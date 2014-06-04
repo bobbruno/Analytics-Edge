@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>6.5 Assignment (<a href="https://courses.edx.org/courses/MITx/15.071x/1T2014/courseware/d32b0c36ff484c228b8117257349d0e6/27bfa0a7d1304080a09965a5773c16f3/">link</a>)</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<h1>6.5 Assignment (<a href="https://courses.edx.org/courses/MITx/15.071x/1T2014/courseware/d32b0c36ff484c228b8117257349d0e6/27bfa0a7d1304080a09965a5773c16f3/">link</a>)</h1>
+
+<h1></h1>
+
+<h2>DOCUMENT CLUSTERING WITH DAILY KOS</h2>
+
+<p>Document clustering, or text clustering, is a very popular application of clustering algorithms. A web search engine, like Google, often returns thousands of results for a simple query. For example, if you type the search term &ldquo;jaguar&rdquo; into Google, 406 million results are returned. This makes it very difficult to browse or find relevant information, especially if the search term has multiple meanings. If we search for &ldquo;jaguar&rdquo;, we might be looking for information about the animal, the car, or the Jacksonville Jaguars football team. </p>
+
+<p>Clustering methods can be used to automatically group search results into categories, making it easier to find relavent results. This method is used in the search engines PolyMeta and Helioid, as well as on FirstGov.gov, the official Web portal for the U.S. government. The two most common algorithms used for document clustering are Hierarchical and k-means. </p>
+
+<p>In this problem, we&#39;ll be clustering articles published on <a href="https://www.dailykos.com/">Daily Kos</a>, an American political blog that publishes news and opinion articles written from a progressive point of view. Daily Kos was founded by Markos Moulitsas in 2002, and as of 2010, the site had an average weekday traffic of hundreds of thousands of visits. </p>
+
+<p>The file <a href="https://courses.edx.org/c4x/MITx/15.071x/asset/dailykos.csv">dailykos.csv</a> contains data on 3,430 news articles or blogs that have been posted on Daily Kos. These articles were posted in 2004, leading up to the United States Presidential Election. The leading candidates were incumbent President George W. Bush (republican) and John Kerry (democratic). Foreign policy was a dominant topic of the election, specifically, the 2003 invasion of Iraq. </p>
+
+<p>The variable &ldquo;<strong>Document</strong>&rdquo; gives an identifying number to each document. Each of the other variables in the dataset is a word that has appeared in at least 50 different articles (1,545 words in total). The set of  words has been trimmed according to the techniques covered in the previous week on text analytics (punctuation has been removed, stop words have been removed, and the words have been stemmed). For each document, the variable values are the number of times that word appeared in the document. </p>
+
+<h3>PROBLEM 1.1 - HIERARCHICAL CLUSTERING  (1 point possible)</h3>
+
+<p>Let&#39;s start by building a hierarchical clustering model. First, read the data set into R. Then, compute the distances (using method=&ldquo;euclidean&rdquo;), and use hclust to build the model (using method=&ldquo;ward&rdquo;). You should cluster on all of the variables EXCEPT the &ldquo;Document&rdquo; variable (see the Netflix lecture to remember how to exclude the first variable in the dataset from clustering).</p>
+
+<pre><code class="r">setwd(&quot;~/Dropbox/Coursera/Analytics Edge/6.5) Assignment&quot;)
+kos = read.csv(&quot;dailykos.csv&quot;)
+distances = dist(kos[2:1546], method = &quot;euclidean&quot;)
+clusterKos = hclust(distances, method = &quot;ward.D&quot;)
+</code></pre>
+
+<h4>Running the dist function will probably take you a while. Why? Select all that apply.</h4>
+
+<ul>
+<li><strong>We have a lot of observations, so it takes a long time to compute the distance between each pair of observations.</strong></li>
+<li><strong>We have a lot of variables, so the distance computation is long.</strong></li>
+<li>Our variables have a wide range of values, so the distances are more complicated. </li>
+<li>The euclidean distance is known to take a long time to compute, regardless of the size of the data.</li>
+</ul>
+
+<h3>PROBLEM 1.2 - HIERARCHICAL CLUSTERING  (1 point possible)</h3>
+
+<p>Plot the dendrogram of your hierarchical clustering model. </p>
+
+<pre><code class="r">plot(clusterKos)
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAADAFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACzMPSIAAABAHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXp7fH1+f4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3N3e3+Dh4uPk5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f7/qVjM+gAAAAlwSFlzAAALEgAACxIB0t1+/AAAIABJREFUeJztnQlAFFUfwN8CSkoYBt5pHmmUZCbU522GVlpWlminoZhlnoWKkWVZJoopqWlYeEWJCGoqiqKI4gHKpXLfIAjItRwLy+7OvG9m9mBPYDkW2Pf/KbMz75o385vr7ZuZRQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgE7OY7vuVEVus0GPYEnTM+VhjKtj3E11RNvh5FapG9B2DMzC+CHG6b20i4/CY7XlysPZ8Q8wPqCjUBDf8TmM7wxFg+LxVj3FT0PodRE9UnuhIL7D0xPjl5iPmRd3sOLtcDpCY3EUQpPDq4pP2zHeMX4fDT5ZUuL3BOqLS8ZFzeGyceKRH/ZQipsdX3W6D0K9A8vvLGLEy1JbbEutjvmUx8zpSFnkDKZoWfi0m1Xll8agp3DGV3k5K8fGVIcNbdcVQRr/w8WyMRXxfarpk1dwfveZWfiHwY8+EJ8KxpkWfXF1LlYW/xUOqI+TVEZT+E9kegffj6U48Wxq3kV8P6gWr0S8cPwgtpITz4YPrJFcjsDZvKcwrktm/tKr8fF2Wwkk8h6Ol42piJ+O0wehHQFPcYf6FdjHxiYUz+2L8Tprcy6xVPyn+KZS3PNoPr6L3saJFry/OPFs6sk4zwq9gstNJuOcx3i7OPFs+JTg75CVGNsw4m3RFfwvbyo7a8BgjMOFsjEV8dbZGN/7dZj0HP8n5vi+L641kSWW7/HH6uPKEHqGyf4D3ojQFE48m3oZ3sMlH7QS70ToOU48V8qoLaFVGPd9Cuch5IsXMcf87PZYfmKxxvg55mNOSZBUfAZC49lzvPknAZVYOJITfwh7TWMYwZyd5dnk5/jNKnG2jPif8I8ITZKe45kkyznxuXjIGryD3TKiZOETJGXb3ytmxWez4p1BvKH5F9/sjfrfwz+x4p/C4sd57oydd/6ai8yD8VJG/ES0Dv+F0OfbxqiLf1VEP6sSx4qfgxO687wV4qfg+4+hlzHfZBZOfxR5KsRvY64LB9Igvv0YnIupbDFOsWTFdynG5RkUY8cR1wadrKNeQGH44hibMnzsDM6wVBGfHZ+PGekqcaz4Lhk4JwYrxPNCce6ZGubirksqzo2mFeJdcdXpAoz7g/h24/E/EmoSPa2k39w5JgiuL2QP9e/fqhDEvIvQmw+qZ6FngssfHh6AVMRjLIhdZ4pU4ljx6IlT/GQ3hXhkuSNdwDXnBgdX3n1fId7CtzJ9xXXsDOKNnf7vOCLmmB/c3vUADMywOvzLwlS8sL3rARiaKWFl1bGLeO1dDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOgPW/du7BkC7MPfL9q4B0C6AeEIB8YQC4gkFxBMKiCcUEE8oIJ5QQDyhgHhCAfGEAuIJBcQTSmPid3gbGtgSDUJj4iOGGpowgyw38TQm/rJhqtGucyQSEE8oIJ5QQDyhgHhCAfGEAuIJBcQTCognFBBPKCCeUEA8oYB4QgHxhALiCQXEEwqIJxQQTyggnlBAPKGAeEIB8YQC4gkFxBMKiCcUEE8oIN7o4fUw0RIK4o2b7u6pdViStsFcPQLEGzcHQ6ZYd7GeeMpHPQLEGzd86UuqLUvUI0C8cRPrwn04xahHgHjjxiE7yd/naHy+vXoEiDdyzBxd3BY7mmmEg3ijB5pzJALNOUKB5hyhQHOOUKA5RyjQnCMVjeZcT3uOdasazgfiOz1qzbmpHhwnNzecC8R3bqA5RyjQnCMUaM4RCjTnCAWac6QCvXMEY26qGQbijZtnzx4cfLmu1s9GPQLEGzfXfTYVb7UeeOiIegSIN25qe1nh7gj1KlePAPHGTdEzvHnMx9h49QgQb9z8lPMiQoO8ipzVI0C8ccObNgShEWsdNCJAPKGAeEIB8YQC4gkFxBMKiCcUEE8oIJ5QQDyhgHhCAfGEAuIJBcQTCognFBBPKCCeUEA8oYB4QgHxhALiCQXEEwqIJxQQTyggnlBAPKGAeEIB8YQC4gkFxBMKiCcUEE8oIJ5QQDyhgHhCAfGEAuIJBcQTCognFBBPKCCeUEA8oYB4QgHxhALiCQXEEwqIJxQQTyggnlBAPKGAeEIB8YQC4gkFxBs9vB4mWkJBvHHT3T21DkvSNpirR4B44+ZgyBTrLtYTT/moR7SN+C6vTGs2cc3POrZZlTVq+P25D8sS9Yi2Ef/KVY9mE9j8rBmPNKu2xkysC/fhFKMe0TbiHb9rVraWcrZbu8y2I+OQneTvczQ+3149AsQbOWaOLm6LHc00wkG80WPI5hyI7ygYuDkH4jsKBm7OgfiOgoGbcyC+owDNOUKB5hypaDTn3g7huOvZcD4Q3+lRa8516cmxAPZ4owaac4QCzTlCgeYcoUBzjlCgOUcq0DtHKj15zMDURj0YxBs3IxPojDcRGozVI0C8cXNtY9fJeQ4gnjgEPRB6O8oUxJNG3ByEeCc2gXjSmF51szeyiYkF8aTRb54lQubztqiHg3hCAfGEAuIJBcQTCognFBBPKCCeUEA8oYB4QgHxhALiCQXEEwqIJxQQTyggnlBAPKGAeEIB8UaAhdKwqYD4To+ZWY4Zg1WlXrlAfKdHIsESFj+9coF4I+BCM/KAeEIB8UaAY3g8i155QLwRkLP+WVsGvfKAeCOgqBnv6QfxRsB3bqZ65wHxnZ7k5BS6IiU5OVmvXCC+02MrR69cIJ5QQLwRkM0Rf3l196bnAfFGgPPVWaNnXfn8tTPeTc8D4o2AnH7MoH8K6pbX9Dwg3gjIcWAGLz5AvUE8WTg/3Lp068PPpzxY2/Q8IN4YeG7Twc32yHacHllAPKGA+E5P1MwoKXrlAvGdHgdrByl65QLxRoFpP56eOUC8ETDgsqDcIXyIXnlAvBFwYdcj2WaeF/XKA+KNgBorlI1sBHrlAfFGwJ03GfFv3NMrD4g3AqaUBFQGPnxVrzwg3hiwdl7v0le/LCCeUEB8p+eiHL1ygfhOzyKG2nXMQK9cIN4o4A/WNweINwpAPKGAeAJ5gqFy4uDBg3XE83qYaAkF8Z0eLEdbZHf31DosSdtgrh4B4o2bgyFTrLtYTzzlox4B4o0bfn/uw7JEPQLEGzexLtyHU4x6BIg3bhyyk/x9jsbn26tHgHgjx8zRxW2xo5lGOIg3eqA5RyLQnCMUaM4RCjTnCAWac4QCzTlS0WjOWdtzrPu64XwgvtOj1px7xYPj5OaGc4H4zg005wgFmnOEAs05QoHmHKFAc45UoHcOUAHEEwqIN250vtMcxBs3Z7Egj0M9AsQbOX/u1h4O4o0cx9Xaw0E8oYB4QgHxhALiCQXEEwqIJxQQTyggnlBAPKF0fPET/JtMXkCTk37VehXsnHR88Z8v6tn69A1uvQp2TjqB+A9arywF5iAexJMJiCcUEE8oIJ5QQDyhgHhCAfGEAuIJBcQTCognFBBPKCCeUEA8obRM/Bgn7Wz00xExXf8agvg2oWXiryzWjuuPOiKS9a8hiG8TWiZe7xNBM84cIL5NMBbxfYbqhe0V/dIPtdS/4h0bYxF/z1sv9l3VL/1RHQ8bd16MRXzzWh9NxnZv25ZveEB8kwDx+sTKcA+pp1hp3K9pNQTxbYIBxJ+xaEFmEN9GgPgmAeL1iZUB4jsiIL5JgHh9YmWA+I4IiG8SxIj3lLe5CmWfYVpXf9uK/4ub850YdnjJq+G0IF5PdIi/0EUtYNp6bcnaVrxyAstTTU/bBoB4KV1lXRcRTenCAPEdkeaJd7kk7buQdXX4NbhaOol4i4aep39pf4OP2/NaPHeD0zzxiz9UiRzh3dAsOon4+IZeoHEysqHY6NktnrvBAfGtUMKSeS2eu8EB8a1QAojXCojviID4ViiBRPET2Xtnv7vKDl00fr9UCojviLRUfOACJyenD13Ze+ZDh2qfBYjviLRY/OOKQJ8mie+luHE1QjHWX3tGEN+GGFx8ouLO1XDFWNrjWjOC+DbE4OK1rd+jvbVm7MDibe2V2fyNyuTwFtfFADRB/IfsTnnmFjv8VhZEvPhUD2V8/lCZvNPiuhiAJoj/dyxzGh5hx56Mw2VBRiX+gLTjOY8bXmzakxMNzq6NO4xah6aI7yf9XB4aUhgSuowdVRVvIT3C/feW9gNdRxfPZu0jP0xPuKY4YutonTY+u84q/jPmaJW51cPj50ek03Lxe9nfJ31mDzuqED8hfPbjaH4Qd4Q7G+DHkjGNY4iivBaLZ/vNBp5je8HUrzwaLraJsFl99nKLEJOUlJ8ko+iqUjfMt1ryKGHylvKz4PHKE2+bNr9mbYkW8VeZrX0G83dO1srSEP+F95WL3gvYIF76fr/PkLMzF++zxY3lkJvbOq+dPmft7WX5Wiz+HrPmA2KZQchmncvRQvH7pdtpuFJXa29rpYmwhmc3+LabEvuUJyKebn7N2hIt4uUL9Y8u8VfsvW5HFoeETEC8UPThYrn4/Yqd3D7O2+eCt/dl1GU3c0WY7cMM7NVLV0a7+KjM+31Vs9hv07kcrSNeZynqEWrTQ/arxY9TNFUT/ORj25tfxTagGeJ5WdYB1szhzX2TmQ7xL21hh38XLLe6wFwRjmH+Vi1WL13GUPbL3tuuzGCWZj0OPqmaRUX8EypvXEhRmerTxKVXFN+Q+A8YafnM30S1PEpoiF/5hfzLqdHD5GM39alUm9MM8eZ47KknELKLj5/OC33t1LlZzs7PsefBzDPM4Cc2pVT8eb/7VifYkT5OTr95OzkNUCldxgpP5jy4dh4ziNCox8ywL59UyaIifv4e5VPpOuWJA3rdGNGY+H/Gchuvyxq1PEpoiletgRl7uuDOI4/oU7O2RKf4p+3PvW7PnZ01xR/MK5uERu2sTukdHbFl+W1n53fd2J/76NnT3SvHw0Uh/kCmVPyCA4vd3Bf/sZwZ/cu/0H+L8sxWvMsOt3vvD3wYGBh4gLuctpbVI8mnPHsp0il+oUqtlS+vDnjq89qdRsVLd4A3WiD+j/CQkPCyrKzissowlgOBHF7c4emz7o3VsC3QKT7B4+i2oE8QsrIPfm0EM91t6D/TByKLOceGmON4n9PnLEftE1RX4LT7W6ivnAMjubP0hrzfZ+zJ/XxNTN595sB9/rigl1T8p8zANTVrMxqWNOJi2MOQU/X3qEnFRwz99VLgkSNHwrxPxMYm3PPw+IFJcfnSS1uX/2ZRv5YdlhxzlP7OlCVz5HR1YwY95OV0u6d0pP9urdJEo1+nyMRPD4ktFBYWFoYGMbzOlC3b/qTiw0IiUqILp7GH+667uEP/D0pFNCx+ulv05jXd3/Cyt7+zxH0Jw/Lg3zeyrOW2zDMvNFbDtkBd/LPco8xTpatjz26E1h49ui2eGd957ubJ9GG/XL5W41Ur8M1I3ft6mLCOpgoWnRCfX5NXxs/bN6ZHklvR8pxd/JNjfQ9eskKZD/DV8sN26MU9u19kzviDVqS/vSc1svAlm/PVeWd2cHMz67lufk8TZmY/phd78lAve/s9mz/+5B17rwcn3kQ16TuT72Ue6cIcI8241Jm/+V54jxsLOODtHXjc29vnP3m9u51VWggb5ZeYRChPaDn5f1i0FY0K/bLrsjk/vNlzpNfO4rt3/YKO5+TnFV4O29mzO3rm3OuW3Oq46Xbop6xhTOlnuUP/ddmM2QP4aF/u2l9W4hIPj5BADw/FkwhH5n766tmn3liz6ER10gWPz5iQfcMRCpQ/upB8Tfp5NXXTEM3qtRxeDxMtoeri53ggZOr9tzknPiHTFK17HblkLOMO9AMvrONThZJams6oSKuqoFkkOXW0sFggFjLjyZKi4kIq92F1UG11ec0WLKRFFdFpJje2+GW+0yXDI2tl6bFrQn7df6U1W/Ny0ncPR5brb4THlt97/YmoY6vSKnxCc0qzUy/+k5G4pPzc/erVNHXrQbpQFHA19YYnW7UDxW7zHxS8zo7+x+3pTzt9FOM051Gu3iri67t/GELrRw8eTFDYUbD5z7v9/Q7cWbB8zva3nvjm5JyZS+POTM1Mvf3V3vKkpHNlo4qOJyaZniq+/XX5iekxN/M+RTbHuHyy41AIdy/mbXaYMEEadN3efuq3ISGFJ07aM5vM895plw69kblsoefpD09M/dAtedlIRvyFxKqs+77e3nvmOi1wW/OSHbt8vodPNleuTrq7p9ZhSdoGjW+j1MWX4Yp/nrp97e3bD/N2TBfQdVl1krRbK9KH+2bmFAkFmMbsf8xYxiy09J9YGsyG0tI4uo7iEjKD3MoCWlgXTdFMMiaQCZVgulZEi+h4YXaVQJgnqRWXUiK6mqIFzIZE0xQtoaiaWjFmkjDJC0atOZd1fduEHkXRdQ/iKsp7DzgTnnOl/PiCaRlZ/x6+WsUPeb87crtcWBg0iKn/C4VhIddKM4qKqi8zJ9GApYsXr1i1atW7zO7YHY1LCBRWSmqF/JzcokM7f9q4eNq0aXOfzhBX16Rn5wqrM8qoopgUcaqwolJY6l6Rcri8prhYXE5to3E037eSkuSI+RUifOdWYf5CtOIuv64kcQp3QOmJukzcd7KSXxxVXBO5xXJ67Y0n37v493trHtytkpR4JhXkSgoxlRyXTyWXfpZfni6iKosv1cam11WVZ96LDzoYViqWiNJqfSMXfJv5kVkriz8YMsW6i/XEUz6NiWdtFQtpSlQjl4sZDSKKksim5D6x0gdWnVINbTE0LaSY7Ymq39BodtvhtiFuU8OYomhKyEzU1FJiprJiZqMRCyTcIUmaS8KEUGLpZkkr1Y/WvgzKy6ixUNJKyEYpZr4UVzcFlGzn0FKkUgCtPnOazUlXt7J4vvTK1LJEEeIkPbHEbVVNqLIImg6whniaVolVX2Oq60vbNkHXF0grBWgrQiWxZmQzUJ2j1sJorGuJNJMqDohaZ6M8R13lCFtZfKyL1HZMYwnbWLyuQhsRT6vOUcduqb18eUbVeqqolh03mihet/kWi6dbXbxDdpK/z9H4fPvGEoJ4bfk7r3hk5ujittix8UsHEK8tfycW31RAvLb8IB6rrm8Qr5oUxGtZZBCvPEcQD+JV0oF4lXgQD+JBPIjXPS+N4kE8iAfxIB7Eg3gQr3OpVFYCiNeaFMRrWWQQrzxHEA/iVdKBeJV4EA/iQTyI1z0vjeJBPIgH8c0Wr6ZBY/FAPIgH8eo1A/GqSUC8NLiziKex0vMJGuJVFg/EK8+xs4nnKkzLHo+iaAH7TBQlq7NicRsSr2VxdYpXcg3i21k8JaZFWJDGrvs60fWT44qYMT6TRyJ4KK7lHk+iuIeduDVJSYRY+XjAjlO0xp6vS7ywVrp+2l+8ikgjFZ9SqryT1lVIJCL5tJimym8+v2f8/pdtw8MLvnNwsETo0WxH1xHf1yVsse09vs86/89Gbvyk8OY7xSf9+fzIa9tmOwanVlK0MJfJys8SFQSLklLvu7lWnLkiqRUJSiWsw0pKRBVS1bWXxQJRLb+6IjupoKYqVVgjqT2xXhR785AbLRfPbFQSWkO8xjrVIq4+oWyg9PAbUwNmU5VusuxDmnXsU5vcgI2nGHDidTZZXg1mNnsJJSuIVnsKTxYk3zKlMRKaYsoR0RJpMDsb9pHQGkxL5Lm5syVWLJKgvcQjNHx6Tdn5ojJJ0p3Nb1lbINQtteacIJtffddliOZz1ibcQ+C8hl7w4TKHGQyzRF3ZpzncJnWrjzF94dHvx9u4TunFTnSx7CJ78wYazQ4mMTMzNWfmsDKuuubWvfDMO7OG8dCvofP+rkjLPJ129/bk2Ois2JSg+du3bfJNrihNETysysgoriopiC2oykrIzeSXVVfUCMqzUnNzSx7klpeU5WXcv/B9WsJ/0Yf3+vrfiTxyITL07qZ/dh9Eqwd5T/x1wjL7MOv3Z76D0KgeY2atNB8wx+XtMZO/GNtt7kfd0cAXVs/taz6nv8nc95DTpWNLsxI3vNtvmMnjh9MKisoLy2/9HeTR7539I/32vvJFUEjioxbDR884vufLSxv7Wdqazna1Gmy268f9FxeOfH79y72e/Bp1QwfmfLcUoakrnL+ZNWHhhl12vYd2X7tlTWheaqD2938BAAAYFO4n1kxt2rsagGEZmUBnvInQYNzeFQEMy7WNXSfnOTDi5ZdovazatT6AgRD0QGheXNfBOGEyCn7ablI6Jbo2Sov7id1afk6AbapjMJHdyeM27i5hWpvZ+OOiHCxt5zKTGU+qv1ELp2fRGbN6mGicE5pmM7gPGnCdEl3p13hSoK1hd3JTNy3flYhjqiUiTBX5b5r13Pv9Zw1/vtcGa5yZFF9EM4F4oOKt3cF9Xpt/kxJHDURovPqvD1n0Unm5N75zpeBCJcZ1/zMdPL+h18a3HO0vgVPGolc/6yYk68R8uWbkrKdXLZ4kfdHixGnPf+bh7jzFaZgde7y2wA91f1XZEHTGL5Muu68rTsdl3AuhmC0lVYS3Xzi9dbej/auPz3T/wTWScUylxUTH+u/ctT35bGilSgGVbH2Y4834lc999caMp62UTh8tPZ10d88UYUmx/+/jrV54d4qdw6QPR7608ItxbmPnvDrz52EzXh1kGyL93pJmtuy8E3OWLFw51sbahpszr0ffYTMmKW+VtoN7TO6GLJ7s99YbA0yZCk/939vfznZ+cvb2TTO2Oz5uhV6aPm3xuqk/rPjkx512M6b2sn52GHcUnWg15n+jX3zSvG97ndpuKFa16O8/K4qU130Y1TzprcTSQ0rf79PFODbx37NhV7deF2B++AafOOx/5New80fvFCYs9Nzjd+m/vTsSk3N8/0iJ9nP/a/e/sTev3jx+aE1qlKfXidRbm/fGnY78L/jXqJgzNw9camZ9AtZXyY55VM75XcfSQ0IjJZFx3EZd378kaWyVsfE1lXRZfUDGsaNrXXs0bqqVaeZaAFqXqlEgnlBAPKEYWnxxey8wwEEbWjwvrpkVlX3QDdyhADSdBn+SvS2Y2G311yVU/U0pdP2tAs2XKn2VtUCEabFyqKSKohVIuOthSvJQmP0wrZJSv6FCdqOCAsUdD/JpWmlmijD11FgxVC6r/p4OWgfqJTef+iWWqM1CeUI819Delc/xojsqrREqqrp52luJI5uVNwVRYkDA3zdSM+MP/+mVfe9Mrbe/a07CxRP/8u9F7Lx7dOfVk2HXokNP3PNyORoWfujkreTr204du5EUffT0zycP7z1z7ojvzt/Onws7fCn50r5m1icyrVY+Whf6uX/whRu4rgRT4rpyTNdi6Vu2ixvfUyjxxQNpkjrZlFh4KQwvPeY+eEQ7igfaExBPKCCeUEA8oRha/JplDd9T3wiKa2Adt4wDTcXQ4hEaFuKD6x83qG9q4AafImgEriVDSah8pc1Bkp4qqG/TMJEUJaIltSWZRwtK864IaY0ClBs9stD69plSmwvraK3pQhaLaZU0lHoK9RakjqZYK4DpbI1f3GxrYiT1YlJyVfb+dt6D92O6TjEhiva6cSssMeX67+klpadyKaoqbc8fZ+PvJd4LuZi43P92kJf7hfPf+F49ExB1a8s+t79ulFVkxv9xNSg1evO5pOun/U8GRHsHeJ79ebf/7980rzrFEdmKfr2sq8d8Dx72DKOwsIYWC+tryW90ndEV5zwC85R6HZN98XH3Dc8b/EbW5q0FoNUB8YQC4gnF0OIz23uBASmGFo9ekDReKR3X9yqdIC1oAgC4PZpzvG/jFBfz0kac/JFkiR4u2d+EVYxKN4iaqHQaU5gfwG5a9z2DML4iEImkDZhiCS2hSrMLyiTnlsYUJ9BYlJIn7ei4ywxraEUbrb7DUDZUbuApxag2tBRPU+tuQNHK8eoplXsruYG4vmjNklTCJOqRLJRqa1G1ILYuZVsML57BxO3LtX9GVGUGq36Zs+O3n9pzL75dww7pSHZoY+W9csKydZe/sRv94XibpyfMHjO862r/GdPWeB2PsNu07dMdzq67vv/mx0Ur333fddm3H61a/+aqG1Hf7lqyaNTrA90/3vfl7I9WvbPzyyX/uL6y9ONg5ZlcL2xaZSoxnrVTenAU+mK88N33Fj3zsxAX5YuEN7BAwr4WonQ+XlGCheXyLDVY47uxPgvwoKnLv8+p4TY7Ac7GmLo5apJNVzuD9859n1FQVlFRUdWi7++AFvKB4Q/1ILwjUNsO5/i6xqsFGACDiz8D+3w7I72UNLh4hLxFOl9Gx/CFgM6u4Jcw1zVUZTxz/Zlfkp/8cxqmxcJsZqqmrLpOJH8zEcVc0mIJO1VR/6Ii2WuvtC+wynvRMG6oHsZOO4hnOFPUL5lphxVwLTJZvxV7NyRNRbwa9AmXpN88S4TM58maHaO9+iHUwyuifmJCbAxv2nNeESN2hL4xz3JMeEnE72tdL9yowbXP9jhF1+CzL/yZtiyj7m5+VVSphOYXHnHeczcp54stm5IvRWwN2nrZNSr7+qVPeuwpiJiWKxKJJRLF+6poiqIuV2AmpKqSZoZ1N6JEtDD9JsYigYiicaVma01Mi8SUmGmDSSqEqjFcq6pSxJQiqqytFIkqRdSVEvatVhKxRFAiomtqJfkS+n5kBSWRSKpoqpxJXitis4kpWsS9/kpE13EvshKygbSYa79Vs++1KmBqIxGwAef5AqbdWpomZMarROIqWvgwpbxQHHNNXFsiYjNz1RJfr6EFIjFfHMwsdfuI5/T9+bkl6rErbQsr+bG1k83n+cuct6xY5U2k+ZisnYzQqyoVaqWSAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABoMVZ85BAln5CYtWdVAEPCiLeeKZ8A8YSw/P79r7k93mxvecl36ALOsfgsqzbiaWR7bXV+1isIzU0r3WuOJsUKggfI0gBGwKSyyQMuceKdkge/IBzG7PED6yZjnZugAAADDElEQVTbHPBGttXrum+5gUaUjBsa5WJdMqvn7svyNEDnx2szQuOl4jNe4tl0ZcQ/MghZePoh2wozZJeM1u9E6PnJnwYg9IjAVJYG6Pz4LUKoLyfe1CWuYH03RrzZxtsXgxjxKQjZJqM/XNlk6yuzs7PL+8nSAJ2f7cweP44TP3wIGhS5jBH/QfTj6GM/Vjr79+MOJsEnLoEImTrwZGmAzs/4skn9Q8pZ8a4RfYbEuSCJ1bIr3XpH/icXP6rkf0Mjv+r7cKaN5zV5GsAIWHY/b0EeK/7RE9Wle7ugo5X9L5Ref7PwE5l4ND+zYn9X9Gq8IHSoPA0AAAAAAAAAAABgKNiGmYLR8Wqxsi65b17jPfYvTxbmfHG1n67SrPjcBx9j4c2XpUnnfdF6lQVaj6aIt4kzmXs+7brsu/gPgpYf0lWaXPwkqyeXVdtzSbvGW7RqhYHWwTZlfVG2vJOVET82ArF/9X2xTJrVXyP0S+IIWY7nPKe63Z6J1ogeQaHzkbSr1i5s/V1ZRy4LfzQz+OUYlxRthG/0OiK29Dfd1ofLOlnrxSv6Ytk04aMR76ths2U5TG3Mrbb8ggKrxnepHiDrqrXjHxgp68hl4cSPz+SSoqmn2mnRgIZgO1mfjZd1siqJl/fFMklM6yzVc712lZeze7VDIpJ11drVmcs7clk48U8JpWkHlRpwcYCmwnWyxss6WWXix0XU98Uyob0fauSyqBwe9dbxFTuRrKvWLl3Rkcsi3+M5TOseMdTCAE2H63KJl3WysuKjEHKKqO+LRVrFo6u/7bYpOPoWknXV2iUrOnJZ5Od4DhMhdNR3QGTipZ2sjPhnxKOtwyLq+2KR8qF+zgB5th+qP0aJ/MeQrKuWFS/ryGUTMVf1g5ZWj5EmHVhm+KUCGkUmXtrJyojn7ay6Oyeivi+WvaoPHy1LXP2mPNtk/BTadwOhx6Rdtax4WUcum4htx0e8LEv68mkDLxLQWrDNOY43HJqR+8dFrVkXwIDYxJlIRzaa6p8ZvsDpxLi/1vy885a0Xj0AwFD8H+1Q2bQkogguAAAAAElFTkSuQmCC" alt="plot of chunk unnamed-chunk-2"/> </p>
+
+<h3>Just looking at the dendrogram, which of the following seem like good choices for the number of clusters?</h3>
+
+<ul>
+<li><strong>2</strong> </li>
+<li><strong>3</strong></li>
+<li>5</li>
+<li>6</li>
+</ul>
+
+<h3>PROBLEM 1.3 - HIERARCHICAL CLUSTERING  (1 point possible)</h3>
+
+<p>In this problem, we are trying to cluster news articles or blog posts into groups. This can be used to show readers categories to choose from when trying to decide what to read. Just thinking about this application, what are good choices for the number of clusters?</p>
+
+<ul>
+<li>2</li>
+<li>3</li>
+<li><strong>7</strong></li>
+<li><strong>8</strong></li>
+</ul>
+
+<h3>PROBLEM 1.4 - HIERARCHICAL CLUSTERING  (3 points possible)</h3>
+
+<p>Let&#39;s pick 7 clusters. This number is reasonable according to the dendrogram, and also seems reasonable for the application. Use the cutree function to split your data into 7 clusters.</p>
+
+<p>Now, we don&#39;t really want to run <strong>tapply</strong> on every single variable when we have over 1,000 different variables. Let&#39;s instead use the <strong>subset</strong> function to subset our data by cluster. Create 7 new datasets, each containing the observations from one of the clusters.</p>
+
+<pre><code class="r">clusterGroups = cutree(clusterKos, k = 7)
+kos.1 = subset(kos, clusterGroups == 1)
+kos.2 = subset(kos, clusterGroups == 2)
+kos.3 = subset(kos, clusterGroups == 3)
+kos.4 = subset(kos, clusterGroups == 4)
+kos.5 = subset(kos, clusterGroups == 5)
+kos.6 = subset(kos, clusterGroups == 6)
+kos.7 = subset(kos, clusterGroups == 7)
+dim(kos.3)[1]
+</code></pre>
+
+<pre><code>## [1] 374
+</code></pre>
+
+<pre><code class="r">which.max(c(dim(kos.1)[1], dim(kos.2)[1], dim(kos.3)[1], dim(kos.4)[1], dim(kos.5)[1], 
+    dim(kos.6)[1], dim(kos.7)[1]))
+</code></pre>
+
+<pre><code>## [1] 1
+</code></pre>
+
+<pre><code class="r">which.min(c(dim(kos.1)[1], dim(kos.2)[1], dim(kos.3)[1], dim(kos.4)[1], dim(kos.5)[1], 
+    dim(kos.6)[1], dim(kos.7)[1]))
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<h4>How many observations are in cluster 3?</h4>
+
+<ul>
+<li><strong>374</strong></li>
+</ul>
+
+<h4>Which cluster has the most observations?</h4>
+
+<ul>
+<li><strong>Cluster 1</strong> (1266)</li>
+<li>Cluster 2</li>
+<li>Cluster 3</li>
+<li>Cluster 4</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h4>Which cluster has the fewest observations?</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li>Cluster 2</li>
+<li>Cluster 3</li>
+<li><strong>Cluster 4</strong> (139)</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h3>PROBLEM 1.5 - HIERARCHICAL CLUSTERING  (1 point possible)</h3>
+
+<p>Instead of looking at the average value in each variable individually, we&#39;ll just look at the top 6 words in each cluster. To do this for cluster 1, type the following in your R console (where &ldquo;<em>HierCluster1</em>&rdquo; should be replaced with the name of your first cluster subset):</p>
+
+<p><strong>tail(sort(colMeans(HierCluster1[-1])))</strong></p>
+
+<pre><code class="r">tail(sort(colMeans(kos.1[-1])))
+</code></pre>
+
+<pre><code>##      state republican       poll   democrat      kerry       bush 
+##     0.7575     0.7591     0.9036     0.9194     1.0624     1.7054
+</code></pre>
+
+<p>This computes the mean frequency values of each of the words in cluster 1, and then outputs the 6 words that occur the most frequently. The [-1] removes the first column of <em>HierCluster1</em>, the <strong>colMeans</strong> function computes the column (word) means, the <strong>sort</strong> function orders the words in increasing order of the mean values, and the <strong>tail</strong> function outputs the last 6 words listed, which are the ones with the largest column means.</p>
+
+<h4>What is the most frequent word in this cluster, in terms of average value? Enter the word exactly how you see it in the output:</h4>
+
+<ul>
+<li><strong>bush</strong></li>
+</ul>
+
+<h3>PROBLEM 1.6 - HIERARCHICAL CLUSTERING  (3 points possible)</h3>
+
+<p>Now repeat the command given in the previous problem for each of the other clusters, and answer the following questions.</p>
+
+<pre><code class="r">tail(sort(colMeans(kos.1[-1])))
+</code></pre>
+
+<pre><code>##      state republican       poll   democrat      kerry       bush 
+##     0.7575     0.7591     0.9036     0.9194     1.0624     1.7054
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.2[-1])))
+</code></pre>
+
+<pre><code>##      bush  democrat challenge      vote      poll  november 
+##     2.847     2.850     4.097     4.399     4.847    10.340
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.3[-1])))
+</code></pre>
+
+<pre><code>##      elect    parties      state republican   democrat       bush 
+##      1.647      1.666      2.321      2.524      3.824      4.406
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.4[-1])))
+</code></pre>
+
+<pre><code>## campaign    voter presided     poll     bush    kerry 
+##    1.432    1.540    1.626    3.590    7.835    8.439
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.5[-1])))
+</code></pre>
+
+<pre><code>##       american       presided administration            war           iraq 
+##          1.091          1.120          1.231          1.776          2.428 
+##           bush 
+##          3.941
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.6[-1])))
+</code></pre>
+
+<pre><code>##     race     bush    kerry    elect democrat     poll 
+##   0.4580   0.4888   0.5168   0.5350   0.5644   0.5812
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.7[-1])))
+</code></pre>
+
+<pre><code>## democrat    clark   edward     poll    kerry     dean 
+##    2.148    2.498    2.608    2.766    3.952    5.804
+</code></pre>
+
+<h4>Which words best describe cluster 2?</h4>
+
+<ul>
+<li>november, vote, edward, bush</li>
+<li>kerry, bush, elect, poll</li>
+<li><strong>november, poll, vote, challenge</strong></li>
+<li>bush, democrat, republican, state</li>
+</ul>
+
+<h4>Which cluster could best be described as the cluster related to the Iraq war?</h4>
+
+<ul>
+<li>Cluster 1 </li>
+<li>Cluster 2 </li>
+<li>Cluster 3 </li>
+<li>Cluster 4 </li>
+<li><strong>Cluster 5</strong></li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h4>In 2004, one of the candidates for the Democratic nomination for the President of the United States was <em>Howard Dean</em>, <em>John Kerry</em> was the candidate who won the democratic nomination, and <em>John Edwards</em> with the running mate of John Kerry (the Vice President nominee). Given this information, which cluster best corresponds to the democratic party?</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li>Cluster 2</li>
+<li>Cluster 3</li>
+<li>Cluster 4</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li><strong>Cluster 7</strong></li>
+</ul>
+
+<h3>PROBLEM 2.1 - K-MEANS CLUSTERING  (3 points possible)</h3>
+
+<p>Now, run k-means clustering, setting the seed to 1000 right before you run the kmeans function. Again, pick the number of clusters equal to 7. You don&#39;t need to add the <em>iters.max</em> argument. Don&#39;t forget to exclude the &ldquo;<em>Document</em>&rdquo; variable from your clustering.</p>
+
+<pre><code class="r">k = 7
+set.seed(1000)
+KMC.kos = kmeans(kos[2:1546], centers = k)
+</code></pre>
+
+<p>Subset your data into the 7 clusters (7 new datasets) by using the &ldquo;<em>cluster</em>&rdquo; variable of your kmeans output.</p>
+
+<pre><code class="r">kos.KMC1 = subset(kos, KMC.kos$cluster == 1)
+kos.KMC2 = subset(kos, KMC.kos$cluster == 2)
+kos.KMC3 = subset(kos, KMC.kos$cluster == 3)
+kos.KMC4 = subset(kos, KMC.kos$cluster == 4)
+kos.KMC5 = subset(kos, KMC.kos$cluster == 5)
+kos.KMC6 = subset(kos, KMC.kos$cluster == 6)
+kos.KMC7 = subset(kos, KMC.kos$cluster == 7)
+dim(kos.KMC3)[1]
+</code></pre>
+
+<pre><code>## [1] 277
+</code></pre>
+
+<pre><code class="r">which.max(c(dim(kos.KMC1)[1], dim(kos.KMC2)[1], dim(kos.KMC3)[1], dim(kos.KMC4)[1], 
+    dim(kos.KMC5)[1], dim(kos.KMC6)[1], dim(kos.KMC7)[1]))
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+<pre><code class="r">which.min(c(dim(kos.KMC1)[1], dim(kos.KMC2)[1], dim(kos.KMC3)[1], dim(kos.KMC4)[1], 
+    dim(kos.KMC5)[1], dim(kos.KMC6)[1], dim(kos.KMC7)[1]))
+</code></pre>
+
+<pre><code>## [1] 2
+</code></pre>
+
+<h4>How many observations are in Cluster 3?</h4>
+
+<ul>
+<li><strong>277</strong></li>
+</ul>
+
+<h4>Which cluster has the most observations?</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li>Cluster 2</li>
+<li>Cluster 3</li>
+<li><strong>Cluster 4</strong></li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h4>Which cluster has the fewest number of observations?</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li><strong>Cluster 2</strong></li>
+<li>Cluster 3</li>
+<li>Cluster 4</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h3>PROBLEM 2.2 - K-MEANS CLUSTERING  (2 points possible)</h3>
+
+<p>Now, output the six most frequent words in each cluster, like we did in the previous problem, for each of the k-means clusters.</p>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC1[-1])))
+</code></pre>
+
+<pre><code>##          state           iraq          kerry administration       presided 
+##          1.610          1.616          1.637          2.664          2.767 
+##           bush 
+##         11.432
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC2[-1])))
+</code></pre>
+
+<pre><code>## primaries  democrat    edward     clark     kerry      dean 
+##     2.319     2.694     2.799     3.090     4.979     8.278
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC3[-1])))
+</code></pre>
+
+<pre><code>## administration          iraqi       american           bush            war 
+##          1.390          1.610          1.686          2.610          3.025 
+##           iraq 
+##          4.094
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC4[-1])))
+</code></pre>
+
+<pre><code>##      elect republican      kerry       poll   democrat       bush 
+##     0.6011     0.6175     0.6495     0.7475     0.7891     1.1474
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC5[-1])))
+</code></pre>
+
+<pre><code>##       race     senate      state    parties republican   democrat 
+##      2.485      2.650      3.521      3.620      4.638      6.994
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC6[-1])))
+</code></pre>
+
+<pre><code>##  democrat      bush challenge      vote      poll  november 
+##     2.900     2.960     4.122     4.447     4.872    10.371
+</code></pre>
+
+<pre><code class="r">tail(sort(colMeans(kos.KMC7[-1])))
+</code></pre>
+
+<pre><code>## presided    voter campaign     poll     bush    kerry 
+##    1.325    1.334    1.383    2.789    5.971    6.481
+</code></pre>
+
+<h4>Which k-means cluster best corresponds to the Iraq War?</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li>Cluster 2</li>
+<li><strong>Cluster 3</strong></li>
+<li>Cluster 4</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h4>Which k-means cluster best corresponds to the democratic party? (Remember that we are looking for the names of the key democratic party leaders.)</h4>
+
+<ul>
+<li>Cluster 1</li>
+<li><strong>Cluster 2</strong></li>
+<li>Cluster 3</li>
+<li>Cluster 4</li>
+<li>Cluster 5</li>
+<li>Cluster 6</li>
+<li>Cluster 7</li>
+</ul>
+
+<h3>PROBLEM 2.3 - K-MEANS CLUSTERING  (1 point possible)</h3>
+
+<p>For the rest of this problem, we&#39;ll ask you to compare how observations were assigned to clusters in the two different methods. Use the table function to compare the cluster assignment of hierarchical clustering to the cluster assignment of k-means clustering.</p>
+
+<p>3, 0, 85, 10, 48, 0, 0, 11, 0, 10, 5, 0, 2, 116, 64, 0, 42, 0, 171, 0, 0, 1045, 0, 79, 0, 145, 712, 82, 32, 0, 126, 1, 3, 0, 1, 0, 320, 8, 0, 1, 0, 0, 111, 1, 24, 123, 39, 0, 10</p>
+
+<h4>Which Hierarchical Cluster best corresponds to K-Means Cluster 2?</h4>
+
+<ul>
+<li>Hierarchical Cluster 1</li>
+<li>Hierarchical Cluster 2</li>
+<li>Hierarchical Cluster 3</li>
+<li>Hierarchical Cluster 4</li>
+<li>Hierarchical Cluster 5</li>
+<li>Hierarchical Cluster 6</li>
+<li><strong>Hierarchical Cluster 7</strong></li>
+<li>No Hierarchical Cluster contains at least half of the points in K-Means Cluster 2.</li>
+</ul>
+
+<h3>PROBLEM 2.4 - K-MEANS CLUSTERING  (1 point possible)</h3>
+
+<p>Which Hierarchical Cluster best corresponds to K-Means Cluster 3?</p>
+
+<ul>
+<li>Hierarchical Cluster 1</li>
+<li>Hierarchical Cluster 2</li>
+<li>Hierarchical Cluster 3</li>
+<li>Hierarchical Cluster 4</li>
+<li><strong>Hierarchical Cluster 5</strong></li>
+<li>Hierarchical Cluster 6</li>
+<li>Hierarchical Cluster 7</li>
+<li>No Hierarchical Cluster contains at least half of the points in K-Means Cluster 3.</li>
+</ul>
+
+<h3>PROBLEM 2.5 - K-MEANS CLUSTERING  (1 point possible)</h3>
+
+<p>Which Hierarchical Cluster best corresponds to K-Means Cluster 7?</p>
+
+<ul>
+<li>Hierarchical Cluster 1</li>
+<li>Hierarchical Cluster 2</li>
+<li>Hierarchical Cluster 3</li>
+<li>Hierarchical Cluster 4</li>
+<li>Hierarchical Cluster 5</li>
+<li>Hierarchical Cluster 6</li>
+<li>Hierarchical Cluster 7</li>
+<li><strong>No Hierarchical Cluster contains at least half of the points in K-Means Cluster 7.</strong></li>
+</ul>
+
+<h3>PROBLEM 2.6 - K-MEANS CLUSTERING  (1 point possible)</h3>
+
+<p>Which Hierarchical Cluster best corresponds to K-Means Cluster 6?</p>
+
+<ul>
+<li>Hierarchical Cluster 1</li>
+<li><strong>Hierarchical Cluster 2</strong></li>
+<li>Hierarchical Cluster 3</li>
+<li>Hierarchical Cluster 4</li>
+<li>Hierarchical Cluster 5</li>
+<li>Hierarchical Cluster 6</li>
+<li>Hierarchical Cluster 7</li>
+<li>No Hierarchical Cluster contains at least half of the points in K-Means Cluster 6.</li>
+</ul>
+
+<p>Please remember not to ask for or post complete answers to homework questions in this discussion forum.</p>
+
+</body>
+
+</html>
+

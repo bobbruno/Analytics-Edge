@@ -1,0 +1,501 @@
+# PREDICTING MEDICAL COSTS WITH CLUSTER-THEN-PREDICT
+
+In the second lecture sequence this week, we heard about cluster-then-predict, a methodology in which you first cluster observations and then build cluster-specific prediction models. In the lecture sequence, we saw how this methodology helped improve the prediction of heart attack risk. In this assignment, we'll use cluster-then-predict to predict future medical costs using medical claims data.
+
+In Week 4, we discussed the importance of high-quality predictions of future medical costs based on information available in medical claims data. In this problem, you will predict future medical claims using part of the [DE-SynPUF dataset](http://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/SynPUFs/DE_Syn_PUF.html), published by the United States Centers for Medicare and Medicaid Services (CMS). This dataset, available in [reimbursement.csv](https://courses.edx.org/c4x/MITx/15.071x/asset/reimbursement.csv), is structured to represent a sample of patients in the Medicare program, which provides health insurance to Americans aged 65 and older as well as some younger people with certain medical conditions. To protect the privacy of patients represented in this publicly available dataset, CMS performs a number of steps to anonymize the data, so we would need to re-train the models we develop in this problem on de-anonymized data if we wanted to apply our models in the real world.
+
+The observations in the dataset represent a 1% random sample of Medicare beneficiaries in 2008, limited to those still alive at the end of 2008. The dependent variable, **reimbursement2009**, represents the total value of all Medicare reimbursements for a patient in 2009, which is the cost of the patient's care to the Medicare system. The following independent variables are available:
+
+- **age**: The patient's age in years at the beginning of 2009
+- **alzheimers**: Binary variable for whether the patient had diagnosis codes for Alzheimer's disease or a related disorder in 2008
+- **arthritis**: Binary variable for whether the patient had diagnosis codes for rheumatoid arthritis or osteoarthritis in 2008
+- **cancer**: Binary variable for whether the patient had diagnosis codes for cancer in 2008
+- **copd**: Binary variable for whether the patient had diagnosis codes for Chronic Obstructive Pulmonary Disease (COPD) in 2008
+- **depression**: Binary variable for whether the patient had diagnosis codes for depression in 2008
+- **diabetes**: Binary variable for whether the patient had diagnosis codes for diabetes in 2008
+- **heart.failure**: Binary variable for whether the patient had diagnosis codes for heart failure in 2008
+- **ihd**: Binary variable for whether the patient had diagnosis codes for ischemic heart disease (IHD) in 2008
+- **kidney**: Binary variable for whether the patient had diagnosis codes for chronic kidney disease in 2008
+- **osteoporosis**: Binary variable for whether the patient had diagnosis codes for osteoporosis in 2008
+- **stroke**: Binary variable for whether the patient had diagnosis codes for a stroke/transient ischemic attack (TIA) in 2008
+- **reimbursement2008**: The total amount of Medicare reimbursements for this patient for 2008
+
+## PROBLEM 1.1 - PREPARING THE DATASET  (1 point possible)
+Load reimbursement.csv into a data frame called claims.
+
+```r
+setwd("~/Dropbox/Coursera/Analytics Edge/6.5) Assignment")
+claims = read.csv("reimbursement.csv")
+str(claims)
+```
+
+```
+## 'data.frame':	458005 obs. of  14 variables:
+##  $ age              : int  89 88 71 80 74 78 68 81 34 85 ...
+##  $ alzheimers       : int  1 1 0 0 1 1 0 1 1 0 ...
+##  $ arthritis        : int  0 1 0 1 1 0 0 0 0 0 ...
+##  $ cancer           : int  0 0 0 0 0 0 0 0 0 0 ...
+##  $ copd             : int  1 0 0 1 1 1 0 0 1 0 ...
+##  $ depression       : int  0 1 0 1 1 0 0 0 1 0 ...
+##  $ diabetes         : int  1 1 0 0 1 0 0 1 1 0 ...
+##  $ heart.failure    : int  1 0 0 1 1 0 0 1 1 0 ...
+##  $ ihd              : int  1 1 0 1 1 0 0 0 1 0 ...
+##  $ kidney           : int  1 0 0 0 1 0 0 0 1 0 ...
+##  $ osteoporosis     : int  0 0 0 0 1 1 0 0 0 0 ...
+##  $ stroke           : int  1 0 0 0 1 1 0 0 0 0 ...
+##  $ reimbursement2008: int  18850 2120 0 4350 8860 1220 1680 1540 23740 0 ...
+##  $ reimbursement2009: int  11350 4000 650 2240 5020 770 2250 1250 7660 0 ...
+```
+
+
+How many Medicare beneficiaries are included in the dataset?
+- __458005__
+
+## PROBLEM 1.2 - PREPARING THE DATASET  (1 point possible)
+What proportion of patients have at least one of the chronic conditions described in the independent variables alzheimers, arthritis, cancer, copd, depression, diabetes, heart.failure, ihd, kidney, osteoporosis, and stroke?
+- __0.6123__
+
+## PROBLEM 1.3 - PREPARING THE DATASET  (1/1 point)
+What is the maximum correlation between independent variables in the dataset?
+
+```r
+correlac = cor(claims[1:13])
+diag(correlac) <- 0
+```
+
+- __0.5146__
+
+## PROBLEM 1.4 - PREPARING THE DATASET  (1 point possible)
+Plot the histogram of the dependent variable.
+
+```r
+hist(claims$reimbursement2009)
+```
+
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+
+
+What is the shape of the distribution?
+- **Skew right -- there are a large number of observations with a small value, but only a small number of observations with a large value.**
+- Balanced -- there are roughly the same number of observations with an unusually large and unusually small value.
+- Skew left -- there are a large number of observations with a large value, but only a small number of observations with a small value.
+
+## PROBLEM 1.5 - PREPARING THE DATASET  (1 point possible)
+To address the shape of the data identified in the previous problem, we will log transform the two reimbursement variables with the following code:
+
+
+```r
+claims$reimbursement2008 = log(claims$reimbursement2008 + 1)
+
+claims$reimbursement2009 = log(claims$reimbursement2009 + 1)
+```
+
+
+### Why did we take the log of the reimbursement value plus 1 instead of the log of the reimbursement value? Hint -- *What happens when a patient has a reimbursement cost of $0?*
+-  Every patient in Medicare gets at least $1 in reimbursement
+- **To avoid log-transformed values of negative infinity**
+- To avoid log-transformed values of infinity
+- There was no reason
+
+## PROBLEM 1.6 - PREPARING THE DATASET  (1 point possible)
+Plot the histogram of the log-transformed dependent variable.
+
+```r
+hist(claims$reimbursement2009)
+```
+
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+
+The distribution is reasonably balanced, other than a large number of people with variable value 0, corresponding to having had $0 in reimbursements in 2009.
+
+```r
+x = c(table(claims$reimbursement2009 <= 0)[2], dim(claims)[1])
+```
+
+
+### What proportion of beneficiaries had $0 in reimbursements in 2009?
+- __0.1985743__
+
+## PROBLEM 2.1 - INITIAL LINEAR REGRESSION MODEL  (1 point possible)
+In Week 3 when we learned about the **sample.split** function, we mentioned that you split data into a training and testing set a bit differently when there is a continuous outcome. Run the following commands to randomly select 70% of the data for the training set and 30% of the data for the testing set:
+
+
+```r
+set.seed(144)
+spl = sample(1:nrow(claims), size = 0.7 * nrow(claims))
+train = claims[spl, ]
+test = claims[-spl, ]
+```
+
+
+Use the train data frame to train a linear regression model (name it lm.claims) to predict reimbursement2009 using all the independent variables.
+
+
+```r
+lm.claims = lm(reimbursement2009 ~ ., data = train)
+summary(lm.claims)
+```
+
+```
+## 
+## Call:
+## lm(formula = reimbursement2009 ~ ., data = train)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -10.708  -1.428  -0.062   0.887   9.382 
+## 
+## Coefficients:
+##                    Estimate Std. Error t value Pr(>|t|)    
+## (Intercept)        1.857321   0.019604   94.74  < 2e-16 ***
+## age               -0.001014   0.000262   -3.87  0.00011 ***
+## alzheimers        -0.015690   0.009434   -1.66  0.09628 .  
+## arthritis          0.047807   0.009933    4.81  1.5e-06 ***
+## cancer            -0.040556   0.013893   -2.92  0.00351 ** 
+## copd              -0.185806   0.010966  -16.94  < 2e-16 ***
+## depression         0.089939   0.009008    9.98  < 2e-16 ***
+## diabetes           0.251835   0.008958   28.11  < 2e-16 ***
+## heart.failure      0.008988   0.009132    0.98  0.32501    
+## ihd                0.154717   0.008999   17.19  < 2e-16 ***
+## kidney            -0.226933   0.010635  -21.34  < 2e-16 ***
+## osteoporosis       0.105285   0.009271   11.36  < 2e-16 ***
+## stroke            -0.254776   0.016667  -15.29  < 2e-16 ***
+## reimbursement2008  0.759142   0.001407  539.69  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 1.85 on 320589 degrees of freedom
+## Multiple R-squared:  0.692,	Adjusted R-squared:  0.692 
+## F-statistic: 5.55e+04 on 13 and 320589 DF,  p-value: <2e-16
+```
+
+
+### What is the training set Multiple R-squared value of lm.claims?
+- __0.6924__
+
+## PROBLEM 2.2 - INITIAL LINEAR REGRESSION MODEL  (1 point possible)
+Obtain testing set predictions from lm.claims. 
+
+
+```r
+predictClaims = predict(lm.claims, newdata = test)
+str(predictClaims)
+```
+
+```
+##  Named num [1:137402] 8.97 1.79 8.66 7.43 9.55 ...
+##  - attr(*, "names")= chr [1:137402] "1" "3" "5" "7" ...
+```
+
+```r
+sqrt(sum((test$reimbursement2009 - predictClaims)^2)/length(predictClaims))
+```
+
+```
+## [1] 1.849
+```
+
+
+### What is the testing set RMSE of the model?
+- __1.849212__
+
+## PROBLEM 2.3 - INITIAL LINEAR REGRESSION MODEL  (1 point possible)
+What is the "naive baseline model" that we would typically use to compute the R-squared value of lm.claims?
+- Predict 0 for every observation
+- Predict mean(train$reimbursement2008) for every observation
+- Predict mean(test$reimbursement2008) for every observation
+- **Predict mean(train$reimbursement2009) for every observation**
+- Predict mean(test$reimbursement2009) for every observation
+
+## PROBLEM 2.4 - INITIAL LINEAR REGRESSION MODEL  (1 point possible)
+What is the testing set RMSE of the naive baseline model?
+- __3.3355__
+
+## PROBLEM 2.5 - INITIAL LINEAR REGRESSION MODEL  (1 point possible)
+In Week 4, we saw how D2Hawkeye used a "smart baseline model" that predicted that a patient's medical costs would be equal to their costs in the previous year. For our problem, this baseline would predict reimbursement2009 to be equal to reimbursement2008.
+
+What is the testing set RMSE of this smart baseline model?
+- __2.0947__
+
+## PROBLEM 3.1 - CLUSTERING MEDICARE BENEFICIARIES  (1 point possible)
+In this section, we will cluster the Medicare beneficiaries. The first step in this process is to remove the dependent variable using the following commands:
+
+
+```r
+train.limited = train
+
+train.limited$reimbursement2009 = NULL
+
+test.limited = test
+
+test.limited$reimbursement2009 = NULL
+```
+
+
+Why do we need to remove the dependent variable in the clustering phase of the cluster-then-predict methodology?
+- Leaving in the dependent variable might lead to unbalanced clusters
+- Removing the dependent variable decreases the computational effort needed to cluster
+- **Needing to know the dependent variable value to assign an observation to a cluster defeats the purpose of the methodology**
+
+## PROBLEM 3.2 - CLUSTERING MEDICARE BENEFICIARIES  (2 points possible)
+In the market segmentation assignment in this week's homework, you were introduced to the **preProcess** command from the **caret** package, which normalizes variables by subtracting by the mean and dividing by the standard deviation.
+
+In cases where we have a training and testing set, we'll want to normalize by the mean and standard deviation of the variables in the training set. We can do this by passing just the training set to the **preProcess** function:
+
+
+```r
+library(caret)
+```
+
+```
+## Loading required package: lattice
+## Loading required package: ggplot2
+```
+
+```r
+
+preproc = preProcess(train.limited)
+
+train.norm = predict(preproc, train.limited)
+
+test.norm = predict(preproc, test.limited)
+mean(test.norm$arthritis)
+```
+
+```
+## [1] -0.006125
+```
+
+
+### What is the mean of the arthritis variable in train.norm?
+- __0__
+
+### What is the mean of the arthritis variable in test.norm?
+- __-0.0061__
+
+## PROBLEM 3.3 - CLUSTERING MEDICARE BENEFICIARIES  (1 point possible)
+Why is the mean arthritis variable much closer to 0 in train.norm than in test.norm?
+- Small rounding errors exist in the normalization procedure
+- **The distribution of the arthritis variable is different in the training and testing set**
+- The distribution of the dependent variable is different in the training and testing set
+
+## PROBLEM 3.4 - CLUSTERING MEDICARE BENEFICIARIES  (1 point possible)
+Set the random seed to 144 (it is important to do this again, even though we did it earlier). Run k-means clustering with 3 clusters on train.norm, storing the result in an object called km.
+
+
+```r
+k = 3
+set.seed(144)
+km = kmeans(train.norm, centers = k, iter.max = 1000)
+```
+
+
+
+```r
+claimVec2 = c(tapply(train$age, km$cluster, mean), tapply(train$alzheimers, 
+    km$cluster, mean), tapply(train$arthritis, km$cluster, mean), tapply(train$cancer, 
+    km$cluster, mean), tapply(train$copd, km$cluster, mean), tapply(train$depression, 
+    km$cluster, mean), tapply(train$diabetes, km$cluster, mean), tapply(train$heart.failure, 
+    km$cluster, mean), tapply(train$ihd, km$cluster, mean), tapply(train$kidney, 
+    km$cluster, mean), tapply(train$osteoporosis, km$cluster, mean), tapply(train$stroke, 
+    km$cluster, mean), tapply(train$reimbursement2008, km$cluster, mean))
+dim(claimVec2) = c(3, 13)
+colnames(claimVec2) = c("age", "alzheimers", "arthritis", "cancer", "copd", 
+    "depression", "diabetes", "heart.failure", "ihd", "kidney", "osteoporosis", 
+    "stroke", "reimbursement2008")
+summary(train)
+```
+
+```
+##       age          alzheimers      arthritis         cancer      
+##  Min.   : 26.0   Min.   :0.000   Min.   :0.000   Min.   :0.0000  
+##  1st Qu.: 67.0   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.0000  
+##  Median : 73.0   Median :0.000   Median :0.000   Median :0.0000  
+##  Mean   : 72.6   Mean   :0.192   Mean   :0.155   Mean   :0.0639  
+##  3rd Qu.: 81.0   3rd Qu.:0.000   3rd Qu.:0.000   3rd Qu.:0.0000  
+##  Max.   :100.0   Max.   :1.000   Max.   :1.000   Max.   :1.0000  
+##       copd         depression       diabetes    heart.failure  
+##  Min.   :0.000   Min.   :0.000   Min.   :0.00   Min.   :0.000  
+##  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.00   1st Qu.:0.000  
+##  Median :0.000   Median :0.000   Median :0.00   Median :0.000  
+##  Mean   :0.136   Mean   :0.213   Mean   :0.38   Mean   :0.285  
+##  3rd Qu.:0.000   3rd Qu.:0.000   3rd Qu.:1.00   3rd Qu.:1.000  
+##  Max.   :1.000   Max.   :1.000   Max.   :1.00   Max.   :1.000  
+##       ihd           kidney       osteoporosis       stroke      
+##  Min.   :0.00   Min.   :0.000   Min.   :0.000   Min.   :0.0000  
+##  1st Qu.:0.00   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.0000  
+##  Median :0.00   Median :0.000   Median :0.000   Median :0.0000  
+##  Mean   :0.42   Mean   :0.161   Mean   :0.175   Mean   :0.0448  
+##  3rd Qu.:1.00   3rd Qu.:0.000   3rd Qu.:0.000   3rd Qu.:0.0000  
+##  Max.   :1.00   Max.   :1.000   Max.   :1.000   Max.   :1.0000  
+##  reimbursement2008 reimbursement2009
+##  Min.   : 0.00     Min.   : 0.00    
+##  1st Qu.: 0.00     1st Qu.: 4.88    
+##  Median : 6.87     Median : 7.34    
+##  Mean   : 5.52     Mean   : 6.10    
+##  3rd Qu.: 8.05     3rd Qu.: 8.35    
+##  Max.   :12.31     Max.   :12.15
+```
+
+```r
+claimVec2
+```
+
+```
+##        age alzheimers arthritis   cancer     copd depression diabetes
+## [1,] 74.48    0.59342   0.45237 0.219218 0.599695    0.57892  0.87779
+## [2,] 71.34    0.02174   0.01169 0.006913 0.007582    0.03076  0.01036
+## [3,] 73.34    0.21354   0.19198 0.061152 0.076266    0.26520  0.60204
+##      heart.failure      ihd   kidney osteoporosis   stroke
+## [1,]       0.82245 0.896540 0.706364       0.3876 0.221155
+## [2,]       0.02578 0.008593 0.006011       0.0264 0.002193
+## [3,]       0.35204 0.705126 0.096093       0.2579 0.014296
+##      reimbursement2008
+## [1,]             9.052
+## [2,]             2.528
+## [3,]             7.548
+```
+
+
+### The description "older-than-average beneficiaries with below average incidence of stroke and above-average 2008 reimbursements" uniquely describes which cluster center?
+- Cluster 1
+- Cluster 2
+- **Cluster 3**
+
+## PROBLEM 3.5 - CLUSTERING MEDICARE BENEFICIARIES  (1 point possible)
+Recall from the recitation that we can use the flexclust package to obtain training set and testing set cluster assignments for our observations (note that the call to as.kcca may take a while to complete):
+
+
+```r
+library(flexclust)
+```
+
+```
+## Loading required package: grid
+## Loading required package: modeltools
+## Loading required package: stats4
+```
+
+```r
+
+km.kcca = as.kcca(km, train.norm)
+
+cluster.train = predict(km.kcca)
+
+cluster.test = predict(km.kcca, newdata = test.norm)
+table(cluster.test)[2]
+```
+
+```
+##     2 
+## 62651
+```
+
+
+How many test-set observations were assigned to Cluster 2?
+- __62650__
+
+## PROBLEM 4.1 - CLUSTER-SPECIFIC PREDICTIONS  (1 point possible)
+Using the subset function, build data frames train1, train2, and train3, containing the elements in the train data frame assigned to clusters 1, 2, and 3, respectively (be careful to take subsets of train, not of train.norm). Similarly build test1, test2, and test3 from the test data frame.
+
+
+```r
+train1 = subset(train, cluster.train == 1)
+train2 = subset(train, cluster.train == 2)
+train3 = subset(train, cluster.train == 3)
+
+test1 = subset(test, cluster.test == 1)
+test2 = subset(test, cluster.test == 2)
+test3 = subset(test, cluster.test == 3)
+```
+
+
+Which training set data frame has the highest average value of the dependent variable?
+- __1__
+
+## PROBLEM 4.2 - CLUSTER-SPECIFIC PREDICTIONS  (1 point possible)
+Build linear regression models lm1, lm2, and lm3, which predict reimbursement2009 using all the variables. lm1 should be trained on train1, lm2 should be trained on train2, and lm3 should be trained on train3.
+
+
+```r
+lm1 = lm(reimbursement2009 ~ ., data = train1)
+lm2 = lm(reimbursement2009 ~ ., data = train2)
+lm3 = lm(reimbursement2009 ~ ., data = train3)
+```
+
+
+### Which variables have a positive sign for the coefficient in at least one of lm1, lm2, and lm3 and a negative sign for the coefficient in at least one of lm1, lm2, and lm3?
+- **age**
+- alzheimers
+- arthritis
+- cancer
+- copd
+- depression
+- diabetes
+- heart.failure
+- ihd
+- kidney
+- osteoporosis
+- reimbursement2008
+
+## PROBLEM 4.3 - CLUSTER-SPECIFIC PREDICTIONS  (1 point possible)
+Using lm1, make test-set predictions called pred.test1 on data frame test1. Using lm2, make test-set predictions called pred.test2 on data frame test2. Using lm3, make test-set predictions called pred.test3 on data frame test3.
+
+
+```r
+pred.test1 = predict(lm1, test1)
+pred.test2 = predict(lm2, test2)
+pred.test3 = predict(lm3, test3)
+```
+
+
+Which vector of test-set predictions has the smallest average predicted reimbursement amount?
+- pred.test1
+- **pred.test2**
+- pred.test3
+
+## PROBLEM 4.4 - CLUSTER-SPECIFIC PREDICTIONS  (1 point possible)
+Obtain the test-set RMSE for each cluster.
+
+```r
+sqrt(sum((test1$reimbursement2009 - pred.test1)^2)/(length(pred.test1)))
+```
+
+```
+## [1] 1.039
+```
+
+```r
+sqrt(sum((test2$reimbursement2009 - pred.test2)^2)/(length(pred.test2)))
+```
+
+```
+## [1] 2.383
+```
+
+```r
+sqrt(sum((test3$reimbursement2009 - pred.test3)^2)/(length(pred.test3)))
+```
+
+```
+## [1] 1.166
+```
+
+### Which cluster has the largest test-set RMSE?
+- Cluster 1
+- Cluster 2
+- Cluster 3
+
+## PROBLEM 4.5 - CLUSTER-SPECIFIC PREDICTIONS  (1 point possible)
+To compute the overall test-set RMSE of the cluster-then-predict approach, we can combine all the test-set predictions into a single vector and all the true outcomes into a single vector:
+
+
+```r
+all.predictions = c(pred.test1, pred.test2, pred.test3)
+
+all.outcomes = c(test1$reimbursement2009, test2$reimbursement2009, test3$reimbursement2009)
+```
+
+
+What is the test-set RMSE of the cluster-then-predict approach?
+- __1.8113__

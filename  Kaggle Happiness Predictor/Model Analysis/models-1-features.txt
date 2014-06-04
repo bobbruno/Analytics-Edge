@@ -1,0 +1,2732 @@
+[1] "Existem 109 modelos"
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` YOB'   AUC = 0.539886"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.529  -1.267   1.005   1.085   1.162  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept) 13.798505   4.889550   2.822  0.00477 **
+YOB         -0.006843   0.002471  -2.770  0.00561 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3788.6  on 2769  degrees of freedom
+AIC: 3792.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Gender'   AUC = 0.500862"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.322  -1.239   1.039   1.039   1.117  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  0.14348    0.05962   2.406   0.0161 *
+GenderMale   0.19132    0.07786   2.457   0.0140 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3790.3  on 2769  degrees of freedom
+AIC: 3794.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` EducationLevel'   AUC = 0.537601"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4155  -1.2096   0.9607   1.0441   1.1977  
+
+Coefficients:
+                                    Estimate Std. Error z value Pr(>|z|)  
+(Intercept)                           0.3218     0.1264   2.547   0.0109 *
+EducationLevelBachelor's Degree       0.1085     0.1470   0.738   0.4608  
+EducationLevelCurrent K-12           -0.2464     0.1576  -1.563   0.1181  
+EducationLevelCurrent Undergraduate  -0.3694     0.1597  -2.314   0.0207 *
+EducationLevelDoctoral Degree         0.2225     0.2227   0.999   0.3178  
+EducationLevelHigh School Diploma    -0.2638     0.1629  -1.619   0.1054  
+EducationLevelMaster's Degree         0.2120     0.1638   1.294   0.1956  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3763.8  on 2764  degrees of freedom
+AIC: 3777.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Party'   AUC = 0.559720"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4054  -1.2515   0.9654   1.1051   1.1526  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       0.05867    0.07662   0.766    0.444    
+PartyIndependent  0.11377    0.10509   1.083    0.279    
+PartyLibertarian  0.18192    0.14198   1.281    0.200    
+PartyOther        0.11318    0.16999   0.666    0.506    
+PartyRepublican   0.46283    0.10439   4.434 9.27e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3773.7  on 2766  degrees of freedom
+AIC: 3783.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q124742'   AUC = 0.544881"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.362  -1.180   1.003   1.003   1.175  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.42442    0.04999   8.491  < 2e-16 ***
+Q124742Yes  -0.41895    0.07839  -5.344 9.07e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3767.7  on 2769  degrees of freedom
+AIC: 3771.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q124122'   AUC = 0.528445"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.312  -1.271   1.048   1.086   1.086  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.31212    0.06038   5.169 2.35e-07 ***
+Q124122Yes  -0.09389    0.07813  -1.202    0.229    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3794.9  on 2769  degrees of freedom
+AIC: 3798.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q123464'   AUC = 0.496187"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.299  -1.299   1.060   1.060   1.197  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.28198    0.03995   7.058 1.69e-12 ***
+Q123464Yes  -0.32850    0.14217  -2.311   0.0209 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.0  on 2769  degrees of freedom
+AIC: 3795
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q123621'   AUC = 0.534832"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3733  -1.2037   0.9934   1.1514   1.1514  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.06160    0.05418   1.137    0.256    
+Q123621Yes   0.38789    0.07697   5.040 4.67e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3770.8  on 2769  degrees of freedom
+AIC: 3774.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q122769'   AUC = 0.490548"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.300  -1.280   1.060   1.078   1.078  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.23783    0.04949   4.805 1.55e-06 ***
+Q122769Yes   0.04567    0.07816   0.584    0.559    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.0  on 2769  degrees of freedom
+AIC: 3800
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q122770'   AUC = 0.523826"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.333  -1.232   1.029   1.029   1.124  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  0.12671    0.05745   2.206  0.02740 * 
+Q122770Yes   0.23231    0.07719   3.010  0.00262 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3787.3  on 2769  degrees of freedom
+AIC: 3791.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q122771'   AUC = 0.519690"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.354  -1.274   1.010   1.084   1.084  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    0.40717    0.09242   4.406 1.05e-05 ***
+Q122771Public -0.18285    0.10156  -1.800   0.0718 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.1  on 2769  degrees of freedom
+AIC: 3797.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q122120'   AUC = 0.528055"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.329  -1.329   1.033   1.033   1.171  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.34930    0.04533   7.706 1.29e-14 ***
+Q122120Yes  -0.33359    0.08538  -3.907 9.35e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3781.1  on 2769  degrees of freedom
+AIC: 3785.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q121699'   AUC = 0.493421"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.344  -1.267   1.020   1.090   1.090  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.38255    0.07378   5.185 2.16e-07 ***
+Q121699Yes  -0.17373    0.08635  -2.012   0.0442 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3792.3  on 2769  degrees of freedom
+AIC: 3796.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q121700'   AUC = 0.510505"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.295  -1.295   1.064   1.064   1.111  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.27184    0.04128   6.585 4.54e-11 ***
+Q121700Yes  -0.11362    0.11089  -1.025    0.306    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.3  on 2769  degrees of freedom
+AIC: 3799.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120978'   AUC = 0.521550"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.290  -1.286   1.068   1.073   1.073  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.26193    0.05773   4.537  5.7e-06 ***
+Q120978Yes  -0.01029    0.07716  -0.133    0.894    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.3  on 2769  degrees of freedom
+AIC: 3800.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q121011'   AUC = 0.539867"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3919  -1.2085   0.9771   1.1466   1.1466  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.49141    0.05869   8.374  < 2e-16 ***
+Q121011Yes  -0.41855    0.07777  -5.382 7.37e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3767.1  on 2769  degrees of freedom
+AIC: 3771.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120379'   AUC = 0.492336"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.288  -1.288   1.070   1.071   1.071  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 0.255281   0.052535   4.859 1.18e-06 ***
+Q120379Yes  0.001905   0.076764   0.025     0.98    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.3  on 2769  degrees of freedom
+AIC: 3800.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120650'   AUC = 0.490535"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.292  -1.292   1.067   1.067   1.110  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)   0.1616     0.1274   1.269    0.205
+Q120650Yes    0.1039     0.1336   0.778    0.437
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.7  on 2769  degrees of freedom
+AIC: 3799.7
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120472'   AUC = 0.512140"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.298  -1.298   1.061   1.061   1.090  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)   
+(Intercept)     0.20886    0.06655   3.138   0.0017 **
+Q120472Science  0.07066    0.08139   0.868   0.3853   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.6  on 2769  degrees of freedom
+AIC: 3799.6
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120194'   AUC = 0.516909"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.304  -1.266   1.056   1.056   1.091  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       0.29315    0.05052   5.802 6.54e-09 ***
+Q120194Try first -0.08730    0.07751  -1.126     0.26    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.1  on 2769  degrees of freedom
+AIC: 3799.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120012'   AUC = 0.541198"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.337  -1.235   1.026   1.121   1.121  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.36696    0.05312   6.908  4.9e-12 ***
+Q120012Yes  -0.23342    0.07681  -3.039  0.00237 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3787.1  on 2769  degrees of freedom
+AIC: 3791.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q120014'   AUC = 0.559909"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3895  -1.1515   0.9792   0.9792   1.2035  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.06126    0.05918  -1.035    0.301    
+Q120014Yes   0.54727    0.07815   7.003 2.51e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3747.0  on 2769  degrees of freedom
+AIC: 3751
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q119334'   AUC = 0.587724"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4408  -1.1483   0.9351   0.9351   1.2068  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.06880    0.05356  -1.284    0.199    
+Q119334Yes   0.66950    0.07777   8.609   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3721.1  on 2769  degrees of freedom
+AIC: 3725.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q119851'   AUC = 0.533758"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.303  -1.277   1.057   1.081   1.081  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.23048    0.05041   4.572 4.83e-06 ***
+Q119851Yes   0.06067    0.07756   0.782    0.434    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.7  on 2769  degrees of freedom
+AIC: 3799.7
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q119650'   AUC = 0.528675"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.319  -1.319   1.042   1.042   1.159  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       0.32631    0.04433   7.361 1.83e-13 ***
+Q119650Receiving -0.28225    0.08855  -3.187  0.00144 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3786.2  on 2769  degrees of freedom
+AIC: 3790.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q118892'   AUC = 0.499432"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.339  -1.259   1.024   1.098   1.098  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.37156    0.06343   5.858 4.68e-09 ***
+Q118892Yes  -0.18271    0.07962  -2.295   0.0217 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.0  on 2769  degrees of freedom
+AIC: 3795
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q118117'   AUC = 0.515212"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.303  -1.303   1.057   1.057   1.090  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.28983    0.05012   5.783 7.35e-09 ***
+Q118117Yes  -0.08122    0.07774  -1.045    0.296    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.2  on 2769  degrees of freedom
+AIC: 3799.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q118232'   AUC = 0.511145"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.294  -1.283   1.065   1.076   1.076  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        0.27087    0.05713   4.741 2.13e-06 ***
+Q118232Pragmatist -0.02673    0.07701  -0.347    0.729    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.2  on 2769  degrees of freedom
+AIC: 3800.2
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q118233'   AUC = 0.518050"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.320  -1.320   1.041   1.041   1.145  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.32870    0.04552   7.221 5.17e-13 ***
+Q118233Yes  -0.25252    0.08459  -2.985  0.00283 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3787.4  on 2769  degrees of freedom
+AIC: 3791.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q118237'   AUC = 0.655899"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5310  -1.0398   0.8611   0.8611   1.3216  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.80122    0.05612   14.28   <2e-16 ***
+Q118237Yes  -1.13396    0.07967  -14.23   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3585.8  on 2769  degrees of freedom
+AIC: 3589.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q117186'   AUC = 0.551071"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.354  -1.354   1.011   1.011   1.183  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        0.40593    0.04821   8.420  < 2e-16 ***
+Q117186Hot headed -0.41820    0.08009  -5.222 1.77e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3769.0  on 2769  degrees of freedom
+AIC: 3773
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q117193'   AUC = 0.514966"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.329  -1.227   1.033   1.033   1.129  
+
+Coefficients:
+                      Estimate Std. Error z value Pr(>|z|)   
+(Intercept)            0.11586    0.06024   1.923  0.05444 . 
+Q117193Standard hours  0.23484    0.07814   3.005  0.00265 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3787.3  on 2769  degrees of freedom
+AIC: 3791.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116797'   AUC = 0.517891"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.307  -1.278   1.053   1.080   1.080  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.23309    0.04733   4.925 8.44e-07 ***
+Q116797Yes   0.06674    0.08060   0.828    0.408    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.6  on 2769  degrees of freedom
+AIC: 3799.6
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116881'   AUC = 0.533476"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.320  -1.320   1.041   1.041   1.152  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   0.32888    0.04498   7.312 2.64e-13 ***
+Q116881Right -0.26940    0.08622  -3.125  0.00178 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3786.6  on 2769  degrees of freedom
+AIC: 3790.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116953'   AUC = 0.550403"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.334  -1.334   1.029   1.029   1.159  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.04435    0.06661   0.666 0.505493    
+Q116953Yes   0.31583    0.08153   3.874 0.000107 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3781.3  on 2769  degrees of freedom
+AIC: 3785.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116601'   AUC = 0.516406"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.316  -1.316   1.045   1.045   1.191  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.03239    0.09000  -0.360 0.718906    
+Q116601Yes   0.35217    0.09951   3.539 0.000401 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3783.8  on 2769  degrees of freedom
+AIC: 3787.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116441'   AUC = 0.536770"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.325  -1.265   1.036   1.092   1.092  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.20339    0.04866    4.18 2.91e-05 ***
+Q116441Yes   0.13824    0.07898    1.75   0.0801 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.3  on 2769  degrees of freedom
+AIC: 3797.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116448'   AUC = 0.563552"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.376  -1.189   0.991   0.991   1.166  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.45573    0.05299   8.601  < 2e-16 ***
+Q116448Yes  -0.42897    0.07717  -5.559 2.72e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3765.3  on 2769  degrees of freedom
+AIC: 3769.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q116197'   AUC = 0.555041"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4016  -1.2286   0.9687   1.1271   1.1271  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.51300    0.06600   7.773 7.68e-15 ***
+Q116197P.M. -0.39337    0.08123  -4.843 1.28e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3772.6  on 2769  degrees of freedom
+AIC: 3776.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115602'   AUC = 0.522331"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.314  -1.314   1.047   1.047   1.161  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  0.03800    0.08313   0.457  0.64759   
+Q115602Yes   0.27661    0.09371   2.952  0.00316 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3787.6  on 2769  degrees of freedom
+AIC: 3791.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115777'   AUC = 0.494741"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.311  -1.256   1.049   1.049   1.101  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept)   0.18200    0.05932   3.068  0.00216 **
+Q115777Start  0.12689    0.07772   1.633  0.10253   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.7  on 2769  degrees of freedom
+AIC: 3797.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115610'   AUC = 0.550125"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.349  -1.349   1.015   1.015   1.328  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.34662    0.09016  -3.845 0.000121 ***
+Q115610Yes   0.74032    0.09983   7.416 1.21e-13 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3740.4  on 2769  degrees of freedom
+AIC: 3744.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115611'   AUC = 0.531094"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3818  -1.2374   0.9859   1.1186   1.1186  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.13987    0.04757   2.940  0.00328 ** 
+Q115611Yes   0.32883    0.08067   4.076 4.58e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3779.6  on 2769  degrees of freedom
+AIC: 3783.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115899'   AUC = 0.529703"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.311  -1.261   1.049   1.096   1.096  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.19385    0.05632   3.442 0.000577 ***
+Q115899Me    0.11567    0.07685   1.505 0.132291    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3794.1  on 2769  degrees of freedom
+AIC: 3798.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115390'   AUC = 0.555365"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3760  -1.2304   0.9911   1.1253   1.1253  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.45553    0.06129   7.432 1.07e-13 ***
+Q115390Yes  -0.33174    0.07868  -4.216 2.48e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3778.4  on 2769  degrees of freedom
+AIC: 3782.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q114961'   AUC = 0.563612"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3693  -1.2074   0.9969   1.1477   1.1477  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.44054    0.05462   8.066 7.28e-16 ***
+Q114961Yes  -0.37013    0.07694  -4.811 1.50e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3773.1  on 2769  degrees of freedom
+AIC: 3777.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q114748'   AUC = 0.525840"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.329  -1.234   1.033   1.033   1.122  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  0.13170    0.05857   2.249  0.02454 * 
+Q114748Yes   0.21678    0.07751   2.797  0.00516 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3788.5  on 2769  degrees of freedom
+AIC: 3792.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q115195'   AUC = 0.507801"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.303  -1.280   1.057   1.078   1.078  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.28948    0.06476   4.470 7.81e-06 ***
+Q115195Yes  -0.05130    0.08032  -0.639    0.523    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.9  on 2769  degrees of freedom
+AIC: 3799.9
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q114517'   AUC = 0.487164"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.306  -1.306   1.054   1.054   1.102  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.29666    0.04740   6.259 3.87e-10 ***
+Q114517Yes  -0.11742    0.08054  -1.458    0.145    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3794.2  on 2769  degrees of freedom
+AIC: 3798.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q114386'   AUC = 0.503923"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.288  -1.288   1.071   1.071   1.071  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 0.256072   0.050378   5.083 3.72e-07 ***
+Q114386TMI  0.000241   0.077564   0.003    0.998    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.3  on 2769  degrees of freedom
+AIC: 3800.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q113992'   AUC = 0.525881"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.294  -1.294   1.065   1.065   1.084  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.26930    0.04553   5.915 3.31e-09 ***
+Q113992Yes  -0.04504    0.08425  -0.535    0.593    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.0  on 2769  degrees of freedom
+AIC: 3800
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q114152'   AUC = 0.528310"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3893  -1.2425   0.9794   1.1137   1.1137  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.15169    0.04615   3.287  0.00101 ** 
+Q114152Yes   0.33381    0.08329   4.008 6.13e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3780.1  on 2769  degrees of freedom
+AIC: 3784.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q113583'   AUC = 0.515306"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.320  -1.273   1.042   1.085   1.085  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   0.32808    0.06764   4.850 1.23e-06 ***
+Q113583Tunes -0.10614    0.08208  -1.293    0.196    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3794.7  on 2769  degrees of freedom
+AIC: 3798.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q113584'   AUC = 0.559304"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.321  -1.254   1.040   1.102   1.102  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        0.33184    0.05409   6.135 8.54e-10 ***
+Q113584Technology -0.15274    0.07667  -1.992   0.0463 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3792.4  on 2769  degrees of freedom
+AIC: 3796.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q113181'   AUC = 0.569492"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4085  -1.2007   0.9627   1.1542   1.1542  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.05476    0.05048   1.085    0.278    
+Q113181Yes   0.47389    0.07823   6.058 1.38e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3759.2  on 2769  degrees of freedom
+AIC: 3763.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q112478'   AUC = 0.537682"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3678  -1.2385   0.9983   1.1176   1.1176  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.43712    0.06223   7.024 2.15e-12 ***
+Q112478Yes  -0.29470    0.07908  -3.726 0.000194 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3782.4  on 2769  degrees of freedom
+AIC: 3786.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q112512'   AUC = 0.528596"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.435  -1.254   0.940   1.103   1.103  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.58779    0.08932   6.581 4.67e-11 ***
+Q112512Yes  -0.41024    0.09894  -4.146 3.38e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3778.8  on 2769  degrees of freedom
+AIC: 3782.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q112270'   AUC = 0.541330"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.313  -1.267   1.048   1.090   1.090  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.20920    0.05165   4.051 5.11e-05 ***
+Q112270Yes   0.10409    0.07703   1.351    0.177    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3794.5  on 2769  degrees of freedom
+AIC: 3798.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q111848'   AUC = 0.535061"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.340  -1.211   1.023   1.023   1.144  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.07858    0.06049   1.299 0.193902    
+Q111848Yes   0.29566    0.07829   3.776 0.000159 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3782.1  on 2769  degrees of freedom
+AIC: 3786.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q111580'   AUC = 0.541169"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.333  -1.333   1.029   1.029   1.143  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        0.08099    0.06289   1.288 0.197803    
+Q111580Supportive  0.27776    0.07940   3.498 0.000468 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3784.1  on 2769  degrees of freedom
+AIC: 3788.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q111220'   AUC = 0.505757"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.297  -1.285   1.063   1.074   1.074  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.24837    0.04526   5.488 4.07e-08 ***
+Q111220Yes   0.02748    0.08498   0.323    0.746    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.2  on 2769  degrees of freedom
+AIC: 3800.2
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q110740'   AUC = 0.504838"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.335  -1.257   1.027   1.100   1.100  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.36385    0.06083   5.981 2.22e-09 ***
+Q110740PC   -0.17954    0.07836  -2.291   0.0219 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.1  on 2769  degrees of freedom
+AIC: 3795.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q109367'   AUC = 0.540184"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4006  -1.2210   0.9695   1.1344   1.1344  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.51083    0.06332   8.067 7.22e-16 ***
+Q109367Yes  -0.40880    0.07975  -5.126 2.95e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3769.8  on 2769  degrees of freedom
+AIC: 3773.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108950'   AUC = 0.517319"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3699  -1.2500   0.9964   1.1065   1.1065  
+
+Coefficients:
+                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)           0.16902    0.04637   3.645 0.000267 ***
+Q108950Risk-friendly  0.27281    0.08265   3.301 0.000964 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3785.4  on 2769  degrees of freedom
+AIC: 3789.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q109244'   AUC = 0.512864"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.330  -1.330   1.032   1.032   1.167  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.35272    0.04582   7.698 1.38e-14 ***
+Q109244Yes  -0.32791    0.08404  -3.902 9.55e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3781.1  on 2769  degrees of freedom
+AIC: 3785.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108855'   AUC = 0.576272"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3736  -1.1584   0.9931   0.9931   1.1966  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.04495    0.06121  -0.734    0.463    
+Q108855Yes!  0.49515    0.07885   6.280 3.39e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3756.7  on 2769  degrees of freedom
+AIC: 3760.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108617'   AUC = 0.527183"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.320  -1.320   1.041   1.041   1.272  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.32978    0.04134   7.978 1.49e-15 ***
+Q108617Yes  -0.54923    0.11300  -4.860 1.17e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3772.5  on 2769  degrees of freedom
+AIC: 3776.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108856'   AUC = 0.561713"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4149  -1.2356   0.9572   1.1203   1.1203  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   0.54278    0.07165   7.576 3.58e-14 ***
+Q108856Space -0.40703    0.08493  -4.793 1.65e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3773.0  on 2769  degrees of freedom
+AIC: 3777
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108754'   AUC = 0.525476"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.315  -1.275   1.046   1.083   1.083  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.22559    0.04688   4.812  1.5e-06 ***
+Q108754Yes   0.09170    0.08135   1.127     0.26    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.1  on 2769  degrees of freedom
+AIC: 3799.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108342'   AUC = 0.563955"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.355  -1.355   1.010   1.010   1.206  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    0.40766    0.04684   8.703  < 2e-16 ***
+Q108342Online -0.47427    0.08241  -5.755 8.66e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3763.1  on 2769  degrees of freedom
+AIC: 3767.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q108343'   AUC = 0.571097"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3708  -1.1682   0.9956   0.9956   1.1867  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.44402    0.05014   8.856  < 2e-16 ***
+Q108343Yes  -0.46584    0.07843  -5.940 2.85e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3760.9  on 2769  degrees of freedom
+AIC: 3764.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q107869'   AUC = 0.634937"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4796  -1.0822   0.9027   0.9027   1.2757  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.22811    0.05653  -4.035 5.46e-05 ***
+Q107869Yes   0.91528    0.07864  11.639  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3657.6  on 2769  degrees of freedom
+AIC: 3661.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q107491'   AUC = 0.493043"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.290  -1.290   1.069   1.069   1.080  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  0.23240    0.10209   2.276   0.0228 *
+Q107491Yes   0.02766    0.11014   0.251   0.8017  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.3  on 2769  degrees of freedom
+AIC: 3800.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106993'   AUC = 0.527501"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.312  -1.312   1.048   1.048   1.181  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)   
+(Intercept) -0.008475   0.092058  -0.092  0.92665   
+Q106993Yes   0.319795   0.101277   3.158  0.00159 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3786.4  on 2769  degrees of freedom
+AIC: 3790.4
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106997'   AUC = 0.592395"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4586  -1.1499   0.9202   1.2052   1.2052  
+
+Coefficients:
+                   Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        -0.06506    0.05209  -1.249    0.212    
+Q106997Yay people!  0.70539    0.07829   9.010   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3713.6  on 2769  degrees of freedom
+AIC: 3717.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106272'   AUC = 0.527286"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.342  -1.342   1.021   1.021   1.190  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.02920    0.06977  -0.419    0.676    
+Q106272Yes   0.40822    0.08363   4.881 1.05e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3772.5  on 2769  degrees of freedom
+AIC: 3776.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106388'   AUC = 0.515648"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.353  -1.264   1.011   1.093   1.093  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.20077    0.04485   4.477 7.57e-06 ***
+Q106388Yes   0.20360    0.08648   2.354   0.0186 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3790.8  on 2769  degrees of freedom
+AIC: 3794.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106389'   AUC = 0.541513"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.345  -1.228   1.019   1.128   1.128  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.38532    0.05359   7.190 6.49e-13 ***
+Q106389Yes  -0.26754    0.07681  -3.483 0.000495 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3784.2  on 2769  degrees of freedom
+AIC: 3788.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q106042'   AUC = 0.511458"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.317  -1.256   1.044   1.100   1.100  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.32171    0.05300   6.070 1.28e-09 ***
+Q106042Yes  -0.13798    0.07674  -1.798   0.0722 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.1  on 2769  degrees of freedom
+AIC: 3797.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q105840'   AUC = 0.512662"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.295  -1.280   1.064   1.079   1.079  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.27305    0.05258   5.193 2.07e-07 ***
+Q105840Yes  -0.03602    0.07676  -0.469    0.639    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.1  on 2769  degrees of freedom
+AIC: 3800.1
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q105655'   AUC = 0.518690"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.290  -1.285   1.069   1.069   1.073  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.24941    0.05816   4.288  1.8e-05 ***
+Q105655Yes   0.01194    0.07729   0.154    0.877    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3796.3  on 2769  degrees of freedom
+AIC: 3800.3
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q104996'   AUC = 0.507444"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.325  -1.249   1.037   1.107   1.107  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)   
+(Intercept)  0.16781    0.05487   3.058  0.00223 **
+Q104996Yes   0.17178    0.07670   2.240  0.02512 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.3  on 2769  degrees of freedom
+AIC: 3795.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q103293'   AUC = 0.496546"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.314  -1.260   1.047   1.097   1.097  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.31491    0.05299   5.942 2.81e-09 ***
+Q103293Yes  -0.12363    0.07673  -1.611    0.107    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.7  on 2769  degrees of freedom
+AIC: 3797.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q102906'   AUC = 0.583891"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4120  -1.0890   0.9597   0.9597   1.2685  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.53642    0.04945  10.847   <2e-16 ***
+Q102906Yes  -0.74804    0.08019  -9.328   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3708.2  on 2769  degrees of freedom
+AIC: 3712.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q102674'   AUC = 0.531594"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.316  -1.316   1.045   1.045   1.118  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.32015    0.04797   6.674  2.5e-11 ***
+Q102674Yes  -0.17821    0.07981  -2.233   0.0256 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.3  on 2769  degrees of freedom
+AIC: 3795.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q102687'   AUC = 0.549519"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3869  -1.1923   0.9815   1.1626   1.1626  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.03494    0.05396   0.647    0.517    
+Q102687Yes   0.44508    0.07709   5.773 7.78e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3762.8  on 2769  degrees of freedom
+AIC: 3766.8
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q102289'   AUC = 0.575782"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5738  -1.1665   0.8274   1.1883   1.1883  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.02562    0.04620  -0.554    0.579    
+Q102289Yes   0.92170    0.08690  10.607   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3677.6  on 2769  degrees of freedom
+AIC: 3681.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q102089'   AUC = 0.563030"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.332  -1.332   1.030   1.030   1.161  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.35629    0.04654   7.656 1.92e-14 ***
+Q102089Rent -0.31698    0.08241  -3.846  0.00012 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3781.5  on 2769  degrees of freedom
+AIC: 3785.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q101162'   AUC = 0.641592"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4796  -1.0035   0.9028   0.9028   1.3619  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       0.68707    0.05099   13.47   <2e-16 ***
+Q101162Pessimist -1.11093    0.08128  -13.67   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3603.2  on 2769  degrees of freedom
+AIC: 3607.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q101163'   AUC = 0.536784"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.299  -1.275   1.061   1.083   1.083  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.28040    0.05177   5.416 6.08e-08 ***
+Q101163Mom  -0.05366    0.07697  -0.697    0.486    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.8  on 2769  degrees of freedom
+AIC: 3799.8
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q101596'   AUC = 0.523861"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.330  -1.265   1.032   1.092   1.092  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.20396    0.04764   4.281 1.86e-05 ***
+Q101596Yes   0.14707    0.08022   1.833   0.0667 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.0  on 2769  degrees of freedom
+AIC: 3797
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q100689'   AUC = 0.511696"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.354  -1.247   1.010   1.110   1.110  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.40701    0.06209   6.555 5.58e-11 ***
+Q100689Yes  -0.24571    0.07898  -3.111  0.00186 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3786.6  on 2769  degrees of freedom
+AIC: 3790.6
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q100680'   AUC = 0.527955"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3677  -1.2402   0.9983   1.1159   1.1159  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.43701    0.06290   6.948 3.72e-12 ***
+Q100680Yes  -0.29064    0.07942  -3.660 0.000253 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3782.9  on 2769  degrees of freedom
+AIC: 3786.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q100562'   AUC = 0.522400"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.307  -1.307   1.053   1.053   1.144  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  0.07884    0.08670   0.909   0.3632  
+Q100562Yes   0.22006    0.09666   2.277   0.0228 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3791.2  on 2769  degrees of freedom
+AIC: 3795.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q99982'   AUC = 0.516455"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.346  -1.226   1.017   1.130   1.130  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.38880    0.05356   7.260 3.87e-13 ***
+Q99982Nope  -0.27530    0.07682  -3.584 0.000339 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3783.5  on 2769  degrees of freedom
+AIC: 3787.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q100010'   AUC = 0.513551"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.301  -1.301   1.059   1.059   1.120  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)  0.13740    0.08517   1.613    0.107
+Q100010Yes   0.14870    0.09537   1.559    0.119
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3793.9  on 2769  degrees of freedom
+AIC: 3797.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q99716'   AUC = 0.516158"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.311  -1.311   1.049   1.049   1.231  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.30925    0.04099   7.544 4.54e-14 ***
+Q99716Yes   -0.43554    0.11722  -3.716 0.000203 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3782.5  on 2769  degrees of freedom
+AIC: 3786.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q99581'   AUC = 0.495675"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.294  -1.294   1.065   1.065   1.104  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.26917    0.04126   6.523 6.88e-11 ***
+Q99581Yes   -0.09459    0.11107  -0.852    0.394    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3795.6  on 2769  degrees of freedom
+AIC: 3799.6
+
+Number of Fisher Scoring iterations: 3
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q99480'   AUC = 0.506027"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.306  -1.306   1.054   1.054   1.129  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  0.11478    0.07994   1.436   0.1511  
+Q99480Yes    0.18326    0.09110   2.012   0.0443 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3792.3  on 2769  degrees of freedom
+AIC: 3796.3
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q98869'   AUC = 0.572906"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.362  -1.362   1.004   1.004   1.338  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.36936    0.08483  -4.354 1.34e-05 ***
+Q98869Yes    0.79269    0.09540   8.309  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3725.9  on 2769  degrees of freedom
+AIC: 3729.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q98578'   AUC = 0.535516"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.349  -1.252   1.015   1.105   1.105  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.17272    0.04843   3.566 0.000362 ***
+Q98578Yes    0.22168    0.07933   2.794 0.005203 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3788.5  on 2769  degrees of freedom
+AIC: 3792.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q98059'   AUC = 0.516531"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.299  -1.299   1.061   1.061   1.165  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)  
+(Intercept)  0.02941    0.12128   0.243   0.8084  
+Q98059Yes    0.25174    0.12783   1.969   0.0489 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3792.5  on 2769  degrees of freedom
+AIC: 3796.5
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q98078'   AUC = 0.513907"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.324  -1.260   1.037   1.097   1.097  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.19180    0.05107   3.756 0.000173 ***
+Q98078Yes    0.14663    0.07729   1.897 0.057786 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3792.7  on 2769  degrees of freedom
+AIC: 3796.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q98197'   AUC = 0.577358"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4014  -1.2071   0.9688   1.1480   1.1480  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.06952    0.05030   1.382    0.167    
+Q98197Yes    0.44311    0.07825   5.663 1.49e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3764.0  on 2769  degrees of freedom
+AIC: 3768
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` Q96024'   AUC = 0.520618"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.342  -1.209   1.021   1.021   1.146  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.07411    0.06015   1.232    0.218    
+Q96024Yes    0.30538    0.07817   3.907 9.35e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3781.1  on 2769  degrees of freedom
+AIC: 3785.1
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` minIncome'   AUC = 0.557551"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-1.489  -1.254   0.895   1.102   1.214  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -8.511e-02  6.441e-02  -1.321    0.186    
+minIncome    5.288e-06  8.108e-07   6.522 6.92e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3752.9  on 2769  degrees of freedom
+AIC: 3756.9
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` maxIncome'   AUC = 0.557551"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4316  -1.2622   0.9429   1.0949   1.1035  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 1.661e-01  4.585e-02   3.622 0.000293 ***
+maxIncome   4.142e-07  1.178e-07   3.516 0.000438 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3783.7  on 2769  degrees of freedom
+AIC: 3787.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` HasKids'   AUC = 0.534230"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3854  -1.2351   0.9827   1.1208   1.1208  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.13459    0.04763   2.826  0.00472 ** 
+HasKids      0.34224    0.08063   4.245 2.19e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3778.2  on 2769  degrees of freedom
+AIC: 3782.2
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Modelo: 'Happy `~` LivesTogether'   AUC = 0.568763"
+
+Call:
+glm(formula = modelFormula, family = binomial, data = trainSet)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4449  -1.1494   0.9316   0.9316   1.2057  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -0.06627    0.05312  -1.247    0.212    
+LivesTogether  0.67622    0.07787   8.683   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3796.3  on 2770  degrees of freedom
+Residual deviance: 3719.7  on 2769  degrees of freedom
+AIC: 3723.7
+
+Number of Fisher Scoring iterations: 4
+
+[1] "==============================================================================="
+[1] "Melhor modelo: 'Happy `~` Q118237'   AUC = 0.655899"

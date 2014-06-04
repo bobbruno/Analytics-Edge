@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>MARKET SEGMENTATION FOR AIRLINES <a href="https://courses.edx.org/courses/MITx/15.071x/1T2014/courseware/d32b0c36ff484c228b8117257349d0e6/27bfa0a7d1304080a09965a5773c16f3/">link</a></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<h1>MARKET SEGMENTATION FOR AIRLINES <a href="https://courses.edx.org/courses/MITx/15.071x/1T2014/courseware/d32b0c36ff484c228b8117257349d0e6/27bfa0a7d1304080a09965a5773c16f3/">link</a></h1>
+
+<p>Market segmentation is a strategy that divides a broad target market of customers into smaller, more similar groups, and then designs a marketing strategy specifically for each group. Clustering is a common technique for market segmentation since it automatically finds similar groups given a data set. </p>
+
+<p>In this problem, we&#39;ll see how clustering can be used to find similar groups of customers who belong to an airline&#39;s frequent flyer program. The airline is trying to learn more about its customers so that it can target different customer segments with different types of mileage offers. </p>
+
+<p>The file <a href="https://courses.edx.org/c4x/MITx/15.071x/asset/AirlinesCluster.csv">AirlinesCluster.csv</a> contains information on 3,999 members of the frequent flyer program. This data comes from the textbook &ldquo;Data Mining for Business Intelligence,&rdquo; by Galit Shmueli, Nitin R. Patel, and Peter C. Bruce. For more information, see the <a href="http://www.dataminingbook.com/">website for the book</a>.</p>
+
+<p>There are seven different variables in the dataset, described below:</p>
+
+<ul>
+<li><strong>Balance</strong> = number of miles eligible for award travel</li>
+<li><strong>QualMiles</strong> = number of miles qualifying for TopFlight status</li>
+<li><strong>BonusMiles</strong> = number of miles earned from non-flight bonus transactions in the past 12 months</li>
+<li><strong>BonusTrans</strong> = number of non-flight bonus transactions in the past 12 months</li>
+<li><strong>FlightMiles</strong> = number of flight miles in the past 12 months</li>
+<li><strong>FlightTrans</strong> = number of flight transactions in the past 12 months</li>
+<li><strong>DaysSinceEnroll</strong> = number of days since enrolled in the frequent flyer program</li>
+</ul>
+
+<h2>PROBLEM 1.1 - NORMALIZING THE DATA  (2 points possible)</h2>
+
+<p>Read the dataset <a href="https://courses.edx.org/c4x/MITx/15.071x/asset/AirlinesCluster.csv">AirlinesCluster.csv</a> into R and call it &ldquo;airlines&rdquo;.</p>
+
+<pre><code class="r">setwd(&quot;~/Dropbox/Coursera/Analytics Edge/6.5) Assignment&quot;)
+airlines = read.csv(&quot;AirlinesCluster.csv&quot;)
+summary(airlines)
+</code></pre>
+
+<pre><code>##     Balance          QualMiles       BonusMiles       BonusTrans  
+##  Min.   :      0   Min.   :    0   Min.   :     0   Min.   : 0.0  
+##  1st Qu.:  18528   1st Qu.:    0   1st Qu.:  1250   1st Qu.: 3.0  
+##  Median :  43097   Median :    0   Median :  7171   Median :12.0  
+##  Mean   :  73601   Mean   :  144   Mean   : 17145   Mean   :11.6  
+##  3rd Qu.:  92404   3rd Qu.:    0   3rd Qu.: 23800   3rd Qu.:17.0  
+##  Max.   :1704838   Max.   :11148   Max.   :263685   Max.   :86.0  
+##   FlightMiles     FlightTrans    DaysSinceEnroll
+##  Min.   :    0   Min.   : 0.00   Min.   :   2   
+##  1st Qu.:    0   1st Qu.: 0.00   1st Qu.:2330   
+##  Median :    0   Median : 0.00   Median :4096   
+##  Mean   :  460   Mean   : 1.37   Mean   :4119   
+##  3rd Qu.:  311   3rd Qu.: 1.00   3rd Qu.:5790   
+##  Max.   :30817   Max.   :53.00   Max.   :8296
+</code></pre>
+
+<h3>Looking at the summary of airlines, which two variables have (on average) the smallest values?</h3>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li><strong>BonusTrans</strong> (11.6)</li>
+<li>FlightMiles</li>
+<li><strong>FlightTrans</strong> (1.374)</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>Which two variables have (on average) the largest values?</h3>
+
+<ul>
+<li><strong>Balance</strong> (73601)</li>
+<li>QualMiles</li>
+<li><strong>BonusMiles</strong> (17145)</li>
+<li>BonusTrans</li>
+<li>FlightMiles</li>
+<li>FlightTrans</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h2>PROBLEM 1.2 - NORMALIZING THE DATA  (1 point possible)</h2>
+
+<p>In this problem, we will normalize our data before we run the clustering algorithms. Why is it important to normalize the data before clustering?</p>
+
+<ul>
+<li>If we don&#39;t normalize the data, the clustering algorithms will not work (we will get an error in R).</li>
+<li>If we don&#39;t normalize the data, it will be hard to interpret the results of the clustering.</li>
+<li><strong>If we don&#39;t normalize the data, the clustering will be dominated by the variables that are on a larger scale.</strong></li>
+<li>If we don&#39;t normalize the data, the clustering will be dominated by the variables that are on a smaller scale.</li>
+</ul>
+
+<h2>PROBLEM 1.3 - NORMALIZING THE DATA  (2 points possible)</h2>
+
+<p>Let&#39;s go ahead and normalize our data. You can normalize the variables in a data frame by using the preProcess function in the &ldquo;caret&rdquo; package. You should already have this package installed from Week 4, but if not, go ahead and install it with <strong>install.packages(&ldquo;caret&rdquo;)</strong>. Then load the package with <strong>library(caret)</strong>.</p>
+
+<p>Now, create a normalized data frame called &ldquo;airlinesNorm&rdquo; by running the following commands:</p>
+
+<pre><code class="r">library(caret)
+</code></pre>
+
+<pre><code>## Loading required package: lattice
+## Loading required package: ggplot2
+</code></pre>
+
+<pre><code class="r">preproc = preProcess(airlines)
+
+airlinesNorm = predict(preproc, airlines)
+summary(airlinesNorm)
+</code></pre>
+
+<pre><code>##     Balance         QualMiles        BonusMiles       BonusTrans    
+##  Min.   :-0.730   Min.   :-0.186   Min.   :-0.710   Min.   :-1.208  
+##  1st Qu.:-0.546   1st Qu.:-0.186   1st Qu.:-0.658   1st Qu.:-0.896  
+##  Median :-0.303   Median :-0.186   Median :-0.413   Median : 0.041  
+##  Mean   : 0.000   Mean   : 0.000   Mean   : 0.000   Mean   : 0.000  
+##  3rd Qu.: 0.187   3rd Qu.:-0.186   3rd Qu.: 0.276   3rd Qu.: 0.562  
+##  Max.   :16.187   Max.   :14.223   Max.   :10.208   Max.   : 7.747  
+##   FlightMiles      FlightTrans     DaysSinceEnroll  
+##  Min.   :-0.329   Min.   :-0.362   Min.   :-1.9934  
+##  1st Qu.:-0.329   1st Qu.:-0.362   1st Qu.:-0.8661  
+##  Median :-0.329   Median :-0.362   Median :-0.0109  
+##  Mean   : 0.000   Mean   : 0.000   Mean   : 0.0000  
+##  3rd Qu.:-0.106   3rd Qu.:-0.098   3rd Qu.: 0.8096  
+##  Max.   :21.680   Max.   :13.610   Max.   : 2.0228
+</code></pre>
+
+<p>The first command pre-processes the data, and the second command performs the normalization. If you look at the summary of airlinesNorm, you should see that all of the variables now have mean zero. You can also see that each of the variables has standard deviation 1 by using the sd() function.</p>
+
+<h3>In the normalized data, which variable has the largest maximum value?</h3>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li><strong><em>FlightMiles</em></strong></li>
+<li>FlightTrans</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>In the normalized data, which variable has the smallest minimum value?</h3>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li>FlightMiles</li>
+<li>FlightTrans</li>
+<li><strong>DaysSinceEnroll</strong></li>
+</ul>
+
+<h2>PROBLEM 2.1 - HIERARCHICAL CLUSTERING  (1 point possible)</h2>
+
+<p>Compute the distances between data points (using euclidean distance) and then run the Hierarchical clustering algorithm (using method=&ldquo;ward&rdquo;) on the normalized data. It may take a few minutes for the commands to finish since the dataset has a large number of observations for hierarchical clustering.</p>
+
+<pre><code class="r">distances = dist(airlinesNorm, method = &quot;euclidean&quot;)
+clusterAirlines = hclust(distances, method = &quot;ward.D&quot;)
+</code></pre>
+
+<p>Then, plot the dendrogram of the hierarchical clustering process. Suppose the airline is looking for somewhere between 2 and 10 clusters. </p>
+
+<pre><code class="r">plot(clusterAirlines)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-4"/> </p>
+
+<p>According to the dendrogram, which of the following is NOT a good choice for the number of clusters?</p>
+
+<ul>
+<li>2</li>
+<li>3</li>
+<li><strong>6</strong></li>
+<li>7</li>
+</ul>
+
+<h2>PROBLEM 2.2 - HIERARCHICAL CLUSTERING  (1 point possible)</h2>
+
+<p>Suppose that after looking at the dendrogram and discussing with the marketing department, the airline decides to proceed with 5 clusters. Divide the data points into 5 clusters by using the <strong>cutree</strong> function. </p>
+
+<pre><code class="r">clusterGroups = cutree(clusterAirlines, k = 5)
+airlines.1 = subset(airlinesNorm, clusterGroups == 1)
+airlines.2 = subset(airlinesNorm, clusterGroups == 2)
+airlines.3 = subset(airlinesNorm, clusterGroups == 3)
+airlines.4 = subset(airlinesNorm, clusterGroups == 4)
+airlines.5 = subset(airlinesNorm, clusterGroups == 5)
+dim(airlines.1)[1]
+</code></pre>
+
+<pre><code>## [1] 776
+</code></pre>
+
+<h3>How many data points are in Cluster 1?</h3>
+
+<ul>
+<li><strong>776</strong></li>
+</ul>
+
+<h2>PROBLEM 2.3 - HIERARCHICAL CLUSTERING  (2 points possible)</h2>
+
+<p>Now, use <strong>tapply</strong> to compare the average values in each of the variables for the 5 clusters (the centroids of the clusters). You may want to compute the average values of the unnormalized data so that it is easier to interpret. You can do this for the variable &ldquo;Balance&rdquo; with the following command:</p>
+
+<p><strong>tapply(airlines$Balance, clusterGroups, mean)</strong></p>
+
+<pre><code class="r">airVec = c(tapply(airlines$Balance, clusterGroups, mean), tapply(airlines$QualMiles, 
+    clusterGroups, mean), tapply(airlines$BonusMiles, clusterGroups, mean), 
+    tapply(airlines$BonusTrans, clusterGroups, mean), tapply(airlines$FlightMiles, 
+        clusterGroups, mean), tapply(airlines$FlightTrans, clusterGroups, mean), 
+    tapply(airlines$DaysSinceEnroll, clusterGroups, mean))
+dim(airVec) = c(5, 7)
+colnames(airVec) = c(&quot;Balance&quot;, &quot;QualMiles&quot;, &quot;BonusMiles&quot;, &quot;BonusTrans&quot;, &quot;FlightMiles&quot;, 
+    &quot;FlightTrans&quot;, &quot;DaysEnroll&quot;)
+airVec
+</code></pre>
+
+<pre><code>##      Balance QualMiles BonusMiles BonusTrans FlightMiles FlightTrans
+## [1,]   57867    0.6443      10360     10.823       83.18      0.3028
+## [2,]  110669 1065.9827      22882     18.229     2613.42      7.4027
+## [3,]  198192   30.3462      55796     19.664      327.68      1.0688
+## [4,]   52336    4.8479      20789     17.088      111.57      0.3445
+## [5,]   36256    2.5112       2265      2.973      119.32      0.4389
+##      DaysEnroll
+## [1,]       6235
+## [2,]       4402
+## [3,]       5616
+## [4,]       2841
+## [5,]       3060
+</code></pre>
+
+<h3>Compared to the other clusters, Cluster 1 has the largest average values in which variables (if any)?</h3>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li>FlightMiles</li>
+<li>FlightTrans</li>
+<li><strong>DaysSinceEnroll</strong></li>
+</ul>
+
+<h3>How would you describe the customers in Cluster 1?</h3>
+
+<ul>
+<li>Relatively new customers who don&#39;t use the airline very often.</li>
+<li><strong>Infrequent but loyal customers.</strong></li>
+<li>Customers who have accumulated a large amount of miles, mostly through non-flight transactions.</li>
+<li>Customers who have accumulated a large amount of miles, and the ones with the largest number of flight transactions.</li>
+<li>Relatively new customers who seem to be accumulating miles, mostly through non-flight transactions.</li>
+</ul>
+
+<h2>PROBLEM 2.4 - HIERARCHICAL CLUSTERING  (2 points possible)</h2>
+
+<p>Compared to the other clusters, Cluster 2 has the largest average values in which variables (if any)?</p>
+
+<ul>
+<li>Balance</li>
+<li><strong>QualMiles</strong></li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li><strong>FlightMiles</strong></li>
+<li><strong>FlightTrans</strong></li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>How would you describe the customers in Cluster 2?</h3>
+
+<ul>
+<li>Relatively new customers who don&#39;t use the airline very often.</li>
+<li>Infrequent but loyal customers.</li>
+<li>Customers who have accumulated a large amount of miles, mostly through non-flight transactions.</li>
+<li><strong>Customers who have accumulated a large amount of miles, and the ones with the largest number of flight transactions.</strong></li>
+<li>Relatively new customers who seem to be accumulating miles, mostly through non-flight transactions.</li>
+</ul>
+
+<h2>PROBLEM 2.5 - HIERARCHICAL CLUSTERING  (2 points possible)</h2>
+
+<p>Compared to the other clusters, Cluster 3 has the largest average values in which variables (if any)?</p>
+
+<ul>
+<li><strong>Balance</strong></li>
+<li>QualMiles</li>
+<li><strong>BonusMiles</strong></li>
+<li><strong>BonusTrans</strong></li>
+<li>FlightMiles</li>
+<li>FlightTrans</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>How would you describe the customers in Cluster 3?</h3>
+
+<ul>
+<li>Relatively new customers who don&#39;t use the airline very often.</li>
+<li>Infrequent but loyal customers.</li>
+<li><strong>Customers who have accumulated a large amount of miles, mostly through non-flight transactions.</strong></li>
+<li>Customers who have accumulated a large amount of miles, and the ones with the largest number of flight transactions.</li>
+<li>Relatively new customers who seem to be accumulating miles, mostly through non-flight transactions.</li>
+</ul>
+
+<h2>PROBLEM 2.6 - HIERARCHICAL CLUSTERING  (2 points possible)</h2>
+
+<p>Compared to the other clusters, Cluster 4 has the largest average values in which variables (if any)?</p>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li>FlightMiles</li>
+<li>FlightTrans</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>How would you describe the customers in Cluster 4?</h3>
+
+<ul>
+<li>Relatively new customers who don&#39;t use the airline very often.</li>
+<li>Infrequent but loyal customers.</li>
+<li>Customers who have accumulated a large amount of miles, mostly through non-flight transactions.</li>
+<li>Customers who have accumulated a large amount of miles, and the ones with the largest number of flight transactions.</li>
+<li><strong>Relatively new customers who seem to be accumulating miles, mostly through non-flight transactions.</strong></li>
+</ul>
+
+<h2>PROBLEM 2.7 - HIERARCHICAL CLUSTERING  (2 points possible)</h2>
+
+<p>Compared to the other clusters, Cluster 5 has the largest average values in which variables (if any)?</p>
+
+<ul>
+<li>Balance</li>
+<li>QualMiles</li>
+<li>BonusMiles</li>
+<li>BonusTrans</li>
+<li>FlightMiles+</li>
+<li>FlightTrans</li>
+<li>DaysSinceEnroll</li>
+</ul>
+
+<h3>How would you describe the customers in Cluster 5?</h3>
+
+<ul>
+<li><strong>Relatively new customers who don&#39;t use the airline very often.</strong></li>
+<li>Infrequent but loyal customers.</li>
+<li>Customers who have accumulated a large amount of miles, mostly through non-flight transactions.</li>
+<li>Customers who have accumulated a large amount of miles, and the ones with the largest number of flight transactions.</li>
+<li>Relatively new customers who seem to be accumulating miles, mostly through non-flight transactions.</li>
+</ul>
+
+<h2>PROBLEM 3.1 - K-MEANS CLUSTERING  (1 point possible)</h2>
+
+<p>Now run the k-means clustering algorithm on the normalized data, again creating 5 clusters. Set the seed to 88 right before running the clustering algorithm, and set the argument iter.max to 1000.</p>
+
+<pre><code class="r">k = 5
+set.seed(88)
+KMC.airlines = kmeans(airlinesNorm, centers = k, iter.max = 1000)
+</code></pre>
+
+<p>How many clusters have more than 1,000 observations?</p>
+
+<ul>
+<li><strong>2</strong></li>
+</ul>
+
+<h2>PROBLEM 3.2 - K-MEANS CLUSTERING  (1 point possible)</h2>
+
+<p>Now, compare the cluster centroids to each other either by dividing the data points into groups and then using tapply, or by looking at the output of kmeansClust$centers, where &ldquo;kmeansClust&rdquo; is the name of the output of the kmeans function. (Note that the output of kmeansClust$centers will be for the normalized data. If you want to look at the average values for the unnormalized data, you need to use tapply like we did for hierarchical clustering.)</p>
+
+<pre><code class="r">airVec2 = c(tapply(airlines$Balance, clusterGroups, mean), tapply(airlines$QualMiles, 
+    KMC.airlines$cluster, mean), tapply(airlines$BonusMiles, KMC.airlines$cluster, 
+    mean), tapply(airlines$BonusTrans, KMC.airlines$cluster, mean), tapply(airlines$FlightMiles, 
+    KMC.airlines$cluster, mean), tapply(airlines$FlightTrans, KMC.airlines$cluster, 
+    mean), tapply(airlines$DaysSinceEnroll, clusterGroups, mean))
+dim(airVec2) = c(5, 7)
+colnames(airVec2) = c(&quot;Balance&quot;, &quot;QualMiles&quot;, &quot;BonusMiles&quot;, &quot;BonusTrans&quot;, &quot;FlightMiles&quot;, 
+    &quot;FlightTrans&quot;, &quot;DaysEnroll&quot;)
+airVec2
+</code></pre>
+
+<pre><code>##      Balance QualMiles BonusMiles BonusTrans FlightMiles FlightTrans
+## [1,]   57867    539.58      62474     21.525       623.9      1.9216
+## [2,]  110669    673.16      31985     28.135      5859.2     17.0000
+## [3,]  198192     34.99      24490     18.429       289.5      0.8852
+## [4,]   52336     55.21       8710      8.362       203.3      0.6294
+## [5,]   36256    126.47       3097      4.285       181.5      0.5404
+##      DaysEnroll
+## [1,]       6235
+## [2,]       4402
+## [3,]       5616
+## [4,]       2841
+## [5,]       3060
+</code></pre>
+
+<p>Do you expect Cluster 1 of the K-Means clustering output to necessarily be similar to Cluster 1 of the Hierarchical clustering output?</p>
+
+<ul>
+<li>Yes, because the clusters are displayed in order of size, so the largest cluster will always be first.</li>
+<li>Yes, because the clusters are displayed according to the properties of the centroid, so the cluster order will be similar.</li>
+<li><strong>No, because cluster ordering is not meaningful in either k-means clustering or hierarchical clustering.</strong></li>
+<li>No, because the clusters produced by the k-means algorithm will never be similar to the clusters produced by the Hierarchical algorithm.</li>
+</ul>
+
+</body>
+
+</html>
+
