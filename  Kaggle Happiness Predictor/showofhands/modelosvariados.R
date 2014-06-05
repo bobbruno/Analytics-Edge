@@ -1,0 +1,6769 @@
+m = createglmModel(Happy ~ CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:Charity+ Alarm:YOB:Overworks+ Medications:TapWater:CheckLists+ 
+    CityLimits:NoLies:Undergraduate+ InteractDislikes:Jealous:WalletHas20:Undergraduate+ CityLimits:NoLies:Undergraduate:TravelAbroad:Charity+ 
+    PositiveThinking:MoneyBuys+ Siblings:AlarmAhead:FullTime:TryFirst:Bachelor+ Outlet:CityLimits:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+
+    ManyPets:LikesFamily:K12+ ManyPets:Phobic:LikesFamily:K12:Medications:TapWater:MorningNews:CheckLists+ Outlet:CityLimits:Overweight:Jealous:Undergraduate+
+    Outlet:CityLimits:Jealous:WalletHas20:Undergraduate:Charity+ Siblings:AlarmAhead:OddHours:FullTime:TryFirst+ 
+    Outlet:Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Jealous:TravelAbroad+ Outlet:CityLimits:Overweight:TravelAbroad+ 
+    ManyPets:LikesFamily:Medications:MorningNews:CheckLists:Masters+ ManyPets:LikesFamily:K12:Medications:TapWater:MorningNews+ 
+    K12:Masters+ ManyPets:Phobic:LikesFamily:CheckLists:Masters+ Outlet:Overweight:TravelAbroad:Charity+ NoLies:Undergraduate:TravelAbroad:Charity+ 
+    ManyPets:Phobic:LikesFamily:K12:Medications:MorningNews:Masters+ CityLimits:Overweight:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ 
+    InteractDislikes:Undergraduate+ Outlet:Overweight:Jealous:WalletHas20:Undergraduate+ Overweight:Jealous:Undergraduate+ 
+    Outlet:CityLimits:Jealous:TravelAbroad:Charity+ Outlet:Jealous:Undergraduate:Charity+ Outlet:WalletHas20:Charity+ 
+    Outlet:CityLimits:Jealous:TravelAbroad+ LikesFamily:Medications:TapWater:Masters+ Jealous:Undergraduate:TravelAbroad+ 
+    Outlet:Overweight:NoLies:Undergraduate+ CityLimits:NoLies:Charity+ MorningNews+ Siblings:OddHours:FullTime:Bachelor+ 
+    ManyPets:Phobic:LikesFamily:TapWater:MorningNews+ Overweight:NoLies:Jealous:Undergraduate:Charity+ Outlet:CityLimits:WalletHas20:Undergraduate:TravelAbroad+ 
+    ManyPets:Phobic:TapWater:MorningNews:CheckLists:Masters+ Siblings:OddHours:FullTime+ ManyPets:LikesFamily:Medications:TapWater:MorningNews+ 
+    CityLimits:Undergraduate:TravelAbroad+ CityLimits:Overweight:NoLies:Jealous:WalletHas20:TravelAbroad:Charity+ 
+    Personality:Alarm:Overworks+ ManyPets:Phobic:K12:Medications:MorningNews:CheckLists:Masters+ CityLimits:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+ 
+    LikesFamily:Medications:TapWater:MorningNews:CheckLists+ Phobic+ ManyPets:Phobic:LikesFamily:K12+ Phobic:TapWater:Masters+ 
+    CreditDebt:SameState:Online+ LikesFamily:K12:Medications:TapWater:MorningNews+ Alarm:YOB+ ManyPets:Phobic:TapWater:Masters+ 
+    Jealous:WalletHas20:TravelAbroad+ SingleParent+ WalletHas20:Undergraduate:Charity+ InteractDislikes:WalletHas20:Undergraduate:TravelAbroad+ 
+    Outlet:Overweight:WalletHas20:Charity+ Phobic:TapWater:MorningNews:Masters+ Phobic:K12:TapWater:MorningNews:Masters+ 
+    Outlet:CityLimits:NoLies:WalletHas20:Charity+ Overweight:NoLies:Jealous:Undergraduate:TravelAbroad:Charity+ Siblings:FullTime:TryFirst+ TapWater:CheckLists+
+    Outlet:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+ CityLimits:NoLies:Jealous:WalletHas20:Undergraduate:Charity+
+    Outlet:Overweight:NoLies:Jealous:Undergraduate:Charity+ Outlet:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad:Charity+
+    Outlet:CityLimits:NoLies:WalletHas20:TravelAbroad+ Phobic:LikesFamily:Medications:TapWater:CheckLists+ InteractDislikes:WalletHas20:Undergraduate+
+    CityLimits:NoLies:WalletHas20:Undergraduate+ Outlet:Jealous:WalletHas20:TravelAbroad+ CityLimits:Overweight+ CityLimits:Overweight:NoLies:Undergraduate:Charity+
+    LikesFamily:K12:Medications+ OddHours:FullTime:TryFirst+ CityLimits:Jealous:WalletHas20+ CityLimits:Jealous:WalletHas20:Undergraduate+
+    Medications:TapWater:MorningNews:CheckLists+ InteractDislikes:Overweight:TravelAbroad+ ManyPets:Phobic:LikesFamily:TapWater:CheckLists:Masters+
+    NoLies:Jealous:WalletHas20:TravelAbroad:Charity+ Phobic:MorningNews+ TalkRadio+ TapWater:Masters+ CityLimits:Overweight:NoLies:WalletHas20:Charity+
+    CityLimits:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Alcohol+ K12:TapWater:MorningNews:CheckLists:Masters+ Outlet:CityLimits:WalletHas20:Undergraduate:TravelAbroad:Charity+
+    ManyPets:Phobic:Medications:TapWater:CheckLists:Masters+ CityLimits:NoLies:Undergraduate:TravelAbroad+
+    InteractDislikes:Jealous:Undergraduate+ InteractDislikes:Overweight:WalletHas20+ Outlet:CityLimits:Jealous:Undergraduate:TravelAbroad:Charity+
+    Jealous:WalletHas20:Charity+ ManyPets:Medications:TapWater:MorningNews+ CityLimits:Jealous:Undergraduate:Charity+ CityLimits:NoLies:Jealous:WalletHas20:Undergraduate+
+    Personality:Alarm:Cautious:YOB+ CityLimits:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ HotHead:MoneyBuys+ 
+    Jealous:WalletHas20+ Outlet:CityLimits:NoLies:WalletHas20+ InteractDislikes:Undergraduate:TravelAbroad+ Outlet:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate+
+    ManyPets:LikesFamily:TapWater:MorningNews:CheckLists+ Overweight:Jealous:WalletHas20+ CityLimits:NoLies:Jealous:Undergraduate:Charity+ Overweight:NoLies:WalletHas20:Undergraduate+
+    ManyPets:Phobic:LikesFamily:K12:Medications+ OddHours+ Phobic:TapWater:CheckLists:Masters+ Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+
+    Phobic:LikesFamily:K12:Medications:TapWater:Masters+ Overweight:NoLies+ Outlet:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate+ CityLimits:Jealous:TravelAbroad:Charity+
+    Outlet:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:Charity+ LikesFamily:K12:Medications:TapWater:MorningNews:Masters+
+    ManyPets:Phobic:K12:TapWater:MorningNews+ Outlet:CityLimits:NoLies:WalletHas20:TravelAbroad:Charity+ Outlet:CityLimits:Undergraduate:TravelAbroad+
+    CityLimits:NoLies:Jealous:Undergraduate:TravelAbroad:Charity+ ManyPets:Medications+ Phobic:LikesFamily:K12:TapWater:MorningNews:Masters+
+    ManyPets:K12:TapWater:MorningNews:Masters+ Phobic:Medications:CheckLists+ ManyPets:LikesFamily:K12:TapWater:MorningNews:CheckLists+
+    Siblings:OddHours:TryFirst+ Mac:PositiveThinking+ Outlet:CityLimits:TravelAbroad+ ManyPets:Phobic:LikesFamily:Medications:CheckLists+
+    Outlet:WalletHas20:TravelAbroad+ Outlet:CityLimits:Overweight:NoLies:WalletHas20:TravelAbroad+ Outlet:Overweight:NoLies:Jealous:Undergraduate+
+    Medications:MorningNews:CheckLists:Masters+ CityLimits:Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+
+    Outlet:Overweight:NoLies:Jealous:Charity+ LikesFamily:Medications:CheckLists:Masters+ ManyPets:Phobic:K12:CheckLists:Masters+
+    CityLimits:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ Outlet:WalletHas20:Undergraduate:TravelAbroad:Charity+
+    Siblings:AlarmAhead:OddHours:TryFirst+ Outlet:WalletHas20:Undergraduate:Charity+ Outlet:CityLimits:TravelAbroad:Charity+
+    CityLimits:Overweight:NoLies:WalletHas20+ InteractDislikes:Jealous:WalletHas20:Undergraduate:TravelAbroad+ CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:Charity+
+    LikesFamily:Medications:TapWater:MorningNews+ Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ Medications:TapWater:Masters+ Spanked+ ManyPets:Phobic:K12:Medications:MorningNews:Masters+ 
+    ManyPets:LikesFamily:Medications:CheckLists:Masters+ ManyPets:Medications:TapWater:MorningNews:CheckLists:Masters+ 
+    K12:MorningNews:Masters+ StraightA:HotHead:PositiveThinking+ ManyPets:Phobic:Medications:TapWater:CheckLists+ 
+    Outlet:Overweight:WalletHas20:Undergraduate:Charity+ CityLimits:Overweight:WalletHas20:Undergraduate:Charity+ CreditDebt:Online+ 
+    Outlet:CityLimits:Overweight:NoLies:WalletHas20:Charity+ Phobic:LikesFamily:K12:Medications+ Phobic:LikesFamily:TapWater:MorningNews:Masters+ CityLimits:Overweight:NoLies:WalletHas20:Undergraduate+ 
+    Siblings:FullTime:TryFirst:Bachelor+ ManyPets:LikesFamily:MorningNews:CheckLists:Masters+ Overweight:NoLies:WalletHas20+ 
+    Outlet:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Successful+ ManyPets:K12:TapWater:CheckLists+ 
+    Alarm:Cautious:YOB:Overworks+ Outlet:Overweight:NoLies:WalletHas20+ Overweight:NoLies:Jealous:Charity+ Overweight:NoLies:WalletHas20:Undergraduate:Charity+ ManyPets:TapWater:CheckLists:Masters+ 
+    Undergraduate+ MorningNews:CheckLists:Masters+ Outlet:CityLimits:Jealous:Undergraduate:TravelAbroad+ Outlet:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ 
+    Phobic:LikesFamily:K12:Medications:TapWater:MorningNews:CheckLists:Masters+ NoLies:Jealous:WalletHas20:Undergraduate:Charity+ 
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad+ CryBaby+ Outlet:Overweight:TravelAbroad+ CityLimits:Overweight:NoLies:Jealous:Undergraduate:Charity+ Outlet:WalletHas20:TravelAbroad:Charity+ 
+    InteractDislikes:Jealous:WalletHas20:TravelAbroad+ Overweight:NoLies:Jealous:TravelAbroad:Charity+ CityLimits:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad:Charity+ 
+    ManyPets:Phobic:K12:Medications:TapWater:CheckLists:Masters+ ManyPets:Phobic:CheckLists+ ManyPets:Phobic:TapWater:CheckLists:Masters+ Overweight:NoLies:Jealous:Undergraduate+ 
+    Phobic:LikesFamily:Medications:TapWater+ LikesFamily:Medications:MorningNews+ Outlet:CityLimits:Overweight:Undergraduate:Charity+ 
+    ManyPets:Phobic:TapWater:MorningNews:CheckLists+ Outlet:Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ Outlet:Overweight:NoLies:WalletHas20:Charity+ Misterious:GoodatMath+ TravelAbroad+ 
+    Phobic:Medications:TapWater:MorningNews+ Outlet:CityLimits:Undergraduate+ CityLimits:Overweight:NoLies:WalletHas20:TravelAbroad+ 
+    CityLimits:NoLies:TravelAbroad+ ManyPets:LikesFamily:K12:Medications:TapWater+ Outlet:Overweight:NoLies:Jealous:TravelAbroad:Charity+ Overweight:NoLies:Jealous+ Personality:Cautious:Overworks+ 
+    Outlet:Jealous:WalletHas20+ Overweight:NoLies:WalletHas20:Charity+ Overweight:NoLies:WalletHas20:TravelAbroad+ Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ Outlet:CityLimits:Overweight+ 
+    Outlet:Overweight:NoLies:WalletHas20:TravelAbroad+ Personality:Alarm:Cautious:Overworks+ CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ 
+    CityLimits:Jealous:Undergraduate:TravelAbroad:Charity+ CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+
+    Outlet:CityLimits:Overweight:Undergraduate:TravelAbroad+ Outlet:Overweight:NoLies:Jealous+ Overweight:NoLies:Jealous:TravelAbroad+ 
+    ManyPets:Phobic:K12:Medications:MorningNews:CheckLists+ Outlet:Undergraduate:TravelAbroad:Charity+ Outlet:Overweight:WalletHas20:Undergraduate:TravelAbroad:Charity+ 
+    Outlet:Overweight:NoLies:Undergraduate:TravelAbroad+ K12:TapWater:MorningNews:Masters+ CityLimits:Overweight:Jealous:Undergraduate+
+    YOB:Overworks+ Outlet:WalletHas20:Undergraduate:TravelAbroad+ Phobic:CheckLists:Masters+ Overweight:Undergraduate+ 
+    K12:Medications:TapWater:MorningNews:Masters+ Siblings:TryFirst:Bachelor+ Medications:MorningNews:Masters+ Phobic:LikesFamily:K12:Medications:TapWater:CheckLists+ 
+    ManyPets:Phobic:K12:Medications:CheckLists:Masters+ Outlet:WalletHas20:Undergraduate+ Outlet:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+ 
+    Overweight:Jealous:Undergraduate:TravelAbroad+ TryFirst:Bachelor+ Republican+ Siblings:AlarmAhead:TryFirst:Bachelor+ 
+    CityLimits:NoLies+ K12:Medications:MorningNews:CheckLists+ Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ 
+    CityLimits:NoLies:TravelAbroad:Charity+ NoLies:Undergraduate:Charity+ OddHours:Bachelor+ ManyPets:Phobic:K12:Medications+ 
+    LikesFamily:TapWater:MorningNews:CheckLists+ ManyPets:LikesFamily:MorningNews:CheckLists+ Outlet:Overweight:NoLies:Jealous:TravelAbroad+ NoLies:WalletHas20:TravelAbroad:Charity+ 
+    Siblings:AlarmAhead:FullTime:TryFirst+ Outlet:Overweight:NoLies:WalletHas20:Undergraduate:Charity+ InteractDislikes:Jealous:Undergraduate:TravelAbroad+ K12:TapWater+ Personality:YOB:Overworks+ 
+    Outlet:Overweight:NoLies:WalletHas20:Undergraduate+ Medications+ ManyPets:Phobic:K12:CheckLists+ Jealous:WalletHas20:Undergraduate:Charity+ NoLies:Jealous:TravelAbroad+ 
+    ManyPets:Phobic:LikesFamily:Medications:TapWater:MorningNews:CheckLists+ CityLimits:Undergraduate+ Outlet:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Phobic:LikesFamily:Medications:Masters+ 
+    Siblings:FullTime+ Misterious:CreditDebt+ ManyPets:Medications:TapWater:CheckLists+ TapWater:MorningNews:CheckLists:Masters+ 
+    WalletHas20:TravelAbroad:Charity+ CityLimits:Overweight:NoLies:Jealous:Undergraduate+ Overweight:NoLies:Jealous:WalletHas20:TravelAbroad:Charity+ Phobic:LikesFamily:Medications:TapWater:MorningNews:CheckLists:Masters+ 
+    Outlet:CityLimits:Jealous:Undergraduate:Charity+ ManyPets:LikesFamily:TapWater:MorningNews:CheckLists:Masters+ Phobic:Medications:CheckLists:Masters+ Misterious:Online:GoodatMath+ ManyPets:Phobic:LikesFamily:K12:TapWater:MorningNews:CheckLists:Masters+ Outlet:Overweight:Undergraduate:Charity+ ManyPets:Phobic:LikesFamily:K12:TapWater:CheckLists:Masters+ 
+    LikesFamily:TapWater+ Outlet:CityLimits:Overweight:Undergraduate+ ManyPets:LikesFamily:K12:MorningNews:CheckLists:Masters+ ManyPets:TapWater:MorningNews:Masters+ ManyPets:LikesFamily:Medications+ Outlet:Overweight+ InteractDislikes:Jealous:TravelAbroad+ LikesFamily:TapWater:Masters+ LikesFamily:K12:MorningNews+ Phobic:Medications:Masters+ 
+    CityLimits:Overweight:NoLies:Jealous:TravelAbroad:Charity+ Siblings:AlarmAhead:OddHours:FullTime:Bachelor+ Overweight:Jealous:WalletHas20:TravelAbroad:Charity+ Phobic:LikesFamily:K12:Medications:MorningNews:CheckLists+ CityLimits:Overweight:NoLies:Jealous:Charity+ SameState:Online+ CityLimits:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ 
+    Outlet:CityLimits:Jealous:Charity+ K12:Medications:TapWater:CheckLists:Masters+ CityLimits:Overweight:NoLies:Jealous+ ManyPets:TapWater:CheckLists+ Overweight:Jealous:WalletHas20:Charity+ Outlet:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Misterious:CreditDebt:SameState:Online+ ManyPets:Phobic:LikesFamily:K12:MorningNews:CheckLists+ 
+    Outlet:Overweight:WalletHas20:TravelAbroad:Charity+ ManyPets:Medications:MorningNews:CheckLists+ Outlet:Jealous:Charity+ ManyPets:K12:TapWater:CheckLists:Masters+ CityLimits:Overweight:NoLies:Jealous:TravelAbroad+ Siblings:OddHours+ StraightA:PositiveThinking:MoneyBuys+ StraightA+ LikesFamily:TapWater:MorningNews:Masters+ ManyPets:K12+ 
+    Overweight:Jealous:WalletHas20:Undergraduate:Charity+ ManyPets:LikesFamily:K12:Medications:MorningNews:CheckLists:Masters+ Outlet:CityLimits:Jealous+ Phobic:Medications:MorningNews:CheckLists+ Glasses+ CityLimits:Overweight:NoLies:Charity+ ManyPets:LikesFamily:K12:CheckLists:Masters+ CityLimits:Overweight:NoLies:TravelAbroad:Charity+ 
+    ManyPets:LikesFamily:K12:MorningNews:CheckLists+ Siblings:AlarmAhead+ Phobic:K12:TapWater:CheckLists+ StraightA:Mac:MoneyBuys+ WalletHas20:Undergraduate:TravelAbroad:Charity+ CityLimits:NoLies:Jealous+ Siblings:AlarmAhead:OddHours+ Siblings:AlarmAhead:OddHours:FullTime:TryFirst:Bachelor+ ManyPets:K12:Medications:TapWater:MorningNews:CheckLists:Masters+ 
+    ManyPets:LikesFamily:Medications:TapWater:MorningNews:CheckLists:Masters+ Phobic:LikesFamily:K12:TapWater:CheckLists:Masters+ AlarmAhead:FullTime:TryFirst+ InteractDislikes:TravelAbroad+ CityLimits:NoLies:Jealous:TravelAbroad+ ManyPets:LikesFamily:K12:Medications:MorningNews:CheckLists+ NoLies:Jealous:Undergraduate:TravelAbroad:Charity+ OddHours:FullTime+ 
+    InteractDislikes:WalletHas20:TravelAbroad+ ManyPets:LikesFamily:K12:Medications:CheckLists:Masters+ Outlet:CityLimits:Overweight:Undergraduate:TravelAbroad:Charity+ InteractDislikes:Overweight:WalletHas20:TravelAbroad+ Medications:TapWater:CheckLists:Masters+ ManyPets:LikesFamily:K12:Medications+ SameState:GoodatMath+ LikesFamily:MorningNews+ 
+    CityLimits:Overweight:WalletHas20:Charity+ Phobic:LikesFamily:CheckLists+ Medications:TapWater:MorningNews:Masters+ CreditDebt+ Outlet:CityLimits+ Jealous+ Misterious:SameState+ ManyPets:LikesFamily:K12:Medications:TapWater:MorningNews:CheckLists:Masters+ HasDebt+ CityLimits:Jealous:TravelAbroad+ AlarmAhead:TryFirst:Bachelor+ 
+    LikesFamily:K12:Medications:TapWater:MorningNews:CheckLists+ AlarmAhead+ NoLies:Jealous:WalletHas20:Undergraduate+ Outlet:CityLimits:Overweight:NoLies:Jealous:WalletHas20:Undergraduate+ Overweight:NoLies:Undergraduate+ Phobic:K12:Medications:MorningNews:CheckLists:Masters+ ManyPets:LikesFamily:K12:TapWater:CheckLists:Masters+ Overweight:WalletHas20:TravelAbroad+ 
+    Phobic:LikesFamily:K12:CheckLists+ Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ Medications:Masters+ CityLimits:NoLies:Jealous:Charity+ Undergraduate:Charity+ ManyPets:LikesFamily:TapWater:MorningNews:Masters+ Outlet:CityLimits:Charity+ ManyPets:Phobic:K12:Medications:Masters+ Jealous:WalletHas20:Undergraduate+ 
+    Outlet:CityLimits:Overweight:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ HotHead+ ManyPets:Phobic:K12:TapWater:MorningNews:CheckLists+ Outlet:CityLimits:Jealous:Undergraduate+ Phobic:K12:TapWater:CheckLists:Masters+ Overweight:WalletHas20:Undergraduate:TravelAbroad+ K12:Medications:CheckLists+ LikesFamily:K12:TapWater:Masters+ CityLimits:Overweight:Jealous+
+    ManyPets:K12:MorningNews:Masters+ ManyPets:LikesFamily:CheckLists:Masters+ LikesFamily:K12:Medications:CheckLists:Masters+ Overweight:NoLies:Jealous:WalletHas20:Charity+ Online+ ManyPets:Phobic:K12:Medications:TapWater:CheckLists+ Phobic:LikesFamily:K12:Medications:TapWater+ Charity+ ManyPets:LikesFamily:K12:TapWater:Masters+ 
+    Phobic:LikesFamily:Medications:MorningNews:CheckLists+ Phobic:TapWater:MorningNews:CheckLists:Masters+ LikesFamily:K12:Medications:MorningNews:CheckLists+ Medications:CheckLists:Masters+ ManyPets:LikesFamily:TapWater:CheckLists:Masters+ ManyPets:LikesFamily+ InteractDislikes:Jealous:WalletHas20+ Outlet:Jealous:WalletHas20:Undergraduate:Charity+ 
+    AlarmAhead:TryFirst+ Overweight:NoLies:Undergraduate:TravelAbroad:Charity+ CityLimits:NoLies:Jealous:TravelAbroad:Charity+ NoLies:Jealous:Undergraduate:Charity+ Outlet:NoLies:TravelAbroad:Charity+ StraightA:HotHead:MoneyBuys+ OddHours:FullTime:Bachelor+ Siblings:OddHours:FullTime:TryFirst+ ManyPets:Phobic:K12:MorningNews:Masters+ 
+    ManyPets:Phobic:LikesFamily:MorningNews:CheckLists+ Outlet:NoLies:TravelAbroad+ Outlet:Jealous:WalletHas20:Charity+ AlarmAhead:OddHours:FullTime:Bachelor+ Phobic:LikesFamily:TapWater:MorningNews+ ManyPets:Phobic:LikesFamily:K12:Medications:CheckLists:Masters+ Outlet:Undergraduate:Charity+ CityLimits:Jealous+ ManyPets:LikesFamily:K12:TapWater:MorningNews:Masters+ 
+    Outlet:CityLimits:Overweight:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Jealous:WalletHas20:TravelAbroad:Charity+ Bachelor+ CityLimits:Overweight:Jealous:Undergraduate:TravelAbroad+ CityLimits:Overweight:NoLies:Undergraduate+ ManyPets:K12:TapWater:MorningNews+ TravelAbroad:Charity+ ManyPets:Phobic:Medications:TapWater:MorningNews:Masters+ 
+    LikesFamily:K12:TapWater:MorningNews:CheckLists+ ManyPets:LikesFamily:K12:TapWater:MorningNews:CheckLists:Masters+ Outlet:CityLimits:Jealous:WalletHas20:Undergraduate+ Outlet:CityLimits:Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ ManyPets:LikesFamily:Medications:TapWater:MorningNews:CheckLists+ Alarm:Cautious:Overworks+ 
+    NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+ ManyPets:LikesFamily:Medications:MorningNews:CheckLists+ Outlet:CityLimits:Jealous:WalletHas20:Undergraduate:TravelAbroad+ ManyPets:Phobic:MorningNews:Masters+ ManyPets:Phobic:LikesFamily:Medications:CheckLists:Masters+ ManyPets:K12:Medications:MorningNews:CheckLists+ K12:Medications:CheckLists:Masters+ 
+    YOB+ LikesFamily:Medications:TapWater:CheckLists:Masters+ StraightA:Mac:PositiveThinking:MoneyBuys+ Phobic:TapWater:MorningNews+ Outlet:NoLies:Charity+ Outlet:Overweight:Undergraduate:TravelAbroad:Charity+ Outlet:Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ ManyPets:LikesFamily:K12:Medications:TapWater:CheckLists:Masters+ AlarmAhead:FullTime:Bachelor+ 
+    K12:TapWater:Masters+ ManyPets:LikesFamily:Medications:TapWater:CheckLists:Masters+ NoLies:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes+ InteractDislikes:CityLimits+ InteractDislikes:NoLies+ InteractDislikes:Charity+ Outlet:InteractDislikes:CityLimits+ Outlet:InteractDislikes:Overweight+ InteractDislikes:CityLimits:Overweight+ 
+    Outlet:InteractDislikes:NoLies+ InteractDislikes:CityLimits:NoLies+ InteractDislikes:Overweight:NoLies+ Outlet:InteractDislikes:Jealous+ InteractDislikes:CityLimits:Jealous+ InteractDislikes:Overweight:Jealous+ InteractDislikes:NoLies:Jealous+ Outlet:InteractDislikes:WalletHas20+ InteractDislikes:CityLimits:WalletHas20+ InteractDislikes:NoLies:WalletHas20+ 
+    Outlet:InteractDislikes:Undergraduate+ InteractDislikes:CityLimits:Undergraduate+ InteractDislikes:NoLies:Undergraduate+ Outlet:InteractDislikes:TravelAbroad+ InteractDislikes:CityLimits:TravelAbroad+ InteractDislikes:NoLies:TravelAbroad+ Outlet:InteractDislikes:Charity+ InteractDislikes:CityLimits:Charity+ InteractDislikes:Overweight:Charity+ 
+    InteractDislikes:NoLies:Charity+ InteractDislikes:Jealous:Charity+ InteractDislikes:WalletHas20:Charity+ InteractDislikes:Undergraduate:Charity+ InteractDislikes:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:Overweight+ Outlet:InteractDislikes:CityLimits:NoLies+ Outlet:InteractDislikes:Overweight:NoLies+ InteractDislikes:CityLimits:Overweight:NoLies+ 
+    Outlet:InteractDislikes:CityLimits:Jealous+ Outlet:InteractDislikes:Overweight:Jealous+ InteractDislikes:CityLimits:Overweight:Jealous+ Outlet:InteractDislikes:NoLies:Jealous+ InteractDislikes:CityLimits:NoLies:Jealous+ InteractDislikes:Overweight:NoLies:Jealous+ Outlet:InteractDislikes:CityLimits:WalletHas20+ Outlet:InteractDislikes:Overweight:WalletHas20+ 
+    InteractDislikes:CityLimits:Overweight:WalletHas20+ Outlet:InteractDislikes:NoLies:WalletHas20+ InteractDislikes:CityLimits:NoLies:WalletHas20+ InteractDislikes:Overweight:NoLies:WalletHas20+ Outlet:InteractDislikes:Jealous:WalletHas20+ InteractDislikes:CityLimits:Jealous:WalletHas20+ InteractDislikes:Overweight:Jealous:WalletHas20+ 
+    InteractDislikes:NoLies:Jealous:WalletHas20+ Outlet:InteractDislikes:CityLimits:Undergraduate+ Outlet:InteractDislikes:Overweight:Undergraduate+ InteractDislikes:CityLimits:Overweight:Undergraduate+ Outlet:InteractDislikes:NoLies:Undergraduate+ InteractDislikes:CityLimits:NoLies:Undergraduate+ InteractDislikes:Overweight:NoLies:Undergraduate+ 
+    Outlet:InteractDislikes:Jealous:Undergraduate+ InteractDislikes:CityLimits:Jealous:Undergraduate+ InteractDislikes:Overweight:Jealous:Undergraduate+ InteractDislikes:NoLies:Jealous:Undergraduate+ Outlet:InteractDislikes:WalletHas20:Undergraduate+ InteractDislikes:CityLimits:WalletHas20:Undergraduate+ InteractDislikes:Overweight:WalletHas20:Undergraduate+ 
+    InteractDislikes:NoLies:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:TravelAbroad+ Outlet:InteractDislikes:Overweight:TravelAbroad+ InteractDislikes:CityLimits:Overweight:TravelAbroad+ Outlet:InteractDislikes:NoLies:TravelAbroad+ InteractDislikes:CityLimits:NoLies:TravelAbroad+ InteractDislikes:Overweight:NoLies:TravelAbroad+ 
+    Outlet:InteractDislikes:Jealous:TravelAbroad+ InteractDislikes:CityLimits:Jealous:TravelAbroad+ InteractDislikes:Overweight:Jealous:TravelAbroad+ InteractDislikes:NoLies:Jealous:TravelAbroad+ Outlet:InteractDislikes:WalletHas20:TravelAbroad+ InteractDislikes:CityLimits:WalletHas20:TravelAbroad+ InteractDislikes:NoLies:WalletHas20:TravelAbroad+ 
+    Outlet:InteractDislikes:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Undergraduate:TravelAbroad+ InteractDislikes:NoLies:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Charity+ Outlet:InteractDislikes:Overweight:Charity+ InteractDislikes:CityLimits:Overweight:Charity+ Outlet:InteractDislikes:NoLies:Charity+ 
+    InteractDislikes:CityLimits:NoLies:Charity+ InteractDislikes:Overweight:NoLies:Charity+ Outlet:InteractDislikes:Jealous:Charity+ InteractDislikes:CityLimits:Jealous:Charity+ InteractDislikes:Overweight:Jealous:Charity+ InteractDislikes:NoLies:Jealous:Charity+ Outlet:InteractDislikes:WalletHas20:Charity+ InteractDislikes:CityLimits:WalletHas20:Charity+ 
+    InteractDislikes:Overweight:WalletHas20:Charity+ InteractDislikes:NoLies:WalletHas20:Charity+ InteractDislikes:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:Undergraduate:Charity+ InteractDislikes:CityLimits:Undergraduate:Charity+ InteractDislikes:Overweight:Undergraduate:Charity+ InteractDislikes:NoLies:Undergraduate:Charity+ 
+    InteractDislikes:Jealous:Undergraduate:Charity+ InteractDislikes:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:TravelAbroad:Charity+ InteractDislikes:CityLimits:TravelAbroad:Charity+ InteractDislikes:Overweight:TravelAbroad:Charity+ InteractDislikes:NoLies:TravelAbroad:Charity+ InteractDislikes:Jealous:TravelAbroad:Charity+ 
+    InteractDislikes:WalletHas20:TravelAbroad:Charity+ InteractDislikes:Undergraduate:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous+ Outlet:InteractDislikes:Overweight:NoLies:Jealous+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:Jealous+ Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20+ Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20+ InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20+
+    Outlet:InteractDislikes:Overweight:Jealous:WalletHas20+ InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20+ InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20+ Outlet:InteractDislikes:CityLimits:Overweight:Undergraduate+ 
+    Outlet:InteractDislikes:CityLimits:NoLies:Undergraduate+ Outlet:InteractDislikes:Overweight:NoLies:Undergraduate+ InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate+ Outlet:InteractDislikes:CityLimits:Jealous:Undergraduate+ Outlet:InteractDislikes:Overweight:Jealous:Undergraduate+ InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate+ 
+    Outlet:InteractDislikes:NoLies:Jealous:Undergraduate+ InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate+ InteractDislikes:Overweight:NoLies:Jealous:Undergraduate+ Outlet:InteractDislikes:CityLimits:WalletHas20:Undergraduate+ Outlet:InteractDislikes:Overweight:WalletHas20:Undergraduate+ InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate+ 
+    Outlet:InteractDislikes:NoLies:WalletHas20:Undergraduate+ InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate+ InteractDislikes:Overweight:NoLies:WalletHas20:Undergraduate+ Outlet:InteractDislikes:Jealous:WalletHas20:Undergraduate+ InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate+ InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate+ 
+    InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:TravelAbroad+ InteractDislikes:CityLimits:Overweight:NoLies:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Jealous:TravelAbroad+ 
+    Outlet:InteractDislikes:Overweight:Jealous:TravelAbroad+ InteractDislikes:CityLimits:Overweight:Jealous:TravelAbroad+ Outlet:InteractDislikes:NoLies:Jealous:TravelAbroad+ InteractDislikes:CityLimits:NoLies:Jealous:TravelAbroad+ InteractDislikes:Overweight:NoLies:Jealous:TravelAbroad+ Outlet:InteractDislikes:CityLimits:WalletHas20:TravelAbroad+ 
+    Outlet:InteractDislikes:Overweight:WalletHas20:TravelAbroad+ InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:NoLies:WalletHas20:TravelAbroad+ InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad+ InteractDislikes:Overweight:NoLies:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:Jealous:WalletHas20:TravelAbroad+ 
+    InteractDislikes:CityLimits:Jealous:WalletHas20:TravelAbroad+ InteractDislikes:Overweight:Jealous:WalletHas20:TravelAbroad+ InteractDislikes:NoLies:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:Undergraduate:TravelAbroad+ 
+    InteractDislikes:CityLimits:Overweight:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:NoLies:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:NoLies:Undergraduate:TravelAbroad+ InteractDislikes:Overweight:NoLies:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Jealous:Undergraduate:TravelAbroad+ 
+    InteractDislikes:CityLimits:Jealous:Undergraduate:TravelAbroad+ InteractDislikes:Overweight:Jealous:Undergraduate:TravelAbroad+ InteractDislikes:NoLies:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:WalletHas20:Undergraduate:TravelAbroad+ 
+    InteractDislikes:Overweight:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:Charity+ Outlet:InteractDislikes:Overweight:NoLies:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:Charity+ 
+    Outlet:InteractDislikes:CityLimits:Jealous:Charity+ Outlet:InteractDislikes:Overweight:Jealous:Charity+ InteractDislikes:CityLimits:Overweight:Jealous:Charity+ Outlet:InteractDislikes:NoLies:Jealous:Charity+ InteractDislikes:CityLimits:NoLies:Jealous:Charity+ InteractDislikes:Overweight:NoLies:Jealous:Charity+ Outlet:InteractDislikes:CityLimits:WalletHas20:Charity+
+    Outlet:InteractDislikes:Overweight:WalletHas20:Charity+ InteractDislikes:CityLimits:Overweight:WalletHas20:Charity+ Outlet:InteractDislikes:NoLies:WalletHas20:Charity+ InteractDislikes:CityLimits:NoLies:WalletHas20:Charity+ InteractDislikes:Overweight:NoLies:WalletHas20:Charity+ Outlet:InteractDislikes:Jealous:WalletHas20:Charity+ 
+    InteractDislikes:CityLimits:Jealous:WalletHas20:Charity+ InteractDislikes:Overweight:Jealous:WalletHas20:Charity+ InteractDislikes:NoLies:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:CityLimits:Undergraduate:Charity+ Outlet:InteractDislikes:Overweight:Undergraduate:Charity+ InteractDislikes:CityLimits:Overweight:Undergraduate:Charity+ 
+    Outlet:InteractDislikes:NoLies:Undergraduate:Charity+ InteractDislikes:CityLimits:NoLies:Undergraduate:Charity+ InteractDislikes:Overweight:NoLies:Undergraduate:Charity+ Outlet:InteractDislikes:Jealous:Undergraduate:Charity+ InteractDislikes:CityLimits:Jealous:Undergraduate:Charity+ InteractDislikes:Overweight:Jealous:Undergraduate:Charity+ 
+    InteractDislikes:NoLies:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:WalletHas20:Undergraduate:Charity+ InteractDislikes:CityLimits:WalletHas20:Undergraduate:Charity+ InteractDislikes:Overweight:WalletHas20:Undergraduate:Charity+ InteractDislikes:NoLies:WalletHas20:Undergraduate:Charity+ InteractDislikes:Jealous:WalletHas20:Undergraduate:Charity+ 
+    Outlet:InteractDislikes:CityLimits:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:TravelAbroad:Charity+ Outlet:InteractDislikes:NoLies:TravelAbroad:Charity+ InteractDislikes:CityLimits:NoLies:TravelAbroad:Charity+ InteractDislikes:Overweight:NoLies:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:Jealous:TravelAbroad:Charity+ InteractDislikes:CityLimits:Jealous:TravelAbroad:Charity+ InteractDislikes:Overweight:Jealous:TravelAbroad:Charity+ InteractDislikes:NoLies:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:WalletHas20:TravelAbroad:Charity+ InteractDislikes:CityLimits:WalletHas20:TravelAbroad:Charity+ 
+    InteractDislikes:Overweight:WalletHas20:TravelAbroad:Charity+ InteractDislikes:NoLies:WalletHas20:TravelAbroad:Charity+ InteractDislikes:Jealous:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:Undergraduate:TravelAbroad:Charity+ InteractDislikes:CityLimits:Undergraduate:TravelAbroad:Charity+ InteractDislikes:Overweight:Undergraduate:TravelAbroad:Charity+ 
+    InteractDislikes:NoLies:Undergraduate:TravelAbroad:Charity+ InteractDislikes:Jealous:Undergraduate:TravelAbroad:Charity+ InteractDislikes:WalletHas20:Undergraduate:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Jealous+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20+
+    Outlet:InteractDislikes:Overweight:NoLies:Jealous:WalletHas20+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:WalletHas20+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate+ 
+    Outlet:InteractDislikes:Overweight:NoLies:Jealous:Undergraduate+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20:Undergraduate+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate+ InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Undergraduate+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:TravelAbroad+ 
+    Outlet:InteractDislikes:Overweight:NoLies:Jealous:TravelAbroad+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20:TravelAbroad+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:Overweight:Jealous:WalletHas20:TravelAbroad+ InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:TravelAbroad+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:TravelAbroad+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:Undergraduate:TravelAbroad+
+    InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:Jealous:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:NoLies:Jealous:Undergraduate:TravelAbroad+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate:TravelAbroad+ InteractDislikes:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate:TravelAbroad+ 
+    Outlet:InteractDislikes:NoLies:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Jealous:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate:TravelAbroad+
+    InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:Charity+ 
+    Outlet:InteractDislikes:Overweight:NoLies:Jealous:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20:Charity+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20:Charity+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:Charity+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:Overweight:Jealous:WalletHas20:Charity+ InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:Charity+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Charity+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:Undergraduate:Charity+ Outlet:InteractDislikes:Overweight:NoLies:Undergraduate:Charity+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:Overweight:Jealous:Undergraduate:Charity+ InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:NoLies:Jealous:Undergraduate:Charity+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate:Charity+ InteractDislikes:Overweight:NoLies:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:Overweight:WalletHas20:Undergraduate:Charity+ InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate:Charity+ 
+    Outlet:InteractDislikes:NoLies:WalletHas20:Undergraduate:Charity+ InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate:Charity+ InteractDislikes:Overweight:NoLies:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:Jealous:WalletHas20:Undergraduate:Charity+ InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate:Charity+ 
+    InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate:Charity+ InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:NoLies:TravelAbroad:Charity+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:Jealous:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:NoLies:Jealous:TravelAbroad:Charity+ 
+    InteractDislikes:CityLimits:NoLies:Jealous:TravelAbroad:Charity+ InteractDislikes:Overweight:NoLies:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:WalletHas20:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:NoLies:WalletHas20:TravelAbroad:Charity+ InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad:Charity+ InteractDislikes:Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:Jealous:WalletHas20:TravelAbroad:Charity+ InteractDislikes:CityLimits:Jealous:WalletHas20:TravelAbroad:Charity+ 
+    InteractDislikes:Overweight:Jealous:WalletHas20:TravelAbroad:Charity+ InteractDislikes:NoLies:Jealous:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:Undergraduate:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:Undergraduate:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:Undergraduate:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:NoLies:Undergraduate:TravelAbroad:Charity+ InteractDislikes:CityLimits:NoLies:Undergraduate:TravelAbroad:Charity+ InteractDislikes:Overweight:NoLies:Undergraduate:TravelAbroad:Charity+ Outlet:InteractDislikes:Jealous:Undergraduate:TravelAbroad:Charity+ InteractDislikes:CityLimits:Jealous:Undergraduate:TravelAbroad:Charity+ 
+    InteractDislikes:Overweight:Jealous:Undergraduate:TravelAbroad:Charity+ InteractDislikes:NoLies:Jealous:Undergraduate:TravelAbroad:Charity+ InteractDislikes:CityLimits:WalletHas20:Undergraduate:TravelAbroad:Charity+ InteractDislikes:NoLies:WalletHas20:Undergraduate:TravelAbroad:Charity+ InteractDislikes:Jealous:WalletHas20:Undergraduate:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Jealous:WalletHas20+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:Undergraduate+ 
+    InteractDislikes:CityLimits:Overweight:NoLies:Jealous:WalletHas20:Undergraduate+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:Jealous:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:TravelAbroad+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:WalletHas20:TravelAbroad+
+    Outlet:InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate:TravelAbroad+ 
+    Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad+ 
+    InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:Undergraduate:TravelAbroad+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:Charity+ 
+    Outlet:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:WalletHas20:Charity+ Outlet:InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:Undergraduate:Charity+ 
+    Outlet:InteractDislikes:Overweight:NoLies:Jealous:Undergraduate:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Undergraduate:Charity+ Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate:Charity+ 
+    InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate:Charity+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ InteractDislikes:Overweight:NoLies:Jealous:WalletHas20:Undergraduate:Charity+ 
+    Outlet:InteractDislikes:CityLimits:Overweight:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:Jealous:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:NoLies:Jealous:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:Jealous:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:TravelAbroad:Charity+ 
+    Outlet:InteractDislikes:CityLimits:Jealous:WalletHas20:TravelAbroad:Charity+ Outlet:InteractDislikes:NoLies:Jealous:WalletHas20:TravelAbroad:Charity+ LikesFamily:Medications:CheckLists+ Phobic:LikesFamily:K12:MorningNews:Masters+ Phobic:CheckLists+ Outlet:CityLimits:Undergraduate:Charity+ LikesFamily:K12:Medications:TapWater:CheckLists:Masters+ 
+    Siblings:TryFirst+ ManyPets:Medications:Masters+ CityLimits:NoLies:Jealous:Undergraduate:TravelAbroad+ Phobic:LikesFamily:K12:Medications:Masters+ ManyPets:K12:Medications:TapWater+ StraightA:HotHead:Mac+ Phobic:K12:TapWater:MorningNews:CheckLists:Masters+ Phobic:LikesFamily:K12:MorningNews:CheckLists:Masters+ ManyPets:Phobic:LikesFamily:Masters+
+    StraightA:HotHead:Mac:PositiveThinking+ CarPymt+ Gender+ CityLimits:NoLies:Jealous:Undergraduate+ Skeptical+ Siblings:AlarmAhead:Bachelor+ NoLies:Jealous+ LikesFamily:K12:Masters+ AlarmAhead:OddHours+ ManyPets:Phobic:K12:Medications:TapWater:MorningNews:Masters+ ManyPets:Phobic:LikesFamily:MorningNews:Masters+ LikesFamily:K12:TapWater:MorningNews:Masters+ 
+    StraightA:HotHead:Mac:MoneyBuys+ AlarmAhead:FullTime+ ManyPets:Phobic:LikesFamily:K12:Masters+ Vitamins+ Outlet:CityLimits:Undergraduate:TravelAbroad:Charity+ Phobic:LikesFamily:Medications:TapWater:MorningNews+ StraightA:HotHead:PositiveThinking:MoneyBuys+ Phobic:LikesFamily:MorningNews:CheckLists:Masters+ Phobic:LikesFamily:TapWater:CheckLists:Masters+ 
+    Phobic:LikesFamily:MorningNews:Masters+ Overweight:NoLies:Undergraduate:Charity+ Phobic:LikesFamily:K12:Medications:TapWater:MorningNews+ NoLies:Jealous:WalletHas20:Charity+ CreditDebt:Online:GoodatMath+ Phobic:K12:TapWater:MorningNews+ AlarmAhead:Bachelor+ ManyPets:Phobic:MorningNews:CheckLists+ CityLimits:Overweight:Jealous:TravelAbroad+ Phobic:TapWater+ 
+    Alarm:Cautious+ LikesFamily:Masters+ NoLies:WalletHas20:TravelAbroad+ Outlet:Jealous:WalletHas20:TravelAbroad:Charity+ ManyPets:Phobic:Medications:TapWater:MorningNews:CheckLists+ Phobic:K12:CheckLists:Masters+ ManyPets:Phobic:LikesFamily:K12:MorningNews:Masters+ Online:GoodatMath+ Outlet:InteractDislikes:CityLimits:Overweight:NoLies:TravelAbroad:Charity+ 
+    ManyPets:Phobic:LikesFamily:Medications:MorningNews:CheckLists:Masters+ StressfulEvts+ LikesFamily:TapWater:CheckLists+ Sociable+ Phobic:K12:CheckLists+ ManyPets:LikesFamily:TapWater:Masters+ MeaningofLife+ LikesFamily:Medications:MorningNews:CheckLists+ LikesFamily:K12:MorningNews:Masters+ LikesFamily:MorningNews:Masters+ FullTime+ LikesFamily:K12:TapWater:CheckLists+
+    Siblings:AlarmAhead:OddHours:Bachelor+ Alarm:Cautious:YOB+ InteractDislikes:Overweight:Undergraduate+ ManyPets:Phobic:K12:MorningNews:CheckLists+ ManyPets:Medications:TapWater:CheckLists:Masters+ Personality:Cautious+ Overweight:WalletHas20:Undergraduate:TravelAbroad:Charity+ CreditDebt:GoodatMath+ Rules+ ManyPets:MorningNews:Masters+ Mac:PositiveThinking:MoneyBuys+
+    Phobic:LikesFamily:K12:TapWater:MorningNews:CheckLists+ Collects+ Phobic:LikesFamily:TapWater:MorningNews:CheckLists+ ManyPets:Phobic:K12:TapWater:MorningNews:Masters+ Jealous:Undergraduate+ ManyPets:Phobic:LikesFamily:K12:Medications:MorningNews:CheckLists:Masters+ NoLies:WalletHas20:Charity+ Misterious:SameState:Online:GoodatMath+ K12:Medications+
+    Phobic:LikesFamily:K12:TapWater:CheckLists+ Phobic:LikesFamily:Medications:MorningNews:Masters+ Siblings:AlarmAhead:FullTime+ AlarmAhead:OddHours:Bachelor+ Siblings:AlarmAhead:FullTime:Bachelor+ ManyPets:Phobic:K12:Medications:TapWater:MorningNews:CheckLists+ Overweight:WalletHas20:TravelAbroad:Charity+ Phobic:LikesFamily:K12:Medications:MorningNews:Masters+ 
+    Misterious+ Phobic:LikesFamily:TapWater:CheckLists+ Phobic:K12:MorningNews+ NoLies:WalletHas20:Undergraduate:Charity+ Phobic:LikesFamily:K12:CheckLists:Masters+ Mac+ Outlet:NoLies+ Phobic:K12:TapWater+ ManyPets:TapWater:MorningNews+ ManyPets:K12:Medications:Masters+ Exciting+ ManyPets:Medications:TapWater+ Phobic:LikesFamily:CheckLists:Masters+ 
+    ManyPets:Phobic:TapWater:MorningNews:Masters+ Grudge+ Poor+ StraightA:HotHead:Mac:PositiveThinking:MoneyBuys+ HappyorRight+ ManyPets:K12:TapWater+ GoodatMath+ Misterious:SameState:GoodatMath+ FeelsNormal+ LivesTogether+ ManyPets:TapWater+ 
+    OverYourHead, traindata, nottraindata)
+
+m = createglmModel(Happy~Undergraduate:Charity:InteractDislikes+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Charity:Jealous+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes:WalletHas20:Outlet+
+    YOB:Overworks:Personality+
+    CityLimits:Overweight:NoLies:TravelAbroad:Charity:InteractDislikes+
+    Overweight:Charity:InteractDislikes:Jealous+
+    Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Overweight:NoLies:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    Siblings:FullTime+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    Overweight:NoLies:InteractDislikes:Jealous:WalletHas20+
+    CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews+
+    Overweight:NoLies:Undergraduate:Charity:Jealous+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    Alarm:YOB:Overworks+
+    CityLimits:Overweight:NoLies:Charity:WalletHas20:Outlet+
+    Medications:TapWater:LikesFamily:K12:Phobic+
+    Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    Undergraduate:Charity:InteractDislikes:Outlet+
+    CityLimits:TravelAbroad:InteractDislikes:Outlet+
+    CityLimits:Overweight:TravelAbroad:Outlet+
+    CityLimits:NoLies:WalletHas20:Outlet+
+    TapWater:ManyPets:K12:Phobic:MorningNews+
+    Undergraduate:TravelAbroad:InteractDislikes+
+    CityLimits:NoLies:TravelAbroad:Charity:InteractDislikes:Outlet+
+    CityLimits:Overweight:NoLies:Charity:InteractDislikes:Outlet+
+    CityLimits:Overweight:NoLies:TravelAbroad:InteractDislikes:Jealous+
+    Undergraduate:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Overweight:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:TravelAbroad:Jealous+
+    Medications:CheckLists:ManyPets:LikesFamily:K12:MorningNews+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:Outlet+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    CityLimits:NoLies:TravelAbroad:Charity:InteractDislikes+
+    Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:NoLies:TravelAbroad:Charity:WalletHas20:Outlet+
+    Overweight:NoLies:Undergraduate:Jealous:Outlet+
+    Overweight:NoLies:InteractDislikes:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:NoLies:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Charity:InteractDislikes:WalletHas20:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    Overweight:Charity:InteractDislikes:Outlet+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    Overweight:NoLies:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Siblings:AlarmAhead:FullTime:TryFirst+
+    NoLies:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    LikesFamily:MorningNews:Masters+
+    CityLimits:Overweight:NoLies:Undergraduate:WalletHas20+
+    Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    Alcohol+
+    Misterious:GoodatMath+
+    TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Undergraduate:InteractDislikes:Jealous:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes+
+    CityLimits:Overweight:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:InteractDislikes:Jealous:WalletHas20:Outlet+
+    TravelAbroad:Charity:InteractDislikes:Outlet+
+    CityLimits:Overweight:NoLies:TravelAbroad:InteractDislikes+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    TapWater:ManyPets:LikesFamily:Masters+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:Jealous:Outlet+
+    TapWater:CheckLists:MorningNews:Masters+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Undergraduate:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:Charity:InteractDislikes:Jealous:WalletHas20+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    Undergraduate:InteractDislikes:Jealous+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    Medications:TapWater:CheckLists:ManyPets:LikesFamily:K12:Masters+
+    Siblings:FullTime:TryFirst:OddHours+
+    TapWater:ManyPets:LikesFamily:Phobic:MorningNews+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes:Outlet+
+    CityLimits:NoLies:TravelAbroad:Charity:InteractDislikes:Jealous+
+    Overweight:Charity:InteractDislikes:WalletHas20+
+    Overweight:NoLies:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    Medications:TapWater:LikesFamily:Masters+
+    Overweight:TravelAbroad:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes+
+    CityLimits:Undergraduate:TravelAbroad:WalletHas20:Outlet+
+    Overweight:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    NoLies:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    Overweight:Charity:InteractDislikes:Jealous:WalletHas20+
+    Overweight:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:InteractDislikes:WalletHas20+
+    TravelAbroad:Jealous:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:InteractDislikes:Jealous+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    Overweight:NoLies:Undergraduate:WalletHas20+
+    Charity:InteractDislikes:Outlet+
+    CityLimits:Overweight:Charity:InteractDislikes:Jealous:Outlet+
+    NoLies:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Jealous+
+    CityLimits:Overweight:Undergraduate:InteractDislikes:Outlet+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:Outlet+
+    NoLies:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    NoLies:Undergraduate:Jealous:WalletHas20+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:Jealous:WalletHas20+
+    Medications:Phobic:Masters+
+    Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:TravelAbroad:Charity:InteractDislikes:Jealous:WalletHas20+
+    Siblings:AlarmAhead:TryFirst:Bachelor+
+    TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    NoLies:InteractDislikes:Jealous:Outlet+
+    Overweight:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:NoLies:InteractDislikes:Outlet+
+    CityLimits:Overweight:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Overweight:NoLies:TravelAbroad:InteractDislikes:WalletHas20+
+    Overweight:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    TapWater:CheckLists:ManyPets:LikesFamily:K12:Masters+
+    YOB+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    Undergraduate:TravelAbroad:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:Undergraduate:WalletHas20:Outlet+
+    Charity:InteractDislikes:Jealous:Outlet+
+    TryFirst:Bachelor+
+    NoLies:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:Undergraduate:Charity:WalletHas20:Outlet+
+    CityLimits:NoLies:InteractDislikes:Jealous:Outlet+
+    CityLimits:NoLies:Undergraduate:WalletHas20+
+    CityLimits:Overweight:NoLies:InteractDislikes+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    Overweight:NoLies:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    NoLies:Undergraduate:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Jealous+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:Charity:InteractDislikes:Outlet+
+    NoLies:InteractDislikes:Jealous:WalletHas20+
+    Undergraduate:Charity:Outlet+
+    NoLies:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    NoLies:Undergraduate:Charity:InteractDislikes:Jealous+
+    Overweight:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:TravelAbroad:Charity:Jealous:WalletHas20+
+    Overweight:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:InteractDislikes:Jealous+
+    Overweight:NoLies:TravelAbroad:InteractDislikes+
+    NoLies:Undergraduate:InteractDislikes:Jealous:Outlet+
+    TravelAbroad:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    Charity:InteractDislikes:Jealous+
+    TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes+
+    CityLimits:NoLies:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Medications:CheckLists:ManyPets:MorningNews+
+    TapWater:CheckLists:ManyPets:K12:Masters+
+    Overweight:NoLies:TravelAbroad:InteractDislikes:Jealous+
+    TapWater:CheckLists:ManyPets:LikesFamily:K12:Phobic:Masters+
+    CityLimits:TravelAbroad:InteractDislikes:WalletHas20+
+    CityLimits:Charity:InteractDislikes:Jealous+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Undergraduate:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:Charity:InteractDislikes:Jealous:WalletHas20+
+    InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    TravelAbroad:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:WalletHas20:Outlet+
+    Overweight:Undergraduate:TravelAbroad:Charity:InteractDislikes:Jealous+
+    Undergraduate:Jealous+
+    Overweight:NoLies:Charity:InteractDislikes:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    Overweight:TravelAbroad:InteractDislikes:Outlet+
+    Overweight:NoLies:TravelAbroad:InteractDislikes:Outlet+
+    NoLies:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Undergraduate:TravelAbroad:Jealous:WalletHas20:Outlet+
+    Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:TravelAbroad:Charity:InteractDislikes+
+    Overweight:TravelAbroad:InteractDislikes:Jealous+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    CityLimits:InteractDislikes:WalletHas20+
+    CityLimits:Undergraduate:Charity:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:InteractDislikes:WalletHas20+
+    Overweight:NoLies:Charity:InteractDislikes:Jealous:Outlet+
+    NoLies:Charity:InteractDislikes:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes+
+    YOB:Overworks+
+    CityLimits:Charity:InteractDislikes+
+    CityLimits:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    TravelAbroad:Charity:WalletHas20+
+    Undergraduate:Jealous:WalletHas20+
+    CityLimits:Overweight:InteractDislikes+
+    CityLimits:Overweight:Undergraduate:InteractDislikes:Jealous+
+    Overweight:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes:Outlet+
+    Overweight:NoLies:Undergraduate:InteractDislikes:Outlet+
+    Undergraduate:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    NoLies:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    SingleParent+
+    TapWater:LikesFamily:K12:Masters+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Overweight:Undergraduate:InteractDislikes+
+    Undergraduate:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    NoLies:Charity:InteractDislikes:Jealous:Outlet+
+    TapWater:CheckLists:K12:MorningNews:Masters+
+    Overweight:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:NoLies:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:Jealous+
+    InteractDislikes:WalletHas20:Outlet+
+    Overweight:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes:Jealous+
+    Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    Medications:LikesFamily:K12:Phobic+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    Medications:ManyPets:LikesFamily:K12:Phobic+
+    Medications:CheckLists:Phobic+
+    CityLimits:Undergraduate:Charity:InteractDislikes+
+    Undergraduate:InteractDislikes:Outlet+
+    Overweight:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:WalletHas20+
+    Overweight:InteractDislikes:Outlet+
+    NoLies:Undergraduate:InteractDislikes:Jealous:WalletHas20+
+    PositiveThinking:MoneyBuys:Mac+
+    Undergraduate:InteractDislikes:Jealous:WalletHas20+
+    TravelAbroad:InteractDislikes:Outlet+
+    Charity:InteractDislikes+
+    Overweight:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:Undergraduate:InteractDislikes:Outlet+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:Undergraduate:Outlet+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    CityLimits:Overweight:Jealous+
+    TravelAbroad:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes+
+    CityLimits:Overweight:NoLies:InteractDislikes:Outlet+
+    CityLimits:Overweight:NoLies:Charity:InteractDislikes:WalletHas20:Outlet+
+    NoLies:TravelAbroad:Charity:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:InteractDislikes:Jealous:Outlet+
+    CheckLists:ManyPets:Phobic+
+    Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    CreditDebt:SameState:Online:Misterious+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    NoLies:InteractDislikes:Outlet+
+    Overweight:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:TravelAbroad:InteractDislikes:Jealous+
+    Overweight:TravelAbroad:Charity:WalletHas20+
+    Overweight:Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    Medications+
+    TapWater:ManyPets:LikesFamily:K12:MorningNews:Masters+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes+
+    Overweight:NoLies:Undergraduate:Charity+
+    NoLies:TravelAbroad:InteractDislikes:WalletHas20+
+    Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    CityLimits:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:Undergraduate:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:TravelAbroad:InteractDislikes:Outlet+
+    Overweight:Undergraduate:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Charity:InteractDislikes:WalletHas20+
+    Medications:CheckLists:Phobic:MorningNews+
+    CityLimits:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Undergraduate:Charity:InteractDislikes:Outlet+
+    CityLimits:TravelAbroad:InteractDislikes+
+    Overweight:NoLies:Charity:WalletHas20+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:Undergraduate:Charity:InteractDislikes:Outlet+
+    CityLimits:NoLies:Undergraduate:InteractDislikes+
+    Overweight:Undergraduate:Jealous+
+    Medications:CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews:Masters+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:Jealous:Outlet+
+    NoLies:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:NoLies:Undergraduate:Charity:WalletHas20+
+    CityLimits:Undergraduate:InteractDislikes:Outlet+
+    CityLimits:Overweight:Charity:InteractDislikes+
+    NoLies:Undergraduate:Charity:Jealous:WalletHas20+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:Outlet+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:WalletHas20+
+    CityLimits:Charity:InteractDislikes:WalletHas20:Outlet+
+    Overweight:NoLies:InteractDislikes+
+    CityLimits:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Charity:InteractDislikes:Jealous:WalletHas20+
+    Overweight:NoLies:InteractDislikes:Jealous+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:InteractDislikes:WalletHas20:Outlet+
+    InteractDislikes:Jealous:Outlet+
+    CityLimits:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Undergraduate:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:NoLies:Charity:InteractDislikes+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes:Outlet+
+    Overweight:NoLies:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Undergraduate:Charity:InteractDislikes:WalletHas20+
+    CityLimits:NoLies:Charity:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:WalletHas20+
+    Undergraduate+
+    NoLies:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Charity:InteractDislikes+
+    Overweight:NoLies:Charity:InteractDislikes:WalletHas20+
+    Overweight:NoLies:Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:TravelAbroad:Jealous+
+    Medications:CheckLists:ManyPets:LikesFamily:Masters+
+    CityLimits:Overweight:NoLies:Undergraduate:Charity:InteractDislikes:Jealous+
+    SameState:Misterious+
+    CityLimits:Overweight:NoLies:Undergraduate:Charity:InteractDislikes+
+    Overweight:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Medications:TapWater:CheckLists:LikesFamily:Phobic:MorningNews:Masters+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    NoLies:TravelAbroad:Charity:InteractDislikes:Outlet+
+    K12:MorningNews:Masters+
+    Medications:TapWater:LikesFamily:K12:Phobic:Masters+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Undergraduate:InteractDislikes:Jealous+
+    CityLimits:Charity:InteractDislikes:Jealous:Outlet+
+    Medications:TapWater:LikesFamily:K12:MorningNews:Masters+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes+
+    Overweight:Undergraduate:InteractDislikes:Jealous+
+    Undergraduate:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:Jealous+
+    CityLimits:NoLies:Charity:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Undergraduate:InteractDislikes+
+    CityLimits:Charity:InteractDislikes:Outlet+
+    NoLies:Undergraduate:Charity:InteractDislikes+
+    NoLies:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Undergraduate:TravelAbroad:WalletHas20+
+    NoLies:Charity:InteractDislikes:Jealous+
+    CityLimits:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    TapWater:CheckLists:ManyPets:Phobic:MorningNews:Masters+
+    Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:Outlet+
+    Medications:CheckLists:ManyPets:LikesFamily:MorningNews+
+    Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Outlet+
+    CheckLists:ManyPets:LikesFamily:MorningNews+
+    Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    TapWater:ManyPets:K12:MorningNews:Masters+
+    CheckLists:ManyPets:K12:Phobic:Masters+
+    CheckLists:ManyPets:K12:Phobic:MorningNews+
+    CityLimits:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CheckLists:LikesFamily:K12:Phobic:MorningNews:Masters+
+    Medications:TapWater:ManyPets:K12:Phobic:MorningNews:Masters+
+    Medications:TapWater:ManyPets:Phobic:MorningNews:Masters+
+    Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Undergraduate:TravelAbroad:Jealous+
+    CityLimits:Overweight:NoLies:Charity:InteractDislikes:Jealous+
+    CityLimits:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Undergraduate:InteractDislikes:Jealous:Outlet+
+    Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:TravelAbroad:Charity:InteractDislikes:Outlet+
+    Overweight:TravelAbroad:Charity:InteractDislikes:Outlet+
+    Overweight:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    NoLies:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes+
+    Medications:CheckLists:ManyPets:LikesFamily:K12:Masters+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Overweight:InteractDislikes:Jealous:WalletHas20+
+    Overweight:InteractDislikes:Jealous+
+    CityLimits:Overweight:NoLies:Charity+
+    Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:NoLies:Undergraduate:Jealous+
+    CityLimits:NoLies:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:NoLies:InteractDislikes:Jealous+
+    Overweight:NoLies:Undergraduate:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:NoLies:InteractDislikes+
+    Overweight:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CreditDebt:SameState:Online+
+    Overweight:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Undergraduate:WalletHas20:Outlet+
+    TalkRadio+
+    TapWater:Phobic:MorningNews:Masters+
+    Overweight:Undergraduate:TravelAbroad:Charity:WalletHas20+
+    CityLimits:NoLies:Charity:InteractDislikes:Outlet+
+    CityLimits:NoLies:TravelAbroad:Charity:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:Outlet+
+    Undergraduate:TravelAbroad:Charity:InteractDislikes:Outlet+
+    Overweight:TravelAbroad:Charity:InteractDislikes:Jealous:Outlet+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:WalletHas20+
+    Republican+
+    NoLies:Undergraduate:Charity:InteractDislikes:WalletHas20:Outlet+
+    Undergraduate:InteractDislikes+
+    NoLies:Undergraduate:InteractDislikes:WalletHas20+
+    Siblings:TryFirst:Bachelor+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    CityLimits:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    NoLies:Charity:InteractDislikes+
+    NoLies:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Medications:TapWater:CheckLists:ManyPets:LikesFamily:Masters+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    TapWater:LikesFamily:Phobic:MorningNews+
+    Overweight:InteractDislikes:WalletHas20+
+    Medications:TapWater:CheckLists:LikesFamily:K12:Phobic:MorningNews:Masters+
+    CityLimits:Undergraduate:Charity:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:NoLies:Charity+
+    TapWater:K12:MorningNews:Masters+
+    Medications:TapWater:LikesFamily:Phobic:MorningNews+
+    CityLimits:Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20:Outlet+
+    ManyPets:LikesFamily+
+    TravelAbroad:Charity:Jealous:WalletHas20:Outlet+
+    Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    TapWater:CheckLists:Phobic:Masters+
+    Medications:TapWater:CheckLists:Masters+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:WalletHas20+
+    CityLimits:Overweight:NoLies:TravelAbroad:Charity:InteractDislikes:Outlet+
+    Overweight:NoLies:TravelAbroad:Charity:WalletHas20:Outlet+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    Siblings:FullTime:Bachelor:OddHours+
+    Undergraduate:TravelAbroad:Charity:WalletHas20:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:Outlet+
+    Medications:LikesFamily:K12:Phobic:Masters+
+    Overweight:Undergraduate:InteractDislikes:WalletHas20+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:Jealous+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes+
+    Spanked+
+    CityLimits:Overweight:NoLies:TravelAbroad:WalletHas20+
+    NoLies:Undergraduate:TravelAbroad:Charity+
+    Medications:CheckLists:LikesFamily:Phobic:MorningNews+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:WalletHas20:Outlet+
+    Alarm:YOB:Cautious+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes+
+    TapWater:CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews:Masters+
+    Medications:CheckLists:MorningNews:Masters+
+    Siblings:AlarmAhead:FullTime:Bachelor:OddHours+
+    Siblings:FullTime:TryFirst:Bachelor+
+    Phobic+
+    CityLimits:NoLies:Undergraduate:Charity:InteractDislikes:Jealous+
+    Medications:ManyPets:K12:Phobic:MorningNews:Masters+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:Jealous:Outlet+
+    Overweight:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    Alarm:YOB+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes:Outlet+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    Overweight:TravelAbroad:Charity:InteractDislikes:Jealous:WalletHas20+
+    CheckLists:ManyPets:LikesFamily:MorningNews:Masters+
+    CityLimits:NoLies:InteractDislikes:WalletHas20+
+    CryBaby+
+    NoLies:Charity:InteractDislikes:WalletHas20:Outlet+
+    Jealous:WalletHas20+
+    SameState:Online:Misterious:GoodatMath+
+    CheckLists:LikesFamily:Phobic:Masters+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    Medications:TapWater:CheckLists:LikesFamily:Phobic+
+    Overweight:Jealous:WalletHas20+
+    Alarm:Cautious+
+    CityLimits:NoLies:TravelAbroad:Charity+
+    CityLimits:Overweight:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    MoneyBuys:Mac:StraightA+
+    CityLimits:Undergraduate:TravelAbroad:Charity:Jealous+
+    CityLimits:NoLies:Undergraduate+
+    Overweight:NoLies+
+    Charity+
+    CityLimits:Undergraduate:TravelAbroad:Jealous:Outlet+
+    TapWater:ManyPets:K12:Phobic:MorningNews:Masters+
+    ManyPets:LikesFamily:K12+
+    CheckLists:LikesFamily:Phobic+
+    Siblings:AlarmAhead+
+    CreditDebt:Misterious+
+    Siblings:TryFirst:OddHours+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20+
+    TravelAbroad:Jealous+
+    NoLies:Undergraduate:InteractDislikes:Jealous+
+    CityLimits:NoLies:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:NoLies:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    Medications:TapWater:CheckLists:LikesFamily:K12:Phobic+
+    FullTime:OddHours+
+    Medications:ManyPets:LikesFamily+
+    Overweight:NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:TravelAbroad:Charity:Outlet+
+    NoLies:Undergraduate:TravelAbroad:InteractDislikes:Jealous+
+    Overweight:NoLies:Undergraduate:Outlet+
+    SameState:GoodatMath+
+    Overweight:NoLies:InteractDislikes:Jealous:WalletHas20:Outlet+
+    TapWater:LikesFamily:Phobic:MorningNews:Masters+
+    CityLimits:Undergraduate:InteractDislikes:Jealous:WalletHas20:Outlet+
+    FullTime:TryFirst:OddHours+
+    FullTime+
+    NoLies:InteractDislikes:Jealous+
+    CityLimits:Charity:Outlet+
+    Alarm:YOB:Personality:Cautious+
+    Undergraduate:TravelAbroad:Charity:Jealous:WalletHas20:Outlet+
+    CityLimits:NoLies:Charity:InteractDislikes+
+    Overweight:NoLies:TravelAbroad:Charity:WalletHas20+
+    Bachelor+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:Jealous+
+    TapWater:Masters+
+    CityLimits:Overweight:Undergraduate:Charity:Outlet+
+    CityLimits:Undergraduate:Jealous:WalletHas20+
+    Overworks:Personality:Cautious+
+    TapWater:CheckLists:ManyPets:LikesFamily:Phobic:Masters+
+    NoLies:TravelAbroad:InteractDislikes:Jealous+
+    Overweight:TravelAbroad:InteractDislikes:WalletHas20+
+    Undergraduate:InteractDislikes:WalletHas20+
+    CityLimits:NoLies+
+    InteractDislikes:Jealous:WalletHas20+
+    Siblings:FullTime:TryFirst+
+    Jealous:WalletHas20:Outlet+
+    LikesFamily:MorningNews+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:WalletHas20+
+    CityLimits:Overweight:Charity:InteractDislikes:Jealous+
+    TravelAbroad:InteractDislikes:Jealous+
+    Overweight:NoLies:TravelAbroad:Charity:Jealous:WalletHas20+
+    Undergraduate:Charity:WalletHas20:Outlet+
+    CityLimits:InteractDislikes:Jealous+
+    NoLies:Undergraduate:TravelAbroad:Charity:Jealous+
+    NoLies:TravelAbroad:Charity:Outlet+
+    PositiveThinking:MoneyBuys:Mac:StraightA+
+    CityLimits:NoLies:Charity:InteractDislikes:Jealous+
+    Medications:TapWater:ManyPets:LikesFamily:K12+
+    CityLimits:Undergraduate:TravelAbroad:Charity:WalletHas20:Outlet+
+    CityLimits:Outlet+
+    TravelAbroad:Jealous:WalletHas20+
+    Medications:CheckLists:LikesFamily:K12:Masters+
+    Overweight:TravelAbroad:Charity:WalletHas20:Outlet+
+    StraightA+
+    CityLimits:NoLies:Undergraduate:InteractDislikes:WalletHas20+
+    Alarm:Overworks:Personality:Cautious+
+    NoLies:Charity:Outlet+
+    MoneyBuys:HotHead+
+    Overweight:NoLies:Undergraduate:TravelAbroad:Charity:InteractDislikes+
+    Overweight:NoLies:Charity:Jealous:Outlet+
+    Siblings:FullTime:OddHours+
+    Overweight:NoLies:Charity:WalletHas20:Outlet+
+    TapWater:CheckLists:LikesFamily:MorningNews+
+    FullTime:Bachelor:OddHours+
+    Overweight:NoLies:TravelAbroad:WalletHas20+
+    Vitamins+
+    ManyPets:LikesFamily:K12:Phobic:Masters+
+    TapWater:LikesFamily:K12:Phobic:MorningNews:Masters+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:Charity:Outlet+
+    CityLimits:InteractDislikes:Jealous:Outlet+
+    MoneyBuys:HotHead:StraightA+
+    Jealous+
+    AlarmAhead:TryFirst:Bachelor+
+    CityLimits:Overweight:TravelAbroad:Charity:InteractDislikes:Jealous+
+    AlarmAhead:FullTime:Bachelor+
+    Charity:Jealous:WalletHas20:Outlet+
+    Undergraduate:Charity:Jealous:WalletHas20:Outlet+
+    Overweight:NoLies:TravelAbroad:Charity:Jealous:Outlet+
+    CityLimits:Overweight:NoLies:Jealous+
+    Mac+
+    TapWater:CheckLists:K12:Phobic:Masters+
+    Medications:TapWater:ManyPets:LikesFamily:K12:MorningNews+
+    CityLimits:Overweight:NoLies:TravelAbroad:Charity:Jealous+
+    ManyPets:LikesFamily:Phobic:MorningNews:Masters+
+    Overweight:TravelAbroad:Charity:Jealous:WalletHas20+
+    Medications:TapWater:MorningNews:Masters+
+    HotHead:Mac:StraightA+
+    CityLimits:NoLies:Undergraduate:Jealous+
+    Siblings:TryFirst+
+    TapWater:ManyPets:Phobic:Masters+
+    TapWater:CheckLists:ManyPets:Masters+
+    Siblings:AlarmAhead:OddHours+
+    Overweight:NoLies:Jealous+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Jealous+
+    NoLies:Undergraduate:TravelAbroad:WalletHas20+
+    AlarmAhead:FullTime:Bachelor:OddHours+
+    Overweight:NoLies:Undergraduate:Charity:WalletHas20+
+    TapWater:Phobic+
+    Overweight:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    TravelAbroad:InteractDislikes:Jealous:WalletHas20+
+    CityLimits:Undergraduate:TravelAbroad:Charity:Jealous:Outlet+
+    Glasses+
+    Alarm:Overworks:Personality+
+    LikesFamily:K12:Masters+
+    CheckLists:LikesFamily:Phobic:MorningNews:Masters+
+    K12:Phobic:MorningNews+
+    TravelAbroad:InteractDislikes+
+    Online:Misterious:GoodatMath+
+    Medications:CheckLists:LikesFamily:K12:MorningNews+
+    CityLimits:Undergraduate:Outlet+
+    Medications:CheckLists:LikesFamily:MorningNews+
+    Overweight:Charity:Jealous:WalletHas20+
+    Overweight:NoLies:TravelAbroad:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:TravelAbroad:Jealous+
+    Overweight:NoLies:Undergraduate:Charity:WalletHas20:Outlet+
+    Overweight:TravelAbroad:InteractDislikes+
+    CityLimits:Overweight:Charity:WalletHas20+
+    Medications:CheckLists:ManyPets:LikesFamily:Phobic:MorningNews:Masters+
+    Online:GoodatMath+
+    Medications:CheckLists:LikesFamily+
+    MoneyBuys:HotHead:Mac:StraightA+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20+
+    TapWater:CheckLists:LikesFamily:Phobic+
+    TapWater:CheckLists:ManyPets+
+    Medications:CheckLists:K12+
+    Siblings:OddHours+
+    Overweight:TravelAbroad:Charity:Outlet+
+    Medications:CheckLists:ManyPets:K12:Phobic:Masters+
+    Medications:CheckLists:LikesFamily:K12:Phobic:MorningNews+
+    CityLimits:NoLies:TravelAbroad+
+    Successful+
+    Medications:K12+
+    Overweight:Undergraduate:InteractDislikes:Jealous:Outlet+
+    Overweight:NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20:Outlet+
+    AlarmAhead+
+    CityLimits:TravelAbroad:Charity:Jealous:Outlet+
+    CheckLists:LikesFamily:K12:Phobic+
+    Overweight:NoLies:Charity:Jealous+
+    TapWater:CheckLists:ManyPets:LikesFamily:Masters+
+    TapWater:K12:Masters+
+    Overweight:NoLies:WalletHas20:Outlet+
+    ManyPets:LikesFamily:Phobic:Masters+
+    CityLimits:Jealous:Outlet+
+    TapWater:ManyPets:MorningNews:Masters+
+    Medications:ManyPets+
+    Medications:CheckLists:ManyPets:LikesFamily:Phobic+
+    Medications:TapWater:CheckLists:ManyPets:Phobic:MorningNews+
+    CarPymt+
+    Medications:CheckLists:Masters+
+    NoLies:Undergraduate:Charity:Jealous+
+    OddHours+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:Jealous:WalletHas20:Outlet+
+    CheckLists:Phobic:Masters+
+    Overweight:NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20+
+    Medications:CheckLists:Phobic:Masters+
+    TapWater:CheckLists:LikesFamily:K12:Phobic:Masters+
+    CheckLists:ManyPets:K12:Phobic+
+    Undergraduate:Charity:Jealous:WalletHas20+
+    CheckLists:ManyPets:LikesFamily:Phobic:Masters+
+    Siblings:AlarmAhead:FullTime:TryFirst:Bachelor:OddHours+
+    CityLimits:Undergraduate:InteractDislikes:WalletHas20:Outlet+
+    Overweight:NoLies:Undergraduate+
+    TravelAbroad:InteractDislikes:WalletHas20+
+    ManyPets:MorningNews:Masters+
+    TapWater:CheckLists:Phobic:MorningNews:Masters+
+    Medications:TapWater:CheckLists+
+    CityLimits:Undergraduate:Charity:Jealous:Outlet+
+    Medications:CheckLists:K12:Phobic:MorningNews:Masters+
+    CityLimits:Undergraduate:Jealous:Outlet+
+    TapWater:LikesFamily:K12:MorningNews:Masters+
+    PositiveThinking:MoneyBuys:StraightA+
+    TapWater:CheckLists:ManyPets:LikesFamily:K12:MorningNews:Masters+
+    CityLimits:TravelAbroad:Charity:Jealous+
+    CityLimits:TravelAbroad:Jealous:Outlet+
+    Medications:TapWater:CheckLists:K12:Masters+
+    NoLies:Undergraduate:Charity+
+    Overweight:NoLies:Undergraduate:TravelAbroad:Outlet+
+    CityLimits:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    CityLimits:Overweight:NoLies:Charity:Jealous+
+    AlarmAhead:FullTime:TryFirst+
+    Overweight:Undergraduate:TravelAbroad:Jealous:WalletHas20:Outlet+
+    NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20:Outlet+
+    Medications:TapWater:CheckLists:ManyPets:K12:Phobic:MorningNews+
+    Medications:TapWater:CheckLists:LikesFamily:K12:MorningNews+
+    NoLies:TravelAbroad:Outlet+
+    CityLimits:Overweight:Undergraduate:TravelAbroad:InteractDislikes:WalletHas20:Outlet+
+    Medications:LikesFamily:MorningNews+
+    Overweight:Undergraduate:TravelAbroad:Charity:WalletHas20:Outlet+
+    Medications:CheckLists:K12:MorningNews+
+    Bachelor:OddHours+
+    CreditDebt+
+    CityLimits:TravelAbroad:Outlet+
+    TravelAbroad+
+    Medications:LikesFamily:K12+
+    ManyPets:K12:MorningNews:Masters+
+    Overweight:NoLies:TravelAbroad:Charity:Jealous+
+    CityLimits:Overweight:NoLies:Undergraduate:Charity+
+    HasDebt+
+    Medications:TapWater:K12:MorningNews:Masters+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad:Charity+
+    Medications:TapWater:ManyPets:LikesFamily:MorningNews+
+    Overweight:Undergraduate:Charity:WalletHas20:Outlet+
+    Sociable+
+    NoLies:TravelAbroad:WalletHas20+
+    Siblings:AlarmAhead:Bachelor+
+    Medications:CheckLists:K12:Masters+
+    PositiveThinking:MoneyBuys:HotHead:StraightA+
+    Overweight:Charity:WalletHas20:Outlet+
+    TapWater:ManyPets:K12:MorningNews+
+    TapWater:CheckLists:LikesFamily:Phobic:Masters+
+    NoLies:Outlet+
+    NoLies:Undergraduate:TravelAbroad:Charity:WalletHas20+
+    LikesFamily:K12:Phobic:MorningNews:Masters+
+    CityLimits:Charity:Jealous:Outlet+
+    AlarmAhead:Bachelor+
+    Poor+
+    AlarmAhead:TryFirst+
+    CityLimits:Undergraduate:Charity:Outlet+
+    Overweight:Undergraduate:Jealous:WalletHas20:Outlet+
+    CheckLists:Phobic+
+    Online+
+    CityLimits:NoLies:Undergraduate:Charity:Jealous:WalletHas20+
+    Collects+
+    Siblings:AlarmAhead:Bachelor:OddHours+
+    StressfulEvts+
+    TapWater:CheckLists:K12:Phobic:MorningNews:Masters+
+    CityLimits:Undergraduate:TravelAbroad:Charity:Outlet+
+    Overweight:TravelAbroad:Outlet+
+    TapWater:CheckLists:ManyPets:LikesFamily:MorningNews:Masters+
+    Overweight:NoLies:TravelAbroad:Jealous:Outlet+
+    CreditDebt:Online:GoodatMath+
+    LikesFamily:K12:MorningNews:Masters+
+    HotHead+
+    Charity:Jealous:Outlet+
+    Siblings:AlarmAhead:FullTime:TryFirst:OddHours+
+    Personality:Cautious+
+    CheckLists:ManyPets:LikesFamily:K12:MorningNews:Masters+
+    Medications:Masters+
+    Siblings:AlarmAhead:FullTime+
+    Medications:CheckLists:ManyPets:K12:Phobic:MorningNews:Masters+
+    Medications:TapWater:CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews+
+    Rules+
+    Overweight:NoLies:TravelAbroad:Jealous+
+    LikesFamily:Phobic:MorningNews:Masters+
+    Medications:ManyPets:LikesFamily:K12+
+    CityLimits:Overweight:NoLies:Undergraduate:TravelAbroad+
+    Overweight:NoLies:Jealous:Outlet+
+    AlarmAhead:FullTime+
+    Medications:TapWater:CheckLists:ManyPets:LikesFamily:Phobic:MorningNews+
+    Gender+
+    CheckLists:K12:Phobic:Masters+
+    Medications:TapWater:ManyPets:K12+
+    Siblings:AlarmAhead:FullTime:Bachelor+
+    TapWater:LikesFamily+
+    ManyPets:K12+
+    Medications:ManyPets:K12:Masters+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Charity:Jealous:WalletHas20+
+    Skeptical+
+    Medications:LikesFamily:K12:Phobic:MorningNews:Masters+
+    CreditDebt:GoodatMath+
+    ManyPets:LikesFamily:K12:Phobic:MorningNews:Masters+
+    Medications:TapWater:CheckLists:LikesFamily:Masters+
+    PositiveThinking:MoneyBuys:HotHead:Mac:StraightA+
+    Medications:LikesFamily:Phobic:MorningNews:Masters+
+    CheckLists:K12:Phobic+
+    Medications:TapWater:CheckLists:LikesFamily:K12:Masters+
+    TapWater:K12+
+    ManyPets:Phobic:MorningNews:Masters+
+    Undergraduate:Charity:Jealous:Outlet+
+    GoodatMath+
+    SameState:Misterious:GoodatMath+
+    TapWater:CheckLists:LikesFamily:K12:MorningNews+
+    AlarmAhead:OddHours+
+    TapWater:K12:Phobic+
+    Overweight:NoLies:Undergraduate:WalletHas20:Outlet+
+    Overweight:Undergraduate:InteractDislikes+
+    AlarmAhead:Bachelor:OddHours+
+    HappyorRight+
+    TapWater:CheckLists:LikesFamily:K12:Phobic+
+    NoLies:Undergraduate:Charity:WalletHas20+
+    TapWater:CheckLists:LikesFamily:Phobic:MorningNews+
+    Medications:TapWater:ManyPets+
+    Overweight:NoLies:Undergraduate:TravelAbroad:WalletHas20:Outlet+
+    Misterious+
+    Medications:ManyPets:Masters+
+    TapWater:ManyPets:MorningNews+
+    TapWater:CheckLists:LikesFamily+
+    CityLimits:Overweight:NoLies:Undergraduate+
+    TapWater:CheckLists+
+    Grudge+
+    ManyPets:K12:Phobic:MorningNews:Masters+
+    MeaningofLife+
+    CityLimits:NoLies:Undergraduate:TravelAbroad:Jealous:WalletHas20+
+    CityLimits:NoLies:Undergraduate:Jealous:WalletHas20+
+    TapWater:ManyPets:Phobic:MorningNews:Masters+
+    Medications:TapWater:CheckLists:ManyPets:K12:Phobic+
+    Medications:TapWater:CheckLists:ManyPets:Phobic+
+    CheckLists:ManyPets:LikesFamily:K12:Masters+
+    Exciting+
+    TapWater:ManyPets+
+    CheckLists:ManyPets:LikesFamily:Masters+
+    TapWater:CheckLists:LikesFamily:K12+
+    TapWater:CheckLists:LikesFamily:K12:Phobic:MorningNews+
+    Medications:TapWater:CheckLists:ManyPets:LikesFamily:MorningNews+
+    TapWater:ManyPets:K12+
+    LivesTogether+
+    FeelsNormal+
+    OverYourHead, traindata, nottraindata)
+
+m = createglmModel(Happy ~Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20
++InteractDislikes:NoLies:TravelAbroad:Overweight:Outlet
++Undergraduate:Charity:InteractDislikes:Overweight
++Charity:NoLies:TravelAbroad:Overweight:WalletHas20:Outlet
++YOB
++LikesFamily:MorningNews:Masters
++Medications
++Charity:TravelAbroad:Overweight:WalletHas20
++CheckLists:ManyPets:K12:Phobic:Masters
++YOB:Overworks:Personality
++CheckLists:ManyPets:K12:TapWater:Masters
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous:WalletHas20
++CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews:Medications:Masters
++Charity:InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++Undergraduate:Charity:CityLimits:NoLies:TravelAbroad:Jealous:WalletHas20
++CheckLists:ManyPets:LikesFamily:MorningNews
++Undergraduate:InteractDislikes
++Charity:TravelAbroad:Overweight:WalletHas20:Outlet
++InteractDislikes:CityLimits:NoLies:Jealous:Overweight:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:Jealous:Overweight:WalletHas20:Outlet
++ManyPets:LikesFamily
++Undergraduate:Charity:InteractDislikes:NoLies:Jealous
++CheckLists:MorningNews:TapWater:Masters
++InteractDislikes:TravelAbroad:Overweight:WalletHas20
++CityLimits:NoLies:Jealous:Overweight
++Siblings:FullTime:TryFirst:Bachelor
++CheckLists:Phobic:TapWater:Masters
++NoLies:TravelAbroad:Overweight:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Overweight:WalletHas20
++Charity:NoLies:Jealous:Overweight
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++Undergraduate:Charity:CityLimits:NoLies:Overweight
++YOB:Overworks
++Charity:InteractDislikes:TravelAbroad:Jealous:Outlet
++InteractDislikes:CityLimits:NoLies:Jealous:Outlet
++Undergraduate:CityLimits:NoLies:WalletHas20
++Undergraduate:InteractDislikes:TravelAbroad:WalletHas20:Outlet
++ManyPets:LikesFamily:K12:Phobic:Medications
++Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20
++Charity:InteractDislikes:NoLies:TravelAbroad:WalletHas20
++Undergraduate:InteractDislikes:TravelAbroad:Overweight:WalletHas20
++CheckLists:ManyPets:Phobic:MorningNews:TapWater:Masters
++CheckLists:ManyPets:LikesFamily:K12:Medications:TapWater:Masters
++Charity:CityLimits:NoLies:TravelAbroad:Jealous:Overweight:WalletHas20
++Undergraduate
++LikesFamily:Medications:TapWater:Masters
++Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++CheckLists:ManyPets:MorningNews:Medications
++Undergraduate:Charity:InteractDislikes:NoLies:Overweight
++ManyPets:LikesFamily:K12
++InteractDislikes:Jealous:WalletHas20:Outlet
++InteractDislikes:NoLies:TravelAbroad:Jealous:Outlet
++Undergraduate:InteractDislikes:CityLimits:WalletHas20:Outlet
++CheckLists:Phobic:Medications
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies
++CheckLists:LikesFamily:K12:Phobic:MorningNews:Masters
++Siblings:TryFirst:OddHours
++Siblings:FullTime:OddHours:Bachelor
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet
++Charity:InteractDislikes:Overweight:Outlet
++Undergraduate:InteractDislikes:Jealous:Outlet
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous:WalletHas20
++InteractDislikes:TravelAbroad
++CheckLists:K12:MorningNews:TapWater:Masters
++Charity:InteractDislikes:CityLimits:TravelAbroad:Overweight:Outlet
++Undergraduate:CityLimits:TravelAbroad:WalletHas20:Outlet
++Undergraduate:InteractDislikes:TravelAbroad:Overweight:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Overweight
++InteractDislikes:TravelAbroad:Jealous:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Jealous:Overweight
++K12:MorningNews:Masters
++TryFirst:Bachelor
++NoLies:Jealous:Overweight
++Siblings:AlarmAhead
++Charity:NoLies:Jealous:Overweight:Outlet
++Undergraduate:Charity:InteractDislikes:NoLies:Jealous:Overweight
++InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight:WalletHas20:Outlet
++Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight:Outlet
++Charity:CityLimits:NoLies:TravelAbroad:Jealous:Overweight
++CheckLists:ManyPets:LikesFamily:K12:Phobic:TapWater:Masters
++InteractDislikes:TravelAbroad:Jealous:WalletHas20:Outlet
++ManyPets:K12:Phobic:MorningNews:Medications:TapWater:Masters
++InteractDislikes:NoLies:Jealous
++Charity:InteractDislikes:CityLimits:Jealous:Overweight:Outlet
++Charity:TravelAbroad:Jealous:Overweight:WalletHas20
++CityLimits:TravelAbroad:Jealous
++Undergraduate:InteractDislikes:TravelAbroad:Jealous:Outlet
++CityLimits:NoLies:TravelAbroad:Jealous:Overweight
++InteractDislikes:Jealous:Overweight:WalletHas20
++NoLies:Overweight
++Phobic:MorningNews:TapWater:Masters
++InteractDislikes:CityLimits:Jealous:Overweight:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:NoLies:Jealous:Outlet
++Undergraduate:Charity:InteractDislikes:NoLies:Jealous:WalletHas20:Outlet
++InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20
++Charity:NoLies:TravelAbroad:Outlet
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous
++Charity:InteractDislikes:NoLies:TravelAbroad:Jealous:WalletHas20
++SingleParent
++ManyPets:K12:MorningNews:TapWater:Masters
++Charity:NoLies:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits
++LikesFamily:K12:Phobic:Medications
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous:Outlet
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:Overweight
++CheckLists:LikesFamily:Phobic:MorningNews:Medications
++Undergraduate:Charity:NoLies:TravelAbroad:Overweight:WalletHas20
++ManyPets:LikesFamily:Phobic:MorningNews:Masters
++Undergraduate:Charity:InteractDislikes:WalletHas20
++Charity:CityLimits:NoLies:TravelAbroad:WalletHas20:Outlet
++Charity:InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20:Outlet
++InteractDislikes:TravelAbroad:Jealous:WalletHas20
++CityLimits:NoLies:WalletHas20:Outlet
++Alarm:Cautious
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:WalletHas20
++K12:MorningNews:TapWater:Masters
++Undergraduate:Charity:InteractDislikes
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:WalletHas20
++Charity:NoLies:TravelAbroad:Jealous:Overweight:Outlet
++Misterious:CreditDebt
++Charity:InteractDislikes:CityLimits:TravelAbroad:Overweight
++TapWater:Masters
++InteractDislikes:CityLimits:NoLies:Outlet
++Siblings:FullTime:TryFirst:OddHours
++Republican
++FullTime:OddHours:Bachelor
++Undergraduate:WalletHas20:Outlet
++FullTime
++PositiveThinking:MoneyBuys:Mac
++Undergraduate:Charity:NoLies:Overweight
++Undergraduate:InteractDislikes:Jealous:WalletHas20
++CheckLists:K12:Phobic:TapWater:Masters
++CheckLists:ManyPets:LikesFamily:MorningNews:Masters
++Charity:InteractDislikes:CityLimits:TravelAbroad:Outlet
++Undergraduate:InteractDislikes:TravelAbroad:Jealous:Overweight:WalletHas20:Outlet
++Charity:InteractDislikes:CityLimits:Overweight
++Undergraduate:Charity:NoLies:Overweight:WalletHas20
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight
++ManyPets:LikesFamily:K12:Phobic:Masters
++Charity:InteractDislikes:CityLimits:TravelAbroad:Jealous:Outlet
++CheckLists:ManyPets:K12:Phobic:Medications:Masters
++ManyPets:Phobic:MorningNews:Medications:TapWater:Masters
++Charity:InteractDislikes:TravelAbroad:Jealous:Overweight
++MoneyBuys:Mac:StraightA
++Bachelor
++ManyPets:LikesFamily:K12:MorningNews:TapWater:Masters
++TalkRadio
++Undergraduate:InteractDislikes:Jealous:Overweight:WalletHas20:Outlet
++ManyPets:K12:Phobic:MorningNews:TapWater:Masters
++Charity:Jealous:WalletHas20:Outlet
++Charity:InteractDislikes:NoLies:WalletHas20
++Charity:InteractDislikes:Jealous:Overweight:Outlet
++Undergraduate:Charity:CityLimits:NoLies:TravelAbroad:Jealous
++CheckLists:LikesFamily:Phobic:MorningNews:Medications:TapWater:Masters
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Outlet
++InteractDislikes:TravelAbroad:Jealous:Overweight
++Charity:InteractDislikes:NoLies:Outlet
++Charity:InteractDislikes:Jealous:WalletHas20:Outlet
++Phobic
++Misterious:GoodatMath
++Charity:InteractDislikes:NoLies:Overweight:WalletHas20:Outlet
++CheckLists:ManyPets:LikesFamily:Medications:Masters
++Undergraduate:Charity:InteractDislikes:Jealous:Outlet
++CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews
++CityLimits:NoLies
++YOB:Alarm
++NoLies:TravelAbroad:Overweight:WalletHas20:Outlet
++CheckLists:ManyPets:LikesFamily:MorningNews:Medications
++Charity:NoLies:Overweight:WalletHas20:Outlet
++Undergraduate:Charity:Outlet
++CityLimits:TravelAbroad:Overweight:Outlet
++YOB:Alarm:Cautious
++Undergraduate:CityLimits:NoLies:TravelAbroad:Overweight
++CheckLists:LikesFamily:MorningNews:TapWater
++InteractDislikes:CityLimits:WalletHas20:Outlet
++FullTime:AlarmAhead:Bachelor
++Undergraduate:Charity:NoLies:Overweight:WalletHas20:Outlet
++FullTime:OddHours
++CheckLists:ManyPets:LikesFamily:Phobic:MorningNews:Medications:Masters
++Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad:Overweight
++Undergraduate:InteractDislikes:NoLies:Jealous:Overweight:WalletHas20:Outlet
++InteractDislikes:CityLimits:Jealous:WalletHas20:Outlet
++LikesFamily:K12:Phobic:Medications:Masters
++InteractDislikes:Jealous:Overweight:Outlet
++Undergraduate:Charity:InteractDislikes:NoLies:TravelAbroad:Jealous
++PositiveThinking:MoneyBuys:Mac:StraightA
++Undergraduate:InteractDislikes:TravelAbroad
++Charity:InteractDislikes:NoLies:Jealous:Overweight:Outlet
++CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews:TapWater:Masters
++Undergraduate:NoLies:Overweight:Outlet
++Undergraduate:Charity:InteractDislikes:NoLies:Jealous:Overweight:WalletHas20
++CheckLists:ManyPets:LikesFamily:Phobic:TapWater:Masters
++Charity:InteractDislikes:CityLimits:NoLies:WalletHas20
++Charity:InteractDislikes:CityLimits:NoLies:Overweight:Outlet
++CheckLists:ManyPets:LikesFamily:K12:TapWater:Masters
++Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:Outlet
++K12:Medications
++Misterious:CreditDebt:SameState:Online
++InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight:Outlet
++Charity:InteractDislikes:Outlet
++CheckLists:LikesFamily:K12:Phobic:Medications:TapWater
++ManyPets:K12:Phobic:MorningNews:Medications:Masters
++Siblings:FullTime:AlarmAhead:OddHours:Bachelor
++GoodatMath:SameState
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:WalletHas20
++CheckLists:ManyPets:LikesFamily:K12:Medications:Masters
++Charity:InteractDislikes:TravelAbroad:Jealous
++CheckLists:LikesFamily:K12:Phobic:MorningNews:Medications:TapWater:Masters
++Charity:InteractDislikes:CityLimits:Overweight:WalletHas20
++CheckLists:MorningNews:Medications:Masters
++Undergraduate:InteractDislikes:Overweight:WalletHas20:Outlet
++GoodatMath:Online
++CheckLists:LikesFamily:K12:Phobic
++Charity:TravelAbroad:Jealous:WalletHas20:Outlet
++CityLimits:TravelAbroad:Jealous:Outlet
++Undergraduate:Charity:NoLies:TravelAbroad:Overweight:WalletHas20:Outlet
++AlarmAhead:TryFirst:Bachelor
++Charity:InteractDislikes:CityLimits
++Siblings:FullTime:OddHours
++Overworks:Personality:Cautious
++CheckLists:ManyPets:LikesFamily:Medications:TapWater:Masters
++CheckLists:Phobic:MorningNews:Medications
++CityLimits:Jealous:Outlet
++CryBaby
++Undergraduate:CityLimits:NoLies:Overweight:WalletHas20
++ManyPets:LikesFamily:Phobic:Masters
++CheckLists:ManyPets:K12:Phobic:MorningNews
++Undergraduate:InteractDislikes:Overweight
++Charity:InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight:Outlet
++Charity:CityLimits:NoLies
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous:Outlet
++Undergraduate:InteractDislikes:CityLimits:Overweight
++Undergraduate:Charity:NoLies:Jealous:Overweight
++Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous
++Charity:InteractDislikes:CityLimits:NoLies:Jealous:Overweight
++LikesFamily:K12:MorningNews:Medications:TapWater:Masters
++Charity:CityLimits:TravelAbroad:Outlet
++Misterious:SameState
++ManyPets:LikesFamily:Medications
++InteractDislikes:TravelAbroad:Outlet
++PositiveThinking:MoneyBuys:StraightA
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Overweight
++InteractDislikes:CityLimits:NoLies:TravelAbroad:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:WalletHas20
++Charity:CityLimits:Outlet
++NoLies:TravelAbroad:Outlet
++CheckLists:LikesFamily:Phobic:Masters
++Undergraduate:Charity:TravelAbroad:Overweight:WalletHas20
++InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight
++Undergraduate:InteractDislikes:CityLimits:Jealous:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:Jealous:Overweight
++Undergraduate:Charity:InteractDislikes:NoLies:Overweight:WalletHas20
++Charity:InteractDislikes:WalletHas20:Outlet
++AlarmAhead
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:Overweight
++CheckLists:Medications:TapWater:Masters
++Misterious:GoodatMath:SameState:Online
++YOB:Personality:Alarm:Cautious
++Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight
++Undergraduate:Charity:WalletHas20:Outlet
++CheckLists:K12:Phobic:MorningNews:Medications:Masters
++CityLimits:Outlet
++Vitamins
++CheckLists:LikesFamily:Phobic:Medications:TapWater
++Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad
++Mac
++Undergraduate:Charity:Jealous:WalletHas20:Outlet
++NoLies:Overweight:WalletHas20:Outlet
++CheckLists:LikesFamily:K12:MorningNews:Medications
++Siblings:TryFirst:Bachelor
++Undergraduate:Charity:TravelAbroad:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:TravelAbroad
++Charity:InteractDislikes:CityLimits:Overweight:Outlet
++Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:Outlet
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:Overweight:WalletHas20
++K12:Phobic:MorningNews
++FullTime:TryFirst:OddHours
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous
++Spanked
++CheckLists:ManyPets:K12:Phobic:MorningNews:Medications:TapWater
++Undergraduate:Charity:CityLimits:TravelAbroad:Overweight:Outlet
++Undergraduate:Charity:InteractDislikes:TravelAbroad:Outlet
++Siblings:FullTime:TryFirst
++Undergraduate:InteractDislikes:CityLimits:NoLies:Jealous
++TravelAbroad:Jealous
++InteractDislikes:CityLimits:Jealous:Outlet
++FullTime:AlarmAhead:OddHours:Bachelor
++InteractDislikes:CityLimits:Jealous:Overweight
++CheckLists:LikesFamily:MorningNews:Medications
++InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight:WalletHas20
++Undergraduate:Charity:InteractDislikes:CityLimits:WalletHas20
++Charity:CityLimits:NoLies:Jealous:Overweight
++InteractDislikes:Jealous:Overweight
++Charity:InteractDislikes:CityLimits:NoLies:Outlet
++InteractDislikes:CityLimits:TravelAbroad
++Overworks:Personality:Alarm
++Undergraduate:Charity:InteractDislikes:CityLimits:Outlet
++Undergraduate:Charity:CityLimits:Overweight:Outlet
++Undergraduate:CityLimits:TravelAbroad:Jealous:WalletHas20:Outlet
++CheckLists:ManyPets:Phobic:MorningNews:Medications:TapWater
++LikesFamily:Phobic:MorningNews:TapWater
++Undergraduate:InteractDislikes:TravelAbroad:Jealous:Overweight
++Undergraduate:CityLimits:Overweight:Outlet
++Undergraduate:Charity:NoLies:Jealous:WalletHas20
++Charity:TravelAbroad:Overweight:Outlet
++Overworks:Personality:Alarm:Cautious
++Siblings:TryFirst
++Undergraduate:InteractDislikes:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:Jealous:Overweight
++InteractDislikes:TravelAbroad:WalletHas20:Outlet
++Charity:InteractDislikes:TravelAbroad:Overweight
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20
++InteractDislikes:CityLimits:TravelAbroad:Outlet
++Undergraduate:Charity:NoLies:TravelAbroad
++Charity:CityLimits:NoLies:Overweight:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:Overweight:Outlet
++ManyPets:LikesFamily:K12:Medications:TapWater
++Undergraduate:Charity:InteractDislikes:TravelAbroad:Overweight
++Charity:Jealous:Overweight:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous
++LikesFamily:K12:Phobic:MorningNews:TapWater:Masters
++CheckLists:LikesFamily:K12:Phobic:TapWater:Masters
++ManyPets:LikesFamily:K12:MorningNews:Medications:TapWater
++K12:TapWater:Masters
++Phobic:TapWater
++CheckLists:Phobic:Masters
++CheckLists:LikesFamily:Phobic:MorningNews:Masters
++CheckLists:LikesFamily:Phobic:TapWater:Masters
++ManyPets:MorningNews:Masters
++CheckLists:ManyPets:TapWater:Masters
++LikesFamily:K12:TapWater:Masters
++Jealous:Overweight:WalletHas20
++Undergraduate:InteractDislikes:NoLies:Jealous:Overweight:Outlet
++Charity:InteractDislikes:CityLimits:Jealous:WalletHas20:Outlet
++InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Outlet
++Charity:NoLies:TravelAbroad:Jealous:Overweight
++Undergraduate:Charity:CityLimits:NoLies:TravelAbroad:WalletHas20
++Glasses
++StraightA
++Charity:InteractDislikes:NoLies:Jealous:Overweight:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:NoLies:Jealous:Overweight
++InteractDislikes:NoLies:TravelAbroad:Jealous
++MoneyBuys:Mac:StraightA:HotHead
++CheckLists:LikesFamily:K12:Phobic:MorningNews:Medications
++CheckLists:LikesFamily:Phobic:TapWater
++Charity:InteractDislikes:NoLies:TravelAbroad:Outlet
++Undergraduate:CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++MoneyBuys:HotHead
++NoLies:TravelAbroad:Jealous:Overweight:Outlet
++CheckLists:K12:Medications
++InteractDislikes:NoLies:TravelAbroad:Overweight
++Undergraduate:Charity:InteractDislikes:Jealous:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:Overweight:WalletHas20:Outlet
++LikesFamily:MorningNews
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight
++Undergraduate:Charity:TravelAbroad:Overweight:WalletHas20:Outlet
++Undergraduate:Charity:NoLies:TravelAbroad:WalletHas20:Outlet
++InteractDislikes:Jealous:Overweight:WalletHas20:Outlet
++Undergraduate:Charity:NoLies:TravelAbroad:Jealous
++Jealous
++LikesFamily:K12:Phobic:MorningNews:Masters
++CheckLists:ManyPets:LikesFamily:Phobic:Masters
++CheckLists:LikesFamily:K12:Medications:Masters
++Undergraduate:Charity:InteractDislikes:Overweight:WalletHas20
++Undergraduate:CityLimits:TravelAbroad:Outlet
++PositiveThinking:MoneyBuys:StraightA:HotHead
++Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet
++InteractDislikes:CityLimits:Jealous
++Charity:InteractDislikes:CityLimits:WalletHas20
++Undergraduate:CityLimits:NoLies
++Charity:InteractDislikes:NoLies:Overweight:WalletHas20
++NoLies:Outlet
++Undergraduate:Charity:InteractDislikes:TravelAbroad
++Charity:InteractDislikes:CityLimits:Jealous:WalletHas20
++CarPymt
++InteractDislikes:CityLimits:NoLies:TravelAbroad:WalletHas20
++LikesFamily:Phobic:MorningNews:TapWater:Masters
++ManyPets:K12:MorningNews:TapWater
++InteractDislikes:TravelAbroad:WalletHas20
++Undergraduate:Charity:Jealous:WalletHas20
++Undergraduate:InteractDislikes:TravelAbroad:Outlet
++Charity:Overweight:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:Jealous:WalletHas20
++Undergraduate:InteractDislikes:TravelAbroad:Jealous
++CheckLists:LikesFamily:Medications
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad
++Charity:InteractDislikes:CityLimits:WalletHas20:Outlet
++CheckLists:Medications:Masters
++Jealous:WalletHas20
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Jealous
++Undergraduate:NoLies:Overweight
++CheckLists:Phobic:Medications:Masters
++FullTime:AlarmAhead:TryFirst
++Charity:InteractDislikes:Overweight:WalletHas20
++Mac:StraightA:HotHead
++Charity:InteractDislikes:CityLimits:Jealous:Outlet
++InteractDislikes:TravelAbroad:Jealous
++Charity:InteractDislikes:CityLimits:NoLies:Overweight
++Undergraduate:CityLimits:TravelAbroad:Jealous:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous:WalletHas20
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight:WalletHas20
++Charity:InteractDislikes:CityLimits:TravelAbroad
++InteractDislikes:CityLimits:TravelAbroad:Overweight:WalletHas20
++Undergraduate:Charity:InteractDislikes:TravelAbroad:Jealous:Overweight
++InteractDislikes:NoLies:TravelAbroad:Outlet
++CityLimits:NoLies:TravelAbroad
++Charity:InteractDislikes:Jealous:Outlet
++Undergraduate:Charity:CityLimits:NoLies:Overweight:WalletHas20:Outlet
++CheckLists:ManyPets:K12:Phobic
++Charity:CityLimits:NoLies:TravelAbroad
++Misterious:GoodatMath:Online
++Charity:InteractDislikes:TravelAbroad:Jealous:Overweight:Outlet
++InteractDislikes:NoLies:Overweight
++InteractDislikes:CityLimits:TravelAbroad:Overweight
++Undergraduate:Jealous
++InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight
++Charity:CityLimits:NoLies:Overweight
++AlarmAhead:Bachelor
++Charity:InteractDislikes:NoLies:Jealous
++CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++OddHours:Bachelor
++Undergraduate:InteractDislikes:WalletHas20:Outlet
++Charity:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20
++InteractDislikes:NoLies:WalletHas20
++Charity:Jealous:Outlet
++ManyPets:K12:MorningNews:Masters
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight
++NoLies:Jealous:Overweight:Outlet
++ManyPets:Phobic:TapWater:Masters
++CheckLists:Phobic
++ManyPets:K12:Medications:Masters
++ManyPets:Medications
++MorningNews:Medications:TapWater:Masters
++CheckLists:K12:Medications:Masters
++Undergraduate:CityLimits:NoLies:Jealous:WalletHas20
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous:Outlet
++Charity:InteractDislikes:NoLies:TravelAbroad:Jealous:Overweight:Outlet
++CityLimits:TravelAbroad:Outlet
++OddHours
++FullTime:AlarmAhead
++NoLies:TravelAbroad:WalletHas20
++InteractDislikes:CityLimits:Overweight:WalletHas20
++NoLies:TravelAbroad:Jealous:Overweight
++Undergraduate:Charity:TravelAbroad:Jealous:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:TravelAbroad:Jealous
++Siblings:AlarmAhead:Bachelor
++Undergraduate:Charity:InteractDislikes:Jealous:Overweight:WalletHas20
++Siblings:FullTime:AlarmAhead
++Undergraduate:Charity:NoLies:TravelAbroad:WalletHas20
++InteractDislikes:NoLies:TravelAbroad:Jealous:WalletHas20
++Charity:InteractDislikes:CityLimits:Outlet
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous:Outlet
++InteractDislikes:NoLies:WalletHas20:Outlet
++InteractDislikes:WalletHas20:Outlet
++InteractDislikes:NoLies:Jealous:Overweight
++Undergraduate:Charity:InteractDislikes:CityLimits:WalletHas20:Outlet
++Undergraduate:Charity:InteractDislikes:WalletHas20:Outlet
++Undergraduate:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Outlet
++Successful
++CheckLists:Medications:TapWater
++Undergraduate:Charity:CityLimits:TravelAbroad:WalletHas20:Outlet
++Charity:InteractDislikes:TravelAbroad:Overweight:Outlet
++Charity
++Siblings:OddHours
++InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet
++LikesFamily:K12:Medications
++Undergraduate:Charity:Overweight:WalletHas20:Outlet
++Charity:NoLies:TravelAbroad:Jealous:Overweight:WalletHas20
++CheckLists:ManyPets:TapWater
++Undergraduate:Charity:InteractDislikes:NoLies:TravelAbroad:Overweight
++Charity:CityLimits:TravelAbroad:Jealous
++TravelAbroad:Jealous:WalletHas20
++Undergraduate:Charity:CityLimits:TravelAbroad:Jealous
++ManyPets:MorningNews:TapWater:Masters
++Undergraduate:NoLies:TravelAbroad:Overweight:Outlet
++Charity:InteractDislikes:Jealous:Overweight:WalletHas20
++Undergraduate:CityLimits:NoLies:Overweight
++Undergraduate:CityLimits:Jealous:WalletHas20
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Outlet
++Undergraduate:Charity:NoLies:Jealous
++Undergraduate:Charity:InteractDislikes:CityLimits:TravelAbroad
++CheckLists:ManyPets:LikesFamily:Phobic:Medications
++TravelAbroad
++Undergraduate:Charity:CityLimits:NoLies:TravelAbroad:Overweight:WalletHas20
++ManyPets:Medications:Masters
++Charity:InteractDislikes:NoLies
++Rules
++Sociable
++InteractDislikes:NoLies:Jealous:WalletHas20:Outlet
++MoneyBuys:StraightA:HotHead
++Charity:InteractDislikes:CityLimits:Jealous
++Undergraduate:CityLimits:NoLies:TravelAbroad:Jealous:WalletHas20
++HasDebt
++CheckLists:Phobic:MorningNews:TapWater:Masters
++Charity:InteractDislikes:CityLimits:NoLies:Jealous:Outlet
++Undergraduate:InteractDislikes:NoLies:WalletHas20
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:WalletHas20:Outlet
++CheckLists:ManyPets:LikesFamily:TapWater:Masters
++InteractDislikes:NoLies:Overweight:Outlet
++LikesFamily:Phobic:MorningNews:Masters
++Charity:InteractDislikes:NoLies:Jealous:Outlet
++Charity:CityLimits:TravelAbroad:Jealous:Outlet
++Siblings:AlarmAhead:OddHours
++Medications:Masters
++Undergraduate:TravelAbroad:Jealous:Overweight:WalletHas20:Outlet
++Siblings:FullTime:AlarmAhead:TryFirst:OddHours:Bachelor
++LikesFamily:Phobic:MorningNews:Medications:TapWater
++Undergraduate:Charity:CityLimits:NoLies:Overweight:WalletHas20
++CreditDebt
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous:WalletHas20:Outlet
++Collects
++InteractDislikes:CityLimits:Overweight
++InteractDislikes:NoLies:Outlet
++CheckLists:ManyPets:K12:Phobic:MorningNews:Medications:Masters
++Undergraduate:CityLimits:NoLies:TravelAbroad:WalletHas20
++InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet
++LikesFamily:MorningNews:Medications
++CheckLists:K12:Medications:TapWater:Masters
++InteractDislikes:Overweight:Outlet
++Undergraduate:InteractDislikes:Jealous:Overweight:Outlet
++Siblings:FullTime:AlarmAhead:TryFirst:OddHours
++InteractDislikes:CityLimits:NoLies:Jealous:Overweight:Outlet
++Personality:Cautious
++ManyPets:LikesFamily:K12:Phobic:MorningNews:Masters
++Charity:InteractDislikes:NoLies:Jealous:WalletHas20:Outlet
++CheckLists:K12:MorningNews:Medications
++Charity:InteractDislikes:Jealous
++InteractDislikes:CityLimits:TravelAbroad:Jealous
++Charity:InteractDislikes:CityLimits:TravelAbroad:Jealous
++Charity:InteractDislikes:TravelAbroad
++HotHead
++Charity:InteractDislikes:NoLies:WalletHas20:Outlet
++Undergraduate:CityLimits:NoLies:Jealous:Overweight
++CheckLists:K12:Phobic:Masters
++ManyPets:LikesFamily:MorningNews:Medications:TapWater
++LikesFamily:K12:Masters
++K12:MorningNews:Medications:TapWater:Masters
++CheckLists:LikesFamily:Medications:TapWater:Masters
++Undergraduate:Charity:Jealous:Outlet
++LikesFamily:TapWater
++CheckLists:ManyPets:LikesFamily:K12:MorningNews:TapWater:Masters
++AlarmAhead:TryFirst
++StressfulEvts
++Siblings:FullTime:AlarmAhead:Bachelor
++Misterious
++Misterious:GoodatMath:SameState
++CheckLists:LikesFamily:K12:MorningNews:Medications:TapWater
++Undergraduate:Charity:CityLimits:TravelAbroad:Jealous:Outlet
++CheckLists:ManyPets:LikesFamily:K12:MorningNews:Masters
++Online
++CheckLists:K12:Phobic:MorningNews:TapWater:Masters
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Jealous:Outlet
++Undergraduate:NoLies:TravelAbroad:Jealous:Overweight
++Charity:CityLimits:Jealous:Outlet
++Poor
++InteractDislikes:CityLimits:NoLies:Jealous:Overweight
++InteractDislikes:CityLimits:NoLies:Overweight
++Charity:InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:Jealous:Outlet
++Undergraduate:InteractDislikes:CityLimits:NoLies:Jealous:Overweight:Outlet
++Undergraduate:CityLimits:Outlet
++Undergraduate:NoLies:Overweight:WalletHas20:Outlet
++ManyPets:Phobic:MorningNews:Masters
++Undergraduate:InteractDislikes:NoLies:Outlet
++Undergraduate:Charity:NoLies
++Undergraduate:Charity:CityLimits:Jealous:Outlet
++Undergraduate:Jealous:Overweight:WalletHas20:Outlet
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous:WalletHas20:Outlet
++CheckLists:LikesFamily:K12:Medications:TapWater:Masters
++GoodatMath
++K12:TapWater
++CheckLists:K12:Phobic
++Undergraduate:NoLies:TravelAbroad:Overweight:WalletHas20:Outlet
++InteractDislikes:NoLies:Jealous:Overweight:WalletHas20
++CheckLists:LikesFamily:K12:MorningNews:TapWater
++CheckLists:ManyPets:LikesFamily:MorningNews:TapWater:Masters
++Gender
++InteractDislikes:NoLies:TravelAbroad:WalletHas20
++Undergraduate:Charity:InteractDislikes:CityLimits:NoLies:Outlet
++GoodatMath:CreditDebt:Online
++Undergraduate:InteractDislikes:Outlet
++Charity:InteractDislikes:CityLimits:NoLies:Jealous:WalletHas20:Outlet
++Undergraduate:Charity:CityLimits:Outlet
++ManyPets:LikesFamily:K12:Medications
++Charity:InteractDislikes:CityLimits:Jealous:Overweight:WalletHas20
++ManyPets:MorningNews:TapWater
++PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
++TravelAbroad:Overweight:Outlet
++Charity:InteractDislikes:TravelAbroad:Overweight:WalletHas20
++Siblings:AlarmAhead:OddHours:Bachelor
++Charity:InteractDislikes:NoLies:TravelAbroad:Jealous:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous:Overweight:Outlet
++Undergraduate:Jealous:Overweight
++GoodatMath:CreditDebt
++InteractDislikes:CityLimits:NoLies:Overweight:Outlet
++Charity:InteractDislikes
++Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Outlet
++Undergraduate:InteractDislikes:NoLies:Jealous
++Undergraduate:Charity:CityLimits:TravelAbroad:Outlet
++LikesFamily:K12:Phobic:MorningNews:Medications:Masters
++Charity:InteractDislikes:TravelAbroad:Jealous:Overweight:WalletHas20
++K12:Phobic:TapWater
++ManyPets:K12
++InteractDislikes:TravelAbroad:Jealous:Overweight:Outlet
++LikesFamily:K12:MorningNews:Masters
++ManyPets:K12:Medications:TapWater
++Skeptical
++Undergraduate:Charity:InteractDislikes:Jealous:Overweight:Outlet
++CheckLists:LikesFamily:TapWater
++Charity:CityLimits:Overweight:WalletHas20
++Undergraduate:Charity:InteractDislikes:CityLimits:Overweight:Outlet
++Undergraduate:CityLimits:Jealous:Outlet
++Undergraduate:Charity:InteractDislikes:CityLimits:Overweight:WalletHas20
++AlarmAhead:OddHours:Bachelor
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Overweight:Outlet
++AlarmAhead:OddHours
++LikesFamily:K12:MorningNews:TapWater:Masters
++Undergraduate:Charity:InteractDislikes:Overweight:Outlet
++CheckLists:LikesFamily:K12:Phobic:TapWater
++HappyorRight
++LikesFamily:Phobic:MorningNews:Medications:Masters
++Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous
++ManyPets:K12:Phobic:MorningNews:Masters
++CheckLists:ManyPets:LikesFamily:K12:Phobic:MorningNews:Medications:TapWater
++CheckLists:TapWater
++Undergraduate:CityLimits:NoLies:TravelAbroad:Jealous:Overweight
++CheckLists:ManyPets:LikesFamily:Phobic:MorningNews:Medications:TapWater
++CheckLists:LikesFamily:Phobic:MorningNews:TapWater
++CheckLists:ManyPets:K12:Phobic:Medications:TapWater
++Undergraduate:Charity:InteractDislikes:CityLimits:Jealous:Overweight:WalletHas20
++MeaningofLife
++Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight:Outlet
++Undergraduate:InteractDislikes:TravelAbroad:Overweight:Outlet
++ManyPets:Phobic:MorningNews:TapWater:Masters
++Grudge
++InteractDislikes:TravelAbroad:Overweight:Outlet
++InteractDislikes:CityLimits:TravelAbroad:Overweight:Outlet
++CheckLists:LikesFamily:K12:TapWater
++CheckLists:ManyPets:LikesFamily:K12:Masters
++ManyPets:Medications:TapWater
++CheckLists:ManyPets:Phobic:Medications:TapWater
++Undergraduate:CityLimits:NoLies:TravelAbroad:Jealous
++CheckLists:ManyPets:LikesFamily:Masters
++Undergraduate:CityLimits:NoLies:Jealous
++Exciting
++ManyPets:TapWater
++Undergraduate:Charity:NoLies:WalletHas20
++CheckLists:LikesFamily:K12:Phobic:MorningNews:TapWater
++ManyPets:K12:TapWater
++LivesTogether
++CheckLists:ManyPets:LikesFamily:MorningNews:Medications:TapWater
++InteractDislikes:CityLimits:TravelAbroad:Jealous:Overweight:Outlet
++FeelsNormal
++OverYourHead, traindata, nottraindata)
+
+m = createglmModel(Happy ~NoLies:Overweight:Outlet:Charity:Jealous
+                   +Siblings:FullTime:Bachelor:OddHours
+                   +LikesFamily:CheckLists:K12:Phobic
+                   +InteractDislikes:NoLies:Overweight:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +LikesFamily:Masters:ManyPets:K12:Phobic
+                   +CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad:Charity:Jealous
+                   +Medications
+                   +Undergraduate:InteractDislikes
+                   +MorningNews:Medications:CheckLists:ManyPets
+                   +Masters:TapWater
+                   +YOB:Overworks
+                   +Undergraduate:CityLimits:NoLies:Overweight:Charity
+                   +MorningNews:Masters:CheckLists:TapWater
+                   +InteractDislikes:TravelAbroad:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:Medications:CheckLists:ManyPets:K12:Phobic
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Charity
+                   +TryFirst:Bachelor
+                   +LikesFamily:MorningNews:Masters:ManyPets:Phobic
+                   +Alarm:Cautious
+                   +FullTime:Bachelor:OddHours
+                   +Undergraduate:CityLimits:NoLies:Overweight:TravelAbroad
+                   +Masters:CheckLists:ManyPets:K12:Phobic
+                   +CityLimits:NoLies:Overweight:TravelAbroad:Charity:Jealous
+                   +LikesFamily:MorningNews:Medications:CheckLists:Phobic
+                   +InteractDislikes:CityLimits:Overweight:Outlet:Charity:Jealous
+                   +Medications:CheckLists:Phobic
+                   +Masters:CheckLists:Phobic:TapWater
+                   +CityLimits:NoLies:WalletHas20:Outlet
+                   +MorningNews:Masters:CheckLists:ManyPets:Phobic:TapWater
+                   +FullTime
+                   +MorningNews:Masters:Medications:ManyPets:K12:Phobic:TapWater
+                   +Siblings:TryFirst:OddHours
+                   +FullTime:Bachelor:AlarmAhead
+                   +CityLimits:NoLies:Overweight:TravelAbroad:Jealous
+                   +LikesFamily:Masters:ManyPets:Phobic
+                   +Siblings:FullTime:TryFirst:OddHours
+                   +LikesFamily:Masters:Medications:CheckLists:ManyPets
+                   +LikesFamily:Masters:Medications:TapWater
+                   +Masters:Medications:CheckLists:ManyPets:K12:Phobic
+                   +InteractDislikes:NoLies:Overweight:TravelAbroad:Charity:Jealous
+                   +NoLies:Overweight:TravelAbroad:Charity:Jealous
+                   +MorningNews:Masters:Medications:CheckLists
+                   +MorningNews:Masters:ManyPets:K12:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:TravelAbroad:Jealous
+                   +NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +FullTime:TryFirst:OddHours
+                   +CityLimits:NoLies:Overweight:Jealous
+                   +Overweight:WalletHas20:TravelAbroad:Outlet:Charity
+                   +LikesFamily:MorningNews:Masters:Medications:CheckLists:Phobic:TapWater
+                   +Undergraduate:CityLimits:WalletHas20:TravelAbroad:Outlet
+                   +InteractDislikes:NoLies:Jealous
+                   +NoLies:Overweight:TravelAbroad:Outlet:Charity:Jealous
+                   +YOB:Overworks:Personality
+                   +InteractDislikes:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +LikesFamily:Masters:Medications:K12:Phobic
+                   +SingleParent
+                   +MorningNews:Masters:Medications:ManyPets:K12:Phobic
+                   +NoLies:TravelAbroad:Outlet
+                   +TryFirst:Bachelor:AlarmAhead
+                   +Undergraduate:CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad
+                   +LikesFamily:Masters:Medications:CheckLists:ManyPets:K12:TapWater
+                   +Undergraduate:CityLimits:Overweight:TravelAbroad:Outlet:Charity
+                   +TalkRadio
+                   +Undergraduate:NoLies:Overweight:WalletHas20:TravelAbroad:Charity
+                   +MorningNews:Masters:Phobic:TapWater
+                   +LikesFamily:Masters:CheckLists:K12:Phobic:TapWater
+                   +PositiveThinking:MoneyBuys:Mac:StraightA
+                   +Undergraduate:Overweight:WalletHas20:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Charity
+                   +LikesFamily:Masters:Medications:CheckLists:ManyPets:K12
+                   +MorningNews:Masters:K12:TapWater
+                   +Undergraduate:InteractDislikes:Overweight
+                   +LikesFamily:MorningNews:Masters
+                   +Masters:Medications:CheckLists:TapWater
+                   +MorningNews:CheckLists:ManyPets:K12:Phobic
+                   +InteractDislikes:WalletHas20:Outlet:Jealous
+                   +Bachelor
+                   +Misterious:CreditDebt
+                   +Phobic
+                   +Siblings:AlarmAhead
+                   +MoneyBuys:Mac:StraightA
+                   +MorningNews:Masters:Medications:ManyPets:Phobic:TapWater
+                   +NoLies:Outlet
+                   +InteractDislikes:Overweight:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:Charity:Jealous
+                   +LikesFamily:Masters:CheckLists:ManyPets:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Jealous
+                   +Overworks:Personality:Cautious
+                   +WalletHas20:TravelAbroad:Jealous
+                   +Undergraduate:NoLies:WalletHas20:TravelAbroad:Outlet:Charity
+                   +LikesFamily:MorningNews
+                   +LikesFamily:MorningNews:Medications:CheckLists:ManyPets
+                   +LikesFamily:MorningNews:Masters:Medications:CheckLists:K12:Phobic:TapWater
+                   +LikesFamily:Masters:CheckLists:ManyPets:K12:TapWater
+                   +Undergraduate:InteractDislikes:Charity
+                   +Overweight:TravelAbroad:Outlet:Charity
+                   +NoLies:Overweight:WalletHas20:TravelAbroad:Outlet
+                   +CityLimits:TravelAbroad:Outlet:Charity
+                   +InteractDislikes:CityLimits:NoLies:Overweight:TravelAbroad
+                   +InteractDislikes:CityLimits:TravelAbroad:Outlet:Charity
+                   +Undergraduate:CityLimits:Overweight:Outlet:Charity
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:Outlet:Charity:Jealous
+                   +LikesFamily:Medications:ManyPets:K12:TapWater
+                   +InteractDislikes:NoLies:WalletHas20:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Charity
+                   +Misterious:GoodatMath:SameState:Online
+                   +Misterious:CreditDebt:SameState:Online
+                   +YOB:Alarm:Cautious
+                   +InteractDislikes:CityLimits:WalletHas20:Charity
+                   +Undergraduate:InteractDislikes:WalletHas20:Charity
+                   +GoodatMath:Online
+                   +Undergraduate:InteractDislikes:NoLies:Outlet:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:CheckLists:K12:Phobic
+                   +MorningNews:Masters:K12
+                   +InteractDislikes:NoLies:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:TravelAbroad
+                   +StraightA
+                   +LikesFamily:MorningNews:Masters:CheckLists:ManyPets:K12:Phobic:TapWater
+                   +Spanked
+                   +Masters:CheckLists:K12:Phobic:TapWater
+                   +LikesFamily:MorningNews:CheckLists:ManyPets:K12:Phobic
+                   +Undergraduate:Outlet:Charity
+                   +CityLimits:Outlet:Charity
+                   +LikesFamily:Masters:CheckLists:ManyPets:K12:Phobic:TapWater
+                   +InteractDislikes:NoLies:WalletHas20:Charity
+                   +LikesFamily:MorningNews:Masters:Medications:K12:TapWater
+                   +InteractDislikes:TravelAbroad
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:TravelAbroad
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20
+                   +LikesFamily:Masters:CheckLists:Phobic:TapWater
+                   +Undergraduate:CityLimits:NoLies:WalletHas20:TravelAbroad:Charity:Jealous
+                   +Jealous
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +TravelAbroad:Jealous
+                   +InteractDislikes:Overweight:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:Outlet:Jealous
+                   +Misterious:SameState
+                   +InteractDislikes:Overweight:WalletHas20:Jealous
+                   +Undergraduate:NoLies:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:TravelAbroad
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad
+                   +CityLimits:Outlet
+                   +YOB:Alarm
+                   +NoLies:WalletHas20:TravelAbroad
+                   +LikesFamily:Masters:CheckLists:ManyPets:Phobic
+                   +YOB:Personality:Alarm:Cautious
+                   +Undergraduate:WalletHas20:Outlet:Charity:Jealous
+                   +LikesFamily:Medications:ManyPets
+                   +LikesFamily:Medications:CheckLists:K12:Phobic:TapWater
+                   +FullTime:OddHours
+                   +LikesFamily:MorningNews:Phobic:TapWater
+                   +MorningNews:Masters:Medications:CheckLists:K12:Phobic
+                   +Masters:CheckLists:Phobic
+                   +Undergraduate:InteractDislikes:Overweight:TravelAbroad:Charity
+                   +LikesFamily:Masters:K12:TapWater
+                   +Undergraduate:NoLies:Overweight:Outlet
+                   +GoodatMath:SameState
+                   +Undergraduate:Jealous
+                   +Masters:K12:TapWater
+                   +Mac
+                   +NoLies:Overweight:TravelAbroad:Jealous
+                   +Undergraduate:WalletHas20:TravelAbroad:Outlet:Charity
+                   +NoLies:Overweight:WalletHas20:Outlet
+                   +WalletHas20:Outlet:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:ManyPets:K12:TapWater
+                   +LikesFamily:MorningNews:CheckLists:TapWater
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:Outlet:Jealous
+                   +InteractDislikes:CityLimits:TravelAbroad:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:TravelAbroad:Charity:Jealous
+                   +Undergraduate:NoLies:Overweight:WalletHas20:Charity
+                   +LikesFamily:MorningNews:Masters:K12:Phobic
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:TravelAbroad:Jealous
+                   +Overweight:WalletHas20:TravelAbroad:Charity:Jealous
+                   +Undergraduate:InteractDislikes:Outlet:Jealous
+                   +InteractDislikes:CityLimits:TravelAbroad
+                   +WalletHas20:Jealous
+                   +Undergraduate:CityLimits:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +AlarmAhead
+                   +CityLimits:Overweight:TravelAbroad:Outlet
+                   +PositiveThinking:MoneyBuys:Mac
+                   +LikesFamily:Medications:CheckLists
+                   +LikesFamily:MorningNews:Masters:Medications:CheckLists:ManyPets:Phobic
+                   +Undergraduate:WalletHas20:Outlet:Charity
+                   +Siblings:TryFirst:Bachelor
+                   +Medications:K12
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad
+                   +LikesFamily:MorningNews:Medications:CheckLists
+                   +MorningNews:Medications:CheckLists:Phobic
+                   +Undergraduate:InteractDislikes:WalletHas20:TravelAbroad:Outlet
+                   +PositiveThinking:MoneyBuys:StraightA
+                   +InteractDislikes:CityLimits:Jealous
+                   +NoLies:Overweight:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:Charity
+                   +CryBaby
+                   +CityLimits:NoLies:Overweight:Charity
+                   +Undergraduate:NoLies:WalletHas20:Charity:Jealous
+                   +Siblings:TryFirst
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet:Charity
+                   +InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +LikesFamily:CheckLists:Phobic:TapWater
+                   +Siblings:FullTime:Bachelor:OddHours:AlarmAhead
+                   +InteractDislikes:CityLimits:Overweight:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Outlet
+                   +Masters:CheckLists:ManyPets:TapWater
+                   +Masters:Medications:CheckLists
+                   +Siblings:FullTime:OddHours
+                   +LikesFamily:Medications:CheckLists:Phobic:TapWater
+                   +Misterious:GoodatMath
+                   +Overworks:Personality:Alarm
+                   +CityLimits:NoLies:Overweight:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Charity:Jealous
+                   +MorningNews:Medications:CheckLists:ManyPets:K12:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:Charity:Jealous
+                   +MorningNews:Medications:CheckLists:ManyPets:Phobic:TapWater
+                   +LikesFamily:Masters:CheckLists:Phobic
+                   +LikesFamily:MorningNews:Medications:CheckLists:K12:Phobic
+                   +InteractDislikes:TravelAbroad:Outlet
+                   +FullTime:Bachelor:OddHours:AlarmAhead
+                   +MorningNews:Masters:Medications:TapWater
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:Charity:Jealous
+                   +InteractDislikes:NoLies:WalletHas20:TravelAbroad:Charity:Jealous
+                   +MorningNews:Masters:ManyPets
+                   +CityLimits:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:TravelAbroad:Outlet
+                   +Masters:Medications:CheckLists:K12
+                   +LikesFamily:Masters:Medications:CheckLists:K12
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad
+                   +InteractDislikes:NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +Mac:StraightA:HotHead
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:Charity
+                   +InteractDislikes:Overweight:TravelAbroad:Charity:Jealous
+                   +MorningNews:Masters:ManyPets:K12
+                   +Phobic:TapWater
+                   +Republican
+                   +LikesFamily:Masters:Medications:CheckLists:ManyPets:TapWater
+                   +MorningNews:K12:Phobic
+                   +CityLimits:TravelAbroad:Outlet:Charity:Jealous
+                   +Bachelor:AlarmAhead
+                   +Undergraduate:NoLies:Overweight:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:CheckLists:ManyPets:K12
+                   +CarPymt
+                   +LikesFamily:MorningNews:Masters:Phobic:TapWater
+                   +PositiveThinking:MoneyBuys:StraightA:HotHead
+                   +Undergraduate:InteractDislikes:WalletHas20
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:Charity:Jealous
+                   +Undergraduate:WalletHas20:Outlet
+                   +CityLimits:NoLies
+                   +Undergraduate:NoLies:WalletHas20:TravelAbroad:Charity
+                   +InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20:Jealous
+                   +Undergraduate:InteractDislikes:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:TravelAbroad:Outlet:Jealous
+                   +Medications:CheckLists:K12
+                   +Masters:Medications:ManyPets:K12
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Charity
+                   +InteractDislikes:CityLimits:Overweight:Outlet:Charity
+                   +CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Charity:Jealous
+                   +Sociable
+                   +Siblings:FullTime:TryFirst
+                   +Charity
+                   +MorningNews:Masters:ManyPets:TapWater
+                   +Undergraduate:CityLimits:NoLies
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:Outlet
+                   +NoLies:Overweight:Outlet:Jealous
+                   +Bachelor:OddHours
+                   +InteractDislikes:Charity:Jealous
+                   +Undergraduate:CityLimits:Overweight:Outlet
+                   +Vitamins
+                   +Undergraduate:CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad:Charity
+                   +LikesFamily:MorningNews:Masters:Phobic
+                   +FullTime:AlarmAhead
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Charity
+                   +LikesFamily:MorningNews:Masters:K12:Phobic:TapWater
+                   +Undergraduate:CityLimits:NoLies:WalletHas20:TravelAbroad:Charity
+                   +LikesFamily:MorningNews:Medications:CheckLists:K12
+                   +Undergraduate:NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +Medications:ManyPets
+                   +Glasses
+                   +Masters:Medications:CheckLists:K12:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Outlet:Charity:Jealous
+                   +LikesFamily:MorningNews:Medications
+                   +Undergraduate:NoLies:Overweight:Charity
+                   +Undergraduate:WalletHas20:Charity:Jealous
+                   +Undergraduate:NoLies:Overweight
+                   +Medications:CheckLists:TapWater
+                   +NoLies:Overweight:WalletHas20:TravelAbroad
+                   +Undergraduate:CityLimits:NoLies:Overweight:WalletHas20:Charity
+                   +Overweight:WalletHas20:Outlet:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Charity
+                   +TryFirst:AlarmAhead
+                   +Overworks:Personality:Alarm:Cautious
+                   +LikesFamily:MorningNews:Medications:ManyPets:K12:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Outlet:Jealous
+                   +LikesFamily:MorningNews:Masters:CheckLists:ManyPets:K12:TapWater
+                   +LikesFamily:MorningNews:Masters:CheckLists:Phobic
+                   +Siblings:FullTime:Bachelor:AlarmAhead
+                   +CityLimits:NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +Masters:Medications:ManyPets
+                   +CheckLists:Phobic
+                   +Undergraduate:NoLies:Overweight:WalletHas20:TravelAbroad:Outlet:Charity
+                   +LikesFamily:MorningNews:Medications:Phobic:TapWater
+                   +MoneyBuys:StraightA:HotHead
+                   +FullTime:TryFirst:AlarmAhead
+                   +Undergraduate:InteractDislikes:CityLimits:Charity:Jealous
+                   +Undergraduate:InteractDislikes:WalletHas20:Jealous
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Outlet:Charity
+                   +CityLimits:NoLies:Charity
+                   +OddHours
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +CreditDebt
+                   +Masters:ManyPets:Phobic:TapWater
+                   +InteractDislikes:NoLies:TravelAbroad:Outlet
+                   +Undergraduate:WalletHas20:TravelAbroad:Outlet:Charity:Jealous
+                   +Undergraduate:NoLies:TravelAbroad:Charity:Jealous
+                   +CityLimits:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Charity:Jealous
+                   +Siblings:OddHours:AlarmAhead
+                   +Siblings:Bachelor:AlarmAhead
+                   +MoneyBuys:HotHead
+                   +InteractDislikes:CityLimits:NoLies:Overweight:TravelAbroad:Outlet:Charity
+                   +Siblings:FullTime:AlarmAhead
+                   +Undergraduate:CityLimits:WalletHas20:Jealous
+                   +NoLies:Overweight:WalletHas20:TravelAbroad:Charity:Jealous
+                   +LikesFamily:Medications:CheckLists:ManyPets:Phobic
+                   +LikesFamily:Medications:K12
+                   +Undergraduate:InteractDislikes:Overweight:Charity
+                   +MorningNews:Medications:CheckLists:K12
+                   +CheckLists:ManyPets:K12:Phobic
+                   +Undergraduate:InteractDislikes:TravelAbroad:Charity
+                   +InteractDislikes:WalletHas20:Outlet:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Outlet:Charity
+                   +Undergraduate:Overweight:WalletHas20:TravelAbroad:Outlet:Charity
+                   +MorningNews:ManyPets:K12:TapWater
+                   +Outlet:Charity:Jealous
+                   +Misterious:GoodatMath:Online
+                   +Undergraduate:Overweight:WalletHas20:Outlet:Charity
+                   +Masters:Medications
+                   +Masters:CheckLists:K12:Phobic
+                   +LikesFamily:Masters:CheckLists:ManyPets:TapWater
+                   +CheckLists:ManyPets:TapWater
+                   +Undergraduate:InteractDislikes:Overweight:TravelAbroad:Jealous
+                   +LikesFamily:MorningNews:Masters:CheckLists:ManyPets:TapWater
+                   +LikesFamily:MorningNews:Masters:ManyPets:K12:Phobic
+                   +InteractDislikes:Overweight:WalletHas20:TravelAbroad
+                   +Masters:Medications:CheckLists:Phobic
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:WalletHas20:Outlet:Jealous
+                   +LikesFamily:TapWater
+                   +TravelAbroad
+                   +MorningNews:Masters:Medications:K12:TapWater
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:WalletHas20:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:Outlet
+                   +Overweight:WalletHas20:Jealous
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Jealous
+                   +Siblings:FullTime:TryFirst:OddHours:AlarmAhead
+                   +Successful
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Jealous
+                   +PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
+                   +MorningNews:Masters:CheckLists:Phobic:TapWater
+                   +InteractDislikes:CityLimits:WalletHas20:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Outlet
+                   +InteractDislikes:TravelAbroad:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:WalletHas20:Outlet:Jealous
+                   +Undergraduate:CityLimits:NoLies:Overweight:WalletHas20:Outlet:Charity
+                   +Rules
+                   +InteractDislikes:Overweight:WalletHas20:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:TravelAbroad:Charity:Jealous
+                   +HasDebt
+                   +LikesFamily:Medications:ManyPets:K12
+                   +Misterious:GoodatMath:SameState
+                   +Poor
+                   +InteractDislikes:CityLimits:TravelAbroad:Jealous
+                   +Undergraduate:NoLies:Charity:Jealous
+                   +InteractDislikes:NoLies:WalletHas20:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:TravelAbroad:Jealous
+                   +Undergraduate:Overweight:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad
+                   +Undergraduate:InteractDislikes:TravelAbroad:Outlet:Charity
+                   +Undergraduate:CityLimits:NoLies:Overweight
+                   +InteractDislikes:WalletHas20:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet
+                   +Siblings:OddHours
+                   +LikesFamily:MorningNews:Medications:CheckLists:K12:TapWater
+                   +Siblings:FullTime:TryFirst:Bachelor:OddHours:AlarmAhead
+                   +K12:TapWater
+                   +InteractDislikes:Overweight:TravelAbroad:Charity
+                   +Siblings:Bachelor:OddHours:AlarmAhead
+                   +InteractDislikes:CityLimits:NoLies:Overweight:TravelAbroad:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:WalletHas20:Charity:Jealous
+                   +Collects
+                   +Undergraduate:CityLimits:WalletHas20:TravelAbroad:Outlet:Charity
+                   +InteractDislikes:CityLimits:Charity:Jealous
+                   +InteractDislikes:NoLies:Overweight:Jealous
+                   +LikesFamily:CheckLists:TapWater
+                   +Overweight:TravelAbroad:Outlet
+                   +Misterious
+                   +Overweight:WalletHas20:Charity:Jealous
+                   +CityLimits:NoLies:TravelAbroad
+                   +MorningNews:Masters:Medications:CheckLists:ManyPets:K12:Phobic
+                   +MorningNews:Masters:CheckLists:K12:Phobic:TapWater
+                   +Undergraduate:CityLimits:TravelAbroad:Charity:Jealous
+                   +InteractDislikes:NoLies:Overweight:TravelAbroad
+                   +Personality:Cautious
+                   +Undergraduate:NoLies:Charity
+                   +MorningNews:ManyPets:TapWater
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:Jealous
+                   +LikesFamily:Masters:K12
+                   +InteractDislikes:CityLimits:WalletHas20:Outlet:Charity:Jealous
+                   +CityLimits:Overweight:WalletHas20:Charity
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Charity
+                   +GoodatMath
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:Charity
+                   +Online
+                   +CreditDebt:GoodatMath
+                   +Undergraduate:CityLimits:TravelAbroad:Outlet:Jealous
+                   +LikesFamily:Masters:Medications:CheckLists:TapWater
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad:Jealous
+                   +InteractDislikes:NoLies:Overweight:TravelAbroad:Jealous
+                   +InteractDislikes:CityLimits:WalletHas20:Outlet
+                   +InteractDislikes:TravelAbroad:Jealous
+                   +OddHours:AlarmAhead
+                   +LikesFamily:MorningNews:CheckLists:K12:TapWater
+                   +CreditDebt:GoodatMath:Online
+                   +LikesFamily:MorningNews:Medications:ManyPets:TapWater
+                   +LikesFamily:Masters:Medications:CheckLists:K12:TapWater
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet:Charity:Jealous
+                   +CityLimits:NoLies:TravelAbroad:Charity
+                   +HotHead
+                   +InteractDislikes:CityLimits:WalletHas20:Outlet:Jealous
+                   +InteractDislikes:WalletHas20:Outlet:Charity:Jealous
+                   +StressfulEvts
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Jealous
+                   +Undergraduate:CityLimits:TravelAbroad:Outlet
+                   +InteractDislikes:Overweight:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Outlet:Charity
+                   +InteractDislikes:NoLies:Overweight:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet
+                   +InteractDislikes:NoLies:Outlet:Charity
+                   +Gender
+                   +Undergraduate:InteractDislikes:WalletHas20:Outlet
+                   +LikesFamily:MorningNews:Masters:Medications:K12:Phobic
+                   +InteractDislikes:CityLimits:Overweight:Jealous
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:Outlet:Charity:Jealous
+                   +MorningNews:Masters:ManyPets:Phobic
+                   +InteractDislikes:NoLies:Overweight:WalletHas20:Jealous
+                   +CityLimits:TravelAbroad:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity
+                   +Bachelor:OddHours:AlarmAhead
+                   +Undergraduate:NoLies:Overweight:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:WalletHas20:Charity
+                   +Medications:CheckLists:ManyPets:K12:Phobic:TapWater
+                   +CheckLists:K12:Phobic
+                   +Undergraduate:NoLies:Overweight:TravelAbroad:Jealous
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:K12:TapWater
+                   +Undergraduate:NoLies:Overweight:WalletHas20:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:Overweight:Outlet
+                   +Undergraduate:CityLimits:NoLies:Overweight:Jealous
+                   +InteractDislikes:NoLies:Overweight:TravelAbroad:Outlet:Charity:Jealous
+                   +InteractDislikes:NoLies:Overweight
+                   +ManyPets:K12
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20
+                   +InteractDislikes:WalletHas20:Outlet
+                   +K12:Phobic:TapWater
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Outlet:Jealous
+                   +InteractDislikes:WalletHas20:TravelAbroad:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Outlet:Charity:Jealous
+                   +Undergraduate:NoLies:Overweight:WalletHas20:Outlet
+                   +Undergraduate:Overweight:WalletHas20:Outlet:Jealous
+                   +Undergraduate:CityLimits:NoLies:WalletHas20:TravelAbroad
+                   +Undergraduate:CityLimits:NoLies:WalletHas20:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:TravelAbroad
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:Medications:Phobic
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:Charity
+                   +InteractDislikes:CityLimits:TravelAbroad:Outlet
+                   +InteractDislikes:NoLies:WalletHas20:TravelAbroad
+                   +InteractDislikes:Overweight:TravelAbroad:Jealous
+                   +InteractDislikes:Overweight:WalletHas20:TravelAbroad:Charity:Jealous
+                   +InteractDislikes:CityLimits:TravelAbroad:Charity
+                   +LikesFamily:CheckLists:K12:Phobic:TapWater
+                   +Skeptical
+                   +Undergraduate:Overweight:Jealous
+                   +Medications:ManyPets:K12:TapWater
+                   +InteractDislikes:Overweight:WalletHas20:Charity:Jealous
+                   +LikesFamily:MorningNews:Masters:K12
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet:Jealous
+                   +InteractDislikes:NoLies:Charity:Jealous
+                   +Undergraduate:CityLimits:TravelAbroad:Outlet:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Overweight:WalletHas20:TravelAbroad:Jealous
+                   +MorningNews:Masters:ManyPets:Phobic:TapWater
+                   +InteractDislikes:NoLies:WalletHas20
+                   +InteractDislikes:Charity
+                   +LikesFamily:CheckLists:K12:TapWater
+                   +LikesFamily:MorningNews:CheckLists:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Jealous
+                   +Medications:CheckLists:ManyPets:Phobic:TapWater
+                   +InteractDislikes:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:TravelAbroad:Charity
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:Charity:Jealous
+                   +InteractDislikes:CityLimits:WalletHas20:Outlet:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:Jealous
+                   +Undergraduate:CityLimits:Outlet:Charity
+                   +CheckLists:TapWater
+                   +Undergraduate:CityLimits:Outlet:Charity:Jealous
+                   +InteractDislikes:Outlet:Charity
+                   +MeaningofLife
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:TravelAbroad:Outlet
+                   +InteractDislikes:NoLies:Outlet
+                   +LikesFamily:MorningNews:Medications:CheckLists:ManyPets:K12:Phobic:TapWater
+                   +InteractDislikes:NoLies:Charity
+                   +Undergraduate:InteractDislikes:TravelAbroad:Outlet
+                   +InteractDislikes:NoLies:Overweight:Outlet
+                   +InteractDislikes:WalletHas20:TravelAbroad
+                   +LikesFamily:MorningNews:Medications:CheckLists:ManyPets:Phobic:TapWater
+                   +HappyorRight
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Charity:Jealous
+                   +MorningNews:Masters:ManyPets:K12:Phobic
+                   +LikesFamily:Masters:CheckLists:ManyPets:K12
+                   +Undergraduate:InteractDislikes:Overweight:WalletHas20:Charity
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Charity:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:TravelAbroad:Jealous
+                   +InteractDislikes:NoLies:TravelAbroad:Outlet:Charity
+                   +Undergraduate:CityLimits:NoLies:WalletHas20:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:Outlet:Jealous
+                   +Undergraduate:NoLies:WalletHas20:Charity
+                   +InteractDislikes:NoLies:Overweight:WalletHas20:Charity:Jealous
+                   +InteractDislikes:CityLimits:TravelAbroad:Charity:Jealous
+                   +Undergraduate:CityLimits:TravelAbroad:Outlet:Charity
+                   +Undergraduate:CityLimits:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight
+                   +Undergraduate:CityLimits:Outlet
+                   +InteractDislikes:CityLimits:NoLies:Overweight
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet:Jealous
+                   +LikesFamily:Masters:CheckLists:ManyPets
+                   +Undergraduate:InteractDislikes:WalletHas20:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet:Charity:Jealous
+                   +Grudge
+                   +Undergraduate:InteractDislikes:Outlet
+                   +Medications:ManyPets:TapWater
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:Outlet:Charity:Jealous
+                   +InteractDislikes:Overweight:WalletHas20:TravelAbroad:Charity
+                   +ManyPets:TapWater
+                   +InteractDislikes:CityLimits:Overweight
+                   +Undergraduate:InteractDislikes:NoLies:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Overweight:Outlet
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:Jealous
+                   +Undergraduate:CityLimits:NoLies:Overweight:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Outlet:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:TravelAbroad
+                   +Undergraduate:InteractDislikes:NoLies:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:NoLies:Overweight:Outlet
+                   +InteractDislikes:CityLimits:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:TravelAbroad:Charity
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad
+                   +Undergraduate:CityLimits:NoLies:TravelAbroad:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:NoLies:Outlet:Charity
+                   +Exciting
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20
+                   +Undergraduate:InteractDislikes:NoLies:Jealous
+                   +InteractDislikes:NoLies:Overweight:WalletHas20:Charity
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet:Charity
+                   +InteractDislikes:Overweight:WalletHas20:Charity
+                   +InteractDislikes:NoLies:Overweight:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:Outlet:Charity
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Jealous
+                   +LikesFamily:MorningNews:CheckLists:K12:Phobic:TapWater
+                   +InteractDislikes:NoLies:WalletHas20:Outlet:Charity:Jealous
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Outlet
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:WalletHas20:Outlet:Charity
+                   +Undergraduate:InteractDislikes:NoLies:Outlet:Jealous
+                   +ManyPets:K12:TapWater
+                   +Undergraduate:InteractDislikes:NoLies:WalletHas20:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:CityLimits:NoLies:Overweight:Outlet
+                   +InteractDislikes:NoLies:WalletHas20:Outlet
+                   +InteractDislikes:NoLies:WalletHas20:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:TravelAbroad:Outlet
+                   +LivesTogether
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet:Charity
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:NoLies:WalletHas20:Outlet:Charity
+                   +Undergraduate:InteractDislikes:NoLies:TravelAbroad:Outlet
+                   +Undergraduate:CityLimits:NoLies:Jealous
+                   +InteractDislikes:CityLimits:Outlet:Charity
+                   +LikesFamily:MorningNews:Medications:CheckLists:ManyPets:TapWater
+                   +InteractDislikes:CityLimits:Outlet:Charity:Jealous
+                   +InteractDislikes:NoLies:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:Outlet:Charity:Jealous
+                   +Undergraduate:InteractDislikes:Overweight:Outlet:Charity
+                   +Undergraduate:InteractDislikes:NoLies:Outlet
+                   +InteractDislikes:NoLies:TravelAbroad:Outlet:Charity:Jealous
+                   +InteractDislikes:Outlet:Charity:Jealous
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet:Jealous
+                   +FeelsNormal
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet:Jealous
+                   +Undergraduate:InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet
+                   +OverYourHead
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet,
+    traindata, nottraindata)
+
+m = createglmModel(Happy ~ NoLies:Jealous:InteractDislikes
+                   +K12:Phobic:Masters:ManyPets:Medications:MorningNews:TapWater
+                   +Charity:Jealous:InteractDislikes:TravelAbroad
+                   +LikesFamily:CheckLists:Phobic:Medications:MorningNews
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +YOB:Overworks:Personality
+                   +FullTime:Bachelor:OddHours
+                   +LikesFamily:Phobic:Masters:ManyPets
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Charity:Jealous:TravelAbroad:CityLimits
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets:Medications
+                   +CheckLists:Masters:Medications:MorningNews
+                   +NoLies:Overweight:Jealous:TravelAbroad:CityLimits
+                   +NoLies:Overweight:Charity:CityLimits:Undergraduate
+                   +Siblings:OddHours:TryFirst
+                   +NoLies:Overweight:Jealous:CityLimits
+                   +K12:Phobic:Masters:ManyPets:Medications:MorningNews
+                   +FullTime:Bachelor:AlarmAhead
+                   +LikesFamily:Masters:Medications:TapWater
+                   +Misterious:CreditDebt
+                   +FullTime:OddHours:TryFirst
+                   +CheckLists:K12:Phobic:Masters:ManyPets
+                   +Bachelor
+                   +LikesFamily:K12:Phobic:Masters:Medications
+                   +Siblings:FullTime:OddHours:TryFirst
+                   +NoLies:Overweight:Outlet:Charity:Jealous:TravelAbroad
+                   +K12:Phobic:Masters:ManyPets:MorningNews:TapWater
+                   +CheckLists:Masters:Medications:TapWater
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets:Medications:TapWater
+                   +K12:Masters:MorningNews:TapWater
+                   +LikesFamily:CheckLists:Phobic:Masters:Medications:MorningNews:TapWater
+                   +NoLies:Outlet:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +PositiveThinking:MoneyBuys:Mac:StraightA
+                   +LikesFamily:CheckLists:K12:Phobic:Masters:TapWater
+                   +CheckLists:K12:Phobic:Masters:ManyPets:Medications
+                   +NoLies:Overweight:InteractDislikes:TravelAbroad:CityLimits
+                   +NoLies:Outlet:WalletHas20:CityLimits
+                   +Outlet:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +LikesFamily:Masters:MorningNews
+                   +LikesFamily:K12:ManyPets:Medications:TapWater
+                   +CheckLists:K12:Phobic:ManyPets:MorningNews
+                   +YOB:Overworks
+                   +Siblings:AlarmAhead
+                   +LikesFamily:CheckLists:ManyPets:Medications:MorningNews
+                   +Overweight:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +NoLies:Outlet:TravelAbroad
+                   +Phobic
+                   +Phobic:Masters:MorningNews:TapWater
+                   +Phobic:Masters:ManyPets:Medications:MorningNews:TapWater
+                   +Overweight:InteractDislikes:WalletHas20:CityLimits
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets:TapWater
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +SingleParent
+                   +CheckLists:K12:Phobic:Masters:TapWater
+                   +Bachelor:TryFirst:AlarmAhead
+                   +NoLies:Charity:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +TalkRadio
+                   +Overworks:Cautious:Personality
+                   +Overweight:Outlet:Charity:Jealous:InteractDislikes
+                   +Outlet:Charity:TravelAbroad:CityLimits
+                   +Charity:InteractDislikes:Undergraduate
+                   +Charity:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +Overweight:Outlet:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +Outlet:Jealous:InteractDislikes:WalletHas20
+                   +LikesFamily:MorningNews
+                   +MoneyBuys:Mac:StraightA
+                   +NoLies:Overweight:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +LikesFamily:CheckLists:K12:Phobic:Masters:Medications:MorningNews:TapWater
+                   +LikesFamily:CheckLists:Phobic:Masters:ManyPets:TapWater
+                   +Outlet:Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +Spanked
+                   +NoLies:Outlet
+                   +LikesFamily:CheckLists:K12:Phobic:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Overweight:Outlet:Charity:WalletHas20
+                   +Overweight:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +Overweight:Outlet:Charity:TravelAbroad
+                   +LikesFamily:CheckLists:K12:Phobic:Masters:MorningNews
+                   +Misterious:CreditDebt:SameState:Online
+                   +Overweight:InteractDislikes:Undergraduate
+                   +NoLies:Charity:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +Outlet:Charity:Undergraduate
+                   +Outlet:Charity:CityLimits
+                   +Jealous:WalletHas20:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad
+                   +LikesFamily:CheckLists:K12:Phobic:Masters:ManyPets:TapWater
+                   +YOB:Alarm:Cautious
+                   +Misterious:GoodatMath:SameState:Online
+                   +NoLies:Charity:TravelAbroad:Undergraduate
+                   +Jealous
+                   +Charity:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:Undergraduate
+                   +Jealous:TravelAbroad
+                   +YOB:Alarm
+                   +K12:Masters:MorningNews
+                   +Misterious:SameState
+                   +LikesFamily:CheckLists:Phobic:Masters:ManyPets
+                   +LikesFamily:K12:Masters:Medications:MorningNews:TapWater
+                   +InteractDislikes:TravelAbroad:CityLimits
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +CheckLists:K12:Phobic:Masters:Medications:MorningNews
+                   +Outlet:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +Charity:InteractDislikes:WalletHas20:CityLimits
+                   +LikesFamily:CheckLists:Phobic:Masters:TapWater
+                   +Outlet:Jealous:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +K12:Masters:TapWater
+                   +StraightA
+                   +NoLies:Charity:Jealous:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Charity:InteractDislikes:WalletHas20
+                   +Overweight:Outlet:Charity:WalletHas20:TravelAbroad
+                   +Jealous:Undergraduate
+                   +InteractDislikes:TravelAbroad:Undergraduate
+                   +GoodatMath:Online
+                   +CheckLists:Phobic:Masters
+                   +NoLies:Overweight:Charity:Jealous:TravelAbroad
+                   +FullTime:OddHours
+                   +NoLies:Charity:InteractDislikes:WalletHas20:TravelAbroad
+                   +Overweight:Outlet:Charity:CityLimits:Undergraduate
+                   +LikesFamily:K12:Phobic:Masters:MorningNews
+                   +LikesFamily:CheckLists:Phobic:Masters:ManyPets:Medications:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad
+                   +InteractDislikes:TravelAbroad
+                   +Siblings:Bachelor:TryFirst
+                   +YOB:Alarm:Cautious:Personality
+                   +LikesFamily:CheckLists:K12:Phobic:ManyPets:MorningNews
+                   +NoLies:Overweight:Outlet:Undergraduate
+                   +Siblings:TryFirst
+                   +Outlet:Charity:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Outlet:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +Outlet:CityLimits
+                   +Mac
+                   +NoLies:Overweight:Outlet:WalletHas20:TravelAbroad
+                   +Overweight:Charity:Jealous:WalletHas20:TravelAbroad
+                   +LikesFamily:CheckLists:Phobic:Masters
+                   +LikesFamily:CheckLists:Medications
+                   +LikesFamily:K12:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Overweight:Charity:CityLimits
+                   +Masters:ManyPets:MorningNews
+                   +LikesFamily:CheckLists:Phobic:TapWater
+                   +LikesFamily:CheckLists:MorningNews:TapWater
+                   +LikesFamily:ManyPets:Medications
+                   +CheckLists:Phobic:ManyPets:Medications:MorningNews:TapWater
+                   +GoodatMath:SameState
+                   +NoLies:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +NoLies:Overweight:Charity:WalletHas20:Undergraduate
+                   +K12:Medications
+                   +Outlet:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +LikesFamily:K12:Masters:TapWater
+                   +LikesFamily:CheckLists:K12:Phobic:Medications:TapWater
+                   +NoLies:Charity:Jealous:WalletHas20:Undergraduate
+                   +AlarmAhead
+                   +PositiveThinking:MoneyBuys:StraightA
+                   +CryBaby
+                   +K12:Masters:ManyPets:MorningNews
+                   +CheckLists:Masters:Medications
+                   +Overweight:Jealous:InteractDislikes:WalletHas20
+                   +Overweight:Outlet:TravelAbroad:CityLimits
+                   +Overweight:Outlet:Jealous:InteractDislikes
+                   +Overweight:Charity:InteractDislikes:TravelAbroad:Undergraduate
+                   +Siblings:FullTime:OddHours
+                   +Jealous:WalletHas20
+                   +Jealous:InteractDislikes:CityLimits
+                   +LikesFamily:Phobic:MorningNews:TapWater
+                   +CheckLists:Masters:ManyPets:TapWater
+                   +Overweight:Outlet:Charity:InteractDislikes:CityLimits
+                   +Charity
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Misterious:GoodatMath
+                   +NoLies:Overweight:Outlet:Jealous:TravelAbroad
+                   +Overweight:Outlet:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Overweight:Outlet:Charity:InteractDislikes:WalletHas20:CityLimits
+                   +PositiveThinking:MoneyBuys:Mac
+                   +Overweight:Outlet:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +LikesFamily:CheckLists:Medications:MorningNews
+                   +Siblings:FullTime:Bachelor:OddHours:AlarmAhead
+                   +Mac:StraightA:HotHead
+                   +Overworks:Alarm:Personality
+                   +LikesFamily:CheckLists:K12:Phobic:Medications:MorningNews
+                   +CheckLists:K12:Phobic:ManyPets:Medications:MorningNews:TapWater
+                   +Outlet:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +Outlet:Jealous:InteractDislikes:Undergraduate
+                   +NoLies:Overweight:WalletHas20:TravelAbroad:CityLimits
+                   +Phobic:TapWater
+                   +CheckLists:Phobic:Medications:MorningNews
+                   +NoLies:Charity:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +FullTime:Bachelor:OddHours:AlarmAhead
+                   +Bachelor:AlarmAhead
+                   +NoLies:Overweight:Charity:Jealous:CityLimits
+                   +Overweight:Charity:InteractDislikes:WalletHas20:CityLimits
+                   +Outlet:Charity:Jealous:WalletHas20:Undergraduate
+                   +Outlet:InteractDislikes:TravelAbroad
+                   +Outlet:Charity:WalletHas20:Undergraduate
+                   +Siblings:FullTime:TryFirst
+                   +NoLies:Overweight:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +ManyPets:Medications
+                   +Overweight:Charity:InteractDislikes:CityLimits
+                   +Masters:Medications:MorningNews:TapWater
+                   +NoLies:Overweight:Charity:Jealous:Undergraduate
+                   +LikesFamily:CheckLists:Phobic:Medications:TapWater
+                   +NoLies:Overweight:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:Charity:InteractDislikes:WalletHas20
+                   +CheckLists:K12:Masters:Medications
+                   +CheckLists:K12:Medications
+                   +Outlet:Charity:Jealous:WalletHas20
+                   +Outlet:Charity:Jealous:TravelAbroad:CityLimits
+                   +NoLies:CityLimits:Undergraduate
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:Undergraduate
+                   +K12:Masters:ManyPets:Medications
+                   +NoLies:Overweight:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +LikesFamily:CheckLists:K12:Masters:Medications
+                   +PositiveThinking:MoneyBuys:StraightA:HotHead
+                   +CheckLists:Medications:TapWater
+                   +Outlet:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Overweight:Jealous:TravelAbroad
+                   +Republican
+                   +LikesFamily:Phobic:Masters:MorningNews:TapWater
+                   +NoLies:Overweight:Charity:InteractDislikes:CityLimits
+                   +LikesFamily:Phobic:Masters:MorningNews
+                   +LikesFamily:K12:Phobic:Masters:MorningNews:TapWater
+                   +Sociable
+                   +NoLies:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +NoLies:Charity:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +CheckLists:K12:Masters:Medications:TapWater
+                   +LikesFamily:CheckLists:Masters:ManyPets:Medications:TapWater
+                   +FullTime:AlarmAhead
+                   +CarPymt
+                   +Overweight:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:Charity:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Charity:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +Outlet:TravelAbroad:CityLimits
+                   +K12:Phobic:MorningNews
+                   +Overweight:Outlet:Jealous:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +NoLies:Overweight:Charity:Undergraduate
+                   +LikesFamily:Medications:MorningNews
+                   +NoLies:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +Vitamins
+                   +NoLies:Overweight:Outlet:Jealous
+                   +NoLies:Charity:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +Charity:Jealous:InteractDislikes
+                   +NoLies:Overweight:InteractDislikes:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Overweight:WalletHas20:TravelAbroad
+                   +NoLies:CityLimits
+                   +Bachelor:OddHours
+                   +Outlet:Jealous:InteractDislikes:TravelAbroad
+                   +Overworks:Alarm:Cautious:Personality
+                   +InteractDislikes:WalletHas20:Undergraduate
+                   +LikesFamily:CheckLists:Phobic:Masters:MorningNews
+                   +Siblings:FullTime:Bachelor:AlarmAhead
+                   +NoLies:Overweight:Undergraduate
+                   +LikesFamily:Phobic:Medications:MorningNews:TapWater
+                   +LikesFamily:K12:ManyPets:Medications:MorningNews:TapWater
+                   +LikesFamily:CheckLists:K12:Medications:MorningNews
+                   +Siblings:Bachelor:AlarmAhead
+                   +NoLies:Overweight:Charity:Jealous:WalletHas20:TravelAbroad
+                   +FullTime:TryFirst:AlarmAhead
+                   +Glasses
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:CityLimits
+                   +Outlet:WalletHas20:Undergraduate
+                   +Overweight:Charity:InteractDislikes:Undergraduate
+                   +CheckLists:Phobic
+                   +Overweight:Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +Masters:ManyPets:Medications
+                   +Outlet:Charity:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +Overweight:InteractDislikes:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +Overweight:Outlet:CityLimits:Undergraduate
+                   +MoneyBuys:HotHead
+                   +NoLies:Overweight:Charity:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +TryFirst:AlarmAhead
+                   +CreditDebt
+                   +Overweight:Outlet:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +CheckLists:K12:Phobic:Masters
+                   +Charity:Jealous:WalletHas20:Undergraduate
+                   +Siblings:FullTime:AlarmAhead
+                   +LikesFamily:CheckLists:Masters:ManyPets:TapWater
+                   +Masters:ManyPets:MorningNews:TapWater
+                   +OddHours
+                   +Overweight:InteractDislikes:CityLimits:Undergraduate
+                   +Overweight:Jealous:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +LikesFamily:K12:Medications
+                   +MoneyBuys:StraightA:HotHead
+                   +NoLies:Outlet:InteractDislikes:TravelAbroad
+                   +NoLies:Overweight:Outlet:Charity:WalletHas20:CityLimits
+                   +Charity:InteractDislikes:TravelAbroad:Undergraduate
+                   +Phobic:Masters:ManyPets:TapWater
+                   +CheckLists:K12:Medications:MorningNews
+                   +Masters:Medications
+                   +Outlet:Charity:Jealous
+                   +K12:ManyPets:MorningNews:TapWater
+                   +NoLies:Charity:Jealous:TravelAbroad:Undergraduate
+                   +Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Overweight:Outlet:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Misterious:GoodatMath:Online
+                   +NoLies:Charity:CityLimits
+                   +Outlet:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +CheckLists:Phobic:Masters:Medications
+                   +NoLies:Overweight:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets:MorningNews
+                   +Siblings:OddHours:AlarmAhead
+                   +Jealous:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Outlet:Jealous:InteractDislikes:CityLimits
+                   +Overweight:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Siblings:FullTime:OddHours:TryFirst:AlarmAhead
+                   +LikesFamily:CheckLists:Masters:ManyPets:MorningNews:TapWater
+                   +LikesFamily:CheckLists:Phobic:ManyPets:Medications
+                   +LikesFamily:K12:Phobic:Masters:ManyPets:MorningNews
+                   +Overweight:Jealous:WalletHas20
+                   +Overweight:Outlet:Charity:WalletHas20
+                   +CheckLists:K12:Phobic:ManyPets
+                   +CheckLists:ManyPets:TapWater
+                   +PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
+                   +Overweight:Outlet:Jealous:InteractDislikes:WalletHas20
+                   +Outlet:Charity:InteractDislikes:WalletHas20
+                   +NoLies:Overweight:Outlet:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +TravelAbroad
+                   +NoLies:Overweight:Charity:WalletHas20:CityLimits:Undergraduate
+                   +Successful
+                   +Outlet:Charity:Jealous:WalletHas20:TravelAbroad:Undergraduate
+                   +NoLies:Overweight:Outlet:Charity:WalletHas20:Undergraduate
+                   +Overweight:InteractDislikes:WalletHas20:TravelAbroad
+                   +LikesFamily:TapWater
+                   +Charity:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:Charity:InteractDislikes:CityLimits
+                   +InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +Rules
+                   +Overweight:Outlet:Charity:WalletHas20:Undergraduate
+                   +NoLies:Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +NoLies:Outlet:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +K12:Masters:Medications:MorningNews:TapWater
+                   +Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Outlet:Charity:Jealous:CityLimits
+                   +Misterious:GoodatMath:SameState
+                   +Outlet:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +CheckLists:Phobic:Masters:MorningNews:TapWater
+                   +Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Overweight:Outlet:Charity:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:InteractDislikes:WalletHas20:Undergraduate
+                   +Overweight:Outlet:Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +NoLies:Overweight:Outlet:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +LikesFamily:CheckLists:K12:Medications:MorningNews:TapWater
+                   +Overweight:Charity:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +LikesFamily:K12:ManyPets:Medications
+                   +NoLies:Overweight:Outlet:Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +Outlet:Charity:Jealous:Undergraduate
+                   +NoLies:Overweight:InteractDislikes:TravelAbroad
+                   +LikesFamily:CheckLists:TapWater
+                   +Outlet:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +K12:TapWater
+                   +HasDebt
+                   +NoLies:Overweight:Jealous:InteractDislikes:Undergraduate
+                   +NoLies:Charity:Jealous:Undergraduate
+                   +Siblings:FullTime:Bachelor:OddHours:TryFirst:AlarmAhead
+                   +Poor
+                   +Outlet:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:Outlet:InteractDislikes:CityLimits
+                   +Overweight:Outlet:Charity:WalletHas20:TravelAbroad:Undergraduate
+                   +Charity:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +Outlet:Charity:Jealous:WalletHas20:TravelAbroad
+                   +NoLies:Overweight:Charity:InteractDislikes:Undergraduate
+                   +NoLies:Overweight:CityLimits:Undergraduate
+                   +Siblings:OddHours
+                   +Siblings:Bachelor:OddHours:AlarmAhead
+                   +Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Outlet:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Overweight:Jealous:InteractDislikes
+                   +Misterious
+                   +Overweight:Charity:InteractDislikes:TravelAbroad
+                   +CheckLists:K12:Phobic:Masters:MorningNews:TapWater
+                   +Online
+                   +Charity:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Outlet:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +Collects
+                   +Overweight:Outlet:Jealous:WalletHas20:TravelAbroad:Undergraduate
+                   +GoodatMath
+                   +LikesFamily:CheckLists:Masters:Medications:TapWater
+                   +NoLies:Charity:Undergraduate
+                   +Overweight:Charity:Jealous:WalletHas20
+                   +LikesFamily:K12:Masters
+                   +Cautious:Personality
+                   +Overweight:Charity:WalletHas20:CityLimits
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +Outlet:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Overweight:Outlet:TravelAbroad
+                   +Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:TravelAbroad:CityLimits
+                   +CheckLists:K12:Phobic:Masters:ManyPets:Medications:MorningNews
+                   +NoLies:Overweight:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +OddHours:AlarmAhead
+                   +ManyPets:MorningNews:TapWater
+                   +Outlet:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Outlet:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +LikesFamily:CheckLists:K12:Masters:Medications:TapWater
+                   +StressfulEvts
+                   +LikesFamily:ManyPets:Medications:MorningNews:TapWater
+                   +Charity:Jealous:InteractDislikes:CityLimits
+                   +Outlet:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Overweight:Jealous:InteractDislikes:TravelAbroad
+                   +CreditDebt:GoodatMath
+                   +CreditDebt:GoodatMath:Online
+                   +HotHead
+                   +LikesFamily:CheckLists:K12:MorningNews:TapWater
+                   +NoLies:Charity:TravelAbroad:CityLimits
+                   +NoLies:Overweight:Outlet:Charity:Jealous:InteractDislikes
+                   +Outlet:Charity:InteractDislikes:TravelAbroad:Undergraduate
+                   +Phobic:Masters:ManyPets:MorningNews
+                   +LikesFamily:K12:Masters:MorningNews:TapWater
+                   +NoLies:Overweight:InteractDislikes
+                   +NoLies:Overweight:Jealous:InteractDislikes:WalletHas20
+                   +NoLies:Charity:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Outlet:Charity:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +Overweight:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Gender
+                   +NoLies:Overweight:Jealous:CityLimits:Undergraduate
+                   +Outlet:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +Outlet:InteractDislikes:WalletHas20
+                   +Overweight:Jealous:InteractDislikes:CityLimits
+                   +Outlet:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Outlet:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +K12:Phobic:TapWater
+                   +NoLies:Overweight:Jealous:TravelAbroad:Undergraduate
+                   +NoLies:Outlet:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +LikesFamily:K12:Phobic:Masters:Medications:MorningNews
+                   +Outlet:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:TravelAbroad:Undergraduate
+                   +CheckLists:K12:Phobic:ManyPets:Medications:TapWater
+                   +Overweight:Outlet:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +Outlet:Charity:Jealous:InteractDislikes:WalletHas20
+                   +Bachelor:OddHours:AlarmAhead
+                   +CheckLists:K12:Phobic
+                   +NoLies:Outlet:Charity:InteractDislikes:CityLimits
+                   +Overweight:Jealous:InteractDislikes
+                   +NoLies:Overweight:Outlet:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Outlet:Charity:InteractDislikes
+                   +NoLies:Overweight:Charity:InteractDislikes:WalletHas20:Undergraduate
+                   +Overweight:Charity:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +K12:ManyPets
+                   +Outlet:InteractDislikes:TravelAbroad:CityLimits
+                   +Charity:Jealous:TravelAbroad:CityLimits
+                   +Outlet:Charity:InteractDislikes:CityLimits:Undergraduate
+                   +LikesFamily:CheckLists:K12:Phobic:TapWater
+                   +NoLies:Overweight:Charity:InteractDislikes:TravelAbroad:Undergraduate
+                   +Outlet:Charity:Jealous:InteractDislikes:Undergraduate
+                   +NoLies:Overweight:Outlet:Jealous:InteractDislikes:CityLimits
+                   +Overweight:Outlet:InteractDislikes
+                   +LikesFamily:Phobic:Masters:Medications:MorningNews
+                   +Overweight:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Overweight:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +K12:ManyPets:Medications:TapWater
+                   +Overweight:Jealous:InteractDislikes:TravelAbroad
+                   +Overweight:Jealous:Undergraduate
+                   +NoLies:InteractDislikes:WalletHas20:TravelAbroad
+                   +LikesFamily:K12:Masters:MorningNews
+                   +Overweight:Outlet:Jealous:WalletHas20:Undergraduate
+                   +NoLies:InteractDislikes:WalletHas20
+                   +LikesFamily:CheckLists:Phobic:MorningNews:TapWater
+                   +NoLies:InteractDislikes:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Outlet:WalletHas20:TravelAbroad:Undergraduate
+                   +Skeptical
+                   +CheckLists:Phobic:ManyPets:Medications:TapWater
+                   +Overweight:Charity:Jealous:InteractDislikes:WalletHas20
+                   +LikesFamily:CheckLists:K12:TapWater
+                   +NoLies:Overweight:Outlet:WalletHas20:Undergraduate
+                   +NoLies:Jealous:WalletHas20:CityLimits:Undergraduate
+                   +Charity:InteractDislikes:TravelAbroad:CityLimits
+                   +Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +Phobic:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:CityLimits
+                   +NoLies:Outlet:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +Outlet:Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +MeaningofLife
+                   +Charity:InteractDislikes
+                   +CheckLists:TapWater
+                   +Outlet:Charity:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Charity:Jealous:InteractDislikes
+                   +NoLies:Overweight:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Overweight:Outlet:Charity:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Outlet:Charity:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +K12:Phobic:Masters:ManyPets:MorningNews
+                   +NoLies:Outlet:InteractDislikes
+                   +NoLies:Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Charity:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +HappyorRight
+                   +Charity:InteractDislikes:TravelAbroad
+                   +LikesFamily:CheckLists:Phobic:ManyPets:Medications:MorningNews:TapWater
+                   +Outlet:Charity:CityLimits:Undergraduate
+                   +Overweight:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Outlet:Charity:Jealous:CityLimits:Undergraduate
+                   +LikesFamily:CheckLists:K12:Phobic:ManyPets:Medications:MorningNews:TapWater
+                   +Outlet:Charity:InteractDislikes
+                   +NoLies:Outlet:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +Overweight:Charity:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Charity:WalletHas20:Undergraduate
+                   +Overweight:Outlet:Jealous:InteractDislikes:Undergraduate
+                   +LikesFamily:CheckLists:K12:Masters:ManyPets
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Charity:InteractDislikes
+                   +NoLies:Jealous:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +ManyPets:TapWater
+                   +ManyPets:Medications:TapWater
+                   +NoLies:Overweight:Jealous:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +Overweight:Charity:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +InteractDislikes:WalletHas20:TravelAbroad
+                   +Charity:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +LikesFamily:CheckLists:Masters:ManyPets
+                   +Overweight:Charity:InteractDislikes:WalletHas20:TravelAbroad
+                   +Grudge
+                   +NoLies:InteractDislikes:WalletHas20:TravelAbroad:CityLimits
+                   +NoLies:Overweight:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Charity:Jealous:InteractDislikes:WalletHas20
+                   +NoLies:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Overweight:Outlet:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Outlet:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Outlet:CityLimits:Undergraduate
+                   +Outlet:InteractDislikes:TravelAbroad:Undergraduate
+                   +Overweight:Charity:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Overweight:InteractDislikes:CityLimits
+                   +NoLies:Overweight:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Outlet:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Overweight:InteractDislikes:CityLimits
+                   +Outlet:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +Overweight:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +Outlet:Charity:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +Outlet:Jealous:CityLimits:Undergraduate
+                   +Overweight:Outlet:Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Exciting
+                   +NoLies:Outlet:Charity:InteractDislikes:TravelAbroad
+                   +Charity:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Overweight:Charity:InteractDislikes:WalletHas20
+                   +Outlet:InteractDislikes:Undergraduate
+                   +NoLies:Overweight:Outlet:InteractDislikes:Undergraduate
+                   +NoLies:Overweight:Outlet:InteractDislikes
+                   +NoLies:Overweight:Outlet:Jealous:InteractDislikes:Undergraduate
+                   +NoLies:Outlet:Charity:InteractDislikes:CityLimits:Undergraduate
+                   +Overweight:Jealous:InteractDislikes:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +Overweight:InteractDislikes:TravelAbroad:CityLimits
+                   +K12:ManyPets:TapWater
+                   +LikesFamily:CheckLists:K12:Phobic:MorningNews:TapWater
+                   +NoLies:InteractDislikes:WalletHas20:Undergraduate
+                   +Outlet:Jealous:InteractDislikes:CityLimits
+                   +NoLies:Outlet:Charity:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +Overweight:Charity:Jealous:InteractDislikes:WalletHas20:CityLimits:Undergraduate
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:WalletHas20
+                   +NoLies:Outlet:Jealous:InteractDislikes:Undergraduate
+                   +LivesTogether
+                   +Overweight:Outlet:Charity:InteractDislikes:CityLimits:Undergraduate
+                   +NoLies:Outlet:InteractDislikes:TravelAbroad:CityLimits
+                   +NoLies:Overweight:Outlet:InteractDislikes:CityLimits
+                   +NoLies:Jealous:CityLimits:Undergraduate
+                   +LikesFamily:CheckLists:ManyPets:Medications:MorningNews:TapWater
+                   +Overweight:Outlet:InteractDislikes:TravelAbroad:Undergraduate
+                   +NoLies:Outlet:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Outlet:Jealous:InteractDislikes:WalletHas20
+                   +NoLies:Overweight:Jealous:InteractDislikes:CityLimits
+                   +Overweight:Outlet:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:Outlet:Charity:InteractDislikes:WalletHas20
+                   +NoLies:Outlet:Jealous:InteractDislikes:WalletHas20:TravelAbroad:Undergraduate
+                   +Outlet:Charity:InteractDislikes:WalletHas20:Undergraduate
+                   +NoLies:Outlet:InteractDislikes:WalletHas20
+                   +NoLies:Overweight:Charity:InteractDislikes:WalletHas20
+                   +NoLies:Outlet:InteractDislikes:TravelAbroad:Undergraduate
+                   +NoLies:Outlet:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Outlet:Charity:InteractDislikes:CityLimits
+                   +Overweight:Outlet:Jealous:InteractDislikes:TravelAbroad
+                   +Outlet:Charity:Jealous:InteractDislikes:CityLimits
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes
+                   +NoLies:Overweight:Outlet:Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:Outlet:InteractDislikes:Undergraduate
+                   +FeelsNormal
+                   +Outlet:Charity:Jealous:InteractDislikes
+                   +Overweight:Outlet:Charity:Jealous:InteractDislikes:Undergraduate
+                   +Overweight:Outlet:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +Overweight:Outlet:InteractDislikes:TravelAbroad
+                   +NoLies:Outlet:Charity:Jealous:InteractDislikes:TravelAbroad
+                   +Overweight:Outlet:Charity:InteractDislikes:TravelAbroad
+                   +Overweight:Outlet:Charity:InteractDislikes:Undergraduate
+                   +Overweight:Outlet:Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +Overweight:Outlet:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +OverYourHead
+                   +Overweight:Outlet:InteractDislikes:TravelAbroad:CityLimits
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ NoLies:Jealous:InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Outlet:WalletHas20
+                   +NoLies:CityLimits:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:Outlet:WalletHas20
+                   +Phobic
+                   +Bachelor
+                   +K12:Phobic:Masters:ManyPets:TapWater:LikesFamily:CheckLists
+                   +K12:Masters:MorningNews:TapWater
+                   +ManyPets:Medications:MorningNews:LikesFamily:CheckLists
+                   +Charity:TravelAbroad:CityLimits:Outlet
+                   +NoLies:TravelAbroad:Outlet
+                   +YOB:Overworks
+                   +K12:ManyPets:Medications:TapWater:LikesFamily
+                   +InteractDislikes:Charity:CityLimits:WalletHas20
+                   +K12:Phobic:ManyPets:MorningNews:CheckLists
+                   +Phobic:Masters:MorningNews:TapWater
+                   +K12:Phobic:Masters:TapWater:LikesFamily:CheckLists
+                   +SingleParent
+                   +Siblings:AlarmAhead
+                   +K12:Phobic:Masters:MorningNews:LikesFamily:CheckLists
+                   +Masters:MorningNews:LikesFamily
+                   +Overworks:Personality:Cautious
+                   +Charity:CityLimits:Outlet
+                   +InteractDislikes:Overweight:CityLimits:WalletHas20
+                   +PositiveThinking:MoneyBuys:Mac:StraightA
+                   +Phobic:Masters:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +MorningNews:LikesFamily
+                   +FullTime:OddHours
+                   +Misterious:CreditDebt:SameState:Online
+                   +K12:Masters:ManyPets:TapWater:LikesFamily:CheckLists
+                   +K12:Masters:Medications:MorningNews:TapWater:LikesFamily
+                   +Spanked
+                   +Charity:TravelAbroad:Overweight:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Undergraduate:WalletHas20
+                   +K12:Phobic:Masters:ManyPets:Medications:CheckLists
+                   +K12:Masters:ManyPets:Medications:TapWater:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:Charity:Overweight:Outlet
+                   +Phobic:Masters:ManyPets:Medications:MorningNews:TapWater
+                   +NoLies:Charity:TravelAbroad:Overweight:Undergraduate:WalletHas20
+                   +InteractDislikes:Charity:TravelAbroad:CityLimits:Outlet
+                   +NoLies:Jealous:Charity:TravelAbroad:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:Charity:TravelAbroad:Undergraduate
+                   +TalkRadio
+                   +K12:Masters:TapWater
+                   +NoLies:Charity:Overweight:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:WalletHas20
+                   +Jealous
+                   +Charity:Undergraduate:Outlet
+                   +Jealous:TravelAbroad:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:WalletHas20
+                   +NoLies:Outlet
+                   +Misterious:SameState
+                   +Phobic:Masters:ManyPets:LikesFamily:CheckLists
+                   +K12:Phobic:ManyPets:MorningNews:LikesFamily:CheckLists
+                   +Masters:ManyPets:MorningNews
+                   +Charity:TravelAbroad:Overweight:Outlet
+                   +InteractDislikes:TravelAbroad:Undergraduate
+                   +MoneyBuys:Mac:StraightA
+                   +InteractDislikes:Overweight:Undergraduate
+                   +NoLies:InteractDislikes:Charity:CityLimits:Undergraduate
+                   +K12:Medications
+                   +Phobic:Masters:ManyPets:Medications:MorningNews:LikesFamily:CheckLists
+                   +FullTime:Bachelor:OddHours:Siblings:AlarmAhead
+                   +K12:Phobic:Masters:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits:WalletHas20
+                   +Phobic:ManyPets:Medications:MorningNews:TapWater:CheckLists
+                   +Medications:LikesFamily:CheckLists
+                   +YOB:Alarm
+                   +Phobic:Masters:CheckLists
+                   +Jealous:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:Outlet
+                   +Bachelor:Siblings:TryFirst
+                   +InteractDislikes:TravelAbroad:CityLimits
+                   +K12:Phobic:Masters:ManyPets:MorningNews:TapWater:LikesFamily:CheckLists
+                   +YOB:Cautious:Alarm
+                   +Jealous:InteractDislikes:Overweight:WalletHas20
+                   +K12:Masters:ManyPets:MorningNews:TapWater:LikesFamily
+                   +Jealous:TravelAbroad:WalletHas20
+                   +K12:Phobic:Masters:MorningNews:LikesFamily
+                   +Mac
+                   +Phobic:TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:Charity:TravelAbroad:Overweight
+                   +K12:Phobic:Masters:Medications:MorningNews:CheckLists
+                   +InteractDislikes:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +Bachelor:TryFirst:AlarmAhead
+                   +K12:Masters:ManyPets:MorningNews
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:CityLimits:Outlet
+                   +NoLies:TravelAbroad:WalletHas20
+                   +NoLies:Charity:Overweight:Undergraduate:WalletHas20
+                   +Jealous:Undergraduate
+                   +YOB:Personality:Cautious:Alarm
+                   +FullTime:OddHours:Siblings
+                   +Phobic:Masters:TapWater:LikesFamily:CheckLists
+                   +FullTime:Bachelor:OddHours:AlarmAhead
+                   +Medications:MorningNews:LikesFamily:CheckLists
+                   +Siblings:TryFirst
+                   +NoLies:Jealous:InteractDislikes:Charity:TravelAbroad:CityLimits
+                   +CityLimits:Outlet
+                   +NoLies:TravelAbroad:Overweight:Outlet:WalletHas20
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +Masters:Medications:CheckLists
+                   +TravelAbroad:Overweight:CityLimits:Outlet
+                   +Jealous:InteractDislikes:Overweight:Outlet
+                   +Misterious:SameState:Online:GoodatMath
+                   +K12:Masters:MorningNews
+                   +Online:GoodatMath
+                   +NoLies:Jealous:Charity:Undergraduate:WalletHas20
+                   +Charity:TravelAbroad:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Overweight:Undergraduate:Outlet
+                   +StraightA
+                   +Masters:ManyPets:TapWater:CheckLists
+                   +K12:Phobic:Medications:MorningNews:LikesFamily:CheckLists
+                   +Misterious:GoodatMath
+                   +NoLies:TravelAbroad:Overweight:CityLimits:WalletHas20
+                   +Phobic:Masters:LikesFamily:CheckLists
+                   +TravelAbroad:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Charity:Overweight:CityLimits
+                   +K12:Masters:TapWater:LikesFamily
+                   +NoLies:Jealous:TravelAbroad:Overweight:Outlet
+                   +MorningNews:TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate:WalletHas20
+                   +PositiveThinking:MoneyBuys:StraightA
+                   +K12:Phobic:ManyPets:Medications:MorningNews:TapWater:CheckLists
+                   +K12:Phobic:Medications:TapWater:LikesFamily:CheckLists
+                   +AlarmAhead
+                   +Jealous:Charity:TravelAbroad:Overweight:WalletHas20
+                   +K12:Masters:ManyPets:Medications
+                   +Charity:Overweight:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Undergraduate
+                   +Jealous:Charity:TravelAbroad:CityLimits:Outlet
+                   +NoLies:Jealous:Charity:Overweight:CityLimits
+                   +InteractDislikes:TravelAbroad:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:Overweight:CityLimits:Outlet:WalletHas20
+                   +NoLies:Jealous:Charity:Overweight:Undergraduate
+                   +K12:Medications:CheckLists
+                   +Charity
+                   +InteractDislikes:TravelAbroad:Outlet
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate
+                   +InteractDislikes:Charity:TravelAbroad:Overweight:Undergraduate
+                   +PositiveThinking:MoneyBuys:Mac
+                   +SameState:GoodatMath
+                   +Overworks:Personality:Alarm
+                   +InteractDislikes:Charity:Overweight:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:CityLimits:Undergraduate
+                   +CryBaby
+                   +Phobic:MorningNews:TapWater:LikesFamily
+                   +NoLies:Jealous:InteractDislikes:Charity:TravelAbroad:WalletHas20
+                   +Jealous:InteractDislikes:Overweight:CityLimits:Outlet:WalletHas20
+                   +K12:Masters:Medications:CheckLists
+                   +NoLies:InteractDislikes:TravelAbroad:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +Jealous:WalletHas20
+                   +Mac:StraightA:HotHead
+                   +Jealous:InteractDislikes:Charity:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +ManyPets:Medications:LikesFamily
+                   +Charity:TravelAbroad:Overweight:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:WalletHas20
+                   +Jealous:Charity:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:Overweight:Outlet:WalletHas20
+                   +NoLies:CityLimits:Undergraduate
+                   +Masters:ManyPets:Medications
+                   +Jealous:InteractDislikes:CityLimits
+                   +Charity:Undergraduate:Outlet:WalletHas20
+                   +Phobic:Medications:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:TravelAbroad
+                   +Phobic:TapWater
+                   +Medications:TapWater:CheckLists
+                   +Phobic:Masters:MorningNews:LikesFamily:CheckLists
+                   +NoLies:InteractDislikes:Charity:Overweight:CityLimits
+                   +NoLies:Charity:Overweight:Undergraduate
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Undergraduate
+                   +Sociable
+                   +InteractDislikes:Charity:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +Bachelor:OddHours
+                   +K12:Masters:Medications:LikesFamily:CheckLists
+                   +Bachelor:AlarmAhead
+                   +Jealous:Charity:Outlet:WalletHas20
+                   +K12:Masters:ManyPets:MorningNews:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:Charity:Overweight:Undergraduate
+                   +TravelAbroad:CityLimits:Outlet
+                   +K12:Phobic:Masters:MorningNews:TapWater:LikesFamily
+                   +NoLies:CityLimits
+                   +InteractDislikes:Charity:Overweight:CityLimits:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +InteractDislikes:Charity:Overweight:CityLimits
+                   +NoLies:InteractDislikes:Charity:CityLimits:Undergraduate:WalletHas20
+                   +FullTime:Siblings:TryFirst
+                   +Phobic:Masters:MorningNews:LikesFamily
+                   +K12:Medications:MorningNews:LikesFamily:CheckLists
+                   +Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:Charity:TravelAbroad:Overweight:WalletHas20
+                   +NoLies:Jealous:Overweight:Outlet
+                   +ManyPets:Medications
+                   +Medications:MorningNews:LikesFamily
+                   +NoLies:Overweight:Outlet:WalletHas20
+                   +Phobic:Masters:MorningNews:TapWater:LikesFamily
+                   +PositiveThinking:MoneyBuys:StraightA:HotHead
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:Undergraduate
+                   +Vitamins
+                   +Bachelor:Siblings:AlarmAhead
+                   +NoLies:Overweight:Undergraduate
+                   +Phobic:CheckLists
+                   +K12:Masters:Medications:TapWater:CheckLists
+                   +InteractDislikes:TravelAbroad:Overweight:WalletHas20
+                   +K12:ManyPets:Medications:MorningNews:TapWater:LikesFamily
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Overweight:Undergraduate:Outlet:WalletHas20
+                   +FullTime:Bachelor:Siblings:AlarmAhead
+                   +Masters:Medications:MorningNews:TapWater
+                   +OddHours
+                   +NoLies:InteractDislikes:TravelAbroad:Outlet
+                   +NoLies:Jealous:TravelAbroad:Overweight
+                   +NoLies:Charity:TravelAbroad:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:CityLimits
+                   +FullTime:Siblings:AlarmAhead
+                   +NoLies:TravelAbroad:Overweight:WalletHas20
+                   +Republican
+                   +K12:Phobic:Masters:CheckLists
+                   +K12:Phobic:MorningNews
+                   +NoLies:Charity:TravelAbroad:CityLimits:Undergraduate:WalletHas20
+                   +CarPymt
+                   +Jealous:InteractDislikes:Undergraduate:Outlet
+                   +Jealous:Charity:Outlet
+                   +InteractDislikes:Undergraduate:WalletHas20
+                   +K12:ManyPets:MorningNews:TapWater
+                   +CreditDebt
+                   +K12:Medications:MorningNews:CheckLists
+                   +FullTime:AlarmAhead
+                   +Phobic:Medications:MorningNews:TapWater:LikesFamily
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:WalletHas20
+                   +NoLies:Charity:TravelAbroad:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Charity:CityLimits:Undergraduate
+                   +Masters:ManyPets:MorningNews:TapWater:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:Charity
+                   +TryFirst:AlarmAhead
+                   +FullTime:TryFirst:AlarmAhead
+                   +MoneyBuys:HotHead
+                   +OddHours:Siblings:AlarmAhead
+                   +Masters:ManyPets:TapWater:LikesFamily:CheckLists
+                   +Overweight:CityLimits:Undergraduate:Outlet
+                   +Glasses
+                   +Masters:ManyPets:Medications:TapWater:LikesFamily:CheckLists
+                   +Misterious:Online:GoodatMath
+                   +NoLies:Charity:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +InteractDislikes:Charity:TravelAbroad:Overweight:CityLimits
+                   +InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +TravelAbroad
+                   +Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Charity:Overweight:CityLimits:Outlet:WalletHas20
+                   +FullTime:OddHours:Siblings:TryFirst:AlarmAhead
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:CityLimits
+                   +NoLies:Jealous:InteractDislikes:Overweight:Undergraduate
+                   +NoLies:Charity:CityLimits
+                   +Phobic:ManyPets:Medications:LikesFamily:CheckLists
+                   +Overworks:Personality:Cautious:Alarm
+                   +NoLies:InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight:Undergraduate
+                   +K12:Phobic:ManyPets:CheckLists
+                   +Jealous:InteractDislikes:Overweight:Outlet:WalletHas20
+                   +Jealous:Overweight:WalletHas20
+                   +Masters:Medications
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet
+                   +Phobic:Medications:MorningNews:CheckLists
+                   +Jealous:InteractDislikes:Charity:CityLimits:Undergraduate:WalletHas20
+                   +K12:Masters:ManyPets:MorningNews:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:Overweight:Undergraduate
+                   +Phobic:Masters:Medications:CheckLists
+                   +Jealous:InteractDislikes:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:Charity:TravelAbroad:Undergraduate
+                   +Jealous:Charity:Undergraduate:WalletHas20
+                   +Phobic:Masters:ManyPets:TapWater
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:Undergraduate
+                   +Jealous:Charity:Undergraduate:Outlet
+                   +Rules
+                   +InteractDislikes:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +MoneyBuys:StraightA:HotHead
+                   +K12:Medications:LikesFamily
+                   +Jealous:Charity:CityLimits:Outlet
+                   +Jealous:Charity:TravelAbroad:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight
+                   +InteractDislikes:Charity:Outlet:WalletHas20
+                   +K12:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +OddHours:Siblings
+                   +Jealous:InteractDislikes:TravelAbroad:Undergraduate:Outlet
+                   +InteractDislikes:TravelAbroad:CityLimits:Undergraduate
+                   +FullTime:Bachelor:OddHours:Siblings:TryFirst:AlarmAhead
+                   +PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:WalletHas20
+                   +NoLies:InteractDislikes:Overweight:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:Undergraduate:WalletHas20
+                   +TapWater:LikesFamily
+                   +Jealous:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:Charity:Overweight:Undergraduate:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Overweight:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:TravelAbroad:Overweight
+                   +Phobic:Masters:MorningNews:TapWater:CheckLists
+                   +NoLies:InteractDislikes:Charity:Overweight:CityLimits:Outlet
+                   +Jealous:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +ManyPets:TapWater:CheckLists
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +Bachelor:OddHours:Siblings:AlarmAhead
+                   +K12:TapWater
+                   +TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:Charity:Undergraduate
+                   +NoLies:Charity:Overweight:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +Successful
+                   +HasDebt
+                   +Charity:Overweight:Outlet:WalletHas20
+                   +Misterious:SameState:GoodatMath
+                   +Poor
+                   +Charity:Overweight:CityLimits:WalletHas20
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:Overweight:CityLimits:Outlet
+                   +InteractDislikes:Charity:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Charity:CityLimits:WalletHas20
+                   +InteractDislikes:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +NoLies:Charity:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +Jealous:Charity:TravelAbroad:Outlet:WalletHas20
+                   +K12:Masters:Medications:MorningNews:TapWater
+                   +K12:Phobic:Masters:ManyPets:MorningNews:LikesFamily
+                   +InteractDislikes:Charity:TravelAbroad:Undergraduate
+                   +NoLies:TravelAbroad:CityLimits
+                   +Masters:Medications:TapWater:LikesFamily:CheckLists
+                   +NoLies:Charity:Undergraduate
+                   +NoLies:InteractDislikes:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:CityLimits:Outlet:WalletHas20
+                   +Jealous:Charity:Overweight:WalletHas20
+                   +K12:ManyPets:Medications:LikesFamily
+                   +NoLies:InteractDislikes:CityLimits:Outlet
+                   +ManyPets:MorningNews:TapWater
+                   +InteractDislikes:TravelAbroad:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Jealous:InteractDislikes:TravelAbroad:CityLimits
+                   +OddHours:AlarmAhead
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:Outlet
+                   +Collects
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:CityLimits:WalletHas20
+                   +K12:Masters:LikesFamily
+                   +HotHead
+                   +Misterious
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits
+                   +Jealous:InteractDislikes:CityLimits:Outlet:WalletHas20
+                   +K12:Masters:Medications:TapWater:LikesFamily:CheckLists
+                   +Personality:Cautious
+                   +Jealous:InteractDislikes:TravelAbroad
+                   +TravelAbroad:Overweight:Outlet
+                   +NoLies:Overweight:CityLimits:Undergraduate
+                   +InteractDislikes:CityLimits:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight
+                   +ManyPets:Medications:MorningNews:TapWater:LikesFamily
+                   +K12:Phobic:Masters:MorningNews:TapWater:CheckLists
+                   +Charity:Overweight:Undergraduate:Outlet:WalletHas20
+                   +K12:Phobic:Masters:ManyPets:Medications:MorningNews:CheckLists
+                   +Online
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +NoLies:InteractDislikes:Overweight
+                   +CreditDebt:Online:GoodatMath
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits
+                   +K12:MorningNews:TapWater:LikesFamily:CheckLists
+                   +NoLies:Charity:TravelAbroad:CityLimits
+                   +TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet
+                   +CreditDebt:GoodatMath
+                   +InteractDislikes:Charity:TravelAbroad:Overweight:CityLimits:Outlet
+                   +Jealous:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:TravelAbroad:Overweight:Outlet
+                   +GoodatMath
+                   +NoLies:InteractDislikes:Charity:CityLimits:WalletHas20
+                   +K12:Masters:MorningNews:TapWater:LikesFamily
+                   +InteractDislikes:Charity:TravelAbroad:Undergraduate:Outlet
+                   +NoLies:Jealous:InteractDislikes:Overweight:WalletHas20
+                   +Jealous:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Overweight:CityLimits
+                   +Phobic:Masters:ManyPets:MorningNews
+                   +Bachelor:OddHours:AlarmAhead
+                   +Gender
+                   +NoLies:InteractDislikes:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:CityLimits:WalletHas20
+                   +Jealous:InteractDislikes:Charity:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Overweight
+                   +Jealous:InteractDislikes:Charity:CityLimits
+                   +StressfulEvts
+                   +InteractDislikes:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:TravelAbroad:CityLimits:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20
+                   +K12:Phobic:ManyPets:Medications:TapWater:CheckLists
+                   +K12:Phobic:Masters:Medications:MorningNews:LikesFamily
+                   +NoLies:TravelAbroad:Overweight:Undergraduate:Outlet
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Outlet
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:Overweight:Undergraduate
+                   +NoLies:InteractDislikes:Charity:Overweight:Undergraduate:WalletHas20
+                   +Jealous:Charity:TravelAbroad:CityLimits
+                   +K12:Phobic:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:Charity:TravelAbroad:CityLimits
+                   +NoLies:InteractDislikes:Charity:Outlet
+                   +InteractDislikes:Overweight:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:TravelAbroad:CityLimits:Outlet
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight
+                   +Charity:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +Phobic:MorningNews:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:Charity:CityLimits:Undergraduate:Outlet
+                   +NoLies:Jealous:TravelAbroad:Overweight:Undergraduate
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight:WalletHas20
+                   +K12:Phobic:CheckLists
+                   +NoLies:InteractDislikes:TravelAbroad:WalletHas20
+                   +K12:Phobic:TapWater
+                   +InteractDislikes:Overweight:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +Charity:TravelAbroad:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate
+                   +Phobic:Masters:Medications:MorningNews:LikesFamily
+                   +Phobic:ManyPets:Medications:TapWater:CheckLists
+                   +NoLies:Jealous:Overweight:CityLimits:Undergraduate
+                   +InteractDislikes:Charity:CityLimits:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:InteractDislikes:WalletHas20
+                   +K12:ManyPets
+                   +Jealous:Overweight:Undergraduate
+                   +Jealous:InteractDislikes:Charity:Overweight:CityLimits:WalletHas20
+                   +K12:TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight:Undergraduate
+                   +K12:ManyPets:Medications:TapWater
+                   +Jealous:Overweight:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Undergraduate
+                   +NoLies:Jealous:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Undergraduate:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:TravelAbroad:WalletHas20
+                   +InteractDislikes:Charity
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +K12:Masters:MorningNews:LikesFamily
+                   +InteractDislikes:Charity:TravelAbroad
+                   +Jealous:Charity:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +Charity:CityLimits:Undergraduate:Outlet
+                   +NoLies:TravelAbroad:Overweight:Undergraduate:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Charity:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:Overweight:WalletHas20
+                   +NoLies:InteractDislikes:Outlet
+                   +NoLies:InteractDislikes:TravelAbroad:CityLimits:Undergraduate:WalletHas20
+                   +Skeptical
+                   +Phobic:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:Overweight:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:Charity:Outlet
+                   +NoLies:InteractDislikes:Charity
+                   +K12:Phobic:Masters:ManyPets:MorningNews
+                   +Jealous:Charity:CityLimits:Undergraduate:Outlet
+                   +HappyorRight
+                   +MeaningofLife
+                   +Jealous:InteractDislikes:Overweight:Undergraduate:Outlet
+                   +NoLies:Charity:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity
+                   +NoLies:Jealous:TravelAbroad:CityLimits:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +TapWater:CheckLists
+                   +CityLimits:Undergraduate:Outlet
+                   +NoLies:InteractDislikes:TravelAbroad:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:TravelAbroad:CityLimits:WalletHas20
+                   +Phobic:ManyPets:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:TravelAbroad:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:WalletHas20
+                   +NoLies:TravelAbroad:CityLimits:Undergraduate:WalletHas20
+                   +InteractDislikes:Charity:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate:Outlet
+                   +Charity:TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:Overweight:WalletHas20
+                   +ManyPets:TapWater
+                   +K12:Phobic:ManyPets:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:Charity:TravelAbroad:Overweight:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +Grudge
+                   +ManyPets:Medications:TapWater
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:CityLimits
+                   +NoLies:InteractDislikes:Overweight:CityLimits
+                   +InteractDislikes:Overweight:CityLimits
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate
+                   +InteractDislikes:Charity:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Jealous:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate:Outlet
+                   +NoLies:InteractDislikes:Overweight:Undergraduate:Outlet
+                   +K12:Masters:ManyPets:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +Jealous:InteractDislikes:Charity:Overweight:Undergraduate:WalletHas20
+                   +NoLies:InteractDislikes:Overweight:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Undergraduate:WalletHas20
+                   +Jealous:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:TravelAbroad:Undergraduate:Outlet
+                   +Exciting
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:Undergraduate:Outlet
+                   +K12:Phobic:MorningNews:TapWater:LikesFamily:CheckLists
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +NoLies:InteractDislikes:Charity:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:Overweight:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +InteractDislikes:Charity:Overweight:WalletHas20
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Outlet:WalletHas20
+                   +Masters:ManyPets:LikesFamily:CheckLists
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Outlet
+                   +InteractDislikes:Undergraduate:Outlet
+                   +NoLies:Jealous:CityLimits:Undergraduate
+                   +K12:ManyPets:TapWater
+                   +Jealous:InteractDislikes:Charity:Overweight:CityLimits:Undergraduate:WalletHas20
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight:Outlet
+                   +InteractDislikes:TravelAbroad:Overweight:Undergraduate:Outlet
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight:CityLimits:Outlet
+                   +NoLies:InteractDislikes:Charity:CityLimits:Outlet:WalletHas20
+                   +NoLies:Jealous:TravelAbroad:Overweight:CityLimits:Undergraduate
+                   +LivesTogether
+                   +InteractDislikes:Charity:Overweight:CityLimits:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:Outlet
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:WalletHas20
+                   +InteractDislikes:Charity:CityLimits:Outlet
+                   +NoLies:InteractDislikes:TravelAbroad:Undergraduate:Outlet
+                   +ManyPets:Medications:MorningNews:TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits
+                   +InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +NoLies:InteractDislikes:TravelAbroad:CityLimits:Outlet
+                   +NoLies:InteractDislikes:Charity:Overweight:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Charity:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:CityLimits:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Charity:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:CityLimits:Outlet
+                   +NoLies:InteractDislikes:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet
+                   +NoLies:InteractDislikes:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Charity:Outlet
+                   +Jealous:InteractDislikes:Charity:Overweight:Undergraduate:Outlet
+                   +FeelsNormal
+                   +InteractDislikes:TravelAbroad:Overweight:Outlet
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:Charity:TravelAbroad:Overweight:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +InteractDislikes:Charity:Overweight:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight:CityLimits:Outlet
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits:Undergraduate:Outlet
+                   +OverYourHead
+                   +InteractDislikes:TravelAbroad:Overweight:CityLimits:Outlet
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ Phobic:K12:Masters:ManyPets:CheckLists:Medications
+                   +LikesFamily:CheckLists:MorningNews:Medications
+                   +NoLies:Outlet:WalletHas20:CityLimits
+                   +NoLies:Outlet:TravelAbroad
+                   +Phobic:ManyPets:TapWater:CheckLists:MorningNews:Medications
+                   +InteractDislikes:Undergraduate:TravelAbroad
+                   +ManyPets:LikesFamily:CheckLists:MorningNews:Medications
+                   +K12:Masters:TapWater:MorningNews
+                   +Phobic:K12:Masters:CheckLists:MorningNews:Medications
+                   +Spanked
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +Jealous:InteractDislikes:Outlet:WalletHas20:TravelAbroad
+                   +Phobic:Masters:TapWater:MorningNews
+                   +Masters:LikesFamily:MorningNews
+                   +Phobic:K12:Masters:LikesFamily:CheckLists:MorningNews
+                   +Jealous:InteractDislikes:Outlet:WalletHas20
+                   +InteractDislikes:WalletHas20:CityLimits:Overweight
+                   +Masters:CheckLists:Medications
+                   +InteractDislikes:Charity:Outlet:CityLimits:TravelAbroad
+                   +FullTime:OddHours
+                   +NoLies:InteractDislikes:Charity:WalletHas20:TravelAbroad
+                   +NoLies:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +Siblings:TryFirst
+                   +NoLies:Charity:Undergraduate:WalletHas20:TravelAbroad:Overweight
+                   +SingleParent
+                   +Phobic:K12:ManyPets:CheckLists:MorningNews
+                   +Overworks:Personality:Cautious
+                   +NoLies:Jealous:Outlet:TravelAbroad:Overweight
+                   +Bachelor:Siblings:TryFirst
+                   +Charity:Outlet:CityLimits:TravelAbroad
+                   +NoLies:Jealous:Charity:Undergraduate:WalletHas20:CityLimits:TravelAbroad
+                   +TapWater:LikesFamily:CheckLists:MorningNews
+                   +Charity:Outlet:CityLimits
+                   +PositiveThinking:MoneyBuys:Mac:StraightA
+                   +InteractDislikes:Charity:Undergraduate:TravelAbroad:Overweight
+                   +Misterious:SameState
+                   +NoLies:InteractDislikes:Charity:Undergraduate:CityLimits
+                   +Phobic:Masters:ManyPets:LikesFamily:CheckLists:MorningNews:Medications
+                   +Phobic:TapWater:LikesFamily:CheckLists
+                   +Charity:Undergraduate:Outlet
+                   +LikesFamily:MorningNews
+                   +YOB:Alarm
+                   +Jealous:InteractDislikes:Charity:Outlet:CityLimits:TravelAbroad
+                   +LikesFamily:CheckLists:Medications
+                   +Phobic:K12:Masters:ManyPets:TapWater:LikesFamily:CheckLists:MorningNews
+                   +Jealous:Undergraduate:Outlet:WalletHas20:CityLimits:TravelAbroad
+                   +Masters:ManyPets:MorningNews
+                   +Outlet:CityLimits:TravelAbroad:Overweight
+                   +InteractDislikes:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:CityLimits:Overweight
+                   +Misterious:CreditDebt:SameState:Online
+                   +NoLies:InteractDislikes:Charity:CityLimits:Overweight
+                   +K12:Masters:ManyPets:TapWater:LikesFamily:MorningNews
+                   +Jealous
+                   +Phobic:K12:LikesFamily:CheckLists:MorningNews:Medications
+                   +K12:Masters:MorningNews
+                   +Phobic:K12:ManyPets:TapWater:CheckLists:MorningNews:Medications
+                   +Jealous:InteractDislikes:Outlet:Overweight
+                   +Phobic:Masters:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +NoLies:WalletHas20:TravelAbroad
+                   +TalkRadio
+                   +Phobic:Masters:CheckLists
+                   +Bachelor:Siblings:AlarmAhead:FullTime:OddHours
+                   +K12:Masters:TapWater
+                   +K12:Masters:ManyPets:TapWater:LikesFamily:CheckLists:Medications
+                   +NoLies:Charity:Undergraduate:WalletHas20:Overweight
+                   +Online:GoodatMath
+                   +Charity:Undergraduate:Outlet:CityLimits:TravelAbroad:Overweight
+                   +NoLies:Outlet
+                   +Jealous:InteractDislikes:Outlet:WalletHas20:CityLimits:Overweight
+                   +Phobic:K12:ManyPets:LikesFamily:CheckLists:MorningNews
+                   +Masters:ManyPets:TapWater:CheckLists
+                   +MoneyBuys:Mac:StraightA
+                   +Phobic:K12:TapWater:LikesFamily:CheckLists:Medications
+                   +NoLies:Undergraduate:Outlet:Overweight
+                   +InteractDislikes:Charity:Undergraduate
+                   +NoLies:Charity:Outlet:WalletHas20:Overweight
+                   +Jealous:TravelAbroad
+                   +NoLies:InteractDislikes:Charity:Undergraduate:WalletHas20:CityLimits
+                   +Jealous:Undergraduate
+                   +AlarmAhead
+                   +InteractDislikes:Charity:Undergraduate:WalletHas20
+                   +K12:LikesFamily:CheckLists:MorningNews:Medications
+                   +Phobic:K12:Masters:LikesFamily:MorningNews
+                   +Jealous:InteractDislikes:WalletHas20:Overweight
+                   +K12:Medications
+                   +InteractDislikes:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20:TravelAbroad
+                   +Misterious:GoodatMath
+                   +YOB:Cautious:Alarm
+                   +Bachelor:AlarmAhead:TryFirst
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +Overworks:Personality:Alarm
+                   +Jealous:Charity:WalletHas20:TravelAbroad:Overweight
+                   +Charity:Undergraduate:Outlet:CityLimits:Overweight
+                   +Phobic:K12:Masters:TapWater:LikesFamily:CheckLists
+                   +Mac
+                   +NoLies:Outlet:WalletHas20:Overweight
+                   +Charity
+                   +NoLies:Jealous:Charity:TravelAbroad:Overweight
+                   +Outlet:CityLimits
+                   +Mac:StraightA:HotHead
+                   +Jealous:InteractDislikes:CityLimits
+                   +Charity:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:CityLimits:TravelAbroad:Overweight
+                   +Phobic:K12:Masters:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +NoLies:Undergraduate:CityLimits
+                   +Phobic:TapWater:LikesFamily:CheckLists:Medications
+                   +NoLies:InteractDislikes:Charity:Undergraduate:CityLimits:TravelAbroad
+                   +Misterious:SameState:Online:GoodatMath
+                   +Jealous:WalletHas20:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:TravelAbroad
+                   +Jealous:Charity:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +NoLies:Jealous:Charity:Undergraduate:WalletHas20
+                   +K12:Masters:ManyPets:Medications
+                   +Siblings:AlarmAhead:FullTime
+                   +Jealous:InteractDislikes:Charity:TravelAbroad:Overweight
+                   +K12:CheckLists:Medications
+                   +ManyPets:LikesFamily:Medications
+                   +Bachelor:AlarmAhead:FullTime:OddHours
+                   +PositiveThinking:MoneyBuys:StraightA
+                   +Phobic:Masters:LikesFamily:CheckLists
+                   +Siblings:FullTime:OddHours
+                   +InteractDislikes:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Charity:Outlet:Overweight
+                   +Bachelor:Siblings:AlarmAhead
+                   +PositiveThinking:MoneyBuys:Mac
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:WalletHas20:TravelAbroad
+                   +K12:Masters:ManyPets:MorningNews
+                   +SameState:GoodatMath
+                   +Charity:Undergraduate:Outlet:WalletHas20:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:WalletHas20:CityLimits
+                   +Phobic:TapWater:LikesFamily:MorningNews
+                   +K12:Masters:CheckLists:Medications
+                   +InteractDislikes:Charity:CityLimits:Overweight
+                   +Phobic:Masters:TapWater:LikesFamily:CheckLists
+                   +StraightA
+                   +NoLies:CityLimits
+                   +Phobic:TapWater
+                   +Bachelor:AlarmAhead
+                   +Phobic:CheckLists
+                   +NoLies:Charity:Undergraduate:Overweight
+                   +K12:Masters:TapWater:CheckLists:Medications
+                   +NoLies:Undergraduate:Overweight
+                   +NoLies:InteractDislikes:Outlet:TravelAbroad
+                   +PositiveThinking:MoneyBuys:StraightA:HotHead
+                   +YOB:Personality:Cautious:Alarm
+                   +Undergraduate:Outlet:WalletHas20:CityLimits:TravelAbroad
+                   +Jealous:Charity:Outlet:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:CityLimits:Overweight
+                   +NoLies:Jealous:Outlet:Overweight
+                   +NoLies:Jealous:Charity:CityLimits:Overweight
+                   +NoLies:InteractDislikes:Charity:Outlet:WalletHas20:CityLimits:Overweight
+                   +Phobic:Masters:TapWater:LikesFamily:MorningNews
+                   +Masters:ManyPets:Medications
+                   +K12:Masters:TapWater:LikesFamily
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20:TravelAbroad
+                   +Masters:TapWater:MorningNews:Medications
+                   +Phobic:Masters:LikesFamily:CheckLists:MorningNews
+                   +Siblings:AlarmAhead:OddHours
+                   +CryBaby
+                   +AlarmAhead:FullTime
+                   +Masters:ManyPets:TapWater:LikesFamily:CheckLists
+                   +Phobic:Masters:LikesFamily:MorningNews
+                   +K12:ManyPets:TapWater:MorningNews
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:CityLimits:Overweight
+                   +OddHours
+                   +InteractDislikes:TravelAbroad
+                   +InteractDislikes:Charity:Outlet:CityLimits:Overweight
+                   +NoLies:Jealous:Charity:Undergraduate:Overweight
+                   +Phobic:K12:Masters:TapWater:LikesFamily:MorningNews
+                   +InteractDislikes:Outlet:TravelAbroad
+                   +K12:CheckLists:MorningNews:Medications
+                   +InteractDislikes:Charity:CityLimits:TravelAbroad:Overweight
+                   +LikesFamily:MorningNews:Medications
+                   +K12:ManyPets:TapWater:LikesFamily:MorningNews:Medications
+                   +InteractDislikes:Charity:WalletHas20:CityLimits:Overweight
+                   +Sociable
+                   +NoLies:Charity:Undergraduate:WalletHas20:TravelAbroad
+                   +Jealous:InteractDislikes:Undergraduate:TravelAbroad:Overweight
+                   +Jealous:Charity:Outlet:WalletHas20
+                   +Jealous:WalletHas20
+                   +NoLies:Jealous:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:Overweight
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:Overweight
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +InteractDislikes:Undergraduate:WalletHas20
+                   +Bachelor:Siblings:AlarmAhead:FullTime
+                   +NoLies:Charity:Undergraduate:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +K12:Masters:ManyPets:TapWater:LikesFamily:CheckLists:MorningNews
+                   +Phobic:TapWater:LikesFamily:MorningNews:Medications
+                   +Jealous:InteractDislikes:Charity:Undergraduate:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Charity:Outlet:WalletHas20:Overweight
+                   +Bachelor:OddHours
+                   +Phobic:K12:MorningNews
+                   +CarPymt
+                   +NoLies:Charity:Outlet:WalletHas20:CityLimits:Overweight
+                   +Masters:ManyPets:TapWater:MorningNews
+                   +Outlet:CityLimits:TravelAbroad
+                   +ManyPets:Medications
+                   +NoLies:Charity:CityLimits
+                   +Republican
+                   +Charity:Undergraduate:Outlet:WalletHas20
+                   +InteractDislikes:Undergraduate:CityLimits:Overweight
+                   +Phobic:Masters:CheckLists:Medications
+                   +InteractDislikes:Charity:Undergraduate:Overweight
+                   +Jealous:InteractDislikes:Charity
+                   +K12:Masters:LikesFamily:CheckLists:Medications
+                   +InteractDislikes:Charity:Outlet:WalletHas20
+                   +Phobic:K12:Masters:CheckLists
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +Jealous:InteractDislikes:Undergraduate:Outlet
+                   +NoLies:Charity:Undergraduate:WalletHas20:CityLimits:Overweight
+                   +NoLies:InteractDislikes:Charity:Undergraduate:Overweight
+                   +AlarmAhead:TryFirst
+                   +NoLies:Jealous:InteractDislikes:Charity:WalletHas20:TravelAbroad
+                   +Jealous:InteractDislikes:Outlet:TravelAbroad
+                   +NoLies:Jealous:Charity:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:Charity:Undergraduate:WalletHas20:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:Overweight
+                   +Masters:ManyPets:TapWater:LikesFamily:CheckLists:MorningNews
+                   +TapWater:CheckLists:Medications
+                   +Bachelor:Siblings:AlarmAhead:FullTime:OddHours:TryFirst
+                   +Phobic:ManyPets:LikesFamily:CheckLists:Medications
+                   +Masters:ManyPets:TapWater:LikesFamily:CheckLists:Medications
+                   +MoneyBuys:HotHead
+                   +Undergraduate:Outlet:CityLimits:Overweight
+                   +Jealous:Charity:Outlet
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:Overweight
+                   +Vitamins
+                   +Jealous:Charity:Undergraduate:Outlet:WalletHas20:TravelAbroad
+                   +K12:Masters:ManyPets:LikesFamily:CheckLists:MorningNews
+                   +Siblings:FullTime:TryFirst
+                   +Undergraduate:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Undergraduate:CityLimits:TravelAbroad
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:WalletHas20:Overweight
+                   +NoLies:InteractDislikes:Charity:Outlet:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:InteractDislikes:Charity:Outlet:CityLimits:TravelAbroad:Overweight
+                   +Rules
+                   +TapWater:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:Outlet:WalletHas20:Overweight
+                   +Phobic:K12:ManyPets:CheckLists
+                   +Overworks:Personality:Cautious:Alarm
+                   +Misterious:Online:GoodatMath
+                   +NoLies:Jealous:InteractDislikes:Overweight
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20:Overweight
+                   +TravelAbroad
+                   +Jealous:Charity:Undergraduate:Outlet
+                   +Jealous:WalletHas20:Overweight
+                   +Jealous:Charity:Outlet:CityLimits
+                   +Bachelor:Siblings:AlarmAhead:OddHours
+                   +Masters:Medications
+                   +NoLies:CityLimits:TravelAbroad
+                   +NoLies:Charity:CityLimits:Overweight
+                   +Siblings:OddHours
+                   +NoLies:Jealous:Charity:Undergraduate:TravelAbroad
+                   +Masters:TapWater:LikesFamily:CheckLists:Medications
+                   +AlarmAhead:OddHours
+                   +Glasses
+                   +Jealous:InteractDislikes:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +CreditDebt
+                   +Charity:WalletHas20:CityLimits:Overweight
+                   +InteractDislikes:Charity:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:CityLimits:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:TravelAbroad
+                   +K12:LikesFamily:Medications
+                   +NoLies:Jealous:InteractDislikes:Outlet:CityLimits
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:TravelAbroad:Overweight
+                   +Jealous:Undergraduate:WalletHas20:CityLimits
+                   +NoLies:WalletHas20:TravelAbroad:Overweight
+                   +K12:Masters:TapWater:MorningNews:Medications
+                   +AlarmAhead:FullTime:TryFirst
+                   +InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +NoLies:InteractDislikes:Charity:CityLimits:TravelAbroad
+                   +NoLies:Charity:Undergraduate:Outlet:WalletHas20:CityLimits:Overweight
+                   +PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
+                   +Jealous:InteractDislikes:Charity:Undergraduate:CityLimits
+                   +NoLies:InteractDislikes:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Charity:Undergraduate:WalletHas20:CityLimits
+                   +Misterious
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:WalletHas20:CityLimits
+                   +Jealous:InteractDislikes:Charity:Outlet:WalletHas20:CityLimits
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +Phobic:CheckLists:MorningNews:Medications
+                   +K12:Masters:TapWater:LikesFamily:CheckLists:Medications
+                   +TapWater:LikesFamily
+                   +Jealous:InteractDislikes:Outlet:WalletHas20:CityLimits
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +HasDebt
+                   +Jealous:Charity:Undergraduate:WalletHas20
+                   +MoneyBuys:StraightA:HotHead
+                   +K12:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +Misterious:SameState:GoodatMath
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet
+                   +Outlet:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Undergraduate:TravelAbroad
+                   +NoLies:Charity:Undergraduate
+                   +Jealous:InteractDislikes:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:CityLimits
+                   +Charity:Outlet:WalletHas20:Overweight
+                   +Jealous:InteractDislikes:Charity:Outlet:TravelAbroad
+                   +Poor
+                   +NoLies:Undergraduate:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Charity:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +Jealous:Charity:Undergraduate:CityLimits:TravelAbroad
+                   +K12:TapWater
+                   +Phobic:Masters:ManyPets:TapWater
+                   +Jealous:InteractDislikes:CityLimits:Overweight
+                   +K12:ManyPets:LikesFamily:Medications
+                   +ManyPets:TapWater:MorningNews
+                   +Jealous:InteractDislikes:Undergraduate:WalletHas20
+                   +Successful
+                   +InteractDislikes:Charity:Undergraduate:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:WalletHas20:Overweight
+                   +Phobic:K12:Masters:ManyPets:CheckLists:MorningNews:Medications
+                   +InteractDislikes:Undergraduate:CityLimits:TravelAbroad
+                   +Collects
+                   +Jealous:Charity:WalletHas20:Overweight
+                   +NoLies:Charity:Undergraduate:Outlet:WalletHas20:Overweight
+                   +K12:Masters:LikesFamily
+                   +NoLies:InteractDislikes:Charity:WalletHas20:CityLimits
+                   +ManyPets:TapWater:CheckLists
+                   +InteractDislikes:Charity:Undergraduate:Outlet:TravelAbroad
+                   +Jealous:Charity:Outlet:WalletHas20:TravelAbroad
+                   +Siblings:AlarmAhead:FullTime:OddHours:TryFirst
+                   +ManyPets:TapWater:LikesFamily:MorningNews:Medications
+                   +Jealous:InteractDislikes:CityLimits:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Overweight
+                   +NoLies:InteractDislikes:Outlet:CityLimits
+                   +Phobic:Masters:TapWater:CheckLists:MorningNews
+                   +InteractDislikes:Undergraduate:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +Personality:Cautious
+                   +NoLies:Charity:CityLimits:TravelAbroad
+                   +Phobic:K12:Masters:ManyPets:LikesFamily:MorningNews
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:Outlet:WalletHas20
+                   +NoLies:Jealous:Charity:Undergraduate
+                   +Charity:Undergraduate:Outlet:WalletHas20:Overweight
+                   +K12:TapWater:LikesFamily:CheckLists:MorningNews
+                   +HotHead
+                   +InteractDislikes:Charity:CityLimits:TravelAbroad
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +InteractDislikes:Outlet:WalletHas20:CityLimits
+                   +NoLies:InteractDislikes:Charity:Outlet:CityLimits
+                   +Bachelor:AlarmAhead:OddHours
+                   +Online
+                   +Jealous:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +Phobic:K12:Masters:TapWater:CheckLists:MorningNews
+                   +Jealous:InteractDislikes:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Overweight
+                   +Jealous:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +InteractDislikes:Charity:Outlet:CityLimits:TravelAbroad:Overweight
+                   +Phobic:K12:ManyPets:TapWater:CheckLists:Medications
+                   +NoLies:Jealous:InteractDislikes:Outlet:CityLimits:Overweight
+                   +Phobic:K12:TapWater:LikesFamily:CheckLists
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:CityLimits
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:Overweight
+                   +GoodatMath
+                   +Phobic:K12:Masters:LikesFamily:MorningNews:Medications
+                   +NoLies:InteractDislikes:Outlet:WalletHas20:CityLimits:TravelAbroad
+                   +CreditDebt:Online:GoodatMath
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Overweight
+                   +StressfulEvts
+                   +Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +Gender
+                   +Jealous:InteractDislikes:Charity:CityLimits
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20:CityLimits:Overweight
+                   +K12:Masters:TapWater:LikesFamily:MorningNews
+                   +Phobic:TapWater:LikesFamily:CheckLists:MorningNews
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20:CityLimits:Overweight
+                   +Phobic:Masters:ManyPets:MorningNews
+                   +InteractDislikes:Charity:Undergraduate:Outlet:CityLimits
+                   +CreditDebt:GoodatMath
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:CityLimits:Overweight
+                   +NoLies:InteractDislikes:WalletHas20
+                   +Phobic:K12:CheckLists
+                   +Jealous:Charity:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:CityLimits:TravelAbroad
+                   +InteractDislikes:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:CityLimits
+                   +NoLies:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Jealous:Undergraduate:TravelAbroad:Overweight
+                   +InteractDislikes:Outlet:WalletHas20:TravelAbroad
+                   +Jealous:InteractDislikes:TravelAbroad
+                   +NoLies:Jealous:Undergraduate:CityLimits:Overweight
+                   +InteractDislikes:Outlet:Overweight
+                   +Phobic:K12:TapWater
+                   +NoLies:InteractDislikes:Charity:Undergraduate:TravelAbroad:Overweight
+                   +InteractDislikes:Outlet:CityLimits:TravelAbroad
+                   +Charity:Undergraduate:Outlet:WalletHas20:CityLimits:TravelAbroad
+                   +InteractDislikes:Undergraduate:CityLimits:TravelAbroad:Overweight
+                   +K12:ManyPets
+                   +NoLies:InteractDislikes:Charity:Undergraduate:WalletHas20:Overweight
+                   +NoLies:Undergraduate:Outlet:TravelAbroad:Overweight
+                   +InteractDislikes:Charity
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20:CityLimits
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:WalletHas20:CityLimits:Overweight
+                   +Charity:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +Phobic:Masters:LikesFamily:MorningNews:Medications
+                   +NoLies:InteractDislikes:Charity:Outlet
+                   +Phobic:ManyPets:TapWater:CheckLists:Medications
+                   +NoLies:Jealous:Undergraduate:WalletHas20:CityLimits
+                   +InteractDislikes:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:CityLimits
+                   +K12:ManyPets:TapWater:Medications
+                   +K12:TapWater:LikesFamily:CheckLists
+                   +NoLies:InteractDislikes:Outlet
+                   +Jealous:Undergraduate:Outlet:WalletHas20:Overweight
+                   +Charity:Undergraduate:Outlet:CityLimits
+                   +Jealous:InteractDislikes:Charity:WalletHas20:TravelAbroad:Overweight
+                   +Jealous:Undergraduate:Overweight
+                   +InteractDislikes:Charity:TravelAbroad
+                   +NoLies:Undergraduate:Outlet:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:CityLimits
+                   +InteractDislikes:Charity:Outlet:WalletHas20:CityLimits
+                   +Jealous:Charity:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +NoLies:Undergraduate:Outlet:WalletHas20:Overweight
+                   +Skeptical
+                   +NoLies:Charity:Undergraduate:WalletHas20
+                   +NoLies:InteractDislikes:Charity
+                   +K12:Masters:LikesFamily:MorningNews
+                   +Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Jealous:Undergraduate:WalletHas20:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Undergraduate:CityLimits:Overweight
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:CityLimits
+                   +Jealous:Charity:Undergraduate:Outlet:CityLimits
+                   +Jealous:InteractDislikes:Charity:WalletHas20:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:TravelAbroad:Overweight
+                   +InteractDislikes:Charity:Outlet
+                   +InteractDislikes:CityLimits:Overweight
+                   +HappyorRight
+                   +NoLies:Jealous:InteractDislikes:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +NoLies:Undergraduate:WalletHas20:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:Undergraduate:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:Overweight
+                   +Undergraduate:Outlet:CityLimits
+                   +InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:InteractDislikes:Outlet:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:CityLimits:Overweight
+                   +Phobic:ManyPets:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +Phobic:K12:Masters:ManyPets:MorningNews
+                   +NoLies:Jealous:InteractDislikes:Charity:WalletHas20:CityLimits
+                   +Grudge
+                   +NoLies:Jealous:InteractDislikes:Charity
+                   +MeaningofLife
+                   +NoLies:Jealous:InteractDislikes:Charity:WalletHas20:Overweight
+                   +Phobic:Masters:ManyPets:TapWater:MorningNews
+                   +TapWater:CheckLists
+                   +Charity:Undergraduate:Outlet:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:CityLimits:TravelAbroad
+                   +Phobic:K12:ManyPets:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +ManyPets:TapWater:Medications
+                   +NoLies:Jealous:Undergraduate:CityLimits:TravelAbroad
+                   +InteractDislikes:Charity:Undergraduate:WalletHas20:CityLimits:Overweight
+                   +NoLies:InteractDislikes:WalletHas20:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Undergraduate:CityLimits:TravelAbroad:Overweight
+                   +ManyPets:TapWater
+                   +InteractDislikes:Charity:Undergraduate:CityLimits:TravelAbroad
+                   +InteractDislikes:CityLimits:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:WalletHas20:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:Undergraduate:WalletHas20:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:CityLimits:Overweight
+                   +Phobic:K12:TapWater:LikesFamily:CheckLists:MorningNews
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:Overweight
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:TravelAbroad
+                   +Jealous:Undergraduate:Outlet:CityLimits
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:CityLimits:Overweight
+                   +InteractDislikes:Undergraduate:Outlet:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Charity:Undergraduate:Outlet:CityLimits
+                   +K12:Masters:ManyPets:LikesFamily:CheckLists
+                   +InteractDislikes:Charity:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:Outlet:WalletHas20:CityLimits
+                   +NoLies:Jealous:Undergraduate:CityLimits
+                   +NoLies:InteractDislikes:Charity:Undergraduate:Outlet:CityLimits
+                   +InteractDislikes:Charity:Undergraduate:WalletHas20:Overweight
+                   +Exciting
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet
+                   +Jealous:InteractDislikes:Outlet:CityLimits
+                   +NoLies:InteractDislikes:Outlet:CityLimits:Overweight
+                   +InteractDislikes:Undergraduate:Outlet
+                   +NoLies:InteractDislikes:Charity:Outlet:TravelAbroad
+                   +Jealous:InteractDislikes:Undergraduate:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +NoLies:Jealous:Undergraduate:CityLimits:TravelAbroad:Overweight
+                   +InteractDislikes:Undergraduate:Outlet:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:WalletHas20
+                   +K12:ManyPets:TapWater
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Overweight
+                   +Jealous:InteractDislikes:Charity:Outlet:CityLimits:TravelAbroad:Overweight
+                   +Masters:ManyPets:LikesFamily:CheckLists
+                   +Jealous:InteractDislikes:Charity:Undergraduate:WalletHas20:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:WalletHas20
+                   +Jealous:InteractDislikes:Charity:Outlet:TravelAbroad:Overweight
+                   +InteractDislikes:Charity:Outlet:CityLimits
+                   +InteractDislikes:Charity:WalletHas20:Overweight
+                   +Jealous:InteractDislikes:Outlet:TravelAbroad:Overweight
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:WalletHas20:CityLimits
+                   +ManyPets:TapWater:LikesFamily:CheckLists:MorningNews:Medications
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:TravelAbroad
+                   +InteractDislikes:Charity:Undergraduate:Outlet:CityLimits:Overweight
+                   +InteractDislikes:Charity:Undergraduate:Outlet:WalletHas20
+                   +NoLies:InteractDislikes:Outlet:CityLimits:TravelAbroad
+                   +LivesTogether
+                   +NoLies:InteractDislikes:Outlet:WalletHas20:CityLimits
+                   +NoLies:InteractDislikes:Charity:Outlet:WalletHas20:CityLimits
+                   +NoLies:InteractDislikes:Charity:WalletHas20:Overweight
+                   +NoLies:Jealous:InteractDislikes:Outlet:CityLimits:TravelAbroad
+                   +Jealous:InteractDislikes:Charity:Outlet:CityLimits
+                   +NoLies:Jealous:InteractDislikes:Outlet:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Outlet:TravelAbroad
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:Outlet:WalletHas20:TravelAbroad
+                   +NoLies:InteractDislikes:Charity:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Outlet:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet
+                   +Jealous:InteractDislikes:Charity:Outlet
+                   +NoLies:InteractDislikes:Outlet:WalletHas20
+                   +FeelsNormal
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +Jealous:InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Outlet
+                   +InteractDislikes:Outlet:TravelAbroad:Overweight
+                   +Jealous:InteractDislikes:Charity:Undergraduate:Outlet:Overweight
+                   +NoLies:Jealous:InteractDislikes:Charity:Outlet:TravelAbroad
+                   +InteractDislikes:Charity:Outlet:TravelAbroad:Overweight
+                   +InteractDislikes:Charity:Undergraduate:Outlet:Overweight
+                   +Jealous:InteractDislikes:Outlet:CityLimits:TravelAbroad:Overweight
+                   +InteractDislikes:Undergraduate:Outlet:CityLimits:TravelAbroad:Overweight
+                   +OverYourHead
+                   +InteractDislikes:Outlet:CityLimits:TravelAbroad:Overweight
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ CheckLists:Medications:LikesFamily
+                   +Masters:CheckLists:Medications
+                   +Misterious:SameState
+                   +Siblings:TryFirst:Bachelor
+                   +NoLies:WalletHas20:TravelAbroad
+                   +YOB:Alarm
+                   +Misterious:SameState:CreditDebt:Online
+                   +Outlet:CityLimits:TravelAbroad:Charity
+                   +K12:Masters:ManyPets:LikesFamily:MorningNews:TapWater
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Charity
+                   +FullTime:OddHours:Siblings:Bachelor:AlarmAhead
+                   +NoLies:Outlet
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Jealous:Charity
+                   +SingleParent
+                   +Outlet:CityLimits:Undergraduate:Charity:Overweight
+                   +TravelAbroad:Jealous
+                   +K12:Masters:MorningNews
+                   +Masters:ManyPets:CheckLists:TapWater
+                   +K12:CheckLists:Medications:LikesFamily:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate
+                   +FullTime:Siblings:AlarmAhead
+                   +Masters:LikesFamily:MorningNews
+                   +NoLies:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Bachelor:AlarmAhead
+                   +TalkRadio
+                   +MoneyBuys:Mac:StraightA
+                   +Siblings:Bachelor:AlarmAhead
+                   +Outlet:CityLimits:TravelAbroad:Undergraduate:Charity:Overweight
+                   +NoLies:Outlet:WalletHas20:Charity:Overweight
+                   +Online:GoodatMath
+                   +TravelAbroad:InteractDislikes:Jealous:Charity:Overweight
+                   +NoLies:CityLimits:TravelAbroad:InteractDislikes:Jealous:Charity
+                   +Phobic:K12:CheckLists:Medications:LikesFamily:TapWater
+                   +NoLies:TravelAbroad:Jealous:Charity:Overweight
+                   +Undergraduate:Jealous
+                   +Misterious:SameState:Online:GoodatMath
+                   +Mac
+                   +Outlet:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Jealous
+                   +Outlet:CityLimits:TravelAbroad:Overweight
+                   +WalletHas20:InteractDislikes:Undergraduate:Charity
+                   +Phobic:Masters:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +K12:Masters:ManyPets:Medications
+                   +NoLies:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Charity
+                   +Misterious:GoodatMath
+                   +K12:Masters:TapWater
+                   +Phobic:Masters:CheckLists
+                   +WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Overweight
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Charity
+                   +NoLies:Outlet:WalletHas20:Overweight
+                   +K12:Medications
+                   +K12:Masters:ManyPets:MorningNews
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +Outlet:CityLimits
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +TryFirst:Bachelor:AlarmAhead
+                   +NoLies:WalletHas20:Undergraduate:Jealous:Charity
+                   +CityLimits:InteractDislikes:Jealous
+                   +Charity
+                   +Phobic:LikesFamily:MorningNews:TapWater
+                   +Phobic:CheckLists
+                   +K12:CheckLists:Medications
+                   +Outlet:WalletHas20:TravelAbroad:Charity:Overweight
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +WalletHas20:TravelAbroad:InteractDislikes:Overweight
+                   +Mac:StraightA:HotHead
+                   +Outlet:WalletHas20:TravelAbroad:Undergraduate:Charity
+                   +Overworks:Personality:Alarm
+                   +Phobic:K12:Masters:CheckLists:LikesFamily:TapWater
+                   +Phobic:CheckLists:Medications:LikesFamily:TapWater
+                   +NoLies:CityLimits:Jealous:Charity:Overweight
+                   +Outlet:WalletHas20:CityLimits:TravelAbroad:Undergraduate
+                   +Outlet:WalletHas20:Undergraduate:Jealous:Charity
+                   +WalletHas20:InteractDislikes:Jealous:Overweight
+                   +PositiveThinking:MoneyBuys:Mac
+                   +PositiveThinking:MoneyBuys:StraightA
+                   +TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:CityLimits:Undergraduate
+                   +K12:ManyPets:MorningNews:TapWater
+                   +K12:ManyPets:Medications:LikesFamily:MorningNews:TapWater
+                   +Cautious:YOB:Alarm
+                   +SameState:GoodatMath
+                   +FullTime:OddHours:Siblings
+                   +K12:Masters:CheckLists:Medications:TapWater
+                   +CityLimits:InteractDislikes:Charity:Overweight
+                   +WalletHas20:TravelAbroad:Jealous:Charity:Overweight
+                   +WalletHas20:TravelAbroad:Jealous
+                   +Outlet:WalletHas20:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +FullTime:OddHours:Bachelor:AlarmAhead
+                   +Phobic:K12:Masters:LikesFamily:MorningNews
+                   +Personality:Cautious:YOB:Alarm
+                   +FullTime:AlarmAhead
+                   +Phobic:Masters:CheckLists:LikesFamily
+                   +Outlet:TravelAbroad:InteractDislikes
+                   +Phobic:K12:ManyPets:CheckLists:LikesFamily:MorningNews
+                   +Masters:ManyPets:CheckLists:LikesFamily:TapWater
+                   +K12:Masters:ManyPets:CheckLists:LikesFamily:MorningNews:TapWater
+                   +Masters:ManyPets:Medications
+                   +Phobic:Masters:CheckLists:LikesFamily:MorningNews
+                   +K12:Masters:CheckLists:Medications
+                   +NoLies:CityLimits:InteractDislikes:Jealous:Charity:Overweight
+                   +OddHours:Siblings:AlarmAhead
+                   +NoLies:CityLimits
+                   +NoLies:Undergraduate:Charity:Overweight
+                   +WalletHas20:InteractDislikes:Undergraduate
+                   +CryBaby
+                   +K12:CheckLists:Medications:MorningNews
+                   +ManyPets:Medications:LikesFamily
+                   +Outlet:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate
+                   +Outlet:CityLimits:TravelAbroad:Jealous:Charity
+                   +Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:Charity:Overweight
+                   +Phobic:K12:Masters:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Charity:Overweight
+                   +NoLies:Outlet:WalletHas20:CityLimits:Charity:Overweight
+                   +Phobic:Masters:CheckLists:LikesFamily:TapWater
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Jealous:Charity
+                   +FullTime:Siblings:Bachelor:AlarmAhead
+                   +OddHours
+                   +Outlet:InteractDislikes:Jealous:Charity:Overweight
+                   +TravelAbroad:InteractDislikes
+                   +K12:Masters:CheckLists:Medications:LikesFamily
+                   +CityLimits:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes
+                   +PositiveThinking:MoneyBuys:StraightA:HotHead
+                   +Phobic:Medications:LikesFamily:MorningNews:TapWater
+                   +Masters:Medications:MorningNews:TapWater
+                   +Phobic:TapWater
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:Charity:Overweight
+                   +K12:Masters:LikesFamily:TapWater
+                   +NoLies:Outlet:Jealous:Overweight
+                   +Masters:ManyPets:CheckLists:Medications:LikesFamily:TapWater
+                   +Outlet:WalletHas20:Jealous:Charity
+                   +WalletHas20:Jealous
+                   +Phobic:Masters:LikesFamily:MorningNews:TapWater
+                   +Phobic:K12:Masters:LikesFamily:MorningNews:TapWater
+                   +ManyPets:Medications
+                   +Outlet:CityLimits:InteractDislikes:Charity:Overweight
+                   +NoLies:TravelAbroad:Jealous:Overweight
+                   +Medications:LikesFamily:MorningNews
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Charity:Overweight
+                   +Outlet:CityLimits:Undergraduate:Overweight
+                   +FullTime:OddHours:Siblings:TryFirst:Bachelor:AlarmAhead
+                   +Outlet:WalletHas20:TravelAbroad:Undergraduate:Jealous:Charity
+                   +Masters:ManyPets:CheckLists:LikesFamily:MorningNews:TapWater
+                   +Outlet:WalletHas20:InteractDislikes:Undergraduate:Overweight
+                   +StraightA
+                   +Republican
+                   +TravelAbroad:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Overweight
+                   +Outlet:CityLimits:TravelAbroad
+                   +MoneyBuys:HotHead
+                   +Phobic:K12:ManyPets:CheckLists
+                   +Outlet:WalletHas20:InteractDislikes:Jealous:Overweight
+                   +NoLies:Undergraduate:Overweight
+                   +WalletHas20:CityLimits:InteractDislikes:Charity:Overweight
+                   +NoLies:CityLimits:Charity:Overweight
+                   +K12:Masters:ManyPets:CheckLists:LikesFamily:MorningNews
+                   +Outlet:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Charity
+                   +Outlet:WalletHas20:InteractDislikes:Charity
+                   +CheckLists:LikesFamily:TapWater
+                   +Phobic:Masters:LikesFamily:MorningNews
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +NoLies:CityLimits:Charity
+                   +Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +InteractDislikes:Jealous:Charity
+                   +Outlet:Jealous:Charity
+                   +Phobic:Masters:CheckLists:Medications
+                   +Outlet:TravelAbroad:InteractDislikes:Jealous
+                   +Outlet:WalletHas20:Undergraduate:Charity
+                   +NoLies:WalletHas20:CityLimits:Undergraduate:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Jealous:Charity
+                   +NoLies:InteractDislikes:Undergraduate:Charity:Overweight
+                   +Masters:Medications
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Undergraduate:Overweight
+                   +Sociable
+                   +Phobic:ManyPets:CheckLists:Medications:LikesFamily
+                   +NoLies:CityLimits:TravelAbroad:InteractDislikes:Charity
+                   +Phobic:K12:Masters:CheckLists
+                   +TryFirst:AlarmAhead
+                   +OddHours:Bachelor
+                   +CarPymt
+                   +K12:Masters:Medications:MorningNews:TapWater
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Jealous:Charity
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Charity
+                   +Vitamins
+                   +Outlet:TravelAbroad:InteractDislikes:Jealous:Charity
+                   +Misterious:Online:GoodatMath
+                   +Outlet:WalletHas20:Undergraduate
+                   +OddHours:Siblings:Bachelor:AlarmAhead
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Jealous
+                   +WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +Masters:CheckLists:Medications:LikesFamily:TapWater
+                   +NoLies:Outlet:CityLimits:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +TravelAbroad
+                   +OddHours:Siblings
+                   +NoLies:InteractDislikes:Jealous:Overweight
+                   +Rules
+                   +FullTime:Siblings:TryFirst
+                   +CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +OddHours:AlarmAhead
+                   +NoLies:Outlet:InteractDislikes:Jealous:Charity:Overweight
+                   +Overworks:Personality:Cautious:Alarm
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Charity:Overweight
+                   +Outlet:TravelAbroad:Overweight
+                   +Glasses
+                   +WalletHas20:Jealous:Overweight
+                   +Outlet:CityLimits:Jealous:Charity
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +WalletHas20:CityLimits:Charity:Overweight
+                   +WalletHas20:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +TravelAbroad:InteractDislikes:Charity:Overweight
+                   +WalletHas20:CityLimits:Undergraduate:Jealous
+                   +NoLies:Outlet:WalletHas20:CityLimits:Undergraduate:Charity:Overweight
+                   +CreditDebt
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Jealous
+                   +Phobic:K12:MorningNews
+                   +CheckLists:Medications:TapWater
+                   +CityLimits:TravelAbroad:Undergraduate:Jealous:Charity
+                   +Outlet:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:WalletHas20:TravelAbroad:Undergraduate:Charity:Overweight
+                   +Outlet:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Jealous
+                   +Outlet:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:CityLimits:TravelAbroad
+                   +NoLies:CityLimits:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +K12:Masters:CheckLists:Medications:LikesFamily:TapWater
+                   +PositiveThinking:MoneyBuys:Mac:StraightA:HotHead
+                   +NoLies:TravelAbroad:InteractDislikes:Overweight
+                   +NoLies:Outlet:WalletHas20:Undergraduate:Charity:Overweight
+                   +HasDebt
+                   +CityLimits:TravelAbroad:InteractDislikes:Jealous
+                   +Misterious
+                   +NoLies:WalletHas20:TravelAbroad:Overweight
+                   +Poor
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate
+                   +ManyPets:MorningNews:TapWater
+                   +FullTime:TryFirst:AlarmAhead
+                   +TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +Outlet:TravelAbroad:InteractDislikes:Undergraduate:Charity
+                   +NoLies:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Misterious:SameState:GoodatMath
+                   +LikesFamily:TapWater
+                   +K12:ManyPets:Medications:LikesFamily
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Charity
+                   +MoneyBuys:StraightA:HotHead
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Jealous:Charity:Overweight
+                   +CityLimits:InteractDislikes:Jealous:Overweight
+                   +K12:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +Outlet:WalletHas20:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:Charity
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate
+                   +K12:CheckLists:LikesFamily:MorningNews:TapWater
+                   +Outlet:InteractDislikes:Undergraduate:Jealous:Charity
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +Phobic:K12:CheckLists:LikesFamily:TapWater
+                   +WalletHas20:Undergraduate:Jealous:Charity
+                   +Phobic:K12:Masters:ManyPets:CheckLists:Medications:MorningNews
+                   +CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:CityLimits:InteractDislikes
+                   +CityLimits:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +K12:Medications:LikesFamily
+                   +Outlet:WalletHas20:TravelAbroad:Jealous:Charity
+                   +ManyPets:CheckLists:TapWater
+                   +K12:Masters:LikesFamily
+                   +K12:TapWater
+                   +WalletHas20:InteractDislikes:Undergraduate:Jealous
+                   +ManyPets:Medications:LikesFamily:MorningNews:TapWater
+                   +InteractDislikes:Jealous:Overweight
+                   +HotHead
+                   +NoLies:Undergraduate:Charity
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +Successful
+                   +FullTime:OddHours:Siblings:TryFirst:AlarmAhead
+                   +Phobic:CheckLists:Medications:MorningNews
+                   +Collects
+                   +TravelAbroad:InteractDislikes:Undergraduate:Charity
+                   +NoLies:CityLimits:Undergraduate:Overweight
+                   +InteractDislikes:Undergraduate:Charity:Overweight
+                   +Personality:Cautious
+                   +Outlet:WalletHas20:InteractDislikes:Jealous:Charity
+                   +Phobic:Masters:ManyPets:TapWater
+                   +NoLies:CityLimits:TravelAbroad:Charity
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Charity
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes
+                   +Outlet:WalletHas20:Undergraduate:Charity:Overweight
+                   +Outlet:WalletHas20:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +NoLies:Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Jealous
+                   +Phobic:K12:Masters:ManyPets:LikesFamily:MorningNews
+                   +OddHours:Bachelor:AlarmAhead
+                   +WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +WalletHas20:Jealous:Charity:Overweight
+                   +CityLimits:TravelAbroad:InteractDislikes:Charity
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate:Charity:Overweight
+                   +WalletHas20:CityLimits:InteractDislikes:Jealous:Charity
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes
+                   +NoLies:InteractDislikes:Overweight
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate
+                   +Outlet:CityLimits:TravelAbroad:Undergraduate
+                   +Outlet:CityLimits:InteractDislikes:Undergraduate:Charity
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +Outlet:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Jealous:Overweight
+                   +CreditDebt:Online:GoodatMath
+                   +Phobic:K12:Masters:CheckLists:MorningNews:TapWater
+                   +Phobic:Masters:CheckLists:MorningNews:TapWater
+                   +NoLies:WalletHas20:InteractDislikes
+                   +Outlet:WalletHas20:TravelAbroad:InteractDislikes
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +Online
+                   +Phobic:CheckLists:LikesFamily:MorningNews:TapWater
+                   +K12:Masters:LikesFamily:MorningNews:TapWater
+                   +Phobic:K12:ManyPets:CheckLists:Medications:TapWater
+                   +NoLies:Outlet:WalletHas20:CityLimits:TravelAbroad:InteractDislikes
+                   +GoodatMath
+                   +NoLies:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Jealous:Charity
+                   +Outlet:CityLimits:TravelAbroad:Undergraduate:Jealous
+                   +Phobic:K12:CheckLists
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Jealous:Overweight
+                   +Gender
+                   +CityLimits:TravelAbroad:Jealous:Charity
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:Outlet:InteractDislikes:Charity
+                   +WalletHas20:TravelAbroad:InteractDislikes:Jealous:Charity:Overweight
+                   +Outlet:WalletHas20:InteractDislikes:Undergraduate
+                   +CreditDebt:GoodatMath
+                   +StressfulEvts
+                   +CityLimits:InteractDislikes:Jealous:Charity
+                   +NoLies:Outlet:TravelAbroad:Undergraduate:Overweight
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +Phobic:Masters:ManyPets:MorningNews
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +Outlet:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Charity
+                   +K12:CheckLists:LikesFamily:TapWater
+                   +Outlet:WalletHas20:TravelAbroad:Undergraduate:Charity:Overweight
+                   +Phobic:K12:Masters:Medications:LikesFamily:MorningNews
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Jealous
+                   +InteractDislikes:Charity
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes
+                   +Outlet:WalletHas20:InteractDislikes
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Undergraduate
+                   +Phobic:K12:TapWater
+                   +NoLies:CityLimits:Undergraduate:Jealous:Overweight
+                   +NoLies:TravelAbroad:InteractDislikes:Undergraduate:Charity:Overweight
+                   +TravelAbroad:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:CityLimits:Undergraduate:Jealous
+                   +K12:ManyPets
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +Outlet:CityLimits:Undergraduate:Charity
+                   +NoLies:Outlet:WalletHas20:Undergraduate:Overweight
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Undergraduate:Jealous
+                   +NoLies:Outlet:WalletHas20:TravelAbroad:Undergraduate:Overweight
+                   +Phobic:ManyPets:CheckLists:Medications:TapWater
+                   +WalletHas20:CityLimits:InteractDislikes:Jealous:Charity:Overweight
+                   +Outlet:WalletHas20:Undergraduate:Jealous:Overweight
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +Outlet:WalletHas20:CityLimits:InteractDislikes:Charity
+                   +Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +Skeptical
+                   +K12:ManyPets:Medications:TapWater
+                   +WalletHas20:InteractDislikes:Jealous:Charity:Overweight
+                   +NoLies:WalletHas20:Undergraduate:Charity
+                   +Undergraduate:Jealous:Overweight
+                   +Phobic:Masters:Medications:LikesFamily:MorningNews
+                   +CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Outlet:CityLimits:TravelAbroad:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:InteractDislikes:Charity
+                   +NoLies:Outlet:InteractDislikes
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:Undergraduate
+                   +TravelAbroad:InteractDislikes:Charity
+                   +WalletHas20:TravelAbroad:InteractDislikes:Jealous
+                   +Outlet:InteractDislikes:Charity
+                   +CityLimits:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Jealous:Charity
+                   +Outlet:CityLimits:Undergraduate:Jealous:Charity
+                   +NoLies:WalletHas20:InteractDislikes:Jealous:Charity:Overweight
+                   +K12:Masters:LikesFamily:MorningNews
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Outlet:CityLimits:Undergraduate
+                   +HappyorRight
+                   +WalletHas20:TravelAbroad:InteractDislikes
+                   +NoLies:InteractDislikes:Jealous:Charity
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Phobic:K12:Masters:ManyPets:MorningNews
+                   +Phobic:K12:CheckLists:LikesFamily:MorningNews:TapWater
+                   +Outlet:CityLimits:TravelAbroad:Undergraduate:Charity
+                   +Grudge
+                   +Phobic:ManyPets:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +ManyPets:Medications:TapWater
+                   +NoLies:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Phobic:K12:ManyPets:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +NoLies:Outlet:InteractDislikes:Overweight
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Charity
+                   +Phobic:Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:WalletHas20:CityLimits:TravelAbroad:InteractDislikes
+                   +NoLies:CityLimits:TravelAbroad:Undergraduate:Jealous
+                   +NoLies:Outlet:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate
+                   +ManyPets:TapWater
+                   +WalletHas20:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +Outlet:TravelAbroad:InteractDislikes:Undergraduate
+                   +CityLimits:TravelAbroad:InteractDislikes:Overweight
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +CityLimits:TravelAbroad:InteractDislikes:Jealous:Charity
+                   +NoLies:CityLimits:InteractDislikes:Overweight
+                   +WalletHas20:CityLimits:InteractDislikes:Undergraduate:Charity:Overweight
+                   +MeaningofLife
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +K12:Masters:ManyPets:CheckLists:LikesFamily
+                   +CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Charity
+                   +CheckLists:TapWater
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +WalletHas20:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +Outlet:CityLimits:Undergraduate:Jealous
+                   +Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +Outlet:WalletHas20:InteractDislikes:Undergraduate:Jealous:Charity
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +Outlet:CityLimits:InteractDislikes:Jealous
+                   +NoLies:CityLimits:Undergraduate:Jealous
+                   +Exciting
+                   +WalletHas20:InteractDislikes:Undergraduate:Charity:Overweight
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Charity
+                   +Outlet:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Jealous
+                   +Outlet:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Charity
+                   +Masters:ManyPets:CheckLists:LikesFamily
+                   +Outlet:TravelAbroad:InteractDislikes:Jealous:Charity:Overweight
+                   +NoLies:CityLimits:InteractDislikes:Jealous:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Overweight
+                   +K12:ManyPets:TapWater
+                   +WalletHas20:InteractDislikes:Charity:Overweight
+                   +Outlet:CityLimits:InteractDislikes:Charity
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Jealous:Charity:Overweight
+                   +NoLies:CityLimits:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +WalletHas20:CityLimits:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +Outlet:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +WalletHas20:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Jealous:Charity
+                   +Outlet:CityLimits:InteractDislikes:Undergraduate:Charity:Overweight
+                   +ManyPets:CheckLists:Medications:LikesFamily:MorningNews:TapWater
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Jealous:Charity
+                   +NoLies:Outlet:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +Outlet:WalletHas20:InteractDislikes:Undergraduate:Charity
+                   +NoLies:WalletHas20:InteractDislikes:Charity:Overweight
+                   +NoLies:Outlet:CityLimits:TravelAbroad:InteractDislikes
+                   +Outlet:CityLimits:InteractDislikes:Jealous:Charity
+                   +NoLies:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes:Charity
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Charity
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Undergraduate
+                   +NoLies:Outlet:CityLimits:TravelAbroad:InteractDislikes:Jealous
+                   +LivesTogether
+                   +NoLies:Outlet:WalletHas20:CityLimits:InteractDislikes
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +Outlet:InteractDislikes:Jealous:Charity
+                   +NoLies:Outlet:WalletHas20:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:InteractDislikes:Jealous:Charity
+                   +FeelsNormal
+                   +NoLies:Outlet:WalletHas20:InteractDislikes
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:InteractDislikes:Undergraduate
+                   +Outlet:TravelAbroad:InteractDislikes:Overweight
+                   +Outlet:InteractDislikes:Undergraduate:Jealous:Charity:Overweight
+                   +NoLies:Outlet:TravelAbroad:InteractDislikes:Jealous:Charity
+                   +Outlet:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +Outlet:InteractDislikes:Undergraduate:Charity:Overweight
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Undergraduate:Overweight
+                   +OverYourHead
+                   +Outlet:CityLimits:TravelAbroad:InteractDislikes:Overweight
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ Misterious:SameState:Online:GoodatMath
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Charity:Undergraduate:Jealous
+                   +MoneyBuys:StraightA:PositiveThinking
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Undergraduate
+                   +CheckLists:LikesFamily:Masters:ManyPets:TapWater
+                   +TravelAbroad:CityLimits:InteractDislikes:Jealous
+                   +SingleParent
+                   +Online:GoodatMath
+                   +CheckLists:Medications:Masters
+                   +CheckLists:Masters:ManyPets:TapWater
+                   +WalletHas20:Outlet:CityLimits:Charity:InteractDislikes:Jealous
+                   +NoLies:TravelAbroad:Charity:Jealous:Overweight
+                   +TravelAbroad:Outlet:InteractDislikes
+                   +TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate
+                   +CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +Medications:LikesFamily:K12:ManyPets:MorningNews:TapWater
+                   +Medications:Masters:K12:ManyPets
+                   +WalletHas20:TravelAbroad:Outlet:CityLimits:Undergraduate
+                   +WalletHas20:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +CheckLists:Medications:Masters:K12:TapWater
+                   +WalletHas20:Outlet:InteractDislikes:Jealous:Overweight
+                   +CheckLists:LikesFamily:Masters:K12:ManyPets:MorningNews:TapWater
+                   +NoLies:Undergraduate:Overweight
+                   +LikesFamily:Masters:K12:ManyPets:MorningNews:TapWater
+                   +WalletHas20:Outlet:CityLimits:InteractDislikes:Jealous
+                   +Medications:K12
+                   +NoLies:WalletHas20:Outlet:Charity:Overweight
+                   +CityLimits:Charity:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +CheckLists:LikesFamily:TapWater
+                   +TalkRadio
+                   +TryFirst:Bachelor:AlarmAhead
+                   +TravelAbroad:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:CityLimits
+                   +MoneyBuys:Mac:StraightA:HotHead
+                   +CheckLists:LikesFamily:Masters:Phobic
+                   +CheckLists:LikesFamily:Masters:K12:ManyPets:MorningNews
+                   +NoLies:WalletHas20:Charity:Undergraduate:Jealous
+                   +Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:CityLimits:Undergraduate
+                   +SameState:GoodatMath
+                   +Charity
+                   +Medications:Masters:MorningNews:TapWater
+                   +NoLies:TravelAbroad:Outlet:CityLimits:Charity:InteractDislikes:Overweight
+                   +TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +Masters:ManyPets:MorningNews:TapWater
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Charity:Undergraduate:Overweight
+                   +NoLies:TravelAbroad:CityLimits:Charity:InteractDislikes
+                   +WalletHas20:TravelAbroad:Outlet:CityLimits:Undergraduate:Jealous
+                   +TapWater:Phobic
+                   +TravelAbroad:Outlet:CityLimits:Charity:Jealous
+                   +WalletHas20:InteractDislikes:Undergraduate
+                   +WalletHas20:TravelAbroad:InteractDislikes:Overweight
+                   +Medications:Masters:ManyPets
+                   +Outlet:CityLimits:Charity:InteractDislikes:Overweight
+                   +NoLies:TravelAbroad:Charity:Undergraduate:Jealous
+                   +CheckLists:Medications:LikesFamily:Masters:K12
+                   +MoneyBuys:Mac:PositiveThinking
+                   +NoLies:Charity:Undergraduate:Jealous:Overweight
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Jealous
+                   +WalletHas20:Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Mac:StraightA:HotHead
+                   +WalletHas20:TravelAbroad:Charity:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Charity:Undergraduate
+                   +NoLies:WalletHas20:CityLimits:Charity:Undergraduate:Overweight
+                   +TryFirst:AlarmAhead
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +Misterious:GoodatMath
+                   +NoLies:Charity:InteractDislikes:Undergraduate:Overweight
+                   +CheckLists:Medications:LikesFamily:TapWater:Phobic
+                   +WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Jealous:Overweight
+                   +Medications:LikesFamily:MorningNews
+                   +NoLies:Charity:Undergraduate:Overweight
+                   +CheckLists:LikesFamily:Masters:ManyPets:MorningNews:TapWater
+                   +YOB:Alarm
+                   +NoLies:Outlet:Jealous:Overweight
+                   +MoneyBuys:StraightA:HotHead:PositiveThinking
+                   +WalletHas20:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +TravelAbroad
+                   +WalletHas20:Outlet:Charity:Undergraduate:Jealous
+                   +WalletHas20:Outlet:Charity:InteractDislikes
+                   +CheckLists:Medications:Masters:K12
+                   +NoLies:Outlet:CityLimits:Charity:InteractDislikes:Overweight
+                   +LikesFamily:Masters:MorningNews:TapWater:Phobic
+                   +YOB:Alarm:Personality:Cautious
+                   +FullTime:AlarmAhead
+                   +CheckLists:Medications:K12:MorningNews
+                   +WalletHas20:TravelAbroad:Jealous
+                   +TravelAbroad:Outlet:CityLimits
+                   +CheckLists:Medications:K12
+                   +Siblings:Bachelor:FullTime:OddHours:AlarmAhead
+                   +NoLies:CityLimits:Charity
+                   +WalletHas20:Outlet:Charity:Undergraduate
+                   +Medications:Masters:K12:MorningNews:TapWater
+                   +WalletHas20:InteractDislikes:Jealous:Overweight
+                   +TravelAbroad:CityLimits:Charity:InteractDislikes:Overweight
+                   +WalletHas20:Outlet:Charity:Jealous
+                   +NoLies:CityLimits:Charity:Jealous:Overweight
+                   +Medications:ManyPets
+                   +NoLies:TravelAbroad:CityLimits:Charity:InteractDislikes:Undergraduate
+                   +CheckLists:Medications:LikesFamily:Masters:MorningNews:TapWater:Phobic
+                   +WalletHas20:TravelAbroad:Outlet:InteractDislikes:Undergraduate
+                   +CheckLists:K12:ManyPets:Phobic
+                   +Charity:InteractDislikes:Jealous
+                   +TravelAbroad:InteractDislikes
+                   +Siblings:OddHours:AlarmAhead
+                   +NoLies:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:Masters:K12:Phobic
+                   +NoLies:WalletHas20:Outlet:CityLimits:Charity:InteractDislikes:Overweight
+                   +YOB:Alarm:Cautious
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:Jealous
+                   +MoneyBuys:HotHead
+                   +CheckLists:Medications:Masters:K12:ManyPets:MorningNews:Phobic
+                   +Medications:LikesFamily:MorningNews:TapWater:Phobic
+                   +Siblings:Bachelor:FullTime:AlarmAhead
+                   +NoLies:InteractDislikes:Jealous:Overweight
+                   +Medications:Masters
+                   +LikesFamily:Masters:K12:MorningNews:TapWater:Phobic
+                   +CryBaby
+                   +Medications:LikesFamily:ManyPets
+                   +NoLies:WalletHas20:Outlet:Charity:InteractDislikes:Overweight
+                   +NoLies:Outlet:Charity:InteractDislikes:Undergraduate:Jealous
+                   +TravelAbroad:Outlet:Charity:InteractDislikes:Undergraduate
+                   +ManyPets:MorningNews:TapWater
+                   +CheckLists:LikesFamily:K12:ManyPets:MorningNews:Phobic
+                   +CheckLists:Medications:Masters:Phobic
+                   +WalletHas20:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:Charity:Jealous:Overweight
+                   +LikesFamily:MorningNews:TapWater:Phobic
+                   +Outlet:Charity:InteractDislikes:Undergraduate:Jealous
+                   +CheckLists:LikesFamily:Masters:TapWater:Phobic
+                   +WalletHas20:Outlet:Undergraduate
+                   +Vitamins
+                   +TravelAbroad:Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Overweight
+                   +StraightA
+                   +OddHours
+                   +LikesFamily:Masters:K12:MorningNews:Phobic
+                   +CityLimits:InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Siblings:TryFirst:Bachelor:FullTime:OddHours:AlarmAhead
+                   +TravelAbroad:CityLimits:InteractDislikes:Jealous:Overweight
+                   +Outlet:Charity:Jealous
+                   +Outlet:CityLimits:Undergraduate:Overweight
+                   +Bachelor:OddHours
+                   +CarPymt
+                   +NoLies:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:TravelAbroad:Jealous:Overweight
+                   +NoLies:Outlet:Charity:InteractDislikes:Jealous:Overweight
+                   +Republican
+                   +NoLies:WalletHas20:Outlet:CityLimits:Charity:Overweight
+                   +WalletHas20:Outlet:CityLimits:InteractDislikes
+                   +TravelAbroad:Charity:InteractDislikes:Overweight
+                   +CheckLists:Medications:LikesFamily:Masters:TapWater
+                   +CheckLists:Medications:LikesFamily:ManyPets:Phobic
+                   +K12:MorningNews:Phobic
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Undergraduate:Jealous
+                   +WalletHas20:CityLimits:Charity:Overweight
+                   +Rules
+                   +CreditDebt
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:CityLimits:InteractDislikes
+                   +CheckLists:LikesFamily:K12:MorningNews:TapWater
+                   +Siblings:OddHours
+                   +Outlet:Charity:Undergraduate:Jealous
+                   +Misterious:Online:GoodatMath
+                   +CheckLists:LikesFamily:Masters:K12:TapWater:Phobic
+                   +LikesFamily:Masters:K12:TapWater
+                   +NoLies:TravelAbroad:Outlet:InteractDislikes
+                   +Bachelor:FullTime:OddHours:AlarmAhead
+                   +NoLies:WalletHas20:TravelAbroad:Charity:InteractDislikes:Jealous
+                   +CheckLists:LikesFamily:MorningNews:TapWater:Phobic
+                   +LikesFamily:Masters:MorningNews:Phobic
+                   +Outlet:CityLimits:Charity:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:Outlet:CityLimits:InteractDislikes
+                   +NoLies:WalletHas20:Outlet:CityLimits:Charity:Undergraduate:Overweight
+                   +CheckLists:Medications:TapWater
+                   +CheckLists:Medications:LikesFamily:Masters:K12:TapWater
+                   +NoLies:WalletHas20:TravelAbroad:Outlet:Charity:Undergraduate:Overweight
+                   +Siblings:Bachelor:OddHours:AlarmAhead
+                   +NoLies:TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate
+                   +TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Charity:Undergraduate:Jealous
+                   +TravelAbroad:Outlet:Charity:InteractDislikes:Jealous
+                   +CheckLists:LikesFamily:K12:TapWater:Phobic
+                   +TravelAbroad:CityLimits:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:Medications:LikesFamily:Masters:K12:MorningNews:TapWater:Phobic
+                   +TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +NoLies:CityLimits:Charity:Overweight
+                   +Misterious:SameState:GoodatMath
+                   +NoLies:TravelAbroad:CityLimits:InteractDislikes:Jealous:Overweight
+                   +NoLies:TravelAbroad:CityLimits
+                   +CheckLists:Medications:LikesFamily:K12:MorningNews:TapWater
+                   +Misterious
+                   +TravelAbroad:Outlet:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +MoneyBuys:Mac:StraightA:HotHead:PositiveThinking
+                   +OddHours:AlarmAhead
+                   +Medications:LikesFamily:ManyPets:MorningNews:TapWater
+                   +Siblings:TryFirst:FullTime
+                   +WalletHas20:Outlet:InteractDislikes
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes
+                   +K12:TapWater
+                   +Glasses
+                   +TryFirst:FullTime:AlarmAhead
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Charity:Undergraduate
+                   +WalletHas20:Jealous:Overweight
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +Medications:LikesFamily:K12:ManyPets
+                   +NoLies:TravelAbroad:InteractDislikes:Overweight
+                   +TravelAbroad:Outlet:Overweight
+                   +TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +WalletHas20:Outlet:Charity:Overweight
+                   +Poor
+                   +Successful
+                   +HotHead
+                   +Alarm:Overworks:Personality:Cautious
+                   +LikesFamily:TapWater
+                   +NoLies:WalletHas20:CityLimits:Charity:InteractDislikes
+                   +InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +Outlet:Charity:InteractDislikes:Jealous:Overweight
+                   +NoLies:TravelAbroad:Outlet:Charity:InteractDislikes:Jealous:Overweight
+                   +Sociable
+                   +Medications:LikesFamily:K12
+                   +WalletHas20:TravelAbroad:Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +WalletHas20:TravelAbroad:Outlet:Undergraduate:Jealous:Overweight
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Jealous
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Jealous
+                   +TravelAbroad:CityLimits:Charity:Undergraduate:Jealous
+                   +NoLies:InteractDislikes:Overweight
+                   +CheckLists:LikesFamily:K12:TapWater
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Overweight
+                   +CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:CityLimits:Undergraduate:Overweight
+                   +WalletHas20:Outlet:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Outlet:CityLimits:Charity:InteractDislikes
+                   +TravelAbroad:CityLimits:Charity:InteractDislikes
+                   +NoLies:WalletHas20:Outlet:CityLimits:InteractDislikes:Undergraduate
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +Masters:ManyPets:TapWater:Phobic
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Jealous
+                   +WalletHas20:InteractDislikes:Undergraduate:Jealous
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate
+                   +CityLimits:Charity:InteractDislikes:Jealous
+                   +WalletHas20:TravelAbroad:Outlet:InteractDislikes
+                   +WalletHas20:CityLimits:Undergraduate:Jealous
+                   +NoLies:WalletHas20:Outlet:Charity:Undergraduate:Overweight
+                   +NoLies:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CreditDebt:Online:GoodatMath
+                   +HasDebt
+                   +NoLies:Outlet:Charity:InteractDislikes
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:InteractDislikes
+                   +MoneyBuys:StraightA:HotHead
+                   +WalletHas20:TravelAbroad:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +Siblings:TryFirst:FullTime:OddHours:AlarmAhead
+                   +WalletHas20:Charity:Undergraduate:Jealous
+                   +Collects
+                   +WalletHas20:TravelAbroad:Charity:InteractDislikes:Jealous:Overweight
+                   +WalletHas20:Outlet:Charity:Undergraduate:Overweight
+                   +NoLies:TravelAbroad:CityLimits:Charity
+                   +LikesFamily:Masters:K12:ManyPets:MorningNews:Phobic
+                   +Outlet:CityLimits:Charity:Undergraduate
+                   +WalletHas20:Outlet:InteractDislikes:Undergraduate
+                   +LikesFamily:Masters:K12
+                   +CheckLists:ManyPets:TapWater
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate
+                   +CheckLists:Masters:K12:MorningNews:TapWater:Phobic
+                   +CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +GoodatMath
+                   +CheckLists:Medications:K12:ManyPets:TapWater:Phobic
+                   +NoLies:WalletHas20:Charity:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Outlet:CityLimits:Charity:InteractDislikes:Jealous
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Jealous:Overweight
+                   +Online
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Undergraduate:Jealous
+                   +WalletHas20:Charity:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Jealous
+                   +Bachelor:OddHours:AlarmAhead
+                   +K12:ManyPets
+                   +LikesFamily:Masters:K12:MorningNews:TapWater
+                   +Personality:Cautious
+                   +Outlet:InteractDislikes:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:TravelAbroad:InteractDislikes:Jealous:Overweight
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:Medications:ManyPets:TapWater:Phobic
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Undergraduate:Overweight
+                   +NoLies:TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous
+                   +CheckLists:K12:Phobic
+                   +WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:Charity:InteractDislikes
+                   +CreditDebt:GoodatMath
+                   +CheckLists:Masters:MorningNews:TapWater:Phobic
+                   +NoLies:WalletHas20:CityLimits:Undergraduate:Jealous
+                   +WalletHas20:Outlet:CityLimits:Charity:InteractDislikes
+                   +WalletHas20:Outlet:Undergraduate:Jealous:Overweight
+                   +TravelAbroad:Charity:InteractDislikes:Undergraduate
+                   +NoLies:Charity:Undergraduate
+                   +NoLies:TravelAbroad:Charity:InteractDislikes:Undergraduate:Overweight
+                   +K12:TapWater:Phobic
+                   +TravelAbroad:InteractDislikes:Jealous
+                   +TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +TravelAbroad:Outlet:CityLimits:Undergraduate
+                   +WalletHas20:Outlet:Charity:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Jealous:Overweight
+                   +Gender
+                   +StressfulEvts
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes
+                   +TravelAbroad:CityLimits:Charity:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:Outlet:Undergraduate:Overweight
+                   +Masters:ManyPets:MorningNews:Phobic
+                   +Charity:InteractDislikes
+                   +NoLies:CityLimits:Undergraduate:Jealous:Overweight
+                   +Outlet:Charity:InteractDislikes
+                   +Skeptical
+                   +TravelAbroad:Outlet:CityLimits:Undergraduate:Jealous
+                   +CheckLists:LikesFamily:K12:MorningNews:TapWater:Phobic
+                   +NoLies:WalletHas20:Outlet:Undergraduate:Overweight
+                   +TravelAbroad:Outlet:CityLimits:Charity:InteractDislikes:Overweight
+                   +WalletHas20:TravelAbroad:Outlet:CityLimits:Charity:Undergraduate
+                   +WalletHas20:Charity:InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:Charity:InteractDislikes:Jealous:Overweight
+                   +NoLies:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Undergraduate
+                   +NoLies:TravelAbroad:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:InteractDislikes
+                   +CityLimits:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:Charity:Undergraduate
+                   +LikesFamily:Masters:K12:MorningNews
+                   +WalletHas20:TravelAbroad:Charity:InteractDislikes:Overweight
+                   +Undergraduate:Jealous:Overweight
+                   +CheckLists:Medications:MorningNews:Phobic
+                   +NoLies:TravelAbroad:Outlet:Undergraduate:Overweight
+                   +Medications:LikesFamily:Masters:K12:MorningNews:Phobic
+                   +Outlet:CityLimits:Charity:InteractDislikes:Undergraduate
+                   +HappyorRight
+                   +Medications:K12:ManyPets:TapWater
+                   +TravelAbroad:CityLimits:Charity:InteractDislikes:Jealous
+                   +Charity:InteractDislikes:Undergraduate:Overweight
+                   +TravelAbroad:Outlet:CityLimits:Charity:Undergraduate:Jealous
+                   +NoLies:TravelAbroad:CityLimits:Undergraduate:Jealous
+                   +WalletHas20:TravelAbroad:InteractDislikes
+                   +Masters:ManyPets:MorningNews:TapWater:Phobic
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Jealous:Overweight
+                   +NoLies:Outlet:InteractDislikes:Overweight
+                   +NoLies:Charity:InteractDislikes:Jealous
+                   +TravelAbroad:Outlet:CityLimits:Charity:Undergraduate
+                   +WalletHas20:TravelAbroad:InteractDislikes:Jealous
+                   +Outlet:CityLimits:Charity:Undergraduate:Jealous
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:CityLimits:Undergraduate:Jealous
+                   +NoLies:CityLimits:InteractDislikes:Overweight
+                   +CheckLists:LikesFamily:Masters:K12:ManyPets
+                   +TravelAbroad:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +TravelAbroad:Outlet:InteractDislikes:Undergraduate
+                   +Medications:LikesFamily:Masters:MorningNews:Phobic
+                   +ManyPets:TapWater
+                   +NoLies:WalletHas20:CityLimits:Charity:InteractDislikes:Jealous
+                   +NoLies:Outlet:InteractDislikes
+                   +TravelAbroad:CityLimits:InteractDislikes:Overweight
+                   +Outlet:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:TravelAbroad:Outlet:Charity:InteractDislikes
+                   +NoLies:Outlet:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous
+                   +Medications:ManyPets:TapWater
+                   +Outlet:CityLimits:Undergraduate
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Outlet:InteractDislikes:Undergraduate
+                   +TravelAbroad:Outlet:Charity:InteractDislikes:Jealous:Overweight
+                   +TravelAbroad:Charity:InteractDislikes
+                   +NoLies:Outlet:CityLimits:Charity:InteractDislikes:Undergraduate
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Undergraduate:Overweight
+                   +Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:LikesFamily:Masters:ManyPets
+                   +CheckLists:TapWater
+                   +WalletHas20:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:Medications:LikesFamily:K12:ManyPets:MorningNews:TapWater:Phobic
+                   +Grudge
+                   +Masters:K12:ManyPets:MorningNews:Phobic
+                   +WalletHas20:Outlet:Charity:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +Outlet:InteractDislikes:Undergraduate
+                   +TravelAbroad:CityLimits:Charity:InteractDislikes:Undergraduate
+                   +NoLies:TravelAbroad:Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Exciting
+                   +MeaningofLife
+                   +TravelAbroad:Outlet:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +CheckLists:Medications:LikesFamily:ManyPets:MorningNews:TapWater:Phobic
+                   +WalletHas20:Charity:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Jealous:Overweight
+                   +NoLies:CityLimits:InteractDislikes:Jealous:Overweight
+                   +WalletHas20:Charity:InteractDislikes:Overweight
+                   +Outlet:CityLimits:Undergraduate:Jealous
+                   +Outlet:CityLimits:InteractDislikes:Jealous
+                   +NoLies:Outlet:InteractDislikes:Undergraduate:Jealous
+                   +K12:ManyPets:TapWater
+                   +WalletHas20:Outlet:Charity:InteractDislikes:Undergraduate
+                   +NoLies:Outlet:CityLimits:InteractDislikes:Overweight
+                   +NoLies:TravelAbroad:Outlet:CityLimits:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:Charity:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:Outlet:CityLimits:InteractDislikes:Jealous
+                   +Outlet:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:TravelAbroad:Outlet:CityLimits:InteractDislikes
+                   +WalletHas20:CityLimits:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +Outlet:CityLimits:Charity:InteractDislikes
+                   +NoLies:TravelAbroad:CityLimits:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Outlet:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate
+                   +NoLies:TravelAbroad:InteractDislikes:Undergraduate:Jealous
+                   +NoLies:WalletHas20:Outlet:Charity:InteractDislikes:Jealous
+                   +NoLies:TravelAbroad:Outlet:InteractDislikes:Undergraduate
+                   +WalletHas20:TravelAbroad:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +CheckLists:Medications:LikesFamily:ManyPets:MorningNews:TapWater
+                   +TravelAbroad:Outlet:CityLimits:Charity:InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:Outlet:CityLimits:InteractDislikes
+                   +Outlet:CityLimits:Charity:InteractDislikes:Undergraduate:Overweight
+                   +NoLies:WalletHas20:Outlet:CityLimits:Charity:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:Outlet:InteractDislikes:Jealous
+                   +NoLies:WalletHas20:Outlet:Charity:InteractDislikes
+                   +Outlet:CityLimits:Charity:InteractDislikes:Jealous
+                   +Outlet:Charity:InteractDislikes:Jealous
+                   +NoLies:Outlet:Charity:InteractDislikes:Jealous
+                   +LivesTogether
+                   +NoLies:TravelAbroad:Outlet:InteractDislikes:Jealous:Overweight
+                   +NoLies:InteractDislikes:Undergraduate:Jealous
+                   +Outlet:Charity:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:Outlet:CityLimits:Charity:InteractDislikes
+                   +TravelAbroad:Outlet:InteractDislikes:Jealous:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Undergraduate:Jealous
+                   +TravelAbroad:Outlet:InteractDislikes:Overweight
+                   +NoLies:Outlet:InteractDislikes:Undergraduate
+                   +NoLies:WalletHas20:Outlet:InteractDislikes
+                   +NoLies:TravelAbroad:Outlet:Charity:InteractDislikes:Jealous
+                   +FeelsNormal
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate:Jealous:Overweight
+                   +TravelAbroad:Outlet:Charity:InteractDislikes:Overweight
+                   +Outlet:Charity:InteractDislikes:Undergraduate:Overweight
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Jealous:Overweight
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Undergraduate:Overweight
+                   +OverYourHead
+                   +TravelAbroad:Outlet:CityLimits:InteractDislikes:Overweight
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ NoLies:Jealous:Outlet:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +YOB:Alarm:Personality:Cautious
+                   +Masters:Phobic:LikesFamily:MorningNews
+                   +Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +LikesFamily:Medications:MorningNews
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Jealous:InteractDislikes:CityLimits:Overweight
+                   +NoLies:WalletHas20:Undergraduate:CityLimits:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits
+                   +Masters:K12:TapWater:Medications:MorningNews
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +NoLies:CityLimits:Charity
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +K12:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +CheckLists:K12:Phobic:ManyPets
+                   +AlarmAhead:Siblings:OddHours
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:Charity:Overweight
+                   +Masters:Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:TravelAbroad:Jealous:Overweight
+                   +AlarmAhead:OddHours:Bachelor:FullTime
+                   +NoLies:Undergraduate:CityLimits
+                   +WalletHas20:TravelAbroad:InteractDislikes:Outlet
+                   +Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +LikesFamily:ManyPets:Medications
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits:Charity:Overweight
+                   +MoneyBuys:StraightA:PositiveThinking:Mac:HotHead
+                   +WalletHas20:Jealous
+                   +TryFirst:AlarmAhead:FullTime
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Outlet:Charity:Overweight
+                   +CheckLists:K12:Phobic:LikesFamily:ManyPets:MorningNews
+                   +Undergraduate:Jealous:Outlet:Charity
+                   +CheckLists:K12:Medications
+                   +Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes
+                   +YOB:Alarm:Cautious
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Charity
+                   +Vitamins
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +WalletHas20:Jealous:Outlet:Charity
+                   +NoLies:Jealous:CityLimits:Charity:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:Overweight
+                   +OddHours
+                   +NoLies:TravelAbroad:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:InteractDislikes:Overweight
+                   +Jealous:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:TapWater
+                   +MoneyBuys:HotHead
+                   +AlarmAhead:Siblings:Bachelor:FullTime
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes:Charity:Overweight
+                   +WalletHas20:Undergraduate:Outlet:Charity
+                   +WalletHas20:InteractDislikes:Outlet
+                   +AlarmAhead:OddHours
+                   +Masters:ManyPets:TapWater:MorningNews
+                   +CheckLists:K12:Medications:MorningNews
+                   +K12:Phobic:MorningNews
+                   +CheckLists:LikesFamily:TapWater
+                   +NoLies:TravelAbroad:InteractDislikes:Overweight
+                   +WalletHas20:Undergraduate:Jealous:Outlet:Charity
+                   +Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +ManyPets:Medications
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:Charity
+                   +NoLies:InteractDislikes:CityLimits:Outlet
+                   +TryFirst:AlarmAhead:Siblings:OddHours:Bachelor:FullTime
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:Outlet:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes
+                   +CheckLists:Masters:Phobic:Medications
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes
+                   +CheckLists:Masters:Phobic:LikesFamily:TapWater
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +Masters:K12:Phobic:LikesFamily:TapWater:MorningNews
+                   +CheckLists:K12:LikesFamily:TapWater:MorningNews
+                   +TryFirst:Siblings:FullTime
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +TravelAbroad:Jealous:CityLimits:Outlet:Charity
+                   +Siblings:OddHours
+                   +Masters:K12:LikesFamily:TapWater
+                   +CheckLists:K12:LikesFamily:TapWater:Medications:MorningNews
+                   +CheckLists:Phobic:LikesFamily:ManyPets:Medications
+                   +TravelAbroad:InteractDislikes:Charity:Overweight
+                   +Rules
+                   +TravelAbroad:InteractDislikes
+                   +NoLies:WalletHas20:CityLimits:Outlet:Charity:Overweight
+                   +Jealous:InteractDislikes:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Charity
+                   +NoLies:CityLimits:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +TravelAbroad:Outlet:Overweight
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity
+                   +CheckLists:Masters:K12:Phobic:LikesFamily:TapWater
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:InteractDislikes:CityLimits:Charity:Overweight
+                   +CryBaby
+                   +WalletHas20:Undergraduate:InteractDislikes
+                   +NoLies:TravelAbroad:InteractDislikes:Outlet
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +GoodatMath:Misterious
+                   +WalletHas20:Undergraduate:Jealous:CityLimits
+                   +Glasses
+                   +Masters:Phobic:ManyPets:TapWater
+                   +CheckLists:Masters:K12:LikesFamily:TapWater:Medications
+                   +K12:TapWater
+                   +StraightA
+                   +WalletHas20:CityLimits:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:Outlet:Charity
+                   +CreditDebt
+                   +NoLies:Undergraduate:CityLimits:Overweight
+                   +LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:Outlet
+                   +GoodatMath:Online:CreditDebt
+                   +NoLies:TravelAbroad:CityLimits
+                   +Republican
+                   +WalletHas20:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +K12:LikesFamily:ManyPets:Medications
+                   +NoLies:WalletHas20:InteractDislikes
+                   +CarPymt
+                   +CheckLists:TapWater:Medications
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +Poor
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Overweight
+                   +CheckLists:Masters:LikesFamily:TapWater:Medications
+                   +K12:LikesFamily:Medications
+                   +CheckLists:Phobic:LikesFamily:TapWater:MorningNews
+                   +Undergraduate:CityLimits:Outlet:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +WalletHas20:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity:Overweight
+                   +GoodatMath:Misterious:Online
+                   +AlarmAhead:Siblings:OddHours:Bachelor
+                   +CheckLists:Masters:Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +OddHours:Bachelor
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Overweight
+                   +HasDebt
+                   +WalletHas20:TravelAbroad:Jealous:Outlet:Charity
+                   +InteractDislikes:Outlet:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits:Charity
+                   +Successful
+                   +Alarm:Personality:Cautious:Overworks
+                   +WalletHas20:Undergraduate:Jealous:Outlet:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Jealous:CityLimits
+                   +WalletHas20:Jealous:Overweight
+                   +NoLies:WalletHas20:Undergraduate:CityLimits:Outlet:Charity:Overweight
+                   +CheckLists:ManyPets:TapWater
+                   +LikesFamily:TapWater
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet
+                   +NoLies:InteractDislikes:Outlet:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +CheckLists:K12:Phobic
+                   +WalletHas20:Jealous:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits
+                   +WalletHas20:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:Jealous:InteractDislikes:Charity:Overweight
+                   +WalletHas20:Undergraduate:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits
+                   +WalletHas20:Jealous:InteractDislikes:Outlet:Charity
+                   +TravelAbroad:Jealous:InteractDislikes:Overweight
+                   +Sociable
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Online
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:WalletHas20:Undergraduate:Outlet:Charity:Overweight
+                   +TravelAbroad:Jealous:CityLimits:Charity
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits
+                   +HotHead
+                   +K12:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Overweight
+                   +Masters:Phobic:ManyPets:MorningNews
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +Masters:K12:Phobic:LikesFamily:ManyPets:MorningNews
+                   +Collects
+                   +NoLies:WalletHas20:Undergraduate:Jealous:CityLimits
+                   +GoodatMath
+                   +Personality:Cautious
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +InteractDislikes:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:K12:LikesFamily:TapWater
+                   +TryFirst:AlarmAhead:Siblings:OddHours:FullTime
+                   +NoLies:Undergraduate:Jealous:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:Charity
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity:Overweight
+                   +CheckLists:Masters:K12:Phobic:TapWater:MorningNews
+                   +CheckLists:K12:Phobic:ManyPets:TapWater:Medications
+                   +CheckLists:Masters:K12:Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:Jealous:Charity
+                   +NoLies:WalletHas20:Undergraduate:Charity
+                   +WalletHas20:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +GoodatMath:CreditDebt
+                   +InteractDislikes:Charity
+                   +StressfulEvts
+                   +Misterious
+                   +Masters:K12:LikesFamily:TapWater:MorningNews
+                   +Undergraduate:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Outlet:Charity
+                   +WalletHas20:Undergraduate:InteractDislikes:Outlet
+                   +CheckLists:Masters:Phobic:TapWater:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Outlet:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:Outlet:Charity
+                   +WalletHas20:Outlet:Charity:Overweight
+                   +AlarmAhead:OddHours:Bachelor
+                   +NoLies:InteractDislikes:Charity
+                   +NoLies:TravelAbroad:CityLimits:Charity
+                   +Masters:K12:LikesFamily
+                   +CheckLists:Phobic:ManyPets:TapWater:Medications
+                   +WalletHas20:TravelAbroad:Undergraduate:CityLimits:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:Charity
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +NoLies:WalletHas20:Undergraduate:Outlet:Overweight
+                   +Masters:K12:LikesFamily:MorningNews
+                   +Gender
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +Undergraduate:Jealous:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes
+                   +InteractDislikes:Outlet:Charity
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +K12:ManyPets
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +NoLies:InteractDislikes:Outlet
+                   +TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:CityLimits
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Charity:Overweight
+                   +NoLies:TravelAbroad:InteractDislikes:Outlet:Charity
+                   +NoLies:InteractDislikes:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Outlet:Overweight
+                   +Skeptical
+                   +NoLies:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +Masters:K12:Phobic:ManyPets:MorningNews
+                   +NoLies:Undergraduate:Jealous:CityLimits
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:CityLimits
+                   +Masters:Phobic:ManyPets:TapWater:MorningNews
+                   +NoLies:Jealous:InteractDislikes:Charity
+                   +TravelAbroad:Undergraduate:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:Masters:K12:LikesFamily:ManyPets
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +WalletHas20:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:Undergraduate:InteractDislikes:CityLimits:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes
+                   +CheckLists:TapWater
+                   +WalletHas20:TravelAbroad:InteractDislikes
+                   +ManyPets:TapWater
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Charity
+                   +TravelAbroad:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +CheckLists:Phobic:Medications:MorningNews
+                   +WalletHas20:InteractDislikes:Charity:Overweight
+                   +CheckLists:Phobic:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +CheckLists:Masters:LikesFamily:ManyPets
+                   +Undergraduate:InteractDislikes:Outlet
+                   +HappyorRight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes
+                   +K12:ManyPets:TapWater:Medications
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Masters:K12:Phobic:LikesFamily:Medications:MorningNews
+                   +Undergraduate:Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Outlet
+                   +TravelAbroad:InteractDislikes:Charity
+                   +MeaningofLife
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +Masters:Phobic:LikesFamily:Medications:MorningNews
+                   +Undergraduate:CityLimits:Outlet
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +MoneyBuys:StraightA:HotHead
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +Exciting
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:CityLimits:Overweight
+                   +WalletHas20:Undergraduate:InteractDislikes:Outlet:Charity
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +ManyPets:TapWater:Medications
+                   +Grudge
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +CheckLists:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet
+                   +Jealous:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Overweight
+                   +K12:ManyPets:TapWater
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes
+                   +Undergraduate:Jealous:CityLimits:Outlet
+                   +NoLies:WalletHas20:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Overweight
+                   +InteractDislikes:CityLimits:Outlet:Charity
+                   +Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:WalletHas20:InteractDislikes:Outlet:Charity
+                   +TravelAbroad:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +NoLies:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:Undergraduate:Jealous:InteractDislikes
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:Outlet
+                   +TravelAbroad:InteractDislikes:Outlet:Charity:Overweight
+                   +LivesTogether
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Charity
+                   +Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +Undergraduate:InteractDislikes:Outlet:Charity:Overweight
+                   +FeelsNormal
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet:Overweight
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ Phobic:TapWater
+                   +TryFirst:AlarmAhead
+                   +K12:Medications
+                   +Masters:TapWater:Medications:MorningNews
+                   +CheckLists:Masters:K12:Phobic:ManyPets:Medications:MorningNews
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Overweight
+                   +CheckLists:Masters:K12:Phobic
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +MoneyBuys:PositiveThinking:Mac
+                   +Jealous:InteractDislikes:Charity
+                   +TravelAbroad
+                   +SingleParent
+                   +WalletHas20:TravelAbroad:Jealous
+                   +CheckLists:Masters:Phobic:LikesFamily
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Overweight
+                   +NoLies:Jealous:InteractDislikes:Overweight
+                   +WalletHas20:TravelAbroad:Jealous:Charity:Overweight
+                   +TalkRadio
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +SameState:GoodatMath:Misterious
+                   +CheckLists:Masters:K12:LikesFamily:ManyPets:MorningNews
+                   +StraightA:Mac:HotHead
+                   +ManyPets:TapWater:MorningNews
+                   +WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +Charity
+                   +SameState:GoodatMath
+                   +CheckLists:Masters:K12:LikesFamily:Medications
+                   +YOB:Alarm
+                   +WalletHas20:TravelAbroad:Undergraduate:CityLimits:Outlet
+                   +Masters:K12:Phobic:LikesFamily:MorningNews
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet:Charity
+                   +AlarmAhead:Siblings:OddHours:Bachelor:FullTime
+                   +WalletHas20:Jealous:InteractDislikes:Outlet:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Overweight
+                   +WalletHas20:InteractDislikes:Outlet:Charity
+                   +WalletHas20:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:Outlet:Charity
+                   +Masters:Medications
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:Jealous:Outlet:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +YOB:Alarm:Personality:Cautious
+                   +Masters:Phobic:LikesFamily:MorningNews
+                   +Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +LikesFamily:Medications:MorningNews
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Jealous:InteractDislikes:CityLimits:Overweight
+                   +NoLies:WalletHas20:Undergraduate:CityLimits:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity
+                   +NoLies:WalletHas20:TravelAbroad:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits
+                   +Masters:K12:TapWater:Medications:MorningNews
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +NoLies:CityLimits:Charity
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +K12:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +CheckLists:K12:Phobic:ManyPets
+                   +AlarmAhead:Siblings:OddHours
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:Charity:Overweight
+                   +Masters:Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:TravelAbroad:Jealous:Overweight
+                   +AlarmAhead:OddHours:Bachelor:FullTime
+                   +NoLies:Undergraduate:CityLimits
+                   +WalletHas20:TravelAbroad:InteractDislikes:Outlet
+                   +Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +LikesFamily:ManyPets:Medications
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits:Charity:Overweight
+                   +MoneyBuys:StraightA:PositiveThinking:Mac:HotHead
+                   +WalletHas20:Jealous
+                   +TryFirst:AlarmAhead:FullTime
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Outlet:Charity:Overweight
+                   +CheckLists:K12:Phobic:LikesFamily:ManyPets:MorningNews
+                   +Undergraduate:Jealous:Outlet:Charity
+                   +CheckLists:K12:Medications
+                   +Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes
+                   +YOB:Alarm:Cautious
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Charity
+                   +Vitamins
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +WalletHas20:Jealous:Outlet:Charity
+                   +NoLies:Jealous:CityLimits:Charity:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:Overweight
+                   +OddHours
+                   +NoLies:TravelAbroad:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:InteractDislikes:Overweight
+                   +Jealous:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:TapWater
+                   +MoneyBuys:HotHead
+                   +AlarmAhead:Siblings:Bachelor:FullTime
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes:Charity:Overweight
+                   +WalletHas20:Undergraduate:Outlet:Charity
+                   +WalletHas20:InteractDislikes:Outlet
+                   +AlarmAhead:OddHours
+                   +Masters:ManyPets:TapWater:MorningNews
+                   +CheckLists:K12:Medications:MorningNews
+                   +K12:Phobic:MorningNews
+                   +CheckLists:LikesFamily:TapWater
+                   +NoLies:TravelAbroad:InteractDislikes:Overweight
+                   +WalletHas20:Undergraduate:Jealous:Outlet:Charity
+                   +Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +ManyPets:Medications
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:Charity
+                   +NoLies:InteractDislikes:CityLimits:Outlet
+                   +TryFirst:AlarmAhead:Siblings:OddHours:Bachelor:FullTime
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:Outlet:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes
+                   +CheckLists:Masters:Phobic:Medications
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes
+                   +CheckLists:Masters:Phobic:LikesFamily:TapWater
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +Masters:K12:Phobic:LikesFamily:TapWater:MorningNews
+                   +CheckLists:K12:LikesFamily:TapWater:MorningNews
+                   +TryFirst:Siblings:FullTime
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +TravelAbroad:Jealous:CityLimits:Outlet:Charity
+                   +Siblings:OddHours
+                   +Masters:K12:LikesFamily:TapWater
+                   +CheckLists:K12:LikesFamily:TapWater:Medications:MorningNews
+                   +CheckLists:Phobic:LikesFamily:ManyPets:Medications
+                   +TravelAbroad:InteractDislikes:Charity:Overweight
+                   +Rules
+                   +TravelAbroad:InteractDislikes
+                   +NoLies:WalletHas20:CityLimits:Outlet:Charity:Overweight
+                   +Jealous:InteractDislikes:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Charity
+                   +NoLies:CityLimits:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +TravelAbroad:Outlet:Overweight
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity
+                   +CheckLists:Masters:K12:Phobic:LikesFamily:TapWater
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:InteractDislikes:CityLimits:Charity:Overweight
+                   +CryBaby
+                   +WalletHas20:Undergraduate:InteractDislikes
+                   +NoLies:TravelAbroad:InteractDislikes:Outlet
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +GoodatMath:Misterious
+                   +WalletHas20:Undergraduate:Jealous:CityLimits
+                   +Glasses
+                   +Masters:Phobic:ManyPets:TapWater
+                   +CheckLists:Masters:K12:LikesFamily:TapWater:Medications
+                   +K12:TapWater
+                   +StraightA
+                   +WalletHas20:CityLimits:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:Outlet:Charity
+                   +CreditDebt
+                   +NoLies:Undergraduate:CityLimits:Overweight
+                   +LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:Outlet
+                   +GoodatMath:Online:CreditDebt
+                   +NoLies:TravelAbroad:CityLimits
+                   +Republican
+                   +WalletHas20:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +K12:LikesFamily:ManyPets:Medications
+                   +NoLies:WalletHas20:InteractDislikes
+                   +CarPymt
+                   +CheckLists:TapWater:Medications
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +Poor
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:TravelAbroad:Outlet:Charity:Overweight
+                   +CheckLists:Masters:LikesFamily:TapWater:Medications
+                   +K12:LikesFamily:Medications
+                   +CheckLists:Phobic:LikesFamily:TapWater:MorningNews
+                   +Undergraduate:CityLimits:Outlet:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +WalletHas20:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity:Overweight
+                   +GoodatMath:Misterious:Online
+                   +AlarmAhead:Siblings:OddHours:Bachelor
+                   +CheckLists:Masters:Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +OddHours:Bachelor
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Overweight
+                   +HasDebt
+                   +WalletHas20:TravelAbroad:Jealous:Outlet:Charity
+                   +InteractDislikes:Outlet:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits:Charity
+                   +Successful
+                   +Alarm:Personality:Cautious:Overworks
+                   +WalletHas20:Undergraduate:Jealous:Outlet:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Jealous:CityLimits
+                   +WalletHas20:Jealous:Overweight
+                   +NoLies:WalletHas20:Undergraduate:CityLimits:Outlet:Charity:Overweight
+                   +CheckLists:ManyPets:TapWater
+                   +LikesFamily:TapWater
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet
+                   +NoLies:InteractDislikes:Outlet:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +CheckLists:K12:Phobic
+                   +WalletHas20:Jealous:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Overweight
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits
+                   +WalletHas20:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:Jealous:InteractDislikes:Charity:Overweight
+                   +WalletHas20:Undergraduate:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits
+                   +WalletHas20:Jealous:InteractDislikes:Outlet:Charity
+                   +TravelAbroad:Jealous:InteractDislikes:Overweight
+                   +Sociable
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Online
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +NoLies:WalletHas20:Undergraduate:Outlet:Charity:Overweight
+                   +TravelAbroad:Jealous:CityLimits:Charity
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits
+                   +HotHead
+                   +K12:Phobic:TapWater
+                   +Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Overweight
+                   +Masters:Phobic:ManyPets:MorningNews
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet
+                   +Masters:K12:Phobic:LikesFamily:ManyPets:MorningNews
+                   +Collects
+                   +NoLies:WalletHas20:Undergraduate:Jealous:CityLimits
+                   +GoodatMath
+                   +Personality:Cautious
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet
+                   +InteractDislikes:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity
+                   +Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:K12:LikesFamily:TapWater
+                   +TryFirst:AlarmAhead:Siblings:OddHours:FullTime
+                   +NoLies:Undergraduate:Jealous:CityLimits:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:Charity
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:TravelAbroad:Undergraduate:Outlet:Charity:Overweight
+                   +CheckLists:Masters:K12:Phobic:TapWater:MorningNews
+                   +CheckLists:K12:Phobic:ManyPets:TapWater:Medications
+                   +CheckLists:Masters:K12:Phobic:LikesFamily:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:Jealous:Charity
+                   +NoLies:WalletHas20:Undergraduate:Charity
+                   +WalletHas20:TravelAbroad:InteractDislikes:Charity:Overweight
+                   +GoodatMath:CreditDebt
+                   +InteractDislikes:Charity
+                   +StressfulEvts
+                   +Misterious
+                   +Masters:K12:LikesFamily:TapWater:MorningNews
+                   +Undergraduate:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Outlet:Charity
+                   +WalletHas20:Undergraduate:InteractDislikes:Outlet
+                   +CheckLists:Masters:Phobic:TapWater:MorningNews
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Outlet:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:CityLimits
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:Outlet:Charity
+                   +WalletHas20:Outlet:Charity:Overweight
+                   +AlarmAhead:OddHours:Bachelor
+                   +NoLies:InteractDislikes:Charity
+                   +NoLies:TravelAbroad:CityLimits:Charity
+                   +Masters:K12:LikesFamily
+                   +CheckLists:Phobic:ManyPets:TapWater:Medications
+                   +WalletHas20:TravelAbroad:Undergraduate:CityLimits:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:TapWater:MorningNews
+                   +NoLies:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:Charity
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:CityLimits:Outlet
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +NoLies:WalletHas20:Undergraduate:Outlet:Overweight
+                   +Masters:K12:LikesFamily:MorningNews
+                   +Gender
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +Undergraduate:Jealous:Overweight
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes
+                   +InteractDislikes:Outlet:Charity
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +K12:ManyPets
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +NoLies:InteractDislikes:Outlet
+                   +TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:CityLimits
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Charity:Overweight
+                   +NoLies:TravelAbroad:InteractDislikes:Outlet:Charity
+                   +NoLies:InteractDislikes:CityLimits:Overweight
+                   +NoLies:Jealous:InteractDislikes:CityLimits:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Outlet:Overweight
+                   +Skeptical
+                   +NoLies:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +Masters:K12:Phobic:ManyPets:MorningNews
+                   +NoLies:Undergraduate:Jealous:CityLimits
+                   +NoLies:WalletHas20:TravelAbroad:InteractDislikes:CityLimits
+                   +Masters:Phobic:ManyPets:TapWater:MorningNews
+                   +NoLies:Jealous:InteractDislikes:Charity
+                   +TravelAbroad:Undergraduate:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:Masters:K12:LikesFamily:ManyPets
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +WalletHas20:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +NoLies:WalletHas20:TravelAbroad:Jealous:InteractDislikes:CityLimits:Overweight
+                   +WalletHas20:Undergraduate:InteractDislikes:CityLimits:Charity:Overweight
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes
+                   +CheckLists:TapWater
+                   +WalletHas20:TravelAbroad:InteractDislikes
+                   +ManyPets:TapWater
+                   +TravelAbroad:Undergraduate:Jealous:CityLimits:Outlet
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Charity
+                   +TravelAbroad:Undergraduate:InteractDislikes:Outlet:Overweight
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +CheckLists:Phobic:Medications:MorningNews
+                   +WalletHas20:InteractDislikes:Charity:Overweight
+                   +CheckLists:Phobic:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +CheckLists:Masters:LikesFamily:ManyPets
+                   +Undergraduate:InteractDislikes:Outlet
+                   +HappyorRight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Charity
+                   +WalletHas20:TravelAbroad:Jealous:InteractDislikes
+                   +K12:ManyPets:TapWater:Medications
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:Charity:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Overweight
+                   +Masters:K12:Phobic:LikesFamily:Medications:MorningNews
+                   +Undergraduate:Jealous:CityLimits:Outlet:Charity
+                   +CheckLists:K12:Phobic:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +WalletHas20:Undergraduate:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Outlet
+                   +TravelAbroad:InteractDislikes:Charity
+                   +MeaningofLife
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +Masters:Phobic:LikesFamily:Medications:MorningNews
+                   +Undergraduate:CityLimits:Outlet
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +MoneyBuys:StraightA:HotHead
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +Exciting
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:CityLimits:Overweight
+                   +WalletHas20:Undergraduate:InteractDislikes:Outlet:Charity
+                   +WalletHas20:Undergraduate:Jealous:InteractDislikes:CityLimits:Charity:Overweight
+                   +ManyPets:TapWater:Medications
+                   +Grudge
+                   +NoLies:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +CheckLists:LikesFamily:ManyPets:TapWater:Medications:MorningNews
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet
+                   +Jealous:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:Undergraduate:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +NoLies:InteractDislikes:CityLimits:Outlet:Overweight
+                   +K12:ManyPets:TapWater
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:TravelAbroad:Undergraduate:Jealous:InteractDislikes
+                   +NoLies:WalletHas20:Undergraduate:Jealous:InteractDislikes
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet
+                   +NoLies:TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:Undergraduate:InteractDislikes
+                   +Undergraduate:Jealous:CityLimits:Outlet
+                   +NoLies:WalletHas20:InteractDislikes:Charity:Overweight
+                   +NoLies:WalletHas20:Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Overweight
+                   +InteractDislikes:CityLimits:Outlet:Charity
+                   +Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:WalletHas20:InteractDislikes:Outlet:Charity
+                   +TravelAbroad:InteractDislikes:Outlet:Overweight
+                   +WalletHas20:TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Overweight
+                   +Undergraduate:Jealous:InteractDislikes:Outlet:Charity:Overweight
+                   +NoLies:Jealous:InteractDislikes:Outlet:Charity
+                   +NoLies:Undergraduate:Jealous:InteractDislikes
+                   +TravelAbroad:Jealous:InteractDislikes:Outlet:Overweight
+                   +NoLies:Undergraduate:InteractDislikes:Outlet
+                   +TravelAbroad:InteractDislikes:Outlet:Charity:Overweight
+                   +LivesTogether
+                   +Undergraduate:InteractDislikes:CityLimits:Outlet:Charity:Overweight
+                   +NoLies:WalletHas20:InteractDislikes:Outlet
+                   +NoLies:WalletHas20:InteractDislikes:CityLimits:Outlet:Charity
+                   +NoLies:TravelAbroad:Jealous:InteractDislikes:Outlet:Charity
+                   +Jealous:InteractDislikes:CityLimits:Outlet:Charity
+                   +TravelAbroad:Undergraduate:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +Undergraduate:InteractDislikes:Outlet:Charity:Overweight
+                   +FeelsNormal
+                   +TravelAbroad:Jealous:InteractDislikes:CityLimits:Outlet:Overweight
+                   +TravelAbroad:Undergraduate:InteractDislikes:CityLimits:Outlet:Overweight
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet:Overweight
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ TapWater:K12:Medications:MorningNews:ManyPets:LikesFamily
+                   +Phobic:TapWater:Masters:MorningNews:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:Overweight:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet
+                   +CityLimits:Charity:Overweight:Jealous:NoLies
+                   +TravelAbroad:Charity:Overweight:Jealous:WalletHas20:NoLies
+                   +Jealous:WalletHas20
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity
+                   +Phobic:TapWater:MorningNews:LikesFamily
+                   +InteractDislikes:Overweight:NoLies
+                   +InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate
+                   +Medications:Masters
+                   +CityLimits:Charity:Overweight:WalletHas20:NoLies:Undergraduate
+                   +Charity:Jealous:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Charity:Overweight
+                   +MoneyBuys:PositiveThinking:Mac:StraightA:HotHead
+                   +TravelAbroad:InteractDislikes:CityLimits:WalletHas20:NoLies:Outlet
+                   +TapWater:Masters:MorningNews:ManyPets
+                   +Medications:MorningNews:LikesFamily
+                   +CityLimits:Charity:Overweight:NoLies
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:Jealous:WalletHas20
+                   +InteractDislikes:Charity:Overweight:NoLies:Undergraduate
+                   +TravelAbroad:CityLimits:Charity:Overweight:WalletHas20:NoLies:Undergraduate
+                   +YOB:Alarm:Cautious
+                   +AlarmAhead:Siblings:OddHours
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20
+                   +TryFirst:AlarmAhead:FullTime
+                   +AlarmAhead:Siblings:Bachelor:FullTime
+                   +AlarmAhead:Siblings:OddHours:Bachelor:FullTime
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:NoLies:Outlet
+                   +Phobic:K12:MorningNews:CheckLists:ManyPets:LikesFamily
+                   +Vitamins
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Overweight:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Jealous:WalletHas20:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Jealous:Outlet
+                   +TravelAbroad:CityLimits:Charity:Jealous:Undergraduate
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:Undergraduate
+                   +Charity:Jealous:Outlet
+                   +Medications:ManyPets:LikesFamily
+                   +AlarmAhead:OddHours
+                   +Charity:Jealous:WalletHas20:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous:Undergraduate
+                   +Charity:WalletHas20:Undergraduate:Outlet
+                   +AlarmAhead:OddHours:Bachelor:FullTime
+                   +InteractDislikes:CityLimits:Jealous:NoLies:Undergraduate
+                   +TravelAbroad:InteractDislikes:Overweight:NoLies
+                   +InteractDislikes:CityLimits:NoLies:Outlet
+                   +TravelAbroad:InteractDislikes
+                   +TravelAbroad:InteractDislikes:CityLimits:Jealous:NoLies:Undergraduate:Outlet
+                   +Phobic:TapWater:K12:Masters:MorningNews:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:WalletHas20:Outlet
+                   +Phobic:TapWater:K12:CheckLists:LikesFamily
+                   +InteractDislikes:Charity:WalletHas20:Outlet
+                   +K12:Medications:CheckLists
+                   +TapWater:K12:Medications:MorningNews:CheckLists:LikesFamily
+                   +TapWater:K12:Medications:Masters:MorningNews
+                   +InteractDislikes:WalletHas20:Outlet
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate:Outlet
+                   +InteractDislikes:Overweight:Outlet
+                   +K12:Medications:MorningNews:CheckLists
+                   +TravelAbroad:InteractDislikes:Charity:Jealous:WalletHas20:NoLies
+                   +TravelAbroad:InteractDislikes:Jealous:Undergraduate
+                   +InteractDislikes:Overweight:Jealous
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:WalletHas20:Undergraduate:Outlet
+                   +MoneyBuys:HotHead
+                   +TravelAbroad:CityLimits:NoLies
+                   +OddHours
+                   +InteractDislikes:Charity:Overweight:Jealous:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous
+                   +CityLimits:NoLies:Undergraduate
+                   +InteractDislikes:Overweight:Jealous:WalletHas20:Outlet
+                   +TravelAbroad:Overweight:Outlet
+                   +InteractDislikes:Charity:Overweight:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:Charity:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Charity:WalletHas20:NoLies
+                   +TravelAbroad:Charity:Jealous:WalletHas20:Outlet
+                   +CityLimits:Jealous:WalletHas20:Undergraduate
+                   +Medications:ManyPets
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:NoLies:Undergraduate
+                   +InteractDislikes:WalletHas20:NoLies
+                   +Phobic:TapWater:Masters:ManyPets
+                   +TravelAbroad:Overweight:Jealous:WalletHas20:Undergraduate:Outlet
+                   +GoodatMath:CreditDebt:Online
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:NoLies
+                   +TapWater:K12:MorningNews:CheckLists:LikesFamily
+                   +TravelAbroad:Charity:Jealous:WalletHas20:Undergraduate:Outlet
+                   +Phobic:TapWater:Masters:CheckLists:LikesFamily
+                   +TryFirst:Siblings:FullTime
+                   +GoodatMath:Misterious
+                   +TapWater:CheckLists:LikesFamily
+                   +Charity:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20
+                   +Charity:WalletHas20:NoLies:Undergraduate
+                   +CityLimits:Overweight:NoLies:Undergraduate
+                   +TapWater:K12:Medications:Masters:CheckLists:LikesFamily
+                   +TryFirst:AlarmAhead:Siblings:OddHours:Bachelor:FullTime
+                   +Rules
+                   +WalletHas20:Undergraduate:Outlet
+                   +Phobic:Medications:Masters:CheckLists
+                   +InteractDislikes:Overweight:Jealous:WalletHas20:NoLies
+                   +TravelAbroad:InteractDislikes:Overweight:WalletHas20:Undergraduate:Outlet
+                   +Phobic:K12:MorningNews
+                   +TapWater:K12
+                   +TravelAbroad:CityLimits:Charity:Jealous:Outlet
+                   +CityLimits:Charity:Overweight:WalletHas20
+                   +TravelAbroad:CityLimits:Jealous:WalletHas20:NoLies:Undergraduate
+                   +Glasses
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:WalletHas20:NoLies:Undergraduate
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate
+                   +StraightA
+                   +TravelAbroad:InteractDislikes:NoLies:Outlet
+                   +TapWater:LikesFamily
+                   +TapWater:Medications:MorningNews:ManyPets:LikesFamily
+                   +Siblings:OddHours
+                   +TravelAbroad:InteractDislikes:Jealous:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous:NoLies:Outlet
+                   +Phobic:TapWater:K12:Masters:CheckLists:LikesFamily
+                   +Charity:Jealous:NoLies:Undergraduate
+                   +K12:Medications:LikesFamily
+                   +InteractDislikes:Charity:Jealous:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:Jealous:NoLies:Outlet
+                   +TravelAbroad:CityLimits:Charity:WalletHas20:NoLies:Undergraduate
+                   +TravelAbroad:Charity:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:Overweight:Jealous:NoLies:Undergraduate
+                   +Republican
+                   +CarPymt
+                   +InteractDislikes:Charity:Overweight:Undergraduate
+                   +Overweight:Jealous:WalletHas20
+                   +CityLimits:Overweight:Undergraduate:Outlet
+                   +AlarmAhead:Siblings:OddHours:Bachelor
+                   +TapWater:K12:Masters:LikesFamily
+                   +Phobic:TapWater:MorningNews:CheckLists:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:Jealous:WalletHas20
+                   +GoodatMath:Misterious:Online
+                   +Alarm:Personality:Cautious:Overworks
+                   +CreditDebt
+                   +Phobic:Medications:CheckLists:ManyPets:LikesFamily
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:NoLies:Undergraduate
+                   +TapWater:CheckLists:ManyPets
+                   +CryBaby
+                   +InteractDislikes:Charity
+                   +Phobic:TapWater:Medications:Masters:MorningNews:CheckLists:LikesFamily
+                   +HasDebt
+                   +TapWater:Medications:CheckLists
+                   +InteractDislikes:Charity:Jealous:WalletHas20:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Jealous:NoLies:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:NoLies:Undergraduate
+                   +CityLimits:Charity:Overweight:WalletHas20:NoLies:Outlet
+                   +TravelAbroad:InteractDislikes:Charity:Undergraduate
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Jealous:Undergraduate
+                   +TravelAbroad:InteractDislikes:CityLimits:Jealous:WalletHas20:NoLies
+                   +Overweight:Jealous:WalletHas20:Undergraduate:Outlet
+                   +K12:Medications:ManyPets:LikesFamily
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:WalletHas20
+                   +OddHours:Bachelor
+                   +Poor
+                   +Successful
+                   +Charity:Overweight:Jealous:WalletHas20
+                   +TravelAbroad:InteractDislikes:CityLimits:Undergraduate:Outlet
+                   +TravelAbroad:CityLimits:Charity:Jealous
+                   +TapWater:Medications:Masters:CheckLists:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:Jealous:NoLies:Undergraduate
+                   +InteractDislikes:CityLimits:Jealous:WalletHas20:NoLies
+                   +Phobic:K12:CheckLists
+                   +TravelAbroad:Charity:Overweight:WalletHas20:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Jealous
+                   +Charity:Overweight:WalletHas20:Undergraduate:Outlet
+                   +Sociable
+                   +CityLimits:Jealous:WalletHas20:NoLies:Undergraduate
+                   +InteractDislikes:CityLimits:WalletHas20:NoLies:Undergraduate
+                   +TravelAbroad:CityLimits:WalletHas20:Undergraduate:Outlet
+                   +HotHead
+                   +CityLimits:Charity:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20
+                   +Phobic:TapWater:K12:Medications:CheckLists:ManyPets
+                   +Phobic:Masters:MorningNews:ManyPets
+                   +Online
+                   +Collects
+                   +InteractDislikes:CityLimits:Charity:NoLies:Undergraduate:Outlet
+                   +Phobic:K12:Masters:MorningNews:ManyPets:LikesFamily
+                   +TravelAbroad:InteractDislikes:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Overweight
+                   +GoodatMath
+                   +CityLimits:Overweight:Jealous:NoLies:Undergraduate
+                   +TravelAbroad:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +Phobic:TapWater:K12
+                   +InteractDislikes:CityLimits:Charity:Jealous:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Jealous:WalletHas20:Outlet
+                   +InteractDislikes:Charity:NoLies
+                   +TravelAbroad:CityLimits:Jealous:NoLies:Undergraduate
+                   +InteractDislikes:Overweight:NoLies:Outlet
+                   +Misterious
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:NoLies:Undergraduate
+                   +Phobic:TapWater:Medications:CheckLists:ManyPets
+                   +TravelAbroad:InteractDislikes:CityLimits:Jealous:Undergraduate:Outlet
+                   +TravelAbroad:CityLimits:WalletHas20:NoLies:Undergraduate
+                   +InteractDislikes:WalletHas20:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight
+                   +TravelAbroad:InteractDislikes:CityLimits:WalletHas20:NoLies:Undergraduate
+                   +GoodatMath:CreditDebt
+                   +CityLimits:Charity:Jealous:Outlet
+                   +CityLimits:Charity:Undergraduate:Outlet
+                   +Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:Charity:Overweight:WalletHas20:Undergraduate:Outlet
+                   +Personality:Cautious
+                   +InteractDislikes:CityLimits:Overweight:Jealous:NoLies:Outlet
+                   +K12:ManyPets
+                   +Phobic:TapWater:K12:Medications:Masters:MorningNews:CheckLists:LikesFamily
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20:NoLies:Undergraduate
+                   +TravelAbroad:CityLimits:Charity:NoLies
+                   +TryFirst:AlarmAhead:Siblings:OddHours:FullTime
+                   +InteractDislikes:CityLimits:Overweight:NoLies
+                   +TapWater:K12:CheckLists:LikesFamily
+                   +CityLimits:Jealous:NoLies:Undergraduate
+                   +Phobic:TapWater:K12:Masters:MorningNews:CheckLists
+                   +Charity:Jealous:WalletHas20:Undergraduate
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:WalletHas20:Undergraduate
+                   +AlarmAhead:OddHours:Bachelor
+                   +StressfulEvts
+                   +Charity:Overweight:WalletHas20:Outlet
+                   +InteractDislikes:CityLimits:Overweight:Jealous:NoLies
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:Jealous:NoLies:Undergraduate
+                   +TravelAbroad:Overweight:NoLies:Undergraduate:Outlet
+                   +Gender
+                   +InteractDislikes:Overweight:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Jealous:WalletHas20:Undergraduate
+                   +TravelAbroad:CityLimits:Charity:WalletHas20:Undergraduate:Outlet
+                   +Overweight:Jealous:Undergraduate
+                   +Phobic:TapWater:Masters:MorningNews:CheckLists
+                   +TravelAbroad:InteractDislikes:Charity:NoLies:Outlet
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20:NoLies
+                   +Phobic:TapWater:K12:MorningNews:CheckLists:LikesFamily
+                   +TravelAbroad:InteractDislikes:CityLimits:WalletHas20:NoLies
+                   +TapWater:K12:Masters:MorningNews:LikesFamily
+                   +Charity:NoLies:Undergraduate
+                   +InteractDislikes:Overweight:Jealous:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Overweight:Jealous:WalletHas20:NoLies:Undergraduate:Outlet
+                   +K12:Masters:LikesFamily
+                   +InteractDislikes:Charity:Outlet
+                   +K12:Masters:CheckLists:ManyPets:LikesFamily
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:Jealous:Outlet
+                   +K12:Masters:MorningNews:LikesFamily
+                   +TravelAbroad:InteractDislikes:WalletHas20:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Outlet
+                   +InteractDislikes:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Jealous
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:NoLies
+                   +InteractDislikes:CityLimits:Overweight:Jealous:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Jealous:NoLies
+                   +InteractDislikes:CityLimits:Charity:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Undergraduate
+                   +Phobic:K12:Masters:MorningNews:ManyPets
+                   +TravelAbroad:CityLimits:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Overweight:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Overweight:Outlet
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:WalletHas20
+                   +InteractDislikes:NoLies:Outlet
+                   +Phobic:TapWater:Masters:MorningNews:ManyPets
+                   +TravelAbroad:InteractDislikes:Jealous:WalletHas20
+                   +TravelAbroad:InteractDislikes:Jealous:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:WalletHas20
+                   +Masters:CheckLists:ManyPets:LikesFamily
+                   +Skeptical
+                   +TravelAbroad:InteractDislikes:Charity
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20:Undergraduate
+                   +TravelAbroad:CityLimits:Charity:Undergraduate:Outlet
+                   +InteractDislikes:Overweight:Jealous:Undergraduate:Outlet
+                   +TapWater:ManyPets
+                   +InteractDislikes:Charity:Overweight:WalletHas20
+                   +TapWater:CheckLists
+                   +TravelAbroad:CityLimits:Charity:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous:WalletHas20:NoLies
+                   +TravelAbroad:InteractDislikes:CityLimits:Charity:Overweight:Jealous:Outlet
+                   +InteractDislikes:Charity:WalletHas20:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:WalletHas20:Undergraduate
+                   +InteractDislikes:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate
+                   +TapWater:K12:Medications:ManyPets
+                   +InteractDislikes:Charity:Overweight:WalletHas20:NoLies:Undergraduate
+                   +Phobic:TapWater:Medications:MorningNews:CheckLists:ManyPets:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Jealous:WalletHas20:NoLies:Outlet
+                   +Phobic:Medications:MorningNews:CheckLists
+                   +HappyorRight
+                   +Phobic:K12:Medications:Masters:MorningNews:LikesFamily
+                   +TravelAbroad:CityLimits:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Jealous:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Jealous:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Jealous:NoLies:Outlet
+                   +TravelAbroad:InteractDislikes:Jealous:WalletHas20:NoLies:Undergraduate:Outlet
+                   +Phobic:TapWater:K12:Medications:MorningNews:CheckLists:ManyPets:LikesFamily
+                   +TapWater:Medications:MorningNews:CheckLists:ManyPets:LikesFamily
+                   +CityLimits:Charity:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous:Undergraduate:Outlet
+                   +Phobic:Medications:Masters:MorningNews:LikesFamily
+                   +TravelAbroad:CityLimits:Overweight:Jealous:NoLies:Undergraduate
+                   +TapWater:Medications:ManyPets
+                   +MeaningofLife
+                   +Grudge
+                   +InteractDislikes:Jealous:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Jealous:NoLies:Undergraduate
+                   +Exciting
+                   +TravelAbroad:InteractDislikes:NoLies:Undergraduate:Outlet
+                   +MoneyBuys:StraightA:HotHead
+                   +InteractDislikes:CityLimits:WalletHas20:NoLies:Outlet
+                   +TravelAbroad:InteractDislikes:Overweight:Outlet
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:NoLies:Outlet
+                   +TapWater:K12:ManyPets
+                   +CityLimits:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:NoLies:Outlet
+                   +InteractDislikes:Jealous:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:Charity:Jealous:Outlet
+                   +TravelAbroad:InteractDislikes:Overweight:Jealous:Outlet
+                   +InteractDislikes:CityLimits:Charity:Outlet
+                   +InteractDislikes:Charity:Overweight:WalletHas20:NoLies
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:Jealous:NoLies:Undergraduate
+                   +InteractDislikes:WalletHas20:NoLies:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Jealous:WalletHas20:NoLies:Outlet
+                   +TravelAbroad:InteractDislikes:Charity:Overweight:Outlet
+                   +InteractDislikes:Charity:Jealous:NoLies:Outlet
+                   +InteractDislikes:Jealous:WalletHas20:NoLies:Undergraduate
+                   +InteractDislikes:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:WalletHas20:NoLies:Outlet
+                   +CityLimits:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:Jealous:Outlet
+                   +InteractDislikes:CityLimits:Charity:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:CityLimits:Charity:Overweight:Undergraduate:Outlet
+                   +TravelAbroad:InteractDislikes:Charity:Jealous:NoLies:Outlet
+                   +LivesTogether
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:Undergraduate:Outlet
+                   +FeelsNormal
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Jealous:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Outlet
+                   +TravelAbroad:InteractDislikes:CityLimits:Overweight:Undergraduate:Outlet
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ OddHours
+                   +Collects
+                   +TapWater:K12:Medications:MorningNews:LikesFamily:CheckLists
+                   +TapWater:LikesFamily:CheckLists
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20
+                   +K12:Medications:MorningNews:CheckLists
+                   +InteractDislikes:CityLimits:Overweight:NoLies:TravelAbroad:WalletHas20:Undergraduate
+                   +Charity:NoLies:WalletHas20:Undergraduate
+                   +Siblings:TryFirst:FullTime
+                   +Republican
+                   +Overweight:NoLies:Outlet:WalletHas20:Undergraduate
+                   +Alarm:Cautious:Personality:Overworks
+                   +AlarmAhead:Siblings:OddHours:Bachelor
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet:Jealous
+                   +CityLimits:Charity:Outlet:Jealous:TravelAbroad
+                   +InteractDislikes:Charity:Outlet:Jealous:Undergraduate
+                   +Medications:ManyPets
+                   +Overweight:NoLies:Jealous:TravelAbroad:Undergraduate
+                   +K12:MorningNews:Phobic
+                   +TapWater:MorningNews:LikesFamily:Phobic:CheckLists
+                   +InteractDislikes:CityLimits:Overweight:NoLies:WalletHas20:Undergraduate
+                   +InteractDislikes:Overweight:Outlet:Jealous:TravelAbroad:WalletHas20:Undergraduate
+                   +K12:Medications:CheckLists
+                   +TapWater:K12:MorningNews:LikesFamily:CheckLists
+                   +CityLimits:Charity:NoLies:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Jealous
+                   +MoneyBuys:HotHead
+                   +CityLimits:Overweight:Outlet:Undergraduate
+                   +TapWater:ManyPets:Phobic:Masters
+                   +Medications:ManyPets:LikesFamily:Phobic:CheckLists
+                   +InteractDislikes:CityLimits:Charity:Overweight:NoLies:Jealous:Undergraduate
+                   +InteractDislikes:Charity:Overweight:NoLies:Jealous:WalletHas20:Undergraduate
+                   +GoodatMath:Online:Misterious
+                   +GoodatMath
+                   +K12:Medications:LikesFamily
+                   +InteractDislikes:CityLimits:Charity:Jealous:TravelAbroad:Undergraduate
+                   +Rules
+                   +TapWater:LikesFamily
+                   +Siblings:OddHours
+                   +Overweight:Jealous:WalletHas20
+                   +Successful
+                   +TapWater:K12:Medications:LikesFamily:Masters:CheckLists
+                   +GoodatMath:CreditDebt:Online
+                   +CreditDebt
+                   +InteractDislikes:Charity:Overweight:NoLies:Outlet:Jealous
+                   +AlarmAhead:Siblings:OddHours:TryFirst:FullTime:Bachelor
+                   +InteractDislikes:Charity:NoLies
+                   +CarPymt
+                   +InteractDislikes:CityLimits:NoLies:WalletHas20:Undergraduate
+                   +CryBaby
+                   +InteractDislikes:CityLimits:Charity:NoLies:Jealous:Undergraduate
+                   +StraightA
+                   +InteractDislikes:Overweight:Outlet:Jealous:WalletHas20
+                   +TapWater:Medications:MorningNews:LikesFamily:Phobic:Masters:CheckLists
+                   +TapWater:Medications:MorningNews:ManyPets:LikesFamily
+                   +InteractDislikes:CityLimits:Overweight:NoLies
+                   +CityLimits:Charity:Overweight:WalletHas20
+                   +InteractDislikes:Overweight:Outlet:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Jealous:TravelAbroad:WalletHas20
+                   +TapWater:ManyPets:CheckLists
+                   +InteractDislikes:Outlet:Jealous:TravelAbroad
+                   +CityLimits:Charity:NoLies:TravelAbroad
+                   +CityLimits:Charity:Jealous:TravelAbroad
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20
+                   +MorningNews:ManyPets:Phobic:Masters
+                   +TapWater:K12:LikesFamily:Masters
+                   +HotHead
+                   +Glasses
+                   +InteractDislikes:Outlet:WalletHas20:Undergraduate
+                   +CityLimits:NoLies:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:WalletHas20
+                   +K12:Medications:ManyPets:LikesFamily
+                   +Cautious:Personality
+                   +HasDebt
+                   +OddHours:Bachelor
+                   +Charity:Overweight:Outlet:WalletHas20:Undergraduate
+                   +InteractDislikes:Overweight:NoLies:Outlet:Undergraduate
+                   +CityLimits:Outlet:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Jealous:TravelAbroad
+                   +Charity:Overweight:Outlet:TravelAbroad:WalletHas20
+                   +K12:ManyPets:LikesFamily:Masters:CheckLists
+                   +InteractDislikes:Charity:Outlet:Jealous:WalletHas20
+                   +CityLimits:Overweight:NoLies:Jealous:Undergraduate
+                   +CityLimits:Charity:Outlet:Undergraduate
+                   +InteractDislikes:Charity:Overweight:NoLies:Jealous:Undergraduate
+                   +InteractDislikes:Overweight:Jealous:TravelAbroad
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Jealous:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet:Jealous
+                   +InteractDislikes:Charity:Overweight:NoLies:Outlet:WalletHas20
+                   +K12:MorningNews:ManyPets:LikesFamily:Phobic:Masters
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:Undergraduate
+                   +K12:Phobic:CheckLists
+                   +InteractDislikes:CityLimits:Outlet:TravelAbroad:Undergraduate
+                   +TapWater:K12:Medications:MorningNews:LikesFamily:Phobic:Masters:CheckLists
+                   +InteractDislikes:Charity:Overweight:NoLies:Outlet:Jealous:TravelAbroad
+                   +K12:LikesFamily:Masters
+                   +InteractDislikes:CityLimits:Charity:NoLies:Jealous:WalletHas20
+                   +CityLimits:NoLies:Jealous:WalletHas20:Undergraduate
+                   +TapWater:Medications:CheckLists
+                   +InteractDislikes:Outlet:TravelAbroad:Undergraduate
+                   +CityLimits:NoLies:Jealous:TravelAbroad:Undergraduate
+                   +GoodatMath:Misterious
+                   +TapWater:Medications:ManyPets:Phobic:CheckLists
+                   +GoodatMath:CreditDebt
+                   +TapWater:Medications:LikesFamily:Masters:CheckLists
+                   +CityLimits:Charity:Overweight:NoLies:Outlet:WalletHas20
+                   +TapWater:K12:Medications:ManyPets:Phobic:CheckLists
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet:Jealous:Undergraduate
+                   +TapWater:K12:MorningNews:LikesFamily:Phobic:CheckLists
+                   +CityLimits:Charity:Overweight:NoLies:Outlet:WalletHas20:Undergraduate
+                   +Poor
+                   +InteractDislikes:CityLimits:Outlet:TravelAbroad
+                   +InteractDislikes:Charity:Overweight:NoLies:Jealous:WalletHas20
+                   +Misterious
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet:Undergraduate
+                   +InteractDislikes:Overweight:Outlet:TravelAbroad
+                   +InteractDislikes:CityLimits:Charity:Overweight:Outlet:TravelAbroad
+                   +Charity:Overweight:Outlet:TravelAbroad:WalletHas20:Undergraduate
+                   +AlarmAhead:OddHours:Bachelor
+                   +TapWater:K12:MorningNews:Phobic:Masters:CheckLists
+                   +InteractDislikes:Charity:TravelAbroad
+                   +Overweight:NoLies:Outlet:TravelAbroad:Undergraduate
+                   +InteractDislikes:NoLies:Outlet:TravelAbroad:WalletHas20:Undergraduate
+                   +Online
+                   +CityLimits:NoLies:Jealous:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Outlet:Undergraduate
+                   +InteractDislikes:CityLimits:NoLies:Jealous:TravelAbroad:WalletHas20
+                   +Sociable
+                   +InteractDislikes:CityLimits:Charity:TravelAbroad:Undergraduate
+                   +InteractDislikes:Overweight:NoLies:Outlet:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Jealous
+                   +InteractDislikes:CityLimits:Outlet:Jealous:TravelAbroad:Undergraduate
+                   +InteractDislikes:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:Overweight:Outlet:TravelAbroad:Undergraduate
+                   +InteractDislikes:Overweight:NoLies:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:Jealous:TravelAbroad
+                   +TapWater:K12:LikesFamily:CheckLists
+                   +CityLimits:Charity:Outlet:Jealous
+                   +AlarmAhead:Siblings:OddHours:TryFirst:FullTime
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:WalletHas20:Undergraduate
+                   +TapWater:K12:Phobic
+                   +InteractDislikes:Charity:Overweight:Jealous:WalletHas20:Undergraduate
+                   +K12:MorningNews:LikesFamily:Masters
+                   +InteractDislikes:NoLies:Outlet
+                   +Charity:Overweight:Outlet:WalletHas20
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate
+                   +K12:ManyPets
+                   +TapWater:MorningNews:Phobic:Masters:CheckLists
+                   +StressfulEvts
+                   +InteractDislikes:Charity:Overweight:NoLies:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:NoLies:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Outlet:TravelAbroad
+                   +CityLimits:Charity:Outlet:TravelAbroad:Undergraduate
+                   +ManyPets:LikesFamily:Masters:CheckLists
+                   +InteractDislikes:Charity:Outlet
+                   +CityLimits:Charity:Outlet:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Overweight:Jealous:WalletHas20
+                   +CityLimits:Charity:Outlet:Jealous:TravelAbroad:Undergraduate
+                   +Overweight:Jealous:Undergraduate
+                   +CityLimits:Outlet:TravelAbroad:Undergraduate
+                   +TapWater:K12:MorningNews:LikesFamily:Masters
+                   +TapWater:ManyPets
+                   +InteractDislikes:Charity:Overweight:Outlet:Jealous:TravelAbroad
+                   +Charity:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:NoLies:Outlet:WalletHas20
+                   +InteractDislikes:Charity:Overweight:WalletHas20
+                   +InteractDislikes:CityLimits:NoLies:Outlet:Jealous:TravelAbroad
+                   +K12:MorningNews:ManyPets:Phobic:Masters
+                   +InteractDislikes:Overweight:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:Jealous:TravelAbroad:WalletHas20
+                   +InteractDislikes:CityLimits:Charity:Overweight:Outlet:Jealous:TravelAbroad
+                   +Gender
+                   +InteractDislikes:TravelAbroad:WalletHas20
+                   +TapWater:MorningNews:ManyPets:Phobic:Masters
+                   +K12:Medications:MorningNews:LikesFamily:Phobic:Masters
+                   +Charity:NoLies:Undergraduate
+                   +TapWater:CheckLists
+                   +InteractDislikes:CityLimits:Outlet:Jealous
+                   +InteractDislikes:Charity:Outlet:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:NoLies:Outlet:Jealous:WalletHas20
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:NoLies:Outlet:Jealous:TravelAbroad:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Outlet:Jealous:WalletHas20
+                   +InteractDislikes:Charity:Overweight:WalletHas20:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Outlet:WalletHas20
+                   +Medications:MorningNews:Phobic:CheckLists
+                   +InteractDislikes:Outlet:Undergraduate
+                   +CityLimits:Charity:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:Overweight:NoLies:Outlet:WalletHas20:Undergraduate
+                   +Skeptical
+                   +InteractDislikes:CityLimits:NoLies:Outlet:TravelAbroad
+                   +Medications:MorningNews:LikesFamily:Phobic:Masters
+                   +TapWater:Medications:MorningNews:ManyPets:LikesFamily:CheckLists
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet
+                   +HappyorRight
+                   +InteractDislikes:NoLies:Jealous:TravelAbroad:Undergraduate
+                   +TapWater:K12:Medications:ManyPets
+                   +InteractDislikes:Overweight:Outlet:Jealous:TravelAbroad
+                   +CityLimits:Outlet:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Overweight:Outlet:Jealous:Undergraduate
+                   +TapWater:Medications:MorningNews:ManyPets:LikesFamily:Phobic:CheckLists
+                   +InteractDislikes:NoLies:Outlet:TravelAbroad:Undergraduate
+                   +MoneyBuys:StraightA:HotHead
+                   +CityLimits:Outlet:Jealous:TravelAbroad:Undergraduate
+                   +TapWater:K12:Medications:MorningNews:ManyPets:LikesFamily:Phobic:CheckLists
+                   +CityLimits:Overweight:NoLies:Jealous:TravelAbroad:Undergraduate
+                   +InteractDislikes:Charity:Overweight:Outlet:Jealous:Undergraduate
+                   +MeaningofLife
+                   +InteractDislikes:NoLies:Outlet:Jealous:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:Charity:Overweight:Outlet:TravelAbroad
+                   +InteractDislikes:Overweight:NoLies:Outlet:Jealous:TravelAbroad
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet:Jealous:WalletHas20
+                   +TapWater:K12:ManyPets
+                   +InteractDislikes:CityLimits:Charity:Outlet
+                   +Grudge
+                   +InteractDislikes:NoLies:Jealous:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Outlet:Jealous
+                   +InteractDislikes:NoLies:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:Jealous:TravelAbroad:WalletHas20:Undergraduate
+                   +InteractDislikes:NoLies:WalletHas20:Undergraduate
+                   +Exciting
+                   +InteractDislikes:Charity:Overweight:NoLies:WalletHas20
+                   +InteractDislikes:CityLimits:Charity:NoLies:Outlet:WalletHas20
+                   +InteractDislikes:Charity:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet:Undergraduate
+                   +InteractDislikes:CityLimits:Charity:Overweight:Outlet:Undergraduate
+                   +TapWater:Medications:ManyPets
+                   +InteractDislikes:NoLies:Outlet:Undergraduate
+                   +InteractDislikes:Charity:Overweight:Outlet:Undergraduate
+                   +InteractDislikes:Charity:NoLies:Outlet:Jealous:TravelAbroad
+                   +InteractDislikes:NoLies:Outlet:Jealous:WalletHas20
+                   +InteractDislikes:NoLies:Outlet:WalletHas20
+                   +InteractDislikes:CityLimits:Charity:Outlet:Jealous
+                   +CityLimits:Outlet:Jealous:Undergraduate
+                   +InteractDislikes:NoLies:Jealous:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:Outlet:Jealous:TravelAbroad:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:Outlet:Jealous:TravelAbroad
+                   +InteractDislikes:CityLimits:Overweight:Outlet:TravelAbroad
+                   +LivesTogether
+                   +FeelsNormal
+                   +InteractDislikes:CityLimits:Overweight:Outlet:TravelAbroad:Undergraduate
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~OddHours:AlarmAhead:Bachelor
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic
+                   +CityLimits:Overweight:NoLies:Undergraduate:Jealous
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:Jealous
+                   +Successful
+                   +K12:LikesFamily:Masters
+                   +InteractDislikes:CityLimits:Charity:Overweight:NoLies:Undergraduate:Jealous
+                   +CityLimits:Charity:NoLies:TravelAbroad
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Jealous
+                   +TapWater:ManyPets:Phobic:Masters
+                   +K12:MorningNews:LikesFamily:ManyPets:Phobic:Masters
+                   +LikesFamily:CheckLists:ManyPets:Masters
+                   +InteractDislikes:WalletHas20:TravelAbroad:Jealous
+                   +InteractDislikes:Charity:Overweight:WalletHas20:Undergraduate:Jealous
+                   +GoodatMath:Misterious
+                   +Cautious:Personality
+                   +CarPymt
+                   +OddHours:Siblings:TryFirst:FullTime:AlarmAhead:Bachelor
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate
+                   +CityLimits:Charity:WalletHas20:NoLies:TravelAbroad:Undergraduate
+                   +TapWater:CheckLists:ManyPets
+                   +K12:MorningNews:LikesFamily:Masters
+                   +Overweight:Undergraduate:Jealous
+                   +InteractDislikes:Overweight:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:Overweight:WalletHas20:TravelAbroad:Undergraduate:Outlet
+                   +Rules
+                   +Misterious
+                   +InteractDislikes:Charity:TravelAbroad
+                   +Charity:WalletHas20:Undergraduate:Jealous
+                   +TapWater:LikesFamily
+                   +InteractDislikes:Charity:Overweight:Undergraduate:Outlet:Jealous
+                   +TapWater:Medications:CheckLists:ManyPets:Phobic
+                   +TapWater:Medications:CheckLists
+                   +Charity:Overweight:WalletHas20:Outlet
+                   +HasDebt
+                   +InteractDislikes:TravelAbroad:Jealous
+                   +CityLimits:Charity:Overweight:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:CityLimits:WalletHas20:NoLies:TravelAbroad
+                   +GoodatMath:Online:CreditDebt
+                   +Charity:Overweight:WalletHas20:TravelAbroad:Outlet
+                   +Medications:ManyPets
+                   +CityLimits:Overweight:Undergraduate:Outlet
+                   +CityLimits:WalletHas20:NoLies:Undergraduate:Jealous
+                   +InteractDislikes:WalletHas20:NoLies:TravelAbroad:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Overweight:WalletHas20:NoLies:Undergraduate
+                   +TapWater:K12:Medications:MorningNews:LikesFamily:CheckLists:Phobic:Masters
+                   +MoneyBuys:HotHead
+                   +InteractDislikes:Overweight:TravelAbroad:Undergraduate:Outlet
+                   +K12:CheckLists:Phobic
+                   +InteractDislikes:Charity:WalletHas20:NoLies:Outlet:Jealous
+                   +InteractDislikes:Overweight:WalletHas20:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:Undergraduate
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:Jealous
+                   +StraightA
+                   +Medications:LikesFamily:CheckLists:ManyPets:Phobic
+                   +InteractDislikes:Overweight:WalletHas20:NoLies:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Charity:Overweight:WalletHas20:Undergraduate:Jealous
+                   +Charity:NoLies:Undergraduate
+                   +InteractDislikes:Charity:Overweight:NoLies:TravelAbroad:Outlet:Jealous
+                   +TapWater:K12:Medications:CheckLists:ManyPets:Phobic
+                   +GoodatMath:CreditDebt
+                   +Glasses
+                   +TapWater:K12:Medications:LikesFamily:CheckLists:Masters
+                   +K12:ManyPets
+                   +InteractDislikes:TravelAbroad:Undergraduate:Outlet
+                   +TapWater:K12:LikesFamily:Masters
+                   +InteractDislikes:Charity:Overweight:TravelAbroad:Outlet:Jealous
+                   +CityLimits:Charity:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:WalletHas20:TravelAbroad
+                   +InteractDislikes:CityLimits:Charity:Undergraduate:Outlet
+                   +TapWater:MorningNews:CheckLists:Phobic:Masters
+                   +TapWater:K12:LikesFamily:CheckLists
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet
+                   +InteractDislikes:Charity:NoLies:Outlet:Jealous
+                   +InteractDislikes:Charity:WalletHas20:Undergraduate:Outlet
+                   +CityLimits:TravelAbroad:Undergraduate:Outlet
+                   +TapWater:K12:MorningNews:LikesFamily:CheckLists:Phobic
+                   +K12:MorningNews:ManyPets:Phobic:Masters
+                   +InteractDislikes:Charity:WalletHas20:NoLies:Outlet
+                   +GoodatMath
+                   +InteractDislikes:CityLimits:Charity:Overweight:TravelAbroad:Outlet
+                   +HotHead
+                   +CityLimits:Charity:Undergraduate:Outlet:Jealous
+                   +CityLimits:Charity:TravelAbroad:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Outlet
+                   +InteractDislikes:NoLies:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:Charity:Overweight:NoLies:Undergraduate:Jealous
+                   +InteractDislikes:WalletHas20:NoLies:Outlet:Jealous
+                   +CityLimits:Overweight:NoLies:TravelAbroad:Undergraduate:Jealous
+                   +TapWater:Medications:LikesFamily:CheckLists:Masters
+                   +CryBaby
+                   +TapWater:K12:MorningNews:LikesFamily:Masters
+                   +InteractDislikes:CityLimits:Outlet:Jealous
+                   +InteractDislikes:Charity:Overweight:WalletHas20:Undergraduate
+                   +Online
+                   +CityLimits:Charity:WalletHas20:TravelAbroad:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:WalletHas20:NoLies:Outlet:Jealous
+                   +OddHours:Bachelor
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Undergraduate
+                   +InteractDislikes:NoLies:Undergraduate:Outlet
+                   +Poor
+                   +InteractDislikes:Charity:Outlet:Jealous
+                   +CityLimits:Charity:Overweight:WalletHas20
+                   +TapWater:Medications:MorningNews:LikesFamily:CheckLists:ManyPets:Phobic
+                   +OddHours:Siblings:TryFirst:FullTime:AlarmAhead
+                   +InteractDislikes:Charity:Overweight:TravelAbroad:Outlet
+                   +InteractDislikes:NoLies:TravelAbroad:Undergraduate:Jealous
+                   +K12:Medications:MorningNews:LikesFamily:Phobic:Masters
+                   +InteractDislikes:Overweight:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:Charity:Overweight:Undergraduate:Outlet
+                   +InteractDislikes:Charity:Outlet
+                   +InteractDislikes:NoLies:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:CityLimits:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:Charity:Overweight:WalletHas20:NoLies
+                   +InteractDislikes:CityLimits:WalletHas20:NoLies:TravelAbroad:Undergraduate
+                   +InteractDislikes:Overweight:WalletHas20:NoLies:Undergraduate:Outlet
+                   +TapWater:MorningNews:ManyPets:Phobic:Masters
+                   +Gender
+                   +InteractDislikes:WalletHas20:NoLies:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +StressfulEvts
+                   +TapWater:ManyPets
+                   +InteractDislikes:CityLimits:WalletHas20:NoLies:TravelAbroad:Jealous
+                   +InteractDislikes:NoLies:TravelAbroad:Undergraduate:Outlet
+                   +TapWater:K12:Phobic
+                   +InteractDislikes:WalletHas20:NoLies:Undergraduate
+                   +Charity:Overweight:WalletHas20:Undergraduate:Outlet
+                   +Skeptical
+                   +CityLimits:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:Overweight:NoLies:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:Undergraduate:Outlet
+                   +TapWater:K12:Medications:MorningNews:LikesFamily:CheckLists:ManyPets:Phobic
+                   +Medications:MorningNews:CheckLists:Phobic
+                   +MoneyBuys:HotHead:StraightA
+                   +InteractDislikes:CityLimits:Charity:Outlet
+                   +TapWater:CheckLists
+                   +InteractDislikes:Charity:NoLies:TravelAbroad:Outlet
+                   +InteractDislikes:CityLimits:Charity:Overweight:TravelAbroad:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Charity:WalletHas20:NoLies:Outlet
+                   +InteractDislikes:Charity:NoLies:TravelAbroad:Outlet:Jealous
+                   +CityLimits:Undergraduate:Outlet
+                   +Sociable
+                   +InteractDislikes:WalletHas20:NoLies:Outlet
+                   +Medications:MorningNews:LikesFamily:Phobic:Masters
+                   +InteractDislikes:NoLies:Undergraduate:Jealous
+                   +InteractDislikes:CityLimits:Charity:Overweight:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Charity:Overweight:Undergraduate:Outlet
+                   +TapWater:Medications:MorningNews:LikesFamily:CheckLists:ManyPets
+                   +InteractDislikes:CityLimits:Charity:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Overweight:WalletHas20:TravelAbroad:Undergraduate:Jealous
+                   +TapWater:K12:Medications:ManyPets
+                   +Charity:Overweight:WalletHas20:TravelAbroad:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Charity:Undergraduate:Outlet:Jealous
+                   +TapWater:K12:ManyPets
+                   +HappyorRight
+                   +InteractDislikes:CityLimits:Overweight:NoLies:Undergraduate:Outlet
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Undergraduate:Outlet:Jealous
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Outlet:Jealous
+                   +TapWater:Medications:ManyPets
+                   +InteractDislikes:WalletHas20:NoLies:Undergraduate:Jealous
+                   +Grudge
+                   +CityLimits:Undergraduate:Outlet:Jealous
+                   +MeaningofLife
+                   +Exciting
+                   +InteractDislikes:CityLimits:Overweight:TravelAbroad:Undergraduate:Outlet
+                   +LivesTogether
+                   +FeelsNormal
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ NoLies:Jealous:InteractDislikes:Charity:Outlet
+                   +Overweight:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +StraightA
+                   +Overweight:Undergraduate:InteractDislikes:WalletHas20:TravelAbroad:Outlet
+                   +CityLimits:Undergraduate:Jealous:Charity:Outlet
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic:ManyPets:Medications
+                   +CityLimits:Undergraduate:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +TapWater:CheckLists:Phobic:K12:ManyPets:Medications
+                   +Undergraduate:Jealous:Charity:WalletHas20
+                   +LikesFamily:CheckLists:Phobic:ManyPets:Medications
+                   +OddHours:AlarmAhead:Bachelor:Siblings:TryFirst:FullTime
+                   +TapWater:Phobic:Masters:ManyPets
+                   +TapWater:LikesFamily:K12:Masters
+                   +CityLimits:Overweight:NoLies:Undergraduate:Jealous:TravelAbroad
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:WalletHas20:TravelAbroad:Outlet
+                   +Misterious
+                   +Overweight:NoLies:Undergraduate:InteractDislikes:WalletHas20:Outlet
+                   +HotHead
+                   +TapWater:LikesFamily
+                   +Undergraduate:InteractDislikes:TravelAbroad:Outlet
+                   +GoodatMath
+                   +GoodatMath:CreditDebt
+                   +CityLimits:Jealous:InteractDislikes:Charity:Outlet
+                   +TapWater:CheckLists:Phobic:ManyPets:Medications
+                   +CityLimits:Overweight:NoLies:Jealous:InteractDislikes
+                   +CarPymt
+                   +NoLies:Undergraduate:InteractDislikes:WalletHas20
+                   +NoLies:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +TapWater:CheckLists:Medications
+                   +NoLies:InteractDislikes:WalletHas20:Outlet
+                   +Overweight:NoLies:Undergraduate:Jealous:InteractDislikes:Charity
+                   +Cautious:Personality
+                   +Overweight:NoLies:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +TapWater:LikesFamily:CheckLists:Masters:Medications
+                   +CityLimits:Overweight:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +Glasses
+                   +MoneyBuys:HotHead
+                   +CityLimits:Undergraduate:Jealous:Charity:TravelAbroad:Outlet
+                   +CityLimits:Undergraduate:Jealous:TravelAbroad:Outlet
+                   +CityLimits:Undergraduate:Outlet
+                   +CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes
+                   +CityLimits:NoLies:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:Outlet
+                   +NoLies:Jealous:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +CityLimits:Undergraduate:Charity:WalletHas20:TravelAbroad:Outlet
+                   +CityLimits:Overweight:Undergraduate:InteractDislikes:WalletHas20:TravelAbroad
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:TravelAbroad
+                   +Gender
+                   +OddHours:Bachelor
+                   +Rules
+                   +CryBaby
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic
+                   +Poor
+                   +Undergraduate:InteractDislikes:Outlet
+                   +CityLimits:Overweight:NoLies:Undergraduate:Jealous:InteractDislikes
+                   +NoLies:Undergraduate:Charity
+                   +K12:ManyPets
+                   +TapWater:Phobic:K12
+                   +CityLimits:Overweight:InteractDislikes:TravelAbroad:Outlet
+                   +NoLies:Undergraduate:InteractDislikes:TravelAbroad:Outlet
+                   +CityLimits:Overweight:Undergraduate:InteractDislikes:Charity:Outlet
+                   +MorningNews:LikesFamily:Phobic:K12:Masters:Medications
+                   +CityLimits:Overweight:Undergraduate:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic:K12:ManyPets:Medications
+                   +Online
+                   +CityLimits:Overweight:Jealous:InteractDislikes:Charity:TravelAbroad:Outlet
+                   +MoneyBuys:HotHead:StraightA
+                   +TapWater:MorningNews:LikesFamily:K12:Masters
+                   +OddHours:AlarmAhead:Siblings:TryFirst:FullTime
+                   +CityLimits:Overweight:Jealous:InteractDislikes:TravelAbroad:Outlet
+                   +TapWater:ManyPets
+                   +CityLimits:Overweight:NoLies:Undergraduate:InteractDislikes:Outlet
+                   +TapWater:MorningNews:Phobic:Masters:ManyPets
+                   +CityLimits:Overweight:Undergraduate:Jealous:InteractDislikes:WalletHas20:TravelAbroad
+                   +Overweight:Undergraduate:Charity:WalletHas20:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes:WalletHas20
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic:K12
+                   +CityLimits:Overweight:Charity:WalletHas20
+                   +Sociable
+                   +Skeptical
+                   +CityLimits:Overweight:Undergraduate:Jealous:InteractDislikes:Charity:Outlet
+                   +StressfulEvts
+                   +MorningNews:CheckLists:Phobic:Medications
+                   +TapWater:CheckLists
+                   +TapWater:MorningNews:LikesFamily:CheckLists:ManyPets:Medications
+                   +CityLimits:Undergraduate:Jealous:InteractDislikes:Charity:Outlet
+                   +TapWater:K12:ManyPets:Medications
+                   +CityLimits:Undergraduate:Jealous:Outlet
+                   +Overweight:Undergraduate:Charity:WalletHas20:TravelAbroad:Outlet
+                   +NoLies:Undergraduate:Jealous:InteractDislikes
+                   +MorningNews:LikesFamily:Phobic:Masters:Medications
+                   +HasDebt
+                   +CityLimits:Overweight:Undergraduate:InteractDislikes:TravelAbroad:Outlet
+                   +CityLimits:NoLies:Undergraduate:Jealous:WalletHas20
+                   +TapWater:K12:ManyPets
+                   +TapWater:ManyPets:Medications
+                   +HappyorRight
+                   +Grudge
+                   +MeaningofLife
+                   +Exciting
+                   +LivesTogether
+                   +FeelsNormal
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ NoLies:Jealous:InteractDislikes:Overweight:CityLimits
+                   +InteractDislikes:Charity:Outlet:Overweight:Undergraduate:CityLimits
+                   +TapWater:CheckLists:Phobic:ManyPets:Medications
+                   +GoodatMath
+                   +CarPymt
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:WalletHas20:CityLimits
+                   +InteractDislikes:Overweight:TravelAbroad:Undergraduate:WalletHas20:CityLimits
+                   +HotHead
+                   +HotHead:MoneyBuys
+                   +TapWater:CheckLists:Phobic:ManyPets:Medications:K12
+                   +Jealous:InteractDislikes:Outlet:Overweight:TravelAbroad:Undergraduate:CityLimits
+                   +InteractDislikes:Outlet:Overweight:TravelAbroad:Undergraduate:CityLimits
+                   +Glasses
+                   +StraightA
+                   +Jealous:InteractDislikes:Charity:Outlet:Overweight:TravelAbroad:CityLimits
+                   +TapWater:LikesFamily
+                   +NoLies:Jealous:InteractDislikes:TravelAbroad:Undergraduate
+                   +Jealous:InteractDislikes:Charity:Outlet:Undergraduate:CityLimits
+                   +TapWater:CheckLists:Medications
+                   +Jealous:Charity:Outlet:Undergraduate:CityLimits
+                   +ManyPets:K12
+                   +Jealous:Charity:Outlet:TravelAbroad:Undergraduate:CityLimits
+                   +Jealous:Outlet:TravelAbroad:Undergraduate:CityLimits
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic:ManyPets:Medications:K12
+                   +Charity:Outlet:Overweight:Undergraduate:WalletHas20
+                   +TapWater:CheckLists
+                   +Jealous:InteractDislikes:Charity:Outlet:Overweight:Undergraduate:CityLimits
+                   +Poor
+                   +NoLies:Jealous:InteractDislikes:Overweight:Undergraduate:CityLimits
+                   +NoLies:Charity:Undergraduate
+                   +Gender
+                   +Cautious:Personality
+                   +TapWater:MorningNews:LikesFamily:K12:Masters
+                   +Jealous:InteractDislikes:Overweight:TravelAbroad:Undergraduate:WalletHas20:CityLimits
+                   +Charity:Overweight:WalletHas20:CityLimits
+                   +CryBaby
+                   +TapWater:Phobic:K12
+                   +MorningNews:LikesFamily:Phobic:Medications:K12:Masters
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic
+                   +NoLies:InteractDislikes:Overweight:Undergraduate:CityLimits
+                   +OddHours:AlarmAhead:Siblings:TryFirst:FullTime
+                   +TapWater:MorningNews:Phobic:ManyPets:Masters
+                   +TapWater:ManyPets
+                   +StraightA:HotHead:MoneyBuys
+                   +Rules
+                   +Charity:Outlet:Overweight:TravelAbroad:Undergraduate:WalletHas20
+                   +Online
+                   +MorningNews:CheckLists:Phobic:Medications
+                   +TapWater:MorningNews:LikesFamily:CheckLists:ManyPets:Medications
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +TapWater:ManyPets:Medications:K12
+                   +Jealous:Outlet:Undergraduate:CityLimits
+                   +Skeptical
+                   +NoLies:Jealous:Undergraduate:WalletHas20:CityLimits
+                   +Sociable
+                   +StressfulEvts
+                   +HappyorRight
+                   +TapWater:MorningNews:LikesFamily:CheckLists:Phobic:K12
+                   +TapWater:ManyPets:Medications
+                   +TapWater:ManyPets:K12
+                   +MorningNews:LikesFamily:Phobic:Medications:Masters
+                   +Grudge
+                   +HasDebt
+                   +MeaningofLife
+                   +Exciting
+                   +LivesTogether
+                   +FeelsNormal
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+m = createglmModel(Happy ~ GoodatMath
+                   +TapWater:K12:LikesFamily:MorningNews:Masters
+                   +NoLies:Jealous:InteractDislikes:CityLimits:TravelAbroad:WalletHas20
+                   +NoLies:Charity:Undergraduate
+                   +HotHead:MoneyBuys
+                   +HotHead
+                   +TapWater:CheckLists:Phobic:ManyPets:Medications:K12:LikesFamily:MorningNews
+                   +ManyPets:K12
+                   +TapWater:CheckLists:Medications
+                   +Glasses
+                   +StraightA
+                   +Cautious:Personality
+                   +Overweight:CityLimits:Charity:WalletHas20
+                   +CarPymt
+                   +TapWater:CheckLists
+                   +OddHours:AlarmAhead:Siblings:TryFirst:FullTime
+                   +TapWater:CheckLists:Phobic:LikesFamily:MorningNews
+                   +Overweight:Charity:Outlet:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +Poor
+                   +HotHead:MoneyBuys:StraightA
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +TapWater:Phobic:K12
+                   +Jealous:CityLimits:Charity:Outlet:Undergraduate
+                   +CryBaby
+                   +Jealous:CityLimits:Outlet:Undergraduate:TravelAbroad
+                   +TapWater:LikesFamily
+                   +CheckLists:Phobic:Medications:MorningNews
+                   +Phobic:Medications:K12:LikesFamily:MorningNews:Masters
+                   +TapWater:Phobic:ManyPets:MorningNews:Masters
+                   +Rules
+                   +Gender
+                   +Jealous:CityLimits:Outlet:Undergraduate
+                   +Jealous:CityLimits:Charity:Outlet:Undergraduate:TravelAbroad
+                   +Online
+                   +TapWater:CheckLists:ManyPets:Medications:LikesFamily:MorningNews
+                   +HappyorRight
+                   +Overweight:Charity:Outlet:Undergraduate:TravelAbroad:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +TapWater:ManyPets
+                   +TapWater:ManyPets:Medications:K12
+                   +NoLies:Jealous:CityLimits:Undergraduate:WalletHas20
+                   +TapWater:CheckLists:Phobic:K12:LikesFamily:MorningNews
+                   +TapWater:ManyPets:K12
+                   +Skeptical
+                   +TapWater:ManyPets:Medications
+                   +Sociable
+                   +StressfulEvts
+                   +HasDebt
+                   +Grudge
+                   +Phobic:Medications:LikesFamily:MorningNews:Masters
+                   +MeaningofLife
+                   +LivesTogether
+                   +Exciting
+                   +FeelsNormal
+                   +OverYourHead
+                   , traindata, nottraindata)
+
+sv = createsvmModel(Happy ~ GoodatMath
+                    +TapWater:K12:LikesFamily:MorningNews:Masters
+                    +NoLies:Jealous:InteractDislikes:CityLimits:TravelAbroad:WalletHas20
+                    +NoLies:Charity:Undergraduate
+                    +HotHead:MoneyBuys
+                    +HotHead
+                    +TapWater:CheckLists:Phobic:ManyPets:Medications:K12:LikesFamily:MorningNews
+                    +ManyPets:K12
+                    +TapWater:CheckLists:Medications
+                    +Glasses
+                    +StraightA
+                    +Cautious:Personality
+                    +Overweight:CityLimits:Charity:WalletHas20
+                    +CarPymt
+                    +TapWater:CheckLists
+                    +OddHours:AlarmAhead:Siblings:TryFirst:FullTime
+                    +TapWater:CheckLists:Phobic:LikesFamily:MorningNews
+                    +Overweight:Charity:Outlet:Undergraduate:WalletHas20
+                    +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate
+                    +Poor
+                    +HotHead:MoneyBuys:StraightA
+                    +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate
+                    +TapWater:Phobic:K12
+                    +Jealous:CityLimits:Charity:Outlet:Undergraduate
+                    +CryBaby
+                    +Jealous:CityLimits:Outlet:Undergraduate:TravelAbroad
+                    +TapWater:LikesFamily
+                    +CheckLists:Phobic:Medications:MorningNews
+                    +Phobic:Medications:K12:LikesFamily:MorningNews:Masters
+                    +TapWater:Phobic:ManyPets:MorningNews:Masters
+                    +Rules
+                    +Gender
+                    +Jealous:CityLimits:Outlet:Undergraduate
+                    +Jealous:CityLimits:Charity:Outlet:Undergraduate:TravelAbroad
+                    +Online
+                    +TapWater:CheckLists:ManyPets:Medications:LikesFamily:MorningNews
+                    +HappyorRight
+                    +Overweight:Charity:Outlet:Undergraduate:TravelAbroad:WalletHas20
+                    +NoLies:Jealous:InteractDislikes:Undergraduate
+                    +TapWater:ManyPets
+                    +TapWater:ManyPets:Medications:K12
+                    +NoLies:Jealous:CityLimits:Undergraduate:WalletHas20
+                    +TapWater:CheckLists:Phobic:K12:LikesFamily:MorningNews
+                    +TapWater:ManyPets:K12
+                    +Skeptical
+                    +TapWater:ManyPets:Medications
+                    +Sociable
+                    +StressfulEvts
+                    +HasDebt
+                    +Grudge
+                    +Phobic:Medications:LikesFamily:MorningNews:Masters
+                    +MeaningofLife
+                    +LivesTogether
+                    +Exciting
+                    +FeelsNormal
+                    +OverYourHead, traindata, nottraindata, 1, 90)
+
+rf = createrfModel(Happy ~ GoodatMath
+                   +TapWater:K12:LikesFamily:MorningNews:Masters
+                   +NoLies:Jealous:InteractDislikes:CityLimits:TravelAbroad:WalletHas20
+                   +NoLies:Charity:Undergraduate
+                   +HotHead:MoneyBuys
+                   +HotHead
+                   +TapWater:CheckLists:Phobic:ManyPets:Medications:K12:LikesFamily:MorningNews
+                   +ManyPets:K12
+                   +TapWater:CheckLists:Medications
+                   +Glasses
+                   +StraightA
+                   +Cautious:Personality
+                   +Overweight:CityLimits:Charity:WalletHas20
+                   +CarPymt
+                   +TapWater:CheckLists
+                   +OddHours:AlarmAhead:Siblings:TryFirst:FullTime
+                   +TapWater:CheckLists:Phobic:LikesFamily:MorningNews
+                   +Overweight:Charity:Outlet:Undergraduate:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +Poor
+                   +HotHead:MoneyBuys:StraightA
+                   +NoLies:InteractDislikes:Overweight:CityLimits:Undergraduate
+                   +TapWater:Phobic:K12
+                   +Jealous:CityLimits:Charity:Outlet:Undergraduate
+                   +CryBaby
+                   +Jealous:CityLimits:Outlet:Undergraduate:TravelAbroad
+                   +TapWater:LikesFamily
+                   +CheckLists:Phobic:Medications:MorningNews
+                   +Phobic:Medications:K12:LikesFamily:MorningNews:Masters
+                   +TapWater:Phobic:ManyPets:MorningNews:Masters
+                   +Rules
+                   +Gender
+                   +Jealous:CityLimits:Outlet:Undergraduate
+                   +Jealous:CityLimits:Charity:Outlet:Undergraduate:TravelAbroad
+                   +Online
+                   +TapWater:CheckLists:ManyPets:Medications:LikesFamily:MorningNews
+                   +HappyorRight
+                   +Overweight:Charity:Outlet:Undergraduate:TravelAbroad:WalletHas20
+                   +NoLies:Jealous:InteractDislikes:Undergraduate
+                   +TapWater:ManyPets
+                   +TapWater:ManyPets:Medications:K12
+                   +NoLies:Jealous:CityLimits:Undergraduate:WalletHas20
+                   +TapWater:CheckLists:Phobic:K12:LikesFamily:MorningNews
+                   +TapWater:ManyPets:K12
+                   +Skeptical
+                   +TapWater:ManyPets:Medications
+                   +Sociable
+                   +StressfulEvts
+                   +HasDebt
+                   +Grudge
+                   +Phobic:Medications:LikesFamily:MorningNews:Masters
+                   +MeaningofLife
+                   +LivesTogether
+                   +Exciting
+                   +FeelsNormal
+                   +OverYourHead, traindata, testdata)
